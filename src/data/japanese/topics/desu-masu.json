@@ -1,0 +1,372 @@
+{
+  "id": "desu-masu",
+  "name": "Beleefdheidsvorm (です/ます)",
+  "description": "Leer de Japanse beleefdheidsvorm: hoe je informele werkwoorden en bijvoeglijke naamwoorden omzet naar de beleefdheidsvormen met です (desu) en ます (masu).",
+  "level": "beginner",
+  "order": 1,
+  "exercises": [
+    {
+      "id": "desu-masu-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Zet het werkwoord 食べる (taberu - eten) om naar de beleefdheids­vorm (ます-vorm).",
+        "sentence": "私 (watashi) は 毎日 (mainichi) ご飯 (gohan) を ___。",
+        "context": "Je vertelt een collega wat je elke dag eet."
+      },
+      "correctAnswer": "食べます (tabemasu)",
+      "distractors": ["食べる (taberu)", "食べた (tabeta)", "食べません (tabemasen)"],
+      "explanation": {
+        "nl": "Bij ichidan-werkwoorden (ru-werkwoorden) vervang je る (ru) door ます (masu). 食べる → 食べます.",
+        "rule": "Ichidan: stam + ます",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "食べる (taberu)",
+          "tense": "masu",
+          "forms": [
+            { "person": "informeel", "form": "食べる (taberu)", "highlight": false },
+            { "person": "beleefd (positief)", "form": "食べます (tabemasu)", "highlight": true },
+            { "person": "beleefd (negatief)", "form": "食べません (tabemasen)", "highlight": false },
+            { "person": "beleefd (verleden)", "form": "食べました (tabemashita)", "highlight": false }
+          ]
+        }
+      },
+      "hints": [
+        "食べる is een ichidan (ru-)werkwoord.",
+        "Verwijder る en voeg ます toe."
+      ]
+    },
+    {
+      "id": "desu-masu-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Zet het werkwoord 行く (iku - gaan) om naar de beleefdheids­vorm.",
+        "sentence": "明日 (ashita) 学校 (gakkou) に ___。",
+        "context": "Je vertelt je leraar dat je morgen naar school gaat."
+      },
+      "correctAnswer": "行きます (ikimasu)",
+      "distractors": ["行く (iku)", "行った (itta)", "行きません (ikimasen)"],
+      "explanation": {
+        "nl": "Bij godan-werkwoorden (u-werkwoorden) verander je de laatste kana naar de i-rij en voeg je ます toe. 行く: く → き + ます = 行きます.",
+        "rule": "Godan: stam (i-rij) + ます",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "行く (iku)",
+          "tense": "masu",
+          "forms": [
+            { "person": "informeel", "form": "行く (iku)", "highlight": false },
+            { "person": "beleefd (positief)", "form": "行きます (ikimasu)", "highlight": true },
+            { "person": "beleefd (negatief)", "form": "行きません (ikimasen)", "highlight": false },
+            { "person": "beleefd (verleden)", "form": "行きました (ikimashita)", "highlight": false }
+          ]
+        }
+      },
+      "hints": [
+        "行く is een godan (u-)werkwoord.",
+        "Verander く (ku) naar き (ki) en voeg ます toe."
+      ]
+    },
+    {
+      "id": "desu-masu-3",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar beleefd Japans: 'Ik drink water.'",
+        "sentence": "水 (mizu) を 飲みます (nomimasu)。",
+        "context": "Je bestelt iets in een restaurant."
+      },
+      "correctAnswer": "水を飲みます (mizu wo nomimasu)",
+      "distractors": ["水を飲む (mizu wo nomu)", "水が飲みます (mizu ga nomimasu)", "水を飲んだ (mizu wo nonda)"],
+      "explanation": {
+        "nl": "飲む (nomu - drinken) is een godan-werkwoord. む → み + ます = 飲みます. Het object 水 (water) wordt gemarkeerd met を.",
+        "rule": "Godan: stam (i-rij) + ます",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "飲む (nomu)",
+          "tense": "masu",
+          "forms": [
+            { "person": "informeel", "form": "飲む (nomu)", "highlight": false },
+            { "person": "beleefd (positief)", "form": "飲みます (nomimasu)", "highlight": true },
+            { "person": "beleefd (negatief)", "form": "飲みません (nomimasen)", "highlight": false },
+            { "person": "beleefd (verleden)", "form": "飲みました (nomimashita)", "highlight": false }
+          ]
+        }
+      },
+      "hints": [
+        "飲む is een godan-werkwoord. Verander む naar み.",
+        "Het object (water) krijgt partikel を."
+      ]
+    },
+    {
+      "id": "desu-masu-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet in de negatieve beleefdheids­vorm: 'Ik eet geen vlees.'",
+        "sentence": "私 (watashi) は 肉 (niku) を ___。",
+        "context": "Je legt aan een ober uit dat je vegetarisch bent."
+      },
+      "correctAnswer": "食べません (tabemasen)",
+      "distractors": ["食べます (tabemasu)", "食べない (tabenai)", "食べなかった (tabenakatta)"],
+      "explanation": {
+        "nl": "De negatieve beleefdheids­vorm maak je door ます te vervangen door ません. 食べます → 食べません.",
+        "rule": "Negatief beleefd: stam + ません",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "食べる (taberu)",
+          "tense": "masu",
+          "forms": [
+            { "person": "beleefd (positief)", "form": "食べます (tabemasu)", "highlight": false },
+            { "person": "beleefd (negatief)", "form": "食べません (tabemasen)", "highlight": true },
+            { "person": "informeel (negatief)", "form": "食べない (tabenai)", "highlight": false }
+          ]
+        }
+      },
+      "hints": [
+        "De negatieve vorm van ます is ません.",
+        "食べ + ません"
+      ]
+    },
+    {
+      "id": "desu-masu-5",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet in de verleden beleefdheids­vorm: 'Ik heb gekocht.'",
+        "sentence": "新しい (atarashii) 本 (hon) を ___。",
+        "context": "Je vertelt een vriend dat je een nieuw boek hebt gekocht."
+      },
+      "correctAnswer": "買いました (kaimashita)",
+      "distractors": ["買います (kaimasu)", "買った (katta)", "買いません (kaimasen)"],
+      "explanation": {
+        "nl": "De verleden beleefdheids­vorm maak je door ます te vervangen door ました. 買います → 買いました.",
+        "rule": "Verleden beleefd: stam + ました",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "買う (kau)",
+          "tense": "masu",
+          "forms": [
+            { "person": "beleefd (positief)", "form": "買います (kaimasu)", "highlight": false },
+            { "person": "beleefd (verleden)", "form": "買いました (kaimashita)", "highlight": true },
+            { "person": "informeel (verleden)", "form": "買った (katta)", "highlight": false }
+          ]
+        }
+      },
+      "hints": [
+        "De verleden tijd van ます is ました.",
+        "買い + ました"
+      ]
+    },
+    {
+      "id": "desu-masu-6",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze beleefde zin?",
+        "sentence": "私 (watashi) は 日本語 (nihongo) を 話す (hanasu)。",
+        "context": "Een student wil beleefd zeggen: 'Ik spreek Japans.'"
+      },
+      "correctAnswer": "話す (hanasu)",
+      "distractors": ["私 (watashi)", "日本語 (nihongo)", "を (wo)"],
+      "explanation": {
+        "nl": "話す (hanasu) is de informele vorm. In een beleefde zin moet dit 話します (hanashimasu) zijn. す → し + ます.",
+        "rule": "Godan: stam (i-rij) + ます",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "話す (hanasu)",
+          "tense": "masu",
+          "forms": [
+            { "person": "informeel (fout hier)", "form": "話す (hanasu)", "highlight": true },
+            { "person": "beleefd (correct)", "form": "話します (hanashimasu)", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "De zin moet beleefd zijn. Kijk naar het werkwoord.",
+        "話す is de informele vorm van 'spreken'."
+      ]
+    },
+    {
+      "id": "desu-masu-7",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Maak de zin beleefd met です (desu): 'Dit is een boek.'",
+        "sentence": "これ (kore) は 本 (hon) ___。",
+        "context": "Je wijst iets aan en legt het beleefd uit."
+      },
+      "correctAnswer": "です (desu)",
+      "distractors": ["だ (da)", "ます (masu)", "でした (deshita)"],
+      "explanation": {
+        "nl": "Bij zelfstandige naamwoorden en na-bijvoeglijke naamwoorden gebruik je です in plaats van het informele だ. これは本だ → これは本です.",
+        "rule": "Zelfstandig naamwoord + です",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "です (desu)",
+          "tense": "masu",
+          "forms": [
+            { "person": "informeel", "form": "だ (da)", "highlight": false },
+            { "person": "beleefd (positief)", "form": "です (desu)", "highlight": true },
+            { "person": "beleefd (negatief)", "form": "ではありません (dewa arimasen)", "highlight": false },
+            { "person": "beleefd (verleden)", "form": "でした (deshita)", "highlight": false }
+          ]
+        }
+      },
+      "hints": [
+        "Na een zelfstandig naamwoord gebruik je de beleefde koppeling.",
+        "De beleefde versie van だ is です."
+      ]
+    },
+    {
+      "id": "desu-masu-8",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar beleefd Japans: 'Ik heb gisteren niet gestudeerd.'",
+        "sentence": "昨日 (kinou) 勉強しませんでした (benkyou shimasen deshita)。",
+        "context": "Je legt je leraar uit wat je gisteren hebt gedaan."
+      },
+      "correctAnswer": "昨日勉強しませんでした (kinou benkyou shimasen deshita)",
+      "distractors": [
+        "昨日勉強しません (kinou benkyou shimasen)",
+        "昨日勉強しなかった (kinou benkyou shinakatta)",
+        "昨日勉強しました (kinou benkyou shimashita)"
+      ],
+      "explanation": {
+        "nl": "De negatieve verleden beleefdheids­vorm is ませんでした. 勉強する → 勉強します → 勉強しませんでした.",
+        "rule": "Negatief verleden beleefd: stam + ませんでした",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "勉強する (benkyou suru)",
+          "tense": "masu",
+          "forms": [
+            { "person": "beleefd (positief)", "form": "勉強します (benkyou shimasu)", "highlight": false },
+            { "person": "beleefd (negatief)", "form": "勉強しません (benkyou shimasen)", "highlight": false },
+            { "person": "beleefd (verleden)", "form": "勉強しました (benkyou shimashita)", "highlight": false },
+            { "person": "beleefd (neg. verleden)", "form": "勉強しませんでした (benkyou shimasen deshita)", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "勉強する is een suru-werkwoord (onregelmatig).",
+        "Negatief + verleden: ませんでした."
+      ]
+    },
+    {
+      "id": "desu-masu-9",
+      "type": "zinsvolgorde",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde om een beleefde zin te maken: 'Ik lees elke dag de krant.'",
+        "sentence": "私は / 毎日 / 新聞を / 読みます",
+        "context": "Je beschrijft je dagelijkse routine."
+      },
+      "correctAnswer": "私は毎日新聞を読みます",
+      "distractors": [
+        "毎日私は読みます新聞を",
+        "読みます私は毎日新聞を",
+        "私は新聞を毎日読みます"
+      ],
+      "explanation": {
+        "nl": "De standaardvolgorde is: thema (私は) + tijd (毎日) + object (新聞を) + werkwoord (読みます). Het werkwoord staat altijd aan het einde.",
+        "rule": "Thema + tijd + object + werkwoord (ます-vorm)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "読む (yomu)",
+          "tense": "masu",
+          "forms": [
+            { "person": "informeel", "form": "読む (yomu)", "highlight": false },
+            { "person": "beleefd (positief)", "form": "読みます (yomimasu)", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord staat altijd aan het einde in het Japans.",
+        "De tijdsaanduiding 毎日 komt voor het object."
+      ]
+    },
+    {
+      "id": "desu-masu-10",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Gebruik de onregelmatige beleefdheids­vorm: 'Ik kom morgen.'",
+        "sentence": "明日 (ashita) ___。",
+        "context": "Je bevestigt een afspraak met een zakenpartner."
+      },
+      "correctAnswer": "来ます (kimasu)",
+      "distractors": ["来る (kuru)", "来ました (kimashita)", "来ません (kimasen)"],
+      "explanation": {
+        "nl": "来る (kuru - komen) is een onregelmatig werkwoord. De ます-vorm is 来ます (kimasu), niet *来ります. Dit moet je uit je hoofd leren.",
+        "rule": "Onregelmatig: 来る → 来ます",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "来る (kuru)",
+          "tense": "masu",
+          "forms": [
+            { "person": "informeel", "form": "来る (kuru)", "highlight": false },
+            { "person": "beleefd (positief)", "form": "来ます (kimasu)", "highlight": true },
+            { "person": "beleefd (negatief)", "form": "来ません (kimasen)", "highlight": false },
+            { "person": "beleefd (verleden)", "form": "来ました (kimashita)", "highlight": false },
+            { "person": "beleefd (neg. verleden)", "form": "来ませんでした (kimasen deshita)", "highlight": false }
+          ]
+        }
+      },
+      "hints": [
+        "来る is een van de twee onregelmatige werkwoorden in het Japans.",
+        "De stam verandert: kuru → ki + masu."
+      ]
+    }
+  ],
+  "grammarRules": [
+    {
+      "id": "masu-vorm-regel",
+      "title": "De ます-vorm (beleefdheids­vorm van werkwoorden)",
+      "explanation": "In het Japans gebruik je de ます-vorm om beleefd te spreken. Er zijn drie werkwoordgroepen: ichidan (ru-werkwoorden), godan (u-werkwoorden) en onregelmatige werkwoorden (する en 来る). Bij ichidan-werkwoorden vervang je る door ます. Bij godan-werkwoorden verander je de laatste kana naar de i-rij en voeg je ます toe.",
+      "formula": "Ichidan: stam + ます | Godan: stam (i-rij) + ます | する → します | 来る → 来ます",
+      "examples": [
+        {
+          "italian": "食べます (tabemasu)",
+          "dutch": "eten (beleefd)",
+          "breakdown": [
+            { "word": "食べ", "role": "verb", "color": "#E74C3C", "annotation": "stam (tabe)" },
+            { "word": "ます", "role": "particle", "color": "#3498DB", "annotation": "beleefdheids­suffix" }
+          ]
+        },
+        {
+          "italian": "行きます (ikimasu)",
+          "dutch": "gaan (beleefd)",
+          "breakdown": [
+            { "word": "行き", "role": "verb", "color": "#E74C3C", "annotation": "stam i-rij (iki)" },
+            { "word": "ます", "role": "particle", "color": "#3498DB", "annotation": "beleefdheids­suffix" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desu-regel",
+      "title": "です (desu) - beleefde koppeling",
+      "explanation": "です is de beleefde vorm van だ en wordt gebruikt na zelfstandige naamwoorden en na-bijvoeglijke naamwoorden. De negatieve vorm is ではありません (of じゃありません in spreektaal). De verleden tijd is でした.",
+      "formula": "Zelfstandig naamwoord + です | Negatief: ではありません | Verleden: でした",
+      "examples": [
+        {
+          "italian": "学生です (gakusei desu)",
+          "dutch": "is een student (beleefd)",
+          "breakdown": [
+            { "word": "学生", "role": "subject", "color": "#2ECC71", "annotation": "student (gakusei)" },
+            { "word": "です", "role": "verb", "color": "#3498DB", "annotation": "is (beleefd)" }
+          ]
+        },
+        {
+          "italian": "学生でした (gakusei deshita)",
+          "dutch": "was een student (beleefd)",
+          "breakdown": [
+            { "word": "学生", "role": "subject", "color": "#2ECC71", "annotation": "student (gakusei)" },
+            { "word": "でした", "role": "verb", "color": "#3498DB", "annotation": "was (beleefd, verleden)" }
+          ]
+        }
+      ]
+    }
+  ]
+}

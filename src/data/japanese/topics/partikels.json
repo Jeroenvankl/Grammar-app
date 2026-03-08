@@ -1,0 +1,353 @@
+{
+  "id": "partikels",
+  "name": "Partikels (は・が・を・に・で)",
+  "description": "Leer de belangrijkste Japanse partikels: は (wa) voor het thema, が (ga) voor het onderwerp, を (wo) voor het lijdend voorwerp, に (ni) voor richting en locatie, en で (de) voor middel en plaats van handeling.",
+  "level": "beginner",
+  "order": 2,
+  "exercises": [
+    {
+      "id": "partikels-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Kies het juiste partikel: 'Ik ben een student.' — 私 (watashi) ___ 学生です (gakusei desu).",
+        "sentence": "私 (watashi) ___ 学生です (gakusei desu)。",
+        "context": "Je stelt jezelf voor aan een nieuwe kennis."
+      },
+      "correctAnswer": "は (wa)",
+      "distractors": ["が (ga)", "を (wo)", "に (ni)"],
+      "explanation": {
+        "nl": "は (wa) markeert het thema van de zin — datgene waar de zin over gaat. 'Wat mij betreft, ik ben een student.' は wordt uitgesproken als 'wa' wanneer het als partikel wordt gebruikt.",
+        "rule": "は markeert het thema",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "私", "role": "thema", "particle": "は", "color": "#4A90D9" },
+            { "text": "学生", "role": "zelfst. naamwoord", "color": "#2ECC71" },
+            { "text": "です", "role": "koppelwerkwoord", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "Het thema van de zin is 'ik' (私).",
+        "Het themapartikel wordt uitgesproken als 'wa'."
+      ]
+    },
+    {
+      "id": "partikels-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Kies het juiste partikel: 'Ik eet sushi.' — 私 (watashi) は 寿司 (sushi) ___ 食べます (tabemasu).",
+        "sentence": "私 (watashi) は 寿司 (sushi) ___ 食べます (tabemasu)。",
+        "context": "Je vertelt wat je als lunch eet."
+      },
+      "correctAnswer": "を (wo)",
+      "distractors": ["は (wa)", "が (ga)", "で (de)"],
+      "explanation": {
+        "nl": "を (wo) markeert het lijdend voorwerp — het ding waarop de actie wordt uitgevoerd. Sushi is wat je eet, dus sushi krijgt を.",
+        "rule": "を markeert het lijdend voorwerp",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "私", "role": "thema", "particle": "は", "color": "#4A90D9" },
+            { "text": "寿司", "role": "lijdend voorwerp", "particle": "を", "color": "#FF9800" },
+            { "text": "食べます", "role": "werkwoord", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "Sushi is het ding dat gegeten wordt.",
+        "Het partikel voor het lijdend voorwerp is を."
+      ]
+    },
+    {
+      "id": "partikels-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Kies het juiste partikel: 'Ik ga naar Tokyo.' — 東京 (Toukyou) ___ 行きます (ikimasu).",
+        "sentence": "東京 (Toukyou) ___ 行きます (ikimasu)。",
+        "context": "Je vertelt over je reisplannen."
+      },
+      "correctAnswer": "に (ni)",
+      "distractors": ["を (wo)", "で (de)", "は (wa)"],
+      "explanation": {
+        "nl": "に (ni) wordt gebruikt voor de richting of bestemming bij bewegingswerkwoorden zoals 行く (gaan), 来る (komen), 帰る (terugkeren). Tokyo is de bestemming, dus に.",
+        "rule": "に markeert richting/bestemming",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "東京", "role": "bestemming", "particle": "に", "color": "#FF9800" },
+            { "text": "行きます", "role": "werkwoord (beweging)", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "Tokyo is de bestemming waarheen je gaat.",
+        "Bij bewegingswerkwoorden gebruik je に voor de bestemming."
+      ]
+    },
+    {
+      "id": "partikels-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Kies het juiste partikel: 'Ik studeer in de bibliotheek.' — 図書館 (toshokan) ___ 勉強します (benkyou shimasu).",
+        "sentence": "図書館 (toshokan) ___ 勉強します (benkyou shimasu)。",
+        "context": "Je vertelt waar je studeert."
+      },
+      "correctAnswer": "で (de)",
+      "distractors": ["に (ni)", "を (wo)", "は (wa)"],
+      "explanation": {
+        "nl": "で (de) markeert de plaats waar een handeling plaatsvindt. Je studeert IN de bibliotheek — de bibliotheek is de locatie van de actie. Let op: に is voor de locatie van bestaan (いる/ある), で is voor de locatie van actie.",
+        "rule": "で markeert de plaats van handeling",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "図書館", "role": "plaats van handeling", "particle": "で", "color": "#9B59B6" },
+            { "text": "勉強します", "role": "werkwoord (actie)", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "De bibliotheek is de plaats waar de handeling (studeren) plaatsvindt.",
+        "で wordt gebruikt voor de locatie van een actie, niet に."
+      ]
+    },
+    {
+      "id": "partikels-5",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk partikel is fout? 'De kat is in de tuin.'",
+        "sentence": "猫 (neko) は 庭 (niwa) で います (imasu)。",
+        "context": "Je beschrijft waar de kat zich bevindt."
+      },
+      "correctAnswer": "で (de)",
+      "distractors": ["は (wa)", "います (imasu)", "猫 (neko)"],
+      "explanation": {
+        "nl": "Bij werkwoorden van bestaan (いる voor levende wezens, ある voor dingen) gebruik je に voor de locatie, niet で. で is voor de locatie van een actie. Correct: 猫は庭にいます.",
+        "rule": "に voor locatie van bestaan (いる/ある), で voor locatie van actie",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "猫", "role": "thema", "particle": "は", "color": "#4A90D9" },
+            { "text": "庭", "role": "locatie (bestaan)", "particle": "に ✓ (niet で ✗)", "color": "#FF9800" },
+            { "text": "います", "role": "werkwoord (bestaan)", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "います is een werkwoord van bestaan, niet van actie.",
+        "Bij いる en ある gebruik je een ander partikel voor locatie dan bij actiewerkwoorden."
+      ]
+    },
+    {
+      "id": "partikels-6",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Kies het juiste partikel (は of が): 'Wie komt er morgen?' — 明日 (ashita) 誰 (dare) ___ 来ますか (kimasu ka)。",
+        "sentence": "明日 (ashita) 誰 (dare) ___ 来ますか (kimasu ka)。",
+        "context": "Je vraagt wie er morgen bij de vergadering aanwezig zal zijn."
+      },
+      "correctAnswer": "が (ga)",
+      "distractors": ["は (wa)", "を (wo)", "に (ni)"],
+      "explanation": {
+        "nl": "が (ga) wordt gebruikt bij vraagwoorden (wie, wat, welke) en bij het antwoord daarop. 'Wie' is onbekende informatie, dus 誰が. は zou betekenen 'wat betreft wie' — dat slaat nergens op.",
+        "rule": "が bij vraagwoorden en nieuw/onbekend onderwerp",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "明日", "role": "tijd", "color": "#95A5A6" },
+            { "text": "誰", "role": "onderwerp (onbekend)", "particle": "が", "color": "#27AE60" },
+            { "text": "来ますか", "role": "werkwoord + vraag", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "Bij vraagwoorden als 誰 (wie) en 何 (wat) gebruik je een specifiek partikel.",
+        "が wordt gebruikt wanneer het onderwerp onbekend of nieuw is."
+      ]
+    },
+    {
+      "id": "partikels-7",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar Japans: 'Ik ga met de bus naar school.'",
+        "sentence": "バス (basu) で 学校 (gakkou) に 行きます (ikimasu)。",
+        "context": "Je vertelt hoe je naar school reist."
+      },
+      "correctAnswer": "バスで学校に行きます (basu de gakkou ni ikimasu)",
+      "distractors": [
+        "バスに学校で行きます (basu ni gakkou de ikimasu)",
+        "バスを学校に行きます (basu wo gakkou ni ikimasu)",
+        "バスは学校で行きます (basu wa gakkou de ikimasu)"
+      ],
+      "explanation": {
+        "nl": "で markeert het middel of transportmiddel (met de bus). に markeert de bestemming (naar school). Beide partikels in dezelfde zin: バスで (met de bus) + 学校に (naar school) + 行きます (gaan).",
+        "rule": "で voor middel, に voor bestemming",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "バス", "role": "middel", "particle": "で", "color": "#9B59B6" },
+            { "text": "学校", "role": "bestemming", "particle": "に", "color": "#FF9800" },
+            { "text": "行きます", "role": "werkwoord (beweging)", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "De bus is het middel van vervoer (で).",
+        "School is de bestemming (に)."
+      ]
+    },
+    {
+      "id": "partikels-8",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "は of が? 'De berg Fuji is mooi.' — 富士山 (Fujisan) ___ きれいです (kirei desu).",
+        "sentence": "富士山 (Fujisan) ___ きれいです (kirei desu)。",
+        "context": "Je deelt je indruk van het uitzicht met een vriend."
+      },
+      "correctAnswer": "は (wa)",
+      "distractors": ["が (ga)", "を (wo)", "で (de)"],
+      "explanation": {
+        "nl": "は wordt gebruikt als je een oordeel geeft over een bekend onderwerp. De berg Fuji is al bekend (gemeenschappelijke kennis), en je deelt je mening erover. が zou je gebruiken als je de berg aanwijst als nieuw feit: 'Het is de berg Fuji die mooi is.'",
+        "rule": "は voor bekende thema's met oordeel",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "富士山", "role": "thema (bekend)", "particle": "は", "color": "#4A90D9" },
+            { "text": "きれいです", "role": "bijv. nw. + koppeling", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "De berg Fuji is al bekend in het gesprek.",
+        "は gebruik je als je een uitspraak doet over een bekend onderwerp."
+      ]
+    },
+    {
+      "id": "partikels-9",
+      "type": "zinsvolgorde",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde: 'Ik schrijf een brief met een pen op kantoor.'",
+        "sentence": "私は / 会社で / ペンで / 手紙を / 書きます",
+        "context": "Je beschrijft je werkactiviteit."
+      },
+      "correctAnswer": "私は会社でペンで手紙を書きます",
+      "distractors": [
+        "私は手紙を会社でペンで書きます",
+        "書きます私は会社でペンで手紙を",
+        "会社で私はペンで手紙を書きます"
+      ],
+      "explanation": {
+        "nl": "De volgorde is: thema (私は) + plaats (会社で) + middel (ペンで) + object (手紙を) + werkwoord (書きます). Partikels binden hun woord aan een rol in de zin. Het werkwoord staat altijd aan het einde.",
+        "rule": "Thema は + plaats で + middel で + object を + werkwoord",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "私", "role": "thema", "particle": "は", "color": "#4A90D9" },
+            { "text": "会社", "role": "plaats", "particle": "で", "color": "#9B59B6" },
+            { "text": "ペン", "role": "middel", "particle": "で", "color": "#9B59B6" },
+            { "text": "手紙", "role": "lijdend voorwerp", "particle": "を", "color": "#FF9800" },
+            { "text": "書きます", "role": "werkwoord", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "Het thema (私は) komt eerst, het werkwoord (書きます) komt laatst.",
+        "Plaats en middel komen voor het lijdend voorwerp."
+      ]
+    },
+    {
+      "id": "partikels-10",
+      "type": "foutherkenning",
+      "difficulty": 4,
+      "question": {
+        "nl": "Welk partikel is fout? 'Ik heb in het park met vrienden gespeeld.'",
+        "sentence": "私 (watashi) は 公園 (kouen) に 友達 (tomodachi) と 遊びました (asobimashita)。",
+        "context": "Je vertelt over je weekend."
+      },
+      "correctAnswer": "に (ni)",
+      "distractors": ["は (wa)", "と (to)", "遊びました (asobimashita)"],
+      "explanation": {
+        "nl": "遊ぶ (spelen) is een actiewerkwoord, geen werkwoord van bestaan. Bij de locatie van een actie gebruik je で, niet に. Correct: 公園で友達と遊びました. に zou je gebruiken als je zegt dat je IN het park bent (いる).",
+        "rule": "で voor locatie van actie, に voor locatie van bestaan",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "私", "role": "thema", "particle": "は", "color": "#4A90D9" },
+            { "text": "公園", "role": "plaats van handeling", "particle": "で ✓ (niet に ✗)", "color": "#9B59B6" },
+            { "text": "友達", "role": "gezelschap", "particle": "と", "color": "#27AE60" },
+            { "text": "遊びました", "role": "werkwoord (actie)", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "Spelen is een actie — welk partikel past bij de locatie van een actie?",
+        "に is voor bestaan (いる/ある), で is voor acties."
+      ]
+    }
+  ],
+  "grammarRules": [
+    {
+      "id": "wa-ga-verschil",
+      "title": "は (wa) vs が (ga) — thema vs onderwerp",
+      "explanation": "は markeert het thema van de zin: datgene waar je over praat. が markeert het grammaticale onderwerp, vooral bij nieuwe of onbekende informatie. Bij vraagwoorden (wie, wat) gebruik je altijd が. は gebruik je als iets al bekend is en je er een uitspraak over doet.",
+      "formula": "Bekend thema + は | Onbekend/nieuw onderwerp + が | Vraagwoord + が",
+      "examples": [
+        {
+          "italian": "私は学生です (watashi wa gakusei desu)",
+          "dutch": "Ik ben een student (thema: ik)",
+          "breakdown": [
+            { "word": "私", "role": "subject", "color": "#4A90D9", "annotation": "ik (watashi)" },
+            { "word": "は", "role": "particle", "color": "#4A90D9", "annotation": "themapartikel" },
+            { "word": "学生", "role": "object", "color": "#2ECC71", "annotation": "student" },
+            { "word": "です", "role": "verb", "color": "#E74C3C", "annotation": "is (beleefd)" }
+          ]
+        },
+        {
+          "italian": "誰が来ますか (dare ga kimasu ka)",
+          "dutch": "Wie komt er?",
+          "breakdown": [
+            { "word": "誰", "role": "subject", "color": "#27AE60", "annotation": "wie (dare)" },
+            { "word": "が", "role": "particle", "color": "#27AE60", "annotation": "onderwerppartikel" },
+            { "word": "来ます", "role": "verb", "color": "#E74C3C", "annotation": "komt (kimasu)" },
+            { "word": "か", "role": "particle", "color": "#95A5A6", "annotation": "vraagpartikel" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ni-de-verschil",
+      "title": "に (ni) vs で (de) — locatie",
+      "explanation": "Beide partikels kunnen een locatie aangeven, maar op een andere manier. に wordt gebruikt voor de locatie van bestaan (met いる en ある) en voor de bestemming van beweging. で wordt gebruikt voor de plaats waar een handeling plaatsvindt en voor het middel waarmee iets gedaan wordt.",
+      "formula": "Bestaan/bestemming + に | Plaats van actie/middel + で",
+      "examples": [
+        {
+          "italian": "図書館で勉強します (toshokan de benkyou shimasu)",
+          "dutch": "Ik studeer in de bibliotheek (actie)",
+          "breakdown": [
+            { "word": "図書館", "role": "adverb", "color": "#9B59B6", "annotation": "bibliotheek (toshokan)" },
+            { "word": "で", "role": "particle", "color": "#9B59B6", "annotation": "plaats van actie" },
+            { "word": "勉強します", "role": "verb", "color": "#E74C3C", "annotation": "studeren (benkyou shimasu)" }
+          ]
+        },
+        {
+          "italian": "図書館にいます (toshokan ni imasu)",
+          "dutch": "Ik ben in de bibliotheek (bestaan)",
+          "breakdown": [
+            { "word": "図書館", "role": "adverb", "color": "#FF9800", "annotation": "bibliotheek (toshokan)" },
+            { "word": "に", "role": "particle", "color": "#FF9800", "annotation": "locatie van bestaan" },
+            { "word": "います", "role": "verb", "color": "#E74C3C", "annotation": "zijn/bestaan (imasu)" }
+          ]
+        }
+      ]
+    }
+  ]
+}

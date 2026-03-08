@@ -1,0 +1,346 @@
+{
+  "id": "articoli",
+  "name": "Lidwoorden",
+  "description": "Leer de Italiaanse bepaalde en onbepaalde lidwoorden: il, lo, la, i, gli, le en un, uno, una, un'. De keuze hangt af van het geslacht, getal en de beginletter van het zelfstandig naamwoord.",
+  "level": "beginner",
+  "order": 2,
+  "grammarRules": [
+    {
+      "id": "articoli-determinativi",
+      "title": "Bepaalde lidwoorden (articoli determinativi)",
+      "explanation": "Het Italiaans heeft 6 bepaalde lidwoorden. De keuze hangt af van geslacht (mannelijk/vrouwelijk), getal (enkelvoud/meervoud) en de beginletter(s) van het volgende woord. 'Lo' en 'gli' worden gebruikt voor mannelijke woorden die beginnen met z, s+medeklinker, gn, ps, x of y.",
+      "formula": "Mannelijk: il (enk.) → i (mv.) | lo (enk.) → gli (mv.) | Vrouwelijk: la (enk.) → le (mv.)",
+      "examples": [
+        {
+          "italian": "Il ragazzo mangia la pizza.",
+          "dutch": "De jongen eet de pizza.",
+          "breakdown": [
+            { "word": "Il", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord, mannelijk enkelvoud" },
+            { "word": "ragazzo", "role": "subject", "color": "#60a5fa", "annotation": "mannelijk, begint met medeklinker → il" },
+            { "word": "mangia", "role": "verb", "color": "#f87171", "annotation": "mangiare, 3e persoon enkelvoud" },
+            { "word": "la", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord, vrouwelijk enkelvoud" },
+            { "word": "pizza", "role": "object", "color": "#34d399", "annotation": "vrouwelijk, begint met medeklinker → la" }
+          ]
+        },
+        {
+          "italian": "Lo studente legge gli articoli.",
+          "dutch": "De student leest de artikelen.",
+          "breakdown": [
+            { "word": "Lo", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord, mannelijk enkelvoud (voor s+medeklinker)" },
+            { "word": "studente", "role": "subject", "color": "#60a5fa", "annotation": "mannelijk, begint met st- → lo" },
+            { "word": "legge", "role": "verb", "color": "#f87171", "annotation": "leggere, 3e persoon enkelvoud" },
+            { "word": "gli", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord, mannelijk meervoud (voor vocaal/speciale combinaties)" },
+            { "word": "articoli", "role": "object", "color": "#34d399", "annotation": "mannelijk meervoud, begint met klinker → gli" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "articoli-indeterminativi",
+      "title": "Onbepaalde lidwoorden (articoli indeterminativi)",
+      "explanation": "Het Italiaans heeft 4 onbepaalde lidwoorden: un (mannelijk, voor de meeste woorden), uno (mannelijk, voor z/s+medeklinker/gn/ps), una (vrouwelijk) en un' (vrouwelijk, voor klinkers). Ze bestaan alleen in het enkelvoud.",
+      "formula": "Mannelijk: un / uno | Vrouwelijk: una / un' (voor klinker)",
+      "examples": [
+        {
+          "italian": "Un amico e una amica.",
+          "dutch": "Een vriend en een vriendin.",
+          "breakdown": [
+            { "word": "Un", "role": "article", "color": "#a78bfa", "annotation": "onbepaald lidwoord, mannelijk" },
+            { "word": "amico", "role": "subject", "color": "#60a5fa", "annotation": "mannelijk, begint met klinker → un" },
+            { "word": "e", "role": "particle", "color": "#fbbf24", "annotation": "voegwoord: en" },
+            { "word": "una", "role": "article", "color": "#a78bfa", "annotation": "onbepaald lidwoord, vrouwelijk (voor medeklinker)" },
+            { "word": "amica", "role": "object", "color": "#34d399", "annotation": "vrouwelijk, begint met klinker → una/un'" }
+          ]
+        },
+        {
+          "italian": "Uno zaino rosso.",
+          "dutch": "Een rode rugzak.",
+          "breakdown": [
+            { "word": "Uno", "role": "article", "color": "#a78bfa", "annotation": "onbepaald lidwoord, mannelijk (voor z-)" },
+            { "word": "zaino", "role": "subject", "color": "#60a5fa", "annotation": "mannelijk, begint met z → uno" },
+            { "word": "rosso", "role": "adjective", "color": "#fb923c", "annotation": "bijvoeglijk naamwoord, mannelijk enkelvoud" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "articoli-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste bepaalde lidwoord in voor 'libro' (boek, mannelijk).",
+        "sentence": "___ libro è interessante.",
+        "context": "libro = boek (mannelijk), begint met medeklinker"
+      },
+      "correctAnswer": "Il",
+      "distractors": ["Lo", "La", "I"],
+      "explanation": {
+        "nl": "'Libro' is mannelijk en begint met een gewone medeklinker (l). Daarom gebruik je 'il'. 'Lo' wordt alleen gebruikt voor woorden die beginnen met z, s+medeklinker, gn, ps, x of y.",
+        "rule": "Mannelijk enkelvoud + gewone medeklinker → il",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "il",
+          "noun": "libro",
+          "gender": "mannelijk",
+          "number": "enkelvoud",
+          "rule": "Mannelijke woorden die beginnen met een gewone medeklinker krijgen 'il'."
+        }
+      },
+      "hints": [
+        "'Libro' is mannelijk en begint met 'l', een gewone medeklinker.",
+        "Gebruik 'il' voor mannelijke woorden met een gewone beginmedeklinker."
+      ]
+    },
+    {
+      "id": "articoli-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste bepaalde lidwoord in voor 'casa' (huis, vrouwelijk).",
+        "sentence": "___ casa è grande.",
+        "context": "casa = huis (vrouwelijk)"
+      },
+      "correctAnswer": "La",
+      "distractors": ["Il", "Lo", "Le"],
+      "explanation": {
+        "nl": "'Casa' is vrouwelijk enkelvoud. Het vrouwelijk bepaald lidwoord in het enkelvoud is altijd 'la' (of 'l'' voor klinkers).",
+        "rule": "Vrouwelijk enkelvoud → la",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "la",
+          "noun": "casa",
+          "gender": "vrouwelijk",
+          "number": "enkelvoud",
+          "rule": "Vrouwelijke woorden in het enkelvoud krijgen 'la'."
+        }
+      },
+      "hints": [
+        "'Casa' is vrouwelijk — kijk naar de uitgang -a.",
+        "Het vrouwelijk bepaald lidwoord in het enkelvoud is 'la'."
+      ]
+    },
+    {
+      "id": "articoli-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste bepaalde lidwoord in voor 'studente' (student, mannelijk).",
+        "sentence": "___ studente studia molto.",
+        "context": "studente = student (mannelijk), begint met s + medeklinker (st-)"
+      },
+      "correctAnswer": "Lo",
+      "distractors": ["Il", "La", "Gli"],
+      "explanation": {
+        "nl": "'Studente' is mannelijk en begint met 's' gevolgd door een medeklinker ('st'). In dit geval gebruik je 'lo' in plaats van 'il'. Dit geldt ook voor woorden die beginnen met z, gn, ps, x of y.",
+        "rule": "Mannelijk enkelvoud + s+medeklinker → lo",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "lo",
+          "noun": "studente",
+          "gender": "mannelijk",
+          "number": "enkelvoud",
+          "rule": "Mannelijke woorden die beginnen met s+medeklinker, z, gn, ps, x of y krijgen 'lo'."
+        }
+      },
+      "hints": [
+        "Let op de beginletters: 'st-' is s gevolgd door een medeklinker.",
+        "Woorden die beginnen met s+medeklinker krijgen een speciaal lidwoord."
+      ]
+    },
+    {
+      "id": "articoli-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste bepaalde lidwoord in voor 'amici' (vrienden, mannelijk meervoud).",
+        "sentence": "___ amici vengono alla festa.",
+        "context": "amici = vrienden (mannelijk meervoud), begint met een klinker"
+      },
+      "correctAnswer": "Gli",
+      "distractors": ["I", "Le", "Lo"],
+      "explanation": {
+        "nl": "'Amici' is mannelijk meervoud en begint met een klinker. Mannelijke meervoudswoorden die beginnen met een klinker krijgen 'gli'. 'I' wordt alleen gebruikt voor mannelijk meervoud met een gewone beginmedeklinker.",
+        "rule": "Mannelijk meervoud + klinker → gli",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "gli",
+          "noun": "amici",
+          "gender": "mannelijk",
+          "number": "meervoud",
+          "rule": "Mannelijke meervoudswoorden die beginnen met een klinker, z, s+medeklinker, gn, ps, x of y krijgen 'gli'."
+        }
+      },
+      "hints": [
+        "'Amici' begint met de klinker 'a'.",
+        "Het mannelijk meervoudslidwoord voor klinkers is niet 'i', maar een langere variant."
+      ]
+    },
+    {
+      "id": "articoli-5",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Il zaino è molto pesante.",
+        "context": "zaino = rugzak (mannelijk), begint met z"
+      },
+      "correctAnswer": "Il",
+      "distractors": ["zaino", "molto", "pesante"],
+      "explanation": {
+        "nl": "'Zaino' begint met een 'z', dus het lidwoord moet 'lo' zijn, niet 'il'. Woorden die beginnen met z krijgen altijd 'lo' (enkelvoud) of 'gli' (meervoud).",
+        "rule": "Mannelijk enkelvoud + z → lo (niet il)",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "lo",
+          "noun": "zaino",
+          "gender": "mannelijk",
+          "number": "enkelvoud",
+          "rule": "Mannelijke woorden die beginnen met z krijgen 'lo', niet 'il'. Correct: Lo zaino."
+        }
+      },
+      "hints": [
+        "Kijk naar de beginletter van het zelfstandig naamwoord na het lidwoord.",
+        "Woorden die beginnen met 'z' krijgen een speciaal mannelijk lidwoord."
+      ]
+    },
+    {
+      "id": "articoli-6",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'De meisjes zijn slim.'",
+        "sentence": "De meisjes zijn slim.",
+        "context": "ragazza = meisje (vrouwelijk), intelligente = slim"
+      },
+      "correctAnswer": ["Le ragazze sono intelligenti.", "Le ragazze sono brave."],
+      "explanation": {
+        "nl": "'Ragazze' is vrouwelijk meervoud, dus het lidwoord is 'le'. Het bijvoeglijk naamwoord 'intelligenti' wordt meervoud om overeen te komen met het onderwerp.",
+        "rule": "Vrouwelijk meervoud → le. Bijvoeglijke naamwoorden congrueren in getal.",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "le",
+          "noun": "ragazze",
+          "gender": "vrouwelijk",
+          "number": "meervoud",
+          "rule": "Vrouwelijke meervoudswoorden krijgen altijd 'le'."
+        }
+      },
+      "hints": [
+        "'Meisjes' is vrouwelijk meervoud in het Italiaans.",
+        "Het vrouwelijk meervoud lidwoord is 'le'."
+      ]
+    },
+    {
+      "id": "articoli-7",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul het juiste onbepaalde lidwoord in voor 'zaino' (rugzak, mannelijk).",
+        "sentence": "Ho comprato ___ zaino nuovo.",
+        "context": "zaino = rugzak (mannelijk), begint met z"
+      },
+      "correctAnswer": "uno",
+      "distractors": ["un", "una", "un'"],
+      "explanation": {
+        "nl": "'Zaino' is mannelijk en begint met 'z'. Net als bij de bepaalde lidwoorden (lo/gli) krijgen deze woorden een speciale vorm: 'uno' in plaats van 'un'.",
+        "rule": "Mannelijk onbepaald + z/s+medeklinker/gn/ps → uno",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "uno",
+          "noun": "zaino",
+          "gender": "mannelijk",
+          "number": "enkelvoud",
+          "rule": "Mannelijke woorden die beginnen met z, s+medeklinker, gn of ps krijgen 'uno'."
+        }
+      },
+      "hints": [
+        "Dezelfde regels als bij lo/gli gelden ook voor de onbepaalde lidwoorden.",
+        "Woorden met z als beginletter krijgen niet 'un', maar een langere variant."
+      ]
+    },
+    {
+      "id": "articoli-8",
+      "type": "zinsvolgorde",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde.",
+        "sentence": "ragazzi / giocano / i / nel / parco",
+        "context": "i ragazzi = de jongens, giocare = spelen, nel = in het"
+      },
+      "correctAnswer": ["I ragazzi giocano nel parco."],
+      "explanation": {
+        "nl": "Het lidwoord 'i' staat direct voor het mannelijk meervouds zelfstandig naamwoord 'ragazzi'. De standaard woordvolgorde is: lidwoord + zelfstandig naamwoord + werkwoord + rest van de zin.",
+        "rule": "Lidwoord + zelfstandig naamwoord vormen samen het onderwerp. Woordvolgorde: S + V + complement.",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "i",
+          "noun": "ragazzi",
+          "gender": "mannelijk",
+          "number": "meervoud",
+          "rule": "'I' is het mannelijk meervoud lidwoord voor woorden die beginnen met een gewone medeklinker."
+        }
+      },
+      "hints": [
+        "Het lidwoord komt direct voor het zelfstandig naamwoord.",
+        "'I ragazzi' is het onderwerp en staat vooraan."
+      ]
+    },
+    {
+      "id": "articoli-9",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "I studenti leggono i libri in biblioteca.",
+        "context": "studenti = studenten (mannelijk meervoud), begint met st-"
+      },
+      "correctAnswer": "I",
+      "distractors": ["studenti", "libri", "biblioteca"],
+      "explanation": {
+        "nl": "'Studenti' begint met 's' gevolgd door een medeklinker ('st'). Daardoor moet het mannelijk meervoud lidwoord 'gli' zijn, niet 'i'. Correct: Gli studenti leggono i libri in biblioteca.",
+        "rule": "Mannelijk meervoud + s+medeklinker → gli (niet i)",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "gli",
+          "noun": "studenti",
+          "gender": "mannelijk",
+          "number": "meervoud",
+          "rule": "Mannelijke meervoudswoorden die beginnen met s+medeklinker krijgen 'gli', niet 'i'."
+        }
+      },
+      "hints": [
+        "Let op de beginletters van 'studenti': s + t (medeklinker).",
+        "De meervoudsregel voor 'lo' is dat het 'gli' wordt, niet 'i'."
+      ]
+    },
+    {
+      "id": "articoli-10",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Een vriendin en een vriend.'",
+        "sentence": "Een vriendin en een vriend.",
+        "context": "amica = vriendin (vrouwelijk), amico = vriend (mannelijk), beginnen beiden met een klinker"
+      },
+      "correctAnswer": ["Un'amica e un amico.", "Un'amica ed un amico."],
+      "explanation": {
+        "nl": "'Amica' is vrouwelijk en begint met een klinker, dus het onbepaald lidwoord is 'un'' (met apostrof). 'Amico' is mannelijk en begint met een klinker; het mannelijk onbepaald lidwoord 'un' krijgt nooit een apostrof. Dit onderscheid is belangrijk!",
+        "rule": "Vrouwelijk + klinker → un' (met apostrof) | Mannelijk + klinker → un (zonder apostrof)",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "un' / un",
+          "noun": "amica / amico",
+          "gender": "vrouwelijk / mannelijk",
+          "number": "enkelvoud",
+          "rule": "Vrouwelijk onbepaald lidwoord voor klinker: un' (met apostrof). Mannelijk onbepaald lidwoord voor klinker: un (zonder apostrof)."
+        }
+      },
+      "hints": [
+        "Beide woorden beginnen met een klinker, maar het geslacht verschilt.",
+        "Alleen het vrouwelijk onbepaald lidwoord krijgt een apostrof voor een klinker."
+      ]
+    }
+  ]
+}

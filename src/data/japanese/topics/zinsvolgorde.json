@@ -1,0 +1,260 @@
+{
+  "id": "zinsvolgorde",
+  "name": "Zinsvolgorde (SOV)",
+  "description": "Japanse SOV-zinsvolgorde vs Nederlandse SVO. Het werkwoord staat altijd aan het einde!",
+  "level": "beginner",
+  "order": 3,
+  "grammarRules": [
+    {
+      "id": "sov-basis",
+      "title": "SOV: Subject-Object-Verb",
+      "explanation": "In het Nederlands zeggen we 'Ik eet sushi' (SVO: Subject-Verb-Object). In het Japans is de volgorde SOV: 'Ik sushi eet' → 私は寿司を食べます. Het werkwoord staat ALTIJD aan het einde.",
+      "formula": "NL: S + V + O → JP: S + O + V",
+      "examples": [
+        {
+          "italian": "私は寿司を食べます (watashi wa sushi wo tabemasu)",
+          "dutch": "Ik eet sushi.",
+          "breakdown": [
+            { "word": "私は", "role": "subject", "color": "#4A90D9", "annotation": "watashi wa (ik)" },
+            { "word": "寿司を", "role": "object", "color": "#4CAF50", "annotation": "sushi wo (sushi)" },
+            { "word": "食べます", "role": "verb", "color": "#E85D75", "annotation": "tabemasu (eet)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tijd-eerst",
+      "title": "Tijdsaanduidingen komen eerst",
+      "explanation": "In het Japans komen tijdsaanduidingen (morgen, gisteren, elke dag) meestal aan het begin van de zin, vóór het onderwerp. De volgorde is: Tijd + Subject + Object + Verb.",
+      "formula": "Tijd + S + O + V",
+      "examples": [
+        {
+          "italian": "明日私は東京に行きます (ashita watashi wa toukyou ni ikimasu)",
+          "dutch": "Morgen ga ik naar Tokyo.",
+          "breakdown": [
+            { "word": "明日", "role": "adverb", "color": "#FFC107", "annotation": "ashita (morgen)" },
+            { "word": "私は", "role": "subject", "color": "#4A90D9", "annotation": "watashi wa (ik)" },
+            { "word": "東京に", "role": "object", "color": "#4CAF50", "annotation": "toukyou ni (Tokyo)" },
+            { "word": "行きます", "role": "verb", "color": "#E85D75", "annotation": "ikimasu (ga)" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "sov-1",
+      "type": "zinsvolgorde",
+      "difficulty": 1,
+      "question": {
+        "nl": "Zet de woorden in de juiste Japanse volgorde: 'Ik drink water.'",
+        "sentence": "私は (watashi wa) + 飲みます (nomimasu) + 水を (mizu wo)",
+        "context": "NL: Ik drink water → JP: Ik water drink"
+      },
+      "correctAnswer": "私は 水を 飲みます",
+      "distractors": [],
+      "explanation": {
+        "nl": "In het Japans is de volgorde SOV: Subject (私は) + Object (水を) + Verb (飲みます). Het werkwoord staat altijd op de laatste plaats.",
+        "rule": "SOV: Subject + Object + Werkwoord",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Ik", "drink", "water"], "order": ["S", "V", "O"] },
+          "japanese": { "words": ["私は", "水を", "飲みます"], "order": ["S", "O", "V"] }
+        }
+      },
+      "hints": ["Het werkwoord komt altijd op de laatste plaats in het Japans"]
+    },
+    {
+      "id": "sov-2",
+      "type": "zinsvolgorde",
+      "difficulty": 1,
+      "question": {
+        "nl": "Zet de woorden in de juiste Japanse volgorde: 'Ik lees een boek.'",
+        "sentence": "私は (watashi wa) + 読みます (yomimasu) + 本を (hon wo)",
+        "context": "NL: Ik lees een boek → JP: Ik boek lees"
+      },
+      "correctAnswer": "私は 本を 読みます",
+      "distractors": [],
+      "explanation": {
+        "nl": "SOV: eerst het onderwerp (私は = ik), dan het lijdend voorwerp (本を = boek), dan het werkwoord (読みます = lees).",
+        "rule": "SOV: het werkwoord staat ALTIJD aan het einde",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Ik", "lees", "een boek"], "order": ["S", "V", "O"] },
+          "japanese": { "words": ["私は", "本を", "読みます"], "order": ["S", "O", "V"] }
+        }
+      },
+      "hints": ["Dezelfde structuur als het vorige: S + O + V"]
+    },
+    {
+      "id": "sov-3",
+      "type": "zinsvolgorde",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet in de juiste volgorde: 'Morgen eet ik sushi.'",
+        "sentence": "私は (watashi wa) + 食べます (tabemasu) + 寿司を (sushi wo) + 明日 (ashita)",
+        "context": "Tijdsaanduidingen komen eerst in het Japans!"
+      },
+      "correctAnswer": "明日 私は 寿司を 食べます",
+      "distractors": [],
+      "explanation": {
+        "nl": "Tijdsaanduidingen staan aan het begin: 明日 (morgen) + 私は (ik) + 寿司を (sushi) + 食べます (eet). De structuur is: Tijd + S + O + V.",
+        "rule": "Tijd + S + O + V",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Morgen", "eet", "ik", "sushi"], "order": ["T", "V", "S", "O"] },
+          "japanese": { "words": ["明日", "私は", "寿司を", "食べます"], "order": ["T", "S", "O", "V"] }
+        }
+      },
+      "hints": ["Tijdsaanduidingen komen altijd eerst in het Japans"]
+    },
+    {
+      "id": "sov-4",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welke volgorde is correct? Kies S, O of V voor elke positie in het Japans.",
+        "sentence": "Japanse zinsstructuur: ___ + ___ + ___"
+      },
+      "correctAnswer": ["S O V", "SOV"],
+      "explanation": {
+        "nl": "De Japanse basisvolgorde is altijd SOV: Subject + Object + Verb. Nederlands gebruikt SVO.",
+        "rule": "Japans = SOV, Nederlands = SVO",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Subject", "Verb", "Object"], "order": ["S", "V", "O"] },
+          "japanese": { "words": ["Subject", "Object", "Verb"], "order": ["S", "O", "V"] }
+        }
+      },
+      "hints": ["Het werkwoord staat in het Japans altijd aan het..."]
+    },
+    {
+      "id": "sov-5",
+      "type": "zinsvolgorde",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet in de juiste volgorde: 'Ik ga naar school.'",
+        "sentence": "私は (watashi wa) + 行きます (ikimasu) + 学校に (gakkou ni)",
+        "context": "に (ni) markeert de bestemming"
+      },
+      "correctAnswer": "私は 学校に 行きます",
+      "distractors": [],
+      "explanation": {
+        "nl": "De richting/bestemming (学校に = naar school) komt vóór het werkwoord (行きます = ga). Alles behalve het werkwoord komt ervoor.",
+        "rule": "Bestemming + に komt vóór het werkwoord",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Ik", "ga", "naar school"], "order": ["S", "V", "O"] },
+          "japanese": { "words": ["私は", "学校に", "行きます"], "order": ["S", "O", "V"] }
+        }
+      },
+      "hints": ["De bestemming met に komt vóór het werkwoord"]
+    },
+    {
+      "id": "sov-6",
+      "type": "zinsvolgorde",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet in de juiste volgorde: 'Gisteren kocht ik bloemen op de markt.'",
+        "sentence": "私は (watashi wa) + 買いました (kaimashita) + 花を (hana wo) + 昨日 (kinou) + 市場で (ichiba de)",
+        "context": "Tijd eerst, dan locatie, dan object, dan werkwoord"
+      },
+      "correctAnswer": "昨日 私は 市場で 花を 買いました",
+      "distractors": [],
+      "explanation": {
+        "nl": "Complexe zinsvolgorde: 昨日 (gisteren) + 私は (ik) + 市場で (op de markt) + 花を (bloemen) + 買いました (kocht). De volgorde is: Tijd + S + Locatie + O + V.",
+        "rule": "Tijd + S + Locatie + Object + V",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Gisteren", "kocht", "ik", "bloemen", "op de markt"], "order": ["T", "V", "S", "O", "L"] },
+          "japanese": { "words": ["昨日", "私は", "市場で", "花を", "買いました"], "order": ["T", "S", "L", "O", "V"] }
+        }
+      },
+      "hints": ["Tijd eerst, dan subject, dan locatie (で), dan object (を), dan werkwoord"]
+    },
+    {
+      "id": "sov-7",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord staat op de verkeerde plek?",
+        "sentence": "私は 食べます 寿司を"
+      },
+      "correctAnswer": "食べます",
+      "explanation": {
+        "nl": "Het werkwoord (食べます) staat in het midden, maar moet aan het einde. De juiste volgorde is: 私は 寿司を 食べます.",
+        "rule": "Het werkwoord staat ALTIJD aan het einde",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Ik", "eet", "sushi"], "order": ["S", "V", "O"] },
+          "japanese": { "words": ["私は", "寿司を", "食べます"], "order": ["S", "O", "V"] }
+        }
+      },
+      "hints": ["Waar hoort het werkwoord thuis in het Japans?"]
+    },
+    {
+      "id": "sov-8",
+      "type": "zinsvolgorde",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet in de juiste volgorde: 'Elke dag drink ik koffie thuis.'",
+        "sentence": "私は (watashi wa) + コーヒーを (koohii wo) + 飲みます (nomimasu) + 毎日 (mainichi) + 家で (ie de)",
+        "context": "Tijd + S + Locatie + O + V"
+      },
+      "correctAnswer": "毎日 私は 家で コーヒーを 飲みます",
+      "distractors": [],
+      "explanation": {
+        "nl": "毎日 (elke dag) + 私は (ik) + 家で (thuis) + コーヒーを (koffie) + 飲みます (drink). Tijdsaanduiding eerst, dan subject, locatie, object, werkwoord.",
+        "rule": "Tijd + S + Locatie + O + V",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Elke dag", "drink", "ik", "koffie", "thuis"], "order": ["T", "V", "S", "O", "L"] },
+          "japanese": { "words": ["毎日", "私は", "家で", "コーヒーを", "飲みます"], "order": ["T", "S", "L", "O", "V"] }
+        }
+      },
+      "hints": ["Dezelfde structuur: Tijd + Subject + Locatie + Object + Werkwoord"]
+    },
+    {
+      "id": "sov-9",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord staat op de verkeerde plek?",
+        "sentence": "明日 行きます 私は 東京に"
+      },
+      "correctAnswer": "行きます",
+      "explanation": {
+        "nl": "Het werkwoord (行きます) staat op de tweede plek maar moet aan het einde. Correct: 明日 私は 東京に 行きます.",
+        "rule": "Ook met tijdsaanduidingen blijft het werkwoord op de laatste plaats",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Morgen", "ga", "ik", "naar Tokyo"], "order": ["T", "V", "S", "O"] },
+          "japanese": { "words": ["明日", "私は", "東京に", "行きます"], "order": ["T", "S", "O", "V"] }
+        }
+      },
+      "hints": ["Het werkwoord moet ALTIJD op de laatste positie staan"]
+    },
+    {
+      "id": "sov-10",
+      "type": "zinsvolgorde",
+      "difficulty": 4,
+      "question": {
+        "nl": "Zet in de juiste volgorde: 'Vorig jaar studeerde mijn vriend Japans in Tokyo.'",
+        "sentence": "友達は (tomodachi wa) + 日本語を (nihongo wo) + 勉強しました (benkyou shimashita) + 去年 (kyonen) + 東京で (toukyou de)",
+        "context": "Alle elementen: Tijd + S + Locatie + Object + Werkwoord"
+      },
+      "correctAnswer": "去年 友達は 東京で 日本語を 勉強しました",
+      "distractors": [],
+      "explanation": {
+        "nl": "去年 (vorig jaar) + 友達は (mijn vriend) + 東京で (in Tokyo) + 日本語を (Japans) + 勉強しました (studeerde). De volledige Japanse zinsstructuur is: Tijd + Subject + Locatie + Object + Werkwoord.",
+        "rule": "Tijd + S + Locatie + O + V (compleet patroon)",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "dutch": { "words": ["Vorig jaar", "studeerde", "mijn vriend", "Japans", "in Tokyo"], "order": ["T", "V", "S", "O", "L"] },
+          "japanese": { "words": ["去年", "友達は", "東京で", "日本語を", "勉強しました"], "order": ["T", "S", "L", "O", "V"] }
+        }
+      },
+      "hints": ["Het volledige patroon: Tijd + Subject + Locatie + Object + Werkwoord"]
+    }
+  ]
+}

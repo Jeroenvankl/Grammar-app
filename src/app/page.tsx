@@ -1,101 +1,135 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { BookOpen, Zap, Target, ChevronRight } from "lucide-react";
+import Layout from "@/components/ui/Layout";
+import { useProgress } from "@/hooks/useProgress";
+import { getAllLanguages } from "@/lib/dataLoader";
+import XPBar from "@/components/gamification/XPBar";
+import StreakCounter from "@/components/gamification/StreakCounter";
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+export default function Dashboard() {
+  const { progress, isLoaded } = useProgress();
+  const languages = getAllLanguages();
+
+  if (!isLoaded) {
+    return (
+      <Layout>
+        <div className="flex items-center justify-center h-64">
+          <div className="animate-pulse text-stone-400">Laden...</div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </Layout>
+    );
+  }
+
+  return (
+    <Layout>
+      <div className="space-y-8">
+        {/* Welcome */}
+        <div>
+          <h1 className="text-2xl font-bold text-stone-800">
+            Welkom bij SyntaxLab
+          </h1>
+          <p className="text-stone-500 mt-1">
+            Leer grammatica als een programmeur
+          </p>
+        </div>
+
+        {/* Stats cards */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <motion.div
+            whileHover={{ y: -2 }}
+            className="bg-white rounded-2xl p-4 border border-stone-200 shadow-sm"
+          >
+            <div className="flex items-center gap-2 text-indigo-600 mb-2">
+              <Zap className="w-4 h-4" />
+              <span className="text-xs font-medium">Level</span>
+            </div>
+            <p className="text-2xl font-bold text-stone-800">
+              {progress.level}
+            </p>
+          </motion.div>
+          <motion.div
+            whileHover={{ y: -2 }}
+            className="bg-white rounded-2xl p-4 border border-stone-200 shadow-sm"
+          >
+            <div className="flex items-center gap-2 text-amber-600 mb-2">
+              <Target className="w-4 h-4" />
+              <span className="text-xs font-medium">XP</span>
+            </div>
+            <p className="text-2xl font-bold text-stone-800">{progress.xp}</p>
+          </motion.div>
+          <div className="col-span-2 bg-white rounded-2xl p-4 border border-stone-200 shadow-sm">
+            <StreakCounter streak={progress.streak} size="lg" />
+          </div>
+        </div>
+
+        {/* XP Progress */}
+        <div className="bg-white rounded-2xl p-4 border border-stone-200 shadow-sm">
+          <XPBar currentXP={progress.xp} level={progress.level} />
+        </div>
+
+        {/* Languages */}
+        <div>
+          <h2 className="text-lg font-bold text-stone-800 mb-3">
+            Kies een taal
+          </h2>
+          <div className="grid gap-3">
+            {languages.map((lang, i) => {
+              const langProgress = progress.languageProgress[lang.id];
+              const completedTopics = langProgress
+                ? Object.values(langProgress.topicProgress).filter(
+                    (t) => t.completed > 0
+                  ).length
+                : 0;
+
+              return (
+                <motion.div
+                  key={lang.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                >
+                  <Link
+                    href={`/taal/${lang.id}`}
+                    className="flex items-center gap-4 bg-white rounded-2xl p-5 border border-stone-200 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all group"
+                  >
+                    <span className="text-4xl">{lang.flag}</span>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-stone-800 group-hover:text-indigo-700 transition-colors">
+                        {lang.name}
+                      </h3>
+                      <p className="text-sm text-stone-500">
+                        {lang.topics.length} onderwerpen
+                        {completedTopics > 0 &&
+                          ` \u2022 ${completedTopics} begonnen`}
+                      </p>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-stone-400 group-hover:text-indigo-500 transition-colors" />
+                  </Link>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Quick tip */}
+        <div className="bg-indigo-50 rounded-2xl p-5 border border-indigo-100">
+          <div className="flex items-start gap-3">
+            <BookOpen className="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <h3 className="font-semibold text-indigo-800 text-sm">
+                Tip van de dag
+              </h3>
+              <p className="text-sm text-indigo-600 mt-1">
+                Als je een fout maakt, klik dan op &quot;Waarom?&quot; om een
+                visueel diagram te zien dat de grammaticaregel uitlegt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
   );
 }

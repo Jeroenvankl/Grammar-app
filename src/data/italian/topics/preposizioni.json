@@ -1,0 +1,215 @@
+{
+  "id": "preposizioni",
+  "name": "Voorzetsels",
+  "description": "Italiaanse voorzetsels en samenvoegingen met lidwoorden (di, a, da, in, su)",
+  "level": "gemiddeld",
+  "order": 3,
+  "grammarRules": [
+    {
+      "id": "preposizioni-base",
+      "title": "Basisvoorzetsels",
+      "explanation": "Italiaans heeft 8 basisvoorzetsels: di (van), a (naar/aan), da (van/uit), in (in), con (met), su (op), per (voor), tra/fra (tussen). De eerste 5 kunnen samensmelten met lidwoorden.",
+      "formula": "voorzetsel + lidwoord = samengevoegd voorzetsel",
+      "examples": [
+        {
+          "italian": "Vado al cinema.",
+          "dutch": "Ik ga naar de bioscoop.",
+          "breakdown": [
+            { "word": "Vado", "role": "verb", "color": "#E85D75" },
+            { "word": "al", "role": "preposition", "color": "#FF9800", "annotation": "a + il" },
+            { "word": "cinema", "role": "object", "color": "#4CAF50" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "preposizioni-articolate",
+      "title": "Samengevoegde voorzetsels",
+      "explanation": "Wanneer di, a, da, in, su gevolgd worden door een lidwoord, smelten ze samen. Bijvoorbeeld: di + il = del, a + la = alla, in + il = nel.",
+      "formula": "di+il=del, a+il=al, da+il=dal, in+il=nel, su+il=sul",
+      "examples": [
+        {
+          "italian": "Il libro della ragazza.",
+          "dutch": "Het boek van het meisje.",
+          "breakdown": [
+            { "word": "Il libro", "role": "subject", "color": "#4A90D9" },
+            { "word": "della", "role": "preposition", "color": "#FF9800", "annotation": "di + la" },
+            { "word": "ragazza", "role": "object", "color": "#4CAF50" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "prep-1",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste samengevoegde voorzetsel in (a + il):",
+        "sentence": "Vado ___ cinema stasera."
+      },
+      "correctAnswer": "al",
+      "explanation": {
+        "nl": "'Al' is de samenvoeging van 'a' (naar) + 'il' (de). Bij mannelijke enkelvoud zelfstandige naamwoorden die met een medeklinker beginnen gebruik je 'il', dus a + il = al.",
+        "rule": "a + il = al",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "a", "article": "il", "combined": "al", "usage": "richting/bestemming" }
+      },
+      "hints": ["Het voorzetsel 'a' betekent 'naar', het lidwoord is 'il'"]
+    },
+    {
+      "id": "prep-2",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste samengevoegde voorzetsel in (di + la):",
+        "sentence": "Il colore ___ macchina è rosso."
+      },
+      "correctAnswer": "della",
+      "explanation": {
+        "nl": "'Della' is de samenvoeging van 'di' (van) + 'la' (de, vrouwelijk). 'Macchina' is vrouwelijk, dus je gebruikt 'la' als lidwoord.",
+        "rule": "di + la = della",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "di", "article": "la", "combined": "della", "usage": "bezit/eigenschap" }
+      },
+      "hints": ["'Di' drukt bezit uit, 'macchina' is vrouwelijk"]
+    },
+    {
+      "id": "prep-3",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Ik kom uit het kantoor.'",
+        "sentence": "Ik kom uit het kantoor."
+      },
+      "correctAnswer": ["Vengo dall'ufficio", "Vengo dall'ufficio."],
+      "explanation": {
+        "nl": "'Dall'' is de samenvoeging van 'da' (uit/van) + 'l'' (het). Voor woorden die met een klinker beginnen (ufficio) gebruik je 'l'' in plaats van 'il' of 'lo'.",
+        "rule": "da + l' = dall'",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "da", "article": "l'", "combined": "dall'", "usage": "herkomst" }
+      },
+      "hints": ["'Komen uit' = 'venire da', 'kantoor' = 'ufficio' (begint met klinker)"]
+    },
+    {
+      "id": "prep-4",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Vivo in il centro di Roma."
+      },
+      "correctAnswer": "in",
+      "explanation": {
+        "nl": "'In' moet samensmelten met 'il' tot 'nel'. Je zegt niet 'in il' maar 'nel centro'. Dus de correcte zin is: 'Vivo nel centro di Roma.'",
+        "rule": "in + il = nel (nooit 'in il')",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "in", "article": "il", "combined": "nel", "usage": "locatie" }
+      },
+      "hints": ["'In' + lidwoord moeten samensmelten"]
+    },
+    {
+      "id": "prep-5",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul het juiste samengevoegde voorzetsel in (su + i):",
+        "sentence": "Il gatto è salito ___ tetti."
+      },
+      "correctAnswer": "sui",
+      "explanation": {
+        "nl": "'Sui' is de samenvoeging van 'su' (op) + 'i' (de, mannelijk meervoud). 'Tetti' (daken) is mannelijk meervoud.",
+        "rule": "su + i = sui",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "su", "article": "i", "combined": "sui", "usage": "positie (op)" }
+      },
+      "hints": ["'Su' betekent 'op', 'tetti' is mannelijk meervoud"]
+    },
+    {
+      "id": "prep-6",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste samengevoegde voorzetsel in (da + la):",
+        "sentence": "Vengo ___ stazione."
+      },
+      "correctAnswer": "dalla",
+      "explanation": {
+        "nl": "'Dalla' is de samenvoeging van 'da' (van/uit) + 'la' (de, vrouwelijk). 'Stazione' is vrouwelijk.",
+        "rule": "da + la = dalla",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "da", "article": "la", "combined": "dalla", "usage": "herkomst" }
+      },
+      "hints": ["'Stazione' (station) is vrouwelijk in het Italiaans"]
+    },
+    {
+      "id": "prep-7",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'De sleutels van het huis.'",
+        "sentence": "De sleutels van het huis."
+      },
+      "correctAnswer": ["Le chiavi della casa", "Le chiavi della casa."],
+      "explanation": {
+        "nl": "'Della' = di + la. 'Casa' (huis) is vrouwelijk in het Italiaans, dus je gebruikt 'la'. Di + la = della.",
+        "rule": "di + la = della",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "di", "article": "la", "combined": "della", "usage": "bezit" }
+      },
+      "hints": ["'Sleutels' = 'chiavi', 'huis' = 'casa' (vrouwelijk)"]
+    },
+    {
+      "id": "prep-8",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Andiamo a la spiaggia domani."
+      },
+      "correctAnswer": "a",
+      "explanation": {
+        "nl": "'A' moet samensmelten met 'la' tot 'alla'. Je zegt niet 'a la' maar 'alla spiaggia'. De juiste zin is: 'Andiamo alla spiaggia domani.'",
+        "rule": "a + la = alla (nooit 'a la')",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "a", "article": "la", "combined": "alla", "usage": "richting" }
+      },
+      "hints": ["Voorzetsels en lidwoorden smelten samen in het Italiaans"]
+    },
+    {
+      "id": "prep-9",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul het juiste samengevoegde voorzetsel in (in + le):",
+        "sentence": "I pesci nuotano ___ acque del lago."
+      },
+      "correctAnswer": "nelle",
+      "explanation": {
+        "nl": "'Nelle' is de samenvoeging van 'in' + 'le' (de, vrouwelijk meervoud). 'Acque' (wateren) is vrouwelijk meervoud.",
+        "rule": "in + le = nelle",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "in", "article": "le", "combined": "nelle", "usage": "locatie" }
+      },
+      "hints": ["'Acque' is het meervoud van 'acqua' (vrouwelijk)"]
+    },
+    {
+      "id": "prep-10",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Ik denk aan de kinderen.'",
+        "sentence": "Ik denk aan de kinderen."
+      },
+      "correctAnswer": ["Penso ai bambini", "Penso ai bambini."],
+      "explanation": {
+        "nl": "'Ai' is de samenvoeging van 'a' + 'i' (mannelijk meervoud). 'Pensare a' = denken aan. 'Bambini' is mannelijk meervoud.",
+        "rule": "a + i = ai",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "a", "article": "i", "combined": "ai", "usage": "denken aan (pensare a)" }
+      },
+      "hints": ["'Denken aan' = 'pensare a', 'kinderen' = 'bambini' (mannelijk mv)"]
+    }
+  ]
+}

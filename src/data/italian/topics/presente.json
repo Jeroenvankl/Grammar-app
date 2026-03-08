@@ -1,0 +1,392 @@
+{
+  "id": "presente",
+  "name": "Presente Indicativo",
+  "description": "Leer de Italiaanse tegenwoordige tijd: regelmatige werkwoorden op -are, -ere en -ire, en onregelmatige werkwoorden zoals essere, avere en andare.",
+  "level": "beginner",
+  "order": 1,
+  "grammarRules": [
+    {
+      "id": "presente-regolare",
+      "title": "Regelmatige werkwoorden in het presente",
+      "explanation": "Italiaanse werkwoorden worden vervoegd door de uitgang (-are, -ere, -ire) te vervangen door de juiste persoonsvorm. Elke groep heeft zijn eigen set uitgangen.",
+      "formula": "stam + persoonlijke uitgang (-o, -i, -a/-e, -iamo, -ate/-ete/-ite, -ano/-ono)",
+      "examples": [
+        {
+          "italian": "Io parlo italiano.",
+          "dutch": "Ik spreek Italiaans.",
+          "breakdown": [
+            { "word": "Io", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (1e persoon enkelvoud)" },
+            { "word": "parlo", "role": "verb", "color": "#f87171", "annotation": "parlare → parl- + -o" },
+            { "word": "italiano", "role": "object", "color": "#34d399", "annotation": "lijdend voorwerp" }
+          ]
+        },
+        {
+          "italian": "Noi scriviamo una lettera.",
+          "dutch": "Wij schrijven een brief.",
+          "breakdown": [
+            { "word": "Noi", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (1e persoon meervoud)" },
+            { "word": "scriviamo", "role": "verb", "color": "#f87171", "annotation": "scrivere → scriv- + -iamo" },
+            { "word": "una", "role": "article", "color": "#a78bfa", "annotation": "onbepaald lidwoord" },
+            { "word": "lettera", "role": "object", "color": "#34d399", "annotation": "lijdend voorwerp" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presente-irregolare",
+      "title": "Onregelmatige werkwoorden: essere, avere, andare",
+      "explanation": "De meest gebruikte Italiaanse werkwoorden zijn onregelmatig. Essere (zijn), avere (hebben) en andare (gaan) moet je uit je hoofd leren omdat ze niet de standaard uitgangen volgen.",
+      "formula": "essere: sono/sei/è/siamo/siete/sono | avere: ho/hai/ha/abbiamo/avete/hanno | andare: vado/vai/va/andiamo/andate/vanno",
+      "examples": [
+        {
+          "italian": "Io sono studente.",
+          "dutch": "Ik ben student.",
+          "breakdown": [
+            { "word": "Io", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp" },
+            { "word": "sono", "role": "verb", "color": "#f87171", "annotation": "essere, 1e persoon enkelvoud (onregelmatig)" },
+            { "word": "studente", "role": "object", "color": "#34d399", "annotation": "naamwoordelijk deel" }
+          ]
+        },
+        {
+          "italian": "Loro vanno al cinema.",
+          "dutch": "Zij gaan naar de bioscoop.",
+          "breakdown": [
+            { "word": "Loro", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (3e persoon meervoud)" },
+            { "word": "vanno", "role": "verb", "color": "#f87171", "annotation": "andare, 3e persoon meervoud (onregelmatig)" },
+            { "word": "al", "role": "preposition", "color": "#fbbf24", "annotation": "a + il (voorzetsel + lidwoord)" },
+            { "word": "cinema", "role": "object", "color": "#34d399", "annotation": "lijdend voorwerp" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "presente-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van 'parlare' (spreken) in.",
+        "sentence": "Io ___ italiano ogni giorno.",
+        "context": "parlare = spreken, 1e persoon enkelvoud"
+      },
+      "correctAnswer": "parlo",
+      "distractors": ["parla", "parli", "parliamo"],
+      "explanation": {
+        "nl": "Bij werkwoorden op -are krijgt de eerste persoon enkelvoud (io) de uitgang -o. Parlare → parl- + -o = parlo.",
+        "rule": "Regelmatige -are werkwoorden: io → stam + -o",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "parlare",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "parlo", "highlight": true },
+            { "person": "tu", "form": "parli" },
+            { "person": "lui/lei", "form": "parla" },
+            { "person": "noi", "form": "parliamo" },
+            { "person": "voi", "form": "parlate" },
+            { "person": "loro", "form": "parlano" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'parlare' is regelmatig en eindigt op -are.",
+        "Voor 'io' vervang je -are door -o."
+      ]
+    },
+    {
+      "id": "presente-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van 'scrivere' (schrijven) in.",
+        "sentence": "Tu ___ una email.",
+        "context": "scrivere = schrijven, 2e persoon enkelvoud"
+      },
+      "correctAnswer": "scrivi",
+      "distractors": ["scrivo", "scrive", "scrivete"],
+      "explanation": {
+        "nl": "Bij werkwoorden op -ere krijgt de tweede persoon enkelvoud (tu) de uitgang -i. Scrivere → scriv- + -i = scrivi.",
+        "rule": "Regelmatige -ere werkwoorden: tu → stam + -i",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "scrivere",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "scrivo" },
+            { "person": "tu", "form": "scrivi", "highlight": true },
+            { "person": "lui/lei", "form": "scrive" },
+            { "person": "noi", "form": "scriviamo" },
+            { "person": "voi", "form": "scrivete" },
+            { "person": "loro", "form": "scrivono" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'scrivere' is regelmatig en eindigt op -ere.",
+        "Voor 'tu' vervang je -ere door -i."
+      ]
+    },
+    {
+      "id": "presente-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul de juiste vorm van 'dormire' (slapen) in.",
+        "sentence": "Noi ___ otto ore ogni notte.",
+        "context": "dormire = slapen, 1e persoon meervoud"
+      },
+      "correctAnswer": "dormiamo",
+      "distractors": ["dormono", "dormite", "dormo"],
+      "explanation": {
+        "nl": "Bij werkwoorden op -ire krijgt de eerste persoon meervoud (noi) de uitgang -iamo. Dormire → dorm- + -iamo = dormiamo. Let op: -iamo is dezelfde uitgang voor alle drie de groepen!",
+        "rule": "Alle werkwoorden: noi → stam + -iamo",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "dormire",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "dormo" },
+            { "person": "tu", "form": "dormi" },
+            { "person": "lui/lei", "form": "dorme" },
+            { "person": "noi", "form": "dormiamo", "highlight": true },
+            { "person": "voi", "form": "dormite" },
+            { "person": "loro", "form": "dormono" }
+          ]
+        }
+      },
+      "hints": [
+        "De 'noi'-vorm eindigt altijd op -iamo, ongeacht de werkwoordgroep.",
+        "Dormire → dorm- is de stam."
+      ]
+    },
+    {
+      "id": "presente-4",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste vorm van 'essere' (zijn) in.",
+        "sentence": "Loro ___ molto felici oggi.",
+        "context": "essere = zijn, 3e persoon meervoud"
+      },
+      "correctAnswer": "sono",
+      "distractors": ["è", "siamo", "siete"],
+      "explanation": {
+        "nl": "'Essere' is een onregelmatig werkwoord. De 3e persoon meervoud is 'sono'. Let op: 'sono' wordt zowel voor 'io' als voor 'loro' gebruikt!",
+        "rule": "Essere is onregelmatig: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "essere",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "sono" },
+            { "person": "tu", "form": "sei" },
+            { "person": "lui/lei", "form": "è" },
+            { "person": "noi", "form": "siamo" },
+            { "person": "voi", "form": "siete" },
+            { "person": "loro", "form": "sono", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "'Essere' is volledig onregelmatig — je moet de vormen uit je hoofd leren.",
+        "De 'loro'-vorm is hetzelfde als de 'io'-vorm."
+      ]
+    },
+    {
+      "id": "presente-5",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Wij hebben een hond.'",
+        "sentence": "Wij hebben een hond.",
+        "context": "avere = hebben, un cane = een hond"
+      },
+      "correctAnswer": ["Noi abbiamo un cane.", "Abbiamo un cane."],
+      "explanation": {
+        "nl": "'Avere' is onregelmatig. De 'noi'-vorm is 'abbiamo'. In het Italiaans mag het persoonlijk voornaamwoord worden weggelaten omdat de werkwoordsvorm al aangeeft wie het onderwerp is.",
+        "rule": "Avere: noi → abbiamo. Het persoonlijk voornaamwoord is optioneel.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "avere",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "ho" },
+            { "person": "tu", "form": "hai" },
+            { "person": "lui/lei", "form": "ha" },
+            { "person": "noi", "form": "abbiamo", "highlight": true },
+            { "person": "voi", "form": "avete" },
+            { "person": "loro", "form": "hanno" }
+          ]
+        }
+      },
+      "hints": [
+        "'Hebben' is 'avere' in het Italiaans.",
+        "De 'noi'-vorm van avere begint met 'abb-'."
+      ]
+    },
+    {
+      "id": "presente-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Tu mangia la pasta ogni sera.",
+        "context": "mangiare = eten, de 'tu'-vorm moet op -i eindigen"
+      },
+      "correctAnswer": "mangia",
+      "distractors": ["Tu", "la", "pasta"],
+      "explanation": {
+        "nl": "'Mangia' is de lui/lei-vorm (3e persoon enkelvoud). Voor 'tu' moet het 'mangi' zijn. Regelmatige -are werkwoorden: tu → stam + -i.",
+        "rule": "Regelmatige -are werkwoorden: tu → stam + -i, lui/lei → stam + -a",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "mangiare",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "mangio" },
+            { "person": "tu", "form": "mangi", "highlight": true },
+            { "person": "lui/lei", "form": "mangia" },
+            { "person": "noi", "form": "mangiamo" },
+            { "person": "voi", "form": "mangiate" },
+            { "person": "loro", "form": "mangiano" }
+          ]
+        }
+      },
+      "hints": [
+        "Kijk naar het onderwerp 'tu' en controleer of de werkwoordsvorm daarbij past.",
+        "De 'tu'-vorm van -are werkwoorden eindigt op -i, niet op -a."
+      ]
+    },
+    {
+      "id": "presente-7",
+      "type": "zinsvolgorde",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde.",
+        "sentence": "ogni / vado / giorno / io / a / scuola",
+        "context": "andare a scuola = naar school gaan"
+      },
+      "correctAnswer": ["Io vado a scuola ogni giorno.", "Ogni giorno io vado a scuola.", "Ogni giorno vado a scuola."],
+      "explanation": {
+        "nl": "De standaard woordvolgorde in het Italiaans is: Onderwerp + Werkwoord + Voorzetselgroep + Tijdsbepaling. 'Andare' is onregelmatig: io → vado.",
+        "rule": "Woordvolgorde: S + V + O/Complement. Tijdsbepalingen kunnen aan het begin of eind staan.",
+        "diagramType": "wordOrder",
+        "diagramData": {
+          "verb": "andare",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "vado", "highlight": true },
+            { "person": "tu", "form": "vai" },
+            { "person": "lui/lei", "form": "va" },
+            { "person": "noi", "form": "andiamo" },
+            { "person": "voi", "form": "andate" },
+            { "person": "loro", "form": "vanno" }
+          ]
+        }
+      },
+      "hints": [
+        "Begin met het onderwerp of de tijdsbepaling.",
+        "'Andare' is onregelmatig: io vado."
+      ]
+    },
+    {
+      "id": "presente-8",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Zij (vrouwelijk, enkelvoud) gaat naar het station.'",
+        "sentence": "Zij gaat naar het station.",
+        "context": "andare = gaan, la stazione = het station"
+      },
+      "correctAnswer": ["Lei va alla stazione.", "Va alla stazione."],
+      "explanation": {
+        "nl": "'Andare' is onregelmatig: lei → va. 'Naar het station' wordt 'alla stazione' (a + la = alla). Let op de samenvoeging van het voorzetsel en het lidwoord!",
+        "rule": "Andare: lei → va. Voorzetsel a + lidwoord la = alla.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "andare",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "vado" },
+            { "person": "tu", "form": "vai" },
+            { "person": "lui/lei", "form": "va", "highlight": true },
+            { "person": "noi", "form": "andiamo" },
+            { "person": "voi", "form": "andate" },
+            { "person": "loro", "form": "vanno" }
+          ]
+        }
+      },
+      "hints": [
+        "'Andare' voor 'lei' is een korte, onregelmatige vorm.",
+        "'Naar de/het' wordt vertaald met 'a + lidwoord' → alla, al, allo, etc."
+      ]
+    },
+    {
+      "id": "presente-9",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Noi avemo due gatti a casa.",
+        "context": "avere = hebben, due gatti = twee katten"
+      },
+      "correctAnswer": "avemo",
+      "distractors": ["Noi", "due", "gatti"],
+      "explanation": {
+        "nl": "'Avemo' bestaat niet in het Italiaans. De juiste 'noi'-vorm van 'avere' is 'abbiamo'. Dit is een veelgemaakte fout omdat de vorm volledig onregelmatig is.",
+        "rule": "Avere is onregelmatig: noi → abbiamo (niet 'avemo')",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "avere",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "ho" },
+            { "person": "tu", "form": "hai" },
+            { "person": "lui/lei", "form": "ha" },
+            { "person": "noi", "form": "abbiamo", "highlight": true },
+            { "person": "voi", "form": "avete" },
+            { "person": "loro", "form": "hanno" }
+          ]
+        }
+      },
+      "hints": [
+        "Controleer of het werkwoord correct vervoegd is voor 'noi'.",
+        "'Avere' is een onregelmatig werkwoord — de stam verandert."
+      ]
+    },
+    {
+      "id": "presente-10",
+      "type": "invullen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vul de juiste vorm van 'finire' (eindigen/afmaken) in. Let op: dit is een -isc- werkwoord!",
+        "sentence": "Loro ___ il lavoro alle cinque.",
+        "context": "finire = afmaken/eindigen, 3e persoon meervoud. Finire gebruikt -isc- in sommige vormen."
+      },
+      "correctAnswer": "finiscono",
+      "distractors": ["finono", "finiscano", "finiscemo"],
+      "explanation": {
+        "nl": "Sommige -ire werkwoorden zoals 'finire' voegen -isc- toe aan de stam in het enkelvoud en de 3e persoon meervoud. Loro → fin- + -isc- + -ono = finiscono. De 'noi' en 'voi' vormen krijgen geen -isc-.",
+        "rule": "-ire werkwoorden met -isc-: io finisco, tu finisci, lui finisce, noi finiamo, voi finite, loro finiscono",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "finire",
+          "tense": "presente",
+          "forms": [
+            { "person": "io", "form": "finisco" },
+            { "person": "tu", "form": "finisci" },
+            { "person": "lui/lei", "form": "finisce" },
+            { "person": "noi", "form": "finiamo" },
+            { "person": "voi", "form": "finite" },
+            { "person": "loro", "form": "finiscono", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "'Finire' is een -isc- werkwoord: sommige vormen krijgen -isc- tussen de stam en de uitgang.",
+        "De 'loro'-vorm krijgt ook -isc-: fin + isc + ono."
+      ]
+    }
+  ]
+}
