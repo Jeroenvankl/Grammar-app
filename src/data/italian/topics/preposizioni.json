@@ -44,7 +44,7 @@
     {
       "id": "prep-1",
       "type": "invullen",
-      "difficulty": 2,
+      "difficulty": 1,
       "question": {
         "nl": "Vul het juiste samengevoegde voorzetsel in (a + il):",
         "sentence": "Vado ___ cinema stasera."
@@ -61,7 +61,7 @@
     {
       "id": "prep-2",
       "type": "invullen",
-      "difficulty": 2,
+      "difficulty": 1,
       "question": {
         "nl": "Vul het juiste samengevoegde voorzetsel in (di + la):",
         "sentence": "Il colore ___ macchina è rosso."
@@ -95,7 +95,7 @@
     {
       "id": "prep-4",
       "type": "foutherkenning",
-      "difficulty": 2,
+      "difficulty": 1,
       "question": {
         "nl": "Welk woord is fout in deze zin?",
         "sentence": "Vivo in il centro di Roma."
@@ -129,7 +129,7 @@
     {
       "id": "prep-6",
       "type": "invullen",
-      "difficulty": 2,
+      "difficulty": 1,
       "question": {
         "nl": "Vul het juiste samengevoegde voorzetsel in (da + la):",
         "sentence": "Vengo ___ stazione."

@@ -11,7 +11,9 @@ export function createInitialProgress(): UserProgress {
 }
 
 export function getXPForLevel(level: number): number {
-  return level * 100;
+  // Early levels are easier to reach, then gradually increases
+  if (level <= 3) return 50 + (level - 1) * 25; // 50, 75, 100
+  return level * 100; // 400, 500, 600, ...
 }
 
 export function calculateLevel(totalXP: number): number {
@@ -50,9 +52,9 @@ export function calculateAnswerXP(
   isPerfect: boolean,
   streak: number
 ): number {
-  let xp = 10;
-  if (isPerfect) xp = 15;
-  xp += Math.min(streak, 5) * 2;
+  let xp = 15; // Base XP per correct answer
+  if (isPerfect) xp = 25; // Perfect answers get bonus
+  xp += Math.min(streak, 5) * 3; // Streak bonus
   return xp;
 }
 

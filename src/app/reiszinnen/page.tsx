@@ -1,22 +1,56 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Volume2, ChevronDown, Search, Plane } from "lucide-react";
+import { Volume2, ChevronDown, Search, Plane, BookOpen } from "lucide-react";
+import Link from "next/link";
 import Layout from "@/components/ui/Layout";
 import { japaneseTravelPhrases, PhraseCategory, TravelPhrase } from "@/data/phrases/japanese-travel";
 
+/** Pick the best available Japanese female voice, or fall back to any ja-JP voice */
+function getJapaneseVoice(): SpeechSynthesisVoice | null {
+  const voices = speechSynthesis.getVoices();
+  const jaVoices = voices.filter(
+    (v) => v.lang === "ja-JP" || v.lang === "ja_JP" || v.lang.startsWith("ja")
+  );
+  // Prefer female voices with natural-sounding names
+  const preferred = [
+    "Google 日本語", "O-Ren", "Kyoko", "Haruka", "Nanami",
+    "Microsoft Nanami", "Microsoft Haruka", "Sayaka",
+  ];
+  for (const name of preferred) {
+    const match = jaVoices.find((v) => v.name.includes(name));
+    if (match) return match;
+  }
+  // Fallback: prefer any female-sounding or premium voice
+  const female = jaVoices.find(
+    (v) =>
+      v.name.toLowerCase().includes("female") ||
+      v.name.includes("Premium") ||
+      v.name.includes("Enhanced") ||
+      !v.name.toLowerCase().includes("male")
+  );
+  return female || jaVoices[0] || null;
+}
+
 function PhraseCard({ phrase, index }: { phrase: TravelPhrase; index: number }) {
   const [expanded, setExpanded] = useState(false);
+  const [speaking, setSpeaking] = useState(false);
 
-  const speak = (text: string) => {
-    if ("speechSynthesis" in window) {
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = "ja-JP";
-      utterance.rate = 0.8;
-      speechSynthesis.speak(utterance);
-    }
-  };
+  const speak = useCallback((text: string) => {
+    if (!("speechSynthesis" in window)) return;
+    speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "ja-JP";
+    utterance.rate = 0.75;
+    utterance.pitch = 1.1;
+    const voice = getJapaneseVoice();
+    if (voice) utterance.voice = voice;
+    utterance.onstart = () => setSpeaking(true);
+    utterance.onend = () => setSpeaking(false);
+    utterance.onerror = () => setSpeaking(false);
+    speechSynthesis.speak(utterance);
+  }, []);
 
   return (
     <motion.div
@@ -60,7 +94,11 @@ function PhraseCard({ phrase, index }: { phrase: TravelPhrase; index: number }) 
                     e.stopPropagation();
                     speak(phrase.japanese);
                   }}
-                  className="p-2 rounded-lg hover:bg-indigo-50 text-indigo-500 transition-colors"
+                  className={`p-2 rounded-lg transition-colors ${
+                    speaking
+                      ? "bg-indigo-100 text-indigo-600 animate-pulse"
+                      : "hover:bg-indigo-50 text-indigo-500"
+                  }`}
                   title="Luister naar uitspraak"
                 >
                   <Volume2 className="w-4 h-4" />
@@ -68,7 +106,7 @@ function PhraseCard({ phrase, index }: { phrase: TravelPhrase; index: number }) 
               </div>
               {phrase.context && (
                 <p className="text-xs text-stone-400 italic bg-stone-50 rounded-lg p-2">
-                  💡 {phrase.context}
+                  {phrase.context}
                 </p>
               )}
             </div>
@@ -126,6 +164,18 @@ function CategorySection({ category }: { category: PhraseCategory }) {
 export default function ReiszinnenPage() {
   const [searchQuery, setSearchQuery] = useState("");
 
+  // Force voices to load (Chrome loads them async)
+  useEffect(() => {
+    speechSynthesis.getVoices();
+    speechSynthesis.addEventListener("voiceschanged", () => {
+      speechSynthesis.getVoices();
+    });
+  }, []);
+
+  const totalPhrases = japaneseTravelPhrases.reduce(
+    (sum, cat) => sum + cat.phrases.length, 0
+  );
+
   const filteredCategories = searchQuery.trim()
     ? japaneseTravelPhrases
         .map((cat) => ({
@@ -152,9 +202,26 @@ export default function ReiszinnenPage() {
             </h1>
           </div>
           <p className="text-stone-500 text-sm">
-            Essentiële zinnen voor toeristen in Japan — met uitspraak
+            {totalPhrases} essenti&euml;le zinnen voor toeristen in Japan &mdash; met uitspraak
           </p>
         </div>
+
+        {/* Culture page link */}
+        <Link
+          href="/japan-gids"
+          className="flex items-center gap-3 bg-gradient-to-r from-rose-50 to-amber-50 rounded-2xl p-4 border border-rose-100 hover:shadow-md transition-all group"
+        >
+          <span className="text-2xl">&#x26E9;&#xFE0F;</span>
+          <div className="flex-1">
+            <h3 className="font-bold text-stone-800 group-hover:text-rose-700 transition-colors">
+              Japanse Cultuur &amp; Etiquette
+            </h3>
+            <p className="text-xs text-stone-500">
+              Onmisbare omgangsvormen, gewoonten en do&apos;s &amp; don&apos;ts
+            </p>
+          </div>
+          <BookOpen className="w-5 h-5 text-rose-400 group-hover:text-rose-600" />
+        </Link>
 
         {/* Search */}
         <div className="relative">
@@ -175,7 +242,6 @@ export default function ReiszinnenPage() {
               <p>Geen zinnen gevonden voor &quot;{searchQuery}&quot;</p>
             </div>
           ) : searchQuery.trim() ? (
-            // When searching, show all results flat
             filteredCategories.map((cat) => (
               <div key={cat.id} className="space-y-2">
                 <h3 className="text-sm font-bold text-stone-600">
@@ -187,25 +253,10 @@ export default function ReiszinnenPage() {
               </div>
             ))
           ) : (
-            // Normal category view
             filteredCategories.map((cat) => (
               <CategorySection key={cat.id} category={cat} />
             ))
           )}
-        </div>
-
-        {/* Tips */}
-        <div className="bg-amber-50 rounded-2xl p-5 border border-amber-100">
-          <h3 className="font-bold text-amber-800 text-sm mb-2">
-            💡 Tips voor Japan
-          </h3>
-          <ul className="text-sm text-amber-700 space-y-1.5">
-            <li>• In Japan geef je <strong>geen fooi</strong> — het wordt als onbeleefd beschouwd</li>
-            <li>• Koop een <strong>Suica/Pasmo kaart</strong> voor al het openbaar vervoer</li>
-            <li>• <strong>Convenience stores</strong> (konbini) zijn overal en hebben alles</li>
-            <li>• Spreek met <strong>twee handen</strong> als je iets aangeeft of ontvangt</li>
-            <li>• Trek altijd je <strong>schoenen uit</strong> bij het betreden van tempels en ryokans</li>
-          </ul>
         </div>
       </div>
     </Layout>
