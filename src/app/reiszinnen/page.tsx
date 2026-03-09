@@ -1,195 +1,47 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Volume2, ChevronDown, Search, Plane, BookOpen } from "lucide-react";
+import { motion } from "framer-motion";
+import { Plane, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Layout from "@/components/ui/Layout";
-import { japaneseTravelPhrases, PhraseCategory, TravelPhrase } from "@/data/phrases/japanese-travel";
 
-/** Pick the best available Japanese female voice, or fall back to any ja-JP voice */
-function getJapaneseVoice(): SpeechSynthesisVoice | null {
-  const voices = speechSynthesis.getVoices();
-  const jaVoices = voices.filter(
-    (v) => v.lang === "ja-JP" || v.lang === "ja_JP" || v.lang.startsWith("ja")
-  );
-  // Prefer female voices with natural-sounding names
-  const preferred = [
-    "Google 日本語", "O-Ren", "Kyoko", "Haruka", "Nanami",
-    "Microsoft Nanami", "Microsoft Haruka", "Sayaka",
-  ];
-  for (const name of preferred) {
-    const match = jaVoices.find((v) => v.name.includes(name));
-    if (match) return match;
-  }
-  // Fallback: prefer any female-sounding or premium voice
-  const female = jaVoices.find(
-    (v) =>
-      v.name.toLowerCase().includes("female") ||
-      v.name.includes("Premium") ||
-      v.name.includes("Enhanced") ||
-      !v.name.toLowerCase().includes("male")
-  );
-  return female || jaVoices[0] || null;
-}
+const languages = [
+  {
+    id: "japans",
+    name: "Japans",
+    flag: "🇯🇵",
+    phrases: "140+",
+    color: "from-rose-50 to-pink-50",
+    border: "border-rose-200",
+    hoverShadow: "hover:shadow-rose-100",
+    description: "Essentiële zinnen voor toeristen in Japan — met uitspraak en romaji",
+    extra: "Cultuur & etiquette gids",
+  },
+  {
+    id: "italiaans",
+    name: "Italiaans",
+    flag: "🇮🇹",
+    phrases: "130+",
+    color: "from-emerald-50 to-green-50",
+    border: "border-emerald-200",
+    hoverShadow: "hover:shadow-emerald-100",
+    description: "Van begroetingen tot noodgevallen — alles voor je reis naar Italië",
+    extra: null,
+  },
+  {
+    id: "spaans",
+    name: "Spaans (Latijns-Amerika)",
+    flag: "🌎",
+    phrases: "140+",
+    color: "from-amber-50 to-orange-50",
+    border: "border-amber-200",
+    hoverShadow: "hover:shadow-amber-100",
+    description: "Reiszinnen voor heel Latijns-Amerika — met regionale uitdrukkingen",
+    extra: "Lokale slang & tips",
+  },
+];
 
-function PhraseCard({ phrase, index }: { phrase: TravelPhrase; index: number }) {
-  const [expanded, setExpanded] = useState(false);
-  const [speaking, setSpeaking] = useState(false);
-
-  const speak = useCallback((text: string) => {
-    if (!("speechSynthesis" in window)) return;
-    speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "ja-JP";
-    utterance.rate = 0.75;
-    utterance.pitch = 1.1;
-    const voice = getJapaneseVoice();
-    if (voice) utterance.voice = voice;
-    utterance.onstart = () => setSpeaking(true);
-    utterance.onend = () => setSpeaking(false);
-    utterance.onerror = () => setSpeaking(false);
-    speechSynthesis.speak(utterance);
-  }, []);
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 5 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.03 }}
-      className="bg-white rounded-xl border border-stone-200 overflow-hidden"
-    >
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-start gap-3 p-4 text-left hover:bg-stone-50 transition-colors"
-      >
-        <div className="flex-1 min-w-0">
-          <p className="font-medium text-stone-800 text-sm font-[family-name:'Noto_Sans_JP']">
-            {phrase.japanese}
-          </p>
-          <p className="text-xs text-stone-500 mt-0.5">{phrase.dutch}</p>
-        </div>
-        <ChevronDown
-          className={`w-4 h-4 text-stone-400 flex-shrink-0 mt-1 transition-transform ${
-            expanded ? "rotate-180" : ""
-          }`}
-        />
-      </button>
-
-      <AnimatePresence>
-        {expanded && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="overflow-hidden"
-          >
-            <div className="px-4 pb-4 space-y-2 border-t border-stone-100 pt-3">
-              <div className="flex items-center justify-between">
-                <p className="text-sm text-indigo-600 font-mono">
-                  {phrase.romaji}
-                </p>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    speak(phrase.japanese);
-                  }}
-                  className={`p-2 rounded-lg transition-colors ${
-                    speaking
-                      ? "bg-indigo-100 text-indigo-600 animate-pulse"
-                      : "hover:bg-indigo-50 text-indigo-500"
-                  }`}
-                  title="Luister naar uitspraak"
-                >
-                  <Volume2 className="w-4 h-4" />
-                </button>
-              </div>
-              {phrase.context && (
-                <p className="text-xs text-stone-400 italic bg-stone-50 rounded-lg p-2">
-                  {phrase.context}
-                </p>
-              )}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.div>
-  );
-}
-
-function CategorySection({ category }: { category: PhraseCategory }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="space-y-2">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center gap-3 bg-white rounded-2xl p-4 border border-stone-200 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all"
-      >
-        <span className="text-2xl">{category.icon}</span>
-        <div className="flex-1 text-left">
-          <h3 className="font-bold text-stone-800">{category.name}</h3>
-          <p className="text-xs text-stone-500">{category.description}</p>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-xs text-stone-400 bg-stone-100 px-2 py-0.5 rounded-full">
-            {category.phrases.length}
-          </span>
-          <ChevronDown
-            className={`w-4 h-4 text-stone-400 transition-transform ${
-              isOpen ? "rotate-180" : ""
-            }`}
-          />
-        </div>
-      </button>
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="overflow-hidden space-y-1.5 pl-2"
-          >
-            {category.phrases.map((phrase, i) => (
-              <PhraseCard key={phrase.id} phrase={phrase} index={i} />
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-}
-
-export default function ReiszinnenPage() {
-  const [searchQuery, setSearchQuery] = useState("");
-
-  // Force voices to load (Chrome loads them async)
-  useEffect(() => {
-    speechSynthesis.getVoices();
-    speechSynthesis.addEventListener("voiceschanged", () => {
-      speechSynthesis.getVoices();
-    });
-  }, []);
-
-  const totalPhrases = japaneseTravelPhrases.reduce(
-    (sum, cat) => sum + cat.phrases.length, 0
-  );
-
-  const filteredCategories = searchQuery.trim()
-    ? japaneseTravelPhrases
-        .map((cat) => ({
-          ...cat,
-          phrases: cat.phrases.filter(
-            (p) =>
-              p.dutch.toLowerCase().includes(searchQuery.toLowerCase()) ||
-              p.japanese.includes(searchQuery) ||
-              p.romaji.toLowerCase().includes(searchQuery.toLowerCase())
-          ),
-        }))
-        .filter((cat) => cat.phrases.length > 0)
-    : japaneseTravelPhrases;
-
+export default function ReiszinnenHubPage() {
   return (
     <Layout>
       <div className="space-y-6">
@@ -197,66 +49,57 @@ export default function ReiszinnenPage() {
         <div>
           <div className="flex items-center gap-2 mb-1">
             <Plane className="w-6 h-6 text-indigo-600" />
-            <h1 className="text-2xl font-bold text-stone-800">
-              Reiszinnen Japans
-            </h1>
+            <h1 className="text-2xl font-bold text-stone-800">Reiszinnen</h1>
           </div>
           <p className="text-stone-500 text-sm">
-            {totalPhrases} essenti&euml;le zinnen voor toeristen in Japan &mdash; met uitspraak
+            Handige zinnen en uitdrukkingen voor op reis — kies je taal
           </p>
         </div>
 
-        {/* Culture page link */}
-        <Link
-          href="/japan-gids"
-          className="flex items-center gap-3 bg-gradient-to-r from-rose-50 to-amber-50 rounded-2xl p-4 border border-rose-100 hover:shadow-md transition-all group"
-        >
-          <span className="text-2xl">&#x26E9;&#xFE0F;</span>
-          <div className="flex-1">
-            <h3 className="font-bold text-stone-800 group-hover:text-rose-700 transition-colors">
-              Japanse Cultuur &amp; Etiquette
-            </h3>
-            <p className="text-xs text-stone-500">
-              Onmisbare omgangsvormen, gewoonten en do&apos;s &amp; don&apos;ts
-            </p>
-          </div>
-          <BookOpen className="w-5 h-5 text-rose-400 group-hover:text-rose-600" />
-        </Link>
-
-        {/* Search */}
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Zoek een zin (NL, JP of romaji)..."
-            className="w-full pl-10 pr-4 py-3 rounded-xl border border-stone-200 bg-white text-sm outline-none focus:border-indigo-400 transition-colors"
-          />
+        {/* Language cards */}
+        <div className="space-y-3">
+          {languages.map((lang, index) => (
+            <motion.div
+              key={lang.id}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+            >
+              <Link
+                href={`/reiszinnen/${lang.id}`}
+                className={`block bg-gradient-to-r ${lang.color} rounded-2xl p-5 border ${lang.border} ${lang.hoverShadow} hover:shadow-lg transition-all group`}
+              >
+                <div className="flex items-start gap-4">
+                  <span className="text-4xl">{lang.flag}</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <h2 className="font-bold text-lg text-stone-800 group-hover:text-indigo-700 transition-colors">
+                        {lang.name}
+                      </h2>
+                      <span className="text-xs text-stone-400 bg-white/60 px-2 py-0.5 rounded-full">
+                        {lang.phrases} zinnen
+                      </span>
+                    </div>
+                    <p className="text-sm text-stone-600">{lang.description}</p>
+                    {lang.extra && (
+                      <p className="text-xs text-indigo-600 font-medium mt-1.5">
+                        ✦ {lang.extra}
+                      </p>
+                    )}
+                  </div>
+                  <ChevronRight className="w-5 h-5 text-stone-400 group-hover:text-indigo-600 group-hover:translate-x-1 transition-all flex-shrink-0 mt-2" />
+                </div>
+              </Link>
+            </motion.div>
+          ))}
         </div>
 
-        {/* Categories */}
-        <div className="space-y-3">
-          {filteredCategories.length === 0 ? (
-            <div className="text-center py-12 text-stone-400">
-              <p>Geen zinnen gevonden voor &quot;{searchQuery}&quot;</p>
-            </div>
-          ) : searchQuery.trim() ? (
-            filteredCategories.map((cat) => (
-              <div key={cat.id} className="space-y-2">
-                <h3 className="text-sm font-bold text-stone-600">
-                  {cat.icon} {cat.name}
-                </h3>
-                {cat.phrases.map((phrase, i) => (
-                  <PhraseCard key={phrase.id} phrase={phrase} index={i} />
-                ))}
-              </div>
-            ))
-          ) : (
-            filteredCategories.map((cat) => (
-              <CategorySection key={cat.id} category={cat} />
-            ))
-          )}
+        {/* Tip */}
+        <div className="bg-indigo-50 rounded-xl p-4 border border-indigo-100">
+          <p className="text-sm text-indigo-700">
+            <span className="font-semibold">💡 Tip:</span> Klik op een zin om de uitspraak te horen.
+            Alle pagina&apos;s werken ook offline — handig voor onderweg!
+          </p>
         </div>
       </div>
     </Layout>
