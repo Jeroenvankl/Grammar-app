@@ -1,0 +1,395 @@
+{
+  "id": "presente-es",
+  "name": "Presente de Indicativo",
+  "description": "Leer de Spaanse tegenwoordige tijd: regelmatige werkwoorden op -ar, -er en -ir, en onregelmatige werkwoorden zoals ser, estar, ir en tener. Focus op Latijns-Amerikaans Spaans.",
+  "level": "beginner",
+  "order": 1,
+  "grammarRules": [
+    {
+      "id": "presente-regular",
+      "title": "Regelmatige werkwoorden in het presente",
+      "explanation": "Spaanse werkwoorden worden vervoegd door de uitgang (-ar, -er, -ir) te vervangen door de juiste persoonsvorm. Elke groep heeft zijn eigen set uitgangen. In Latijns-Amerika wordt 'ustedes' gebruikt in plaats van 'vosotros'.",
+      "formula": "stam + persoonlijke uitgang (-o, -as/-es, -a/-e, -amos/-emos/-imos, -an/-en)",
+      "examples": [
+        {
+          "italian": "Yo hablo español.",
+          "dutch": "Ik spreek Spaans.",
+          "breakdown": [
+            { "word": "Yo", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (1e persoon enkelvoud)" },
+            { "word": "hablo", "role": "verb", "color": "#f87171", "annotation": "hablar → habl- + -o" },
+            { "word": "español", "role": "object", "color": "#34d399", "annotation": "lijdend voorwerp" }
+          ]
+        },
+        {
+          "italian": "Nosotros comemos tacos en el mercado.",
+          "dutch": "Wij eten taco's op de markt.",
+          "breakdown": [
+            { "word": "Nosotros", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (1e persoon meervoud)" },
+            { "word": "comemos", "role": "verb", "color": "#f87171", "annotation": "comer → com- + -emos" },
+            { "word": "tacos", "role": "object", "color": "#34d399", "annotation": "lijdend voorwerp" },
+            { "word": "en", "role": "preposition", "color": "#fbbf24", "annotation": "voorzetsel (in/op)" },
+            { "word": "el", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord" },
+            { "word": "mercado", "role": "object", "color": "#34d399", "annotation": "plaats (de markt)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presente-irregular",
+      "title": "Onregelmatige werkwoorden: ser, ir, tener",
+      "explanation": "De meest gebruikte Spaanse werkwoorden zijn onregelmatig. Ser (zijn), ir (gaan) en tener (hebben) moet je uit je hoofd leren omdat ze niet de standaard uitgangen volgen.",
+      "formula": "ser: soy/eres/es/somos/son | ir: voy/vas/va/vamos/van | tener: tengo/tienes/tiene/tenemos/tienen",
+      "examples": [
+        {
+          "italian": "Yo soy estudiante.",
+          "dutch": "Ik ben student.",
+          "breakdown": [
+            { "word": "Yo", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp" },
+            { "word": "soy", "role": "verb", "color": "#f87171", "annotation": "ser, 1e persoon enkelvoud (onregelmatig)" },
+            { "word": "estudiante", "role": "object", "color": "#34d399", "annotation": "naamwoordelijk deel" }
+          ]
+        },
+        {
+          "italian": "Ellos van al mercado en colectivo.",
+          "dutch": "Zij gaan met de bus naar de markt.",
+          "breakdown": [
+            { "word": "Ellos", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (3e persoon meervoud)" },
+            { "word": "van", "role": "verb", "color": "#f87171", "annotation": "ir, 3e persoon meervoud (onregelmatig)" },
+            { "word": "al", "role": "preposition", "color": "#fbbf24", "annotation": "a + el (voorzetsel + lidwoord)" },
+            { "word": "mercado", "role": "object", "color": "#34d399", "annotation": "de markt" },
+            { "word": "en", "role": "preposition", "color": "#fbbf24", "annotation": "voorzetsel (met)" },
+            { "word": "colectivo", "role": "object", "color": "#34d399", "annotation": "bus (Latijns-Amerika)" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "presente-es-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van 'hablar' (spreken) in.",
+        "sentence": "Yo ___ español todos los días.",
+        "context": "hablar = spreken, 1e persoon enkelvoud"
+      },
+      "correctAnswer": "hablo",
+      "distractors": ["habla", "hablas", "hablamos"],
+      "explanation": {
+        "nl": "Bij werkwoorden op -ar krijgt de eerste persoon enkelvoud (yo) de uitgang -o. Hablar → habl- + -o = hablo.",
+        "rule": "Regelmatige -ar werkwoorden: yo → stam + -o",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "hablar",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "hablo", "highlight": true },
+            { "person": "tú", "form": "hablas" },
+            { "person": "él/ella/usted", "form": "habla" },
+            { "person": "nosotros", "form": "hablamos" },
+            { "person": "ustedes", "form": "hablan" },
+            { "person": "ellos/ellas", "form": "hablan" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'hablar' is regelmatig en eindigt op -ar.",
+        "Voor 'yo' vervang je -ar door -o."
+      ]
+    },
+    {
+      "id": "presente-es-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van 'comer' (eten) in.",
+        "sentence": "Tú ___ tacos en la calle.",
+        "context": "comer = eten, 2e persoon enkelvoud"
+      },
+      "correctAnswer": "comes",
+      "distractors": ["como", "come", "comen"],
+      "explanation": {
+        "nl": "Bij werkwoorden op -er krijgt de tweede persoon enkelvoud (tú) de uitgang -es. Comer → com- + -es = comes.",
+        "rule": "Regelmatige -er werkwoorden: tú → stam + -es",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "comer",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "como" },
+            { "person": "tú", "form": "comes", "highlight": true },
+            { "person": "él/ella/usted", "form": "come" },
+            { "person": "nosotros", "form": "comemos" },
+            { "person": "ustedes", "form": "comen" },
+            { "person": "ellos/ellas", "form": "comen" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'comer' is regelmatig en eindigt op -er.",
+        "Voor 'tú' vervang je -er door -es."
+      ]
+    },
+    {
+      "id": "presente-es-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul de juiste vorm van 'vivir' (wonen/leven) in.",
+        "sentence": "Nosotros ___ en Buenos Aires.",
+        "context": "vivir = wonen/leven, 1e persoon meervoud"
+      },
+      "correctAnswer": "vivimos",
+      "distractors": ["viven", "vivo", "vives"],
+      "explanation": {
+        "nl": "Bij werkwoorden op -ir krijgt de eerste persoon meervoud (nosotros) de uitgang -imos. Vivir → viv- + -imos = vivimos.",
+        "rule": "Regelmatige -ir werkwoorden: nosotros → stam + -imos",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "vivir",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "vivo" },
+            { "person": "tú", "form": "vives" },
+            { "person": "él/ella/usted", "form": "vive" },
+            { "person": "nosotros", "form": "vivimos", "highlight": true },
+            { "person": "ustedes", "form": "viven" },
+            { "person": "ellos/ellas", "form": "viven" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'vivir' is regelmatig en eindigt op -ir.",
+        "Voor 'nosotros' vervang je -ir door -imos."
+      ]
+    },
+    {
+      "id": "presente-es-4",
+      "type": "zinsvolgorde",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde.",
+        "sentence": "todos / al / los / vamos / días / mercado / nosotros",
+        "context": "ir al mercado = naar de markt gaan"
+      },
+      "correctAnswer": ["Nosotros vamos al mercado todos los días.", "Todos los días nosotros vamos al mercado.", "Todos los días vamos al mercado."],
+      "explanation": {
+        "nl": "De standaard woordvolgorde in het Spaans is: Onderwerp + Werkwoord + Voorzetselgroep + Tijdsbepaling. 'Ir' is onregelmatig: nosotros → vamos. 'Al' is de samenvoeging van 'a' + 'el'.",
+        "rule": "Woordvolgorde: S + V + O/Complement. Tijdsbepalingen kunnen aan het begin of eind staan.",
+        "diagramType": "wordOrder",
+        "diagramData": {
+          "verb": "ir",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "voy" },
+            { "person": "tú", "form": "vas" },
+            { "person": "él/ella/usted", "form": "va" },
+            { "person": "nosotros", "form": "vamos", "highlight": true },
+            { "person": "ustedes", "form": "van" },
+            { "person": "ellos/ellas", "form": "van" }
+          ]
+        }
+      },
+      "hints": [
+        "Begin met het onderwerp of de tijdsbepaling.",
+        "'Ir' is onregelmatig: nosotros vamos."
+      ]
+    },
+    {
+      "id": "presente-es-5",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Wij hebben een auto.'",
+        "sentence": "Wij hebben een auto.",
+        "context": "tener = hebben, un carro = een auto (Latijns-Amerika)"
+      },
+      "correctAnswer": ["Nosotros tenemos un carro.", "Tenemos un carro."],
+      "explanation": {
+        "nl": "'Tener' is onregelmatig. De 'nosotros'-vorm is 'tenemos'. In het Spaans mag het persoonlijk voornaamwoord worden weggelaten omdat de werkwoordsvorm al aangeeft wie het onderwerp is. In Latijns-Amerika zegt men 'carro' in plaats van 'coche'.",
+        "rule": "Tener: nosotros → tenemos. Het persoonlijk voornaamwoord is optioneel.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "tener",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "tengo" },
+            { "person": "tú", "form": "tienes" },
+            { "person": "él/ella/usted", "form": "tiene" },
+            { "person": "nosotros", "form": "tenemos", "highlight": true },
+            { "person": "ustedes", "form": "tienen" },
+            { "person": "ellos/ellas", "form": "tienen" }
+          ]
+        }
+      },
+      "hints": [
+        "'Hebben' is 'tener' in het Spaans.",
+        "De 'nosotros'-vorm van tener is regelmatig: ten- + -emos."
+      ]
+    },
+    {
+      "id": "presente-es-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Tú trabaja en una tienda en Colombia.",
+        "context": "trabajar = werken, de 'tú'-vorm moet op -as eindigen"
+      },
+      "correctAnswer": "trabaja",
+      "distractors": ["Tú", "una", "tienda"],
+      "explanation": {
+        "nl": "'Trabaja' is de él/ella/usted-vorm (3e persoon enkelvoud). Voor 'tú' moet het 'trabajas' zijn. Regelmatige -ar werkwoorden: tú → stam + -as.",
+        "rule": "Regelmatige -ar werkwoorden: tú → stam + -as, él/ella/usted → stam + -a",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "trabajar",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "trabajo" },
+            { "person": "tú", "form": "trabajas", "highlight": true },
+            { "person": "él/ella/usted", "form": "trabaja" },
+            { "person": "nosotros", "form": "trabajamos" },
+            { "person": "ustedes", "form": "trabajan" },
+            { "person": "ellos/ellas", "form": "trabajan" }
+          ]
+        }
+      },
+      "hints": [
+        "Kijk naar het onderwerp 'tú' en controleer of de werkwoordsvorm daarbij past.",
+        "De 'tú'-vorm van -ar werkwoorden eindigt op -as, niet op -a."
+      ]
+    },
+    {
+      "id": "presente-es-7",
+      "type": "zinsvolgorde",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde.",
+        "sentence": "la / con / ella / celular / habla / mamá / por",
+        "context": "hablar por celular = bellen via de mobiele telefoon (Latijns-Amerika)"
+      },
+      "correctAnswer": ["Ella habla con la mamá por celular.", "Ella habla por celular con la mamá."],
+      "explanation": {
+        "nl": "De woordvolgorde is: Onderwerp + Werkwoord + Voorzetselgroep. 'Por celular' betekent 'via de mobiele telefoon'. In Latijns-Amerika zegt men 'celular' in plaats van 'móvil'.",
+        "rule": "Woordvolgorde: S + V + Complement. Voorzetselgroepen kunnen van plaats wisselen.",
+        "diagramType": "wordOrder",
+        "diagramData": {
+          "verb": "hablar",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "hablo" },
+            { "person": "tú", "form": "hablas" },
+            { "person": "él/ella/usted", "form": "habla", "highlight": true },
+            { "person": "nosotros", "form": "hablamos" },
+            { "person": "ustedes", "form": "hablan" },
+            { "person": "ellos/ellas", "form": "hablan" }
+          ]
+        }
+      },
+      "hints": [
+        "Begin met het onderwerp 'ella'.",
+        "'Hablar por celular' is de Latijns-Amerikaanse manier om 'bellen' te zeggen."
+      ]
+    },
+    {
+      "id": "presente-es-8",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Zij (vrouwelijk, enkelvoud) gaat naar de universiteit.'",
+        "sentence": "Zij gaat naar de universiteit.",
+        "context": "ir = gaan, la universidad = de universiteit"
+      },
+      "correctAnswer": ["Ella va a la universidad.", "Va a la universidad."],
+      "explanation": {
+        "nl": "'Ir' is onregelmatig: ella → va. 'Naar de universiteit' wordt 'a la universidad'. Let op: in het Spaans wordt 'a' niet samengevoegd met 'la' (anders dan 'a + el = al').",
+        "rule": "Ir: ella → va. Voorzetsel 'a' + 'la' blijven apart (alleen a + el = al).",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "ir",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "voy" },
+            { "person": "tú", "form": "vas" },
+            { "person": "él/ella/usted", "form": "va", "highlight": true },
+            { "person": "nosotros", "form": "vamos" },
+            { "person": "ustedes", "form": "van" },
+            { "person": "ellos/ellas", "form": "van" }
+          ]
+        }
+      },
+      "hints": [
+        "'Ir' voor 'ella' is een korte, onregelmatige vorm.",
+        "'Naar de' wordt vertaald met 'a + lidwoord' → a la (vrouwelijk) of al (mannelijk)."
+      ]
+    },
+    {
+      "id": "presente-es-9",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Nosotros tienemos dos computadoras en casa.",
+        "context": "tener = hebben, dos computadoras = twee computers (Latijns-Amerika)"
+      },
+      "correctAnswer": "tienemos",
+      "distractors": ["Nosotros", "dos", "computadoras"],
+      "explanation": {
+        "nl": "'Tienemos' bestaat niet in het Spaans. De juiste 'nosotros'-vorm van 'tener' is 'tenemos'. De stamverandering e → ie komt alleen voor in het enkelvoud en de 3e persoon meervoud, niet bij 'nosotros'.",
+        "rule": "Tener is onregelmatig: de stamverandering e → ie geldt niet voor nosotros. Nosotros → tenemos (niet 'tienemos').",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "tener",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "tengo" },
+            { "person": "tú", "form": "tienes" },
+            { "person": "él/ella/usted", "form": "tiene" },
+            { "person": "nosotros", "form": "tenemos", "highlight": true },
+            { "person": "ustedes", "form": "tienen" },
+            { "person": "ellos/ellas", "form": "tienen" }
+          ]
+        }
+      },
+      "hints": [
+        "Controleer of het werkwoord correct vervoegd is voor 'nosotros'.",
+        "Bij stamveranderende werkwoorden verandert de stam niet in de 'nosotros'-vorm."
+      ]
+    },
+    {
+      "id": "presente-es-10",
+      "type": "invullen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vul de juiste vorm van 'ser' (zijn) in. Let op het verschil tussen 'ser' en 'estar'!",
+        "sentence": "Ustedes ___ de México, ¿verdad?",
+        "context": "ser = zijn (permanente eigenschap/herkomst), ustedes = jullie (Latijns-Amerika). Ser wordt gebruikt voor herkomst."
+      },
+      "correctAnswer": "son",
+      "distractors": ["están", "somos", "es"],
+      "explanation": {
+        "nl": "'Ser' wordt gebruikt voor herkomst en permanente eigenschappen. De 'ustedes'-vorm is 'son'. In Latijns-Amerika wordt 'ustedes' altijd gebruikt als meervoudsvorm (in plaats van 'vosotros'). Let op: 'estar' (están) zou hier fout zijn omdat het om herkomst gaat.",
+        "rule": "Ser voor herkomst: ustedes → son. Ser vs. estar: ser = permanente eigenschappen, estar = tijdelijke toestanden.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "ser",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "soy" },
+            { "person": "tú", "form": "eres" },
+            { "person": "él/ella/usted", "form": "es" },
+            { "person": "nosotros", "form": "somos" },
+            { "person": "ustedes", "form": "son", "highlight": true },
+            { "person": "ellos/ellas", "form": "son" }
+          ]
+        }
+      },
+      "hints": [
+        "'Ser' is volledig onregelmatig -- je moet de vormen uit je hoofd leren.",
+        "Voor herkomst gebruik je altijd 'ser', niet 'estar'. De 'ustedes'-vorm is dezelfde als 'ellos/ellas'."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "id": "por-para",
+  "name": "Por vs Para",
+  "description": "Leer het verschil tussen 'por' en 'para': twee voorzetsels die allebei 'voor' kunnen betekenen, maar in heel verschillende situaties worden gebruikt.",
+  "level": "gemiddeld",
+  "order": 3,
+  "grammarRules": [
+    {
+      "id": "por-gebruik",
+      "title": "Wanneer gebruik je POR?",
+      "explanation": "Gebruik 'por' voor: reden/oorzaak (waarom iets gebeurt), ruil of prijs, tijdsduur (por dos horas), beweging door een plek (por la calle), communicatiemiddel (por teléfono), frequentie (por día). Ook in vaste uitdrukkingen: por favor, por eso, por supuesto.",
+      "formula": "POR = reden/oorzaak | ruil/prijs | tijdsduur | door (beweging) | middel | per (frequentie)",
+      "examples": [
+        {
+          "italian": "Gracias por la ayuda.",
+          "dutch": "Bedankt voor de hulp.",
+          "breakdown": [
+            { "word": "Gracias", "role": "object", "color": "#34d399", "annotation": "bedankt" },
+            { "word": "por", "role": "preposition", "color": "#fbbf24", "annotation": "voor (reden/oorzaak)" },
+            { "word": "la", "role": "article", "color": "#a78bfa", "annotation": "de (vrouwelijk)" },
+            { "word": "ayuda", "role": "object", "color": "#34d399", "annotation": "hulp" }
+          ]
+        },
+        {
+          "italian": "Caminamos por la playa en Cancún.",
+          "dutch": "We liepen over het strand in Cancún.",
+          "breakdown": [
+            { "word": "Caminamos", "role": "verb", "color": "#f87171", "annotation": "caminar, 1e persoon meervoud (wij liepen)" },
+            { "word": "por", "role": "preposition", "color": "#fbbf24", "annotation": "door/over (beweging door een plek)" },
+            { "word": "la", "role": "article", "color": "#a78bfa", "annotation": "het (vrouwelijk)" },
+            { "word": "playa", "role": "object", "color": "#34d399", "annotation": "strand" },
+            { "word": "en", "role": "preposition", "color": "#fbbf24", "annotation": "in" },
+            { "word": "Cancún", "role": "object", "color": "#34d399", "annotation": "Cancún (Mexico)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "para-gebruik",
+      "title": "Wanneer gebruik je PARA?",
+      "explanation": "Gebruik 'para' voor: doel/reden om iets te doen (para estudiar), ontvanger (para ti), bestemming (para México), deadline (para mañana), vergelijking (para ser joven). Ook in vaste uitdrukkingen: para siempre, para nada.",
+      "formula": "PARA = doel/purpose | ontvanger | bestemming | deadline | vergelijking",
+      "examples": [
+        {
+          "italian": "Este regalo es para ti.",
+          "dutch": "Dit cadeau is voor jou.",
+          "breakdown": [
+            { "word": "Este", "role": "adjective", "color": "#fb923c", "annotation": "dit (aanwijzend voornaamwoord)" },
+            { "word": "regalo", "role": "subject", "color": "#60a5fa", "annotation": "cadeau" },
+            { "word": "es", "role": "verb", "color": "#f87171", "annotation": "ser, 3e persoon enkelvoud (is)" },
+            { "word": "para", "role": "preposition", "color": "#fbbf24", "annotation": "voor (ontvanger/bestemming)" },
+            { "word": "ti", "role": "object", "color": "#34d399", "annotation": "jou" }
+          ]
+        },
+        {
+          "italian": "Viajamos para Buenos Aires mañana.",
+          "dutch": "We reizen morgen naar Buenos Aires.",
+          "breakdown": [
+            { "word": "Viajamos", "role": "verb", "color": "#f87171", "annotation": "viajar, 1e persoon meervoud (wij reizen)" },
+            { "word": "para", "role": "preposition", "color": "#fbbf24", "annotation": "naar (bestemming)" },
+            { "word": "Buenos Aires", "role": "object", "color": "#34d399", "annotation": "Buenos Aires (Argentinië)" },
+            { "word": "mañana", "role": "adverb", "color": "#38bdf8", "annotation": "morgen" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "por-para-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste voorzetsel in: 'Dit cadeau is voor jou.'",
+        "sentence": "Este regalo es ___ ti.",
+        "context": "Ontvanger/bestemming -> para"
+      },
+      "correctAnswer": "para",
+      "distractors": ["por", "a", "de"],
+      "explanation": {
+        "nl": "'Para' wordt gebruikt voor de ontvanger of bestemming. Het cadeau is bestemd voor jou, dus 'para ti'.",
+        "rule": "Para voor ontvanger/bestemming",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Por vs Para",
+          "preposition": "para",
+          "combinations": [
+            { "usage": "Ontvanger", "example": "para ti (voor jou)", "highlight": true },
+            { "usage": "Doel", "example": "para estudiar (om te studeren)" },
+            { "usage": "Bestemming", "example": "para México (naar Mexico)" },
+            { "usage": "Deadline", "example": "para mañana (voor morgen)" }
+          ]
+        }
+      },
+      "hints": [
+        "Wie ontvangt het cadeau?",
+        "Para wordt gebruikt voor de ontvanger."
+      ]
+    },
+    {
+      "id": "por-para-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste voorzetsel in: 'Bedankt voor de hulp.'",
+        "sentence": "Gracias ___ la ayuda.",
+        "context": "Reden/oorzaak -> por"
+      },
+      "correctAnswer": "por",
+      "distractors": ["para", "de", "a"],
+      "explanation": {
+        "nl": "'Por' wordt gebruikt om de reden of oorzaak aan te geven. Je bedankt iemand vanwege de hulp (oorzaak van je dankbaarheid), dus 'por la ayuda'.",
+        "rule": "Por voor reden/oorzaak",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Por vs Para",
+          "preposition": "por",
+          "combinations": [
+            { "usage": "Reden/oorzaak", "example": "por la ayuda (voor de hulp)", "highlight": true },
+            { "usage": "Tijdsduur", "example": "por dos horas (twee uur lang)" },
+            { "usage": "Beweging", "example": "por la calle (door de straat)" },
+            { "usage": "Middel", "example": "por teléfono (per telefoon)" }
+          ]
+        }
+      },
+      "hints": [
+        "Waarom zeg je 'gracias'? Vanwege de hulp.",
+        "Por geeft de reden of oorzaak aan."
+      ]
+    },
+    {
+      "id": "por-para-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste voorzetsel in: 'We liepen twee uur lang door het park in Bogotá.'",
+        "sentence": "Caminamos ___ el parque ___ dos horas en Bogotá.",
+        "context": "Eerste: beweging door een plek (por). Tweede: tijdsduur (por)."
+      },
+      "correctAnswer": "por",
+      "distractors": ["para", "en", "de"],
+      "explanation": {
+        "nl": "Hier wordt 'por' twee keer gebruikt: eerst voor beweging door een plek ('por el parque' = door het park) en dan voor tijdsduur ('por dos horas' = twee uur lang). Beide zijn typische por-functies.",
+        "rule": "Por voor beweging door een plek en voor tijdsduur",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Por: twee functies",
+          "preposition": "por",
+          "combinations": [
+            { "usage": "Beweging door plek", "example": "por el parque (door het park)", "highlight": true },
+            { "usage": "Tijdsduur", "example": "por dos horas (twee uur lang)", "highlight": true },
+            { "usage": "Reden", "example": "por la lluvia (vanwege de regen)" },
+            { "usage": "Middel", "example": "por correo (per post)" }
+          ]
+        }
+      },
+      "hints": [
+        "Liep je 'door' het park of 'naar' het park?",
+        "Was het 'gedurende' twee uur? Por geeft tijdsduur aan."
+      ]
+    },
+    {
+      "id": "por-para-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste voorzetsel in: 'Ik bel je per celular (mobiel).'",
+        "sentence": "Te llamo ___ celular.",
+        "context": "Communicatiemiddel -> por"
+      },
+      "correctAnswer": "por",
+      "distractors": ["para", "con", "en"],
+      "explanation": {
+        "nl": "'Por' wordt gebruikt om het middel of de manier aan te geven. Je belt via de mobiel, dus 'por celular'. Dit geldt ook voor: por teléfono, por correo, por internet.",
+        "rule": "Por voor communicatiemiddel",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Por: middel/manier",
+          "preposition": "por",
+          "combinations": [
+            { "usage": "Per telefoon", "example": "por teléfono" },
+            { "usage": "Per mobiel", "example": "por celular", "highlight": true },
+            { "usage": "Per e-mail", "example": "por correo electrónico" },
+            { "usage": "Per internet", "example": "por internet" }
+          ]
+        }
+      },
+      "hints": [
+        "Via welk middel bel je? Per mobiel.",
+        "Por geeft het communicatiemiddel aan."
+      ]
+    },
+    {
+      "id": "por-para-5",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'We studeren om arts te worden.'",
+        "sentence": "We studeren om arts te worden.",
+        "context": "Doel/purpose -> para + infinitief"
+      },
+      "correctAnswer": ["Estudiamos para ser médicos.", "Estudiamos para ser doctores.", "Estudiamos para ser médicos"],
+      "explanation": {
+        "nl": "'Para' wordt gebruikt om een doel of purpose aan te geven. 'Om ... te' wordt in het Spaans vertaald met 'para' + infinitief. 'Estudiar para ser médico' = studeren om arts te worden.",
+        "rule": "Para + infinitief voor doel (om ... te)",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Para + infinitief",
+          "preposition": "para",
+          "combinations": [
+            { "usage": "Doel", "example": "para ser médicos (om arts te worden)", "highlight": true },
+            { "usage": "Doel", "example": "para aprender (om te leren)" },
+            { "usage": "Doel", "example": "para trabajar (om te werken)" },
+            { "usage": "Doel", "example": "para vivir mejor (om beter te leven)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Studeren' = estudiar, 'arts' = médico/doctor.",
+        "'Om te' wordt vertaald met 'para' + infinitief."
+      ]
+    },
+    {
+      "id": "por-para-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin? 'Ik heb 500 pesos betaald voor het boek.'",
+        "sentence": "Pagué 500 pesos para el libro.",
+        "context": "Ruil/prijs -> por, niet para"
+      },
+      "correctAnswer": "para",
+      "explanation": {
+        "nl": "'Para' is hier fout en moet 'por' zijn. Bij een ruil of prijs gebruik je altijd 'por'. Je betaalt een bedrag in ruil voor iets: 'Pagué 500 pesos por el libro.' Let op het verschil: 'por' = in ruil voor, 'para' = bestemd voor.",
+        "rule": "Por voor ruil/prijs, niet para",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Por vs Para bij prijs",
+          "preposition": "por",
+          "combinations": [
+            { "usage": "Ruil/prijs", "example": "por 500 pesos (voor 500 pesos)", "highlight": true },
+            { "usage": "Fout", "example": "para 500 pesos (FOUT bij prijs)" },
+            { "usage": "Correct", "example": "Pagué por el libro (ik betaalde voor het boek)" },
+            { "usage": "Vergelijk", "example": "El libro es para ti (het boek is voor jou = ontvanger)" }
+          ]
+        }
+      },
+      "hints": [
+        "Je betaalt geld in ruil voor iets. Welk voorzetsel gebruik je bij ruil?",
+        "Por wordt gebruikt bij ruil en prijs."
+      ]
+    },
+    {
+      "id": "por-para-7",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul het juiste voorzetsel in: 'Het rapport moet klaar zijn voor (deadline) vrijdag.'",
+        "sentence": "El informe tiene que estar listo ___ el viernes.",
+        "context": "Deadline -> para"
+      },
+      "correctAnswer": "para",
+      "distractors": ["por", "en", "hasta"],
+      "explanation": {
+        "nl": "'Para' wordt gebruikt voor deadlines: het moment waarop iets klaar moet zijn. 'Para el viernes' = uiterlijk vrijdag, voor vrijdag klaar. Let op: 'por el viernes' zou 'rond vrijdag' of 'gedurende vrijdag' betekenen, wat iets heel anders is.",
+        "rule": "Para voor deadlines (uiterlijk/voor wanneer)",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Para vs Por bij tijd",
+          "preposition": "para",
+          "combinations": [
+            { "usage": "Deadline", "example": "para el viernes (voor vrijdag)", "highlight": true },
+            { "usage": "Deadline", "example": "para mañana (voor morgen)" },
+            { "usage": "Vergelijk: tijdsduur", "example": "por dos días (twee dagen lang) = POR" },
+            { "usage": "Vergelijk: tijdstip", "example": "por la mañana (in de ochtend) = POR" }
+          ]
+        }
+      },
+      "hints": [
+        "Is dit een deadline (wanneer moet het klaar zijn)?",
+        "Para wordt gebruikt bij deadlines."
+      ]
+    },
+    {
+      "id": "por-para-8",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul het juiste voorzetsel in: 'Het vliegtuig naar Lima vertrekt om 8 uur. We reizen door de nacht.'",
+        "sentence": "El avión sale a las 8. Viajamos ___ la noche ___ Lima.",
+        "context": "Eerste: tijdsduur/doorheen (por). Tweede: bestemming (para)."
+      },
+      "correctAnswer": "por",
+      "distractors": ["para", "en", "de"],
+      "explanation": {
+        "nl": "Hier zie je het contrast duidelijk: 'por la noche' = gedurende/door de nacht (tijdsduur/doorheen), terwijl 'para Lima' = naar Lima (bestemming). Dit is een van de moeilijkste por/para-contrasten: por = door(heen), para = naar(toe).",
+        "rule": "Por voor doorheen (tijd/ruimte), para voor bestemming",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Por vs Para in dezelfde zin",
+          "preposition": "por / para",
+          "combinations": [
+            { "usage": "Doorheen (tijd)", "example": "por la noche (door de nacht)", "highlight": true },
+            { "usage": "Bestemming", "example": "para Lima (naar Lima)", "highlight": true },
+            { "usage": "Doorheen (ruimte)", "example": "por la selva (door het oerwoud)" },
+            { "usage": "Bestemming", "example": "para Bogotá (naar Bogotá)" }
+          ]
+        }
+      },
+      "hints": [
+        "Reizen jullie 'doorheen' de nacht of 'voor' de nacht?",
+        "Gaan jullie 'naar' Lima of 'door' Lima?"
+      ]
+    },
+    {
+      "id": "por-para-9",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Voor een kind spreekt hij heel goed Spaans.' (vergelijking)",
+        "sentence": "Voor een kind spreekt hij heel goed Spaans.",
+        "context": "Vergelijking (voor iemand van die categorie) -> para"
+      },
+      "correctAnswer": ["Para ser niño, habla muy bien español.", "Para ser un niño, habla muy bien español.", "Para ser niño habla muy bien español."],
+      "explanation": {
+        "nl": "'Para' wordt gebruikt bij vergelijkingen: 'in verhouding tot wat je zou verwachten'. 'Para ser niño' = voor een kind (gezien het feit dat hij een kind is). Dit is een geavanceerd gebruik van 'para' dat je veel hoort in Latijns-Amerika.",
+        "rule": "Para + ser + zelfstandig naamwoord voor vergelijkingen",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Para bij vergelijkingen",
+          "preposition": "para",
+          "combinations": [
+            { "usage": "Vergelijking", "example": "para ser niño (voor een kind)", "highlight": true },
+            { "usage": "Vergelijking", "example": "para ser extranjero (voor een buitenlander)" },
+            { "usage": "Vergelijking", "example": "para su edad (voor zijn leeftijd)" },
+            { "usage": "Let op", "example": "NIET 'por ser niño' (= omdat hij een kind is)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Voor' in de zin van 'gezien het feit dat' = para.",
+        "'Spreken' = hablar, 'heel goed' = muy bien."
+      ]
+    },
+    {
+      "id": "por-para-10",
+      "type": "invullen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Kies het juiste voorzetsel. 'Hij werkt niet voor (doel) de plata, maar vanwege (oorzaak) de passie.'",
+        "sentence": "No trabaja ___ la plata, sino ___ la pasión.",
+        "context": "Eerste: doel (para). Tweede: reden/oorzaak (por). Let op het subtiele verschil!"
+      },
+      "correctAnswer": "para",
+      "distractors": ["por", "con", "en"],
+      "explanation": {
+        "nl": "Dit is het klassieke por/para-contrast. 'Para la plata' = met het doel geld te verdienen (doel/purpose). 'Por la pasión' = vanwege de passie (reden/oorzaak). Het verschil: para kijkt vooruit (wat wil je bereiken?), por kijkt achteruit (waarom doe je het?). De volledige zin: 'No trabaja para la plata, sino por la pasión.'",
+        "rule": "Para = doel (vooruit kijkend), Por = reden (achteruit kijkend)",
+        "diagramType": "preposition",
+        "diagramData": {
+          "title": "Para (doel) vs Por (reden)",
+          "preposition": "para / por",
+          "combinations": [
+            { "usage": "Doel (para)", "example": "para la plata (voor het geld = om geld te krijgen)", "highlight": true },
+            { "usage": "Reden (por)", "example": "por la pasión (vanwege de passie)", "highlight": true },
+            { "usage": "Doel (para)", "example": "para ganar (om te winnen)" },
+            { "usage": "Reden (por)", "example": "por amor (uit liefde)" }
+          ]
+        }
+      },
+      "hints": [
+        "Is geld het doel (wat hij wil bereiken) of de reden (waarom hij werkt)?",
+        "Para kijkt vooruit naar het doel, por kijkt terug naar de oorzaak."
+      ]
+    }
+  ]
+}

@@ -10,6 +10,11 @@ import desuMasuData from "@/data/japanese/topics/desu-masu.json";
 import partikelsData from "@/data/japanese/topics/partikels.json";
 import zinsvolgordeData from "@/data/japanese/topics/zinsvolgorde.json";
 
+// Spanish (Latin American) topics
+import presenteEsData from "@/data/spanish/topics/presente.json";
+import serEstarData from "@/data/spanish/topics/ser-estar.json";
+import porParaData from "@/data/spanish/topics/por-para.json";
+
 const italianTopics: Topic[] = [
   presenteData as unknown as Topic,
   articoliData as unknown as Topic,
@@ -20,6 +25,12 @@ const japaneseTopics: Topic[] = [
   desuMasuData as unknown as Topic,
   partikelsData as unknown as Topic,
   zinsvolgordeData as unknown as Topic,
+];
+
+const spanishTopics: Topic[] = [
+  presenteEsData as unknown as Topic,
+  serEstarData as unknown as Topic,
+  porParaData as unknown as Topic,
 ];
 
 export const languages: Language[] = [
@@ -34,6 +45,12 @@ export const languages: Language[] = [
     name: "Japans",
     flag: "\u{1F1EF}\u{1F1F5}",
     topics: japaneseTopics,
+  },
+  {
+    id: "spanish",
+    name: "Spaans (Latijns-Amerika)",
+    flag: "\u{1F30E}",
+    topics: spanishTopics,
   },
 ];
 

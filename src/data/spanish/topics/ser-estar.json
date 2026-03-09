@@ -1,0 +1,395 @@
+{
+  "id": "ser-estar",
+  "name": "Ser vs Estar",
+  "description": "Leer wanneer je 'ser' en wanneer je 'estar' gebruikt. Ser voor identiteit, beroep en permanente eigenschappen. Estar voor locatie, gemoedstoestand en tijdelijke toestanden.",
+  "level": "beginner",
+  "order": 2,
+  "grammarRules": [
+    {
+      "id": "ser-gebruik",
+      "title": "Wanneer gebruik je SER?",
+      "explanation": "Ser gebruik je voor dingen die permanent of wezenlijk zijn: identiteit, beroep, nationaliteit, permanente eigenschappen, tijd, herkomst en materiaal. Denk aan ser als 'wat iets IS' — de essentie van iets.",
+      "formula": "ser + identiteit / beroep / nationaliteit / permanente eigenschap / tijd / herkomst",
+      "examples": [
+        {
+          "italian": "Yo soy colombiano.",
+          "dutch": "Ik ben Colombiaan.",
+          "breakdown": [
+            { "word": "Yo", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (1e persoon enkelvoud)" },
+            { "word": "soy", "role": "verb", "color": "#f87171", "annotation": "ser, 1e persoon enkelvoud (identiteit/nationaliteit)" },
+            { "word": "colombiano", "role": "adjective", "color": "#34d399", "annotation": "nationaliteit (permanent)" }
+          ]
+        },
+        {
+          "italian": "Ella es doctora en Ciudad de México.",
+          "dutch": "Zij is arts in Mexico-Stad.",
+          "breakdown": [
+            { "word": "Ella", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (3e persoon enkelvoud)" },
+            { "word": "es", "role": "verb", "color": "#f87171", "annotation": "ser, 3e persoon enkelvoud (beroep)" },
+            { "word": "doctora", "role": "object", "color": "#34d399", "annotation": "beroep (permanent kenmerk)" },
+            { "word": "en", "role": "preposition", "color": "#fbbf24", "annotation": "voorzetsel 'in'" },
+            { "word": "Ciudad de México", "role": "object", "color": "#a78bfa", "annotation": "plaatsnaam" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estar-gebruik",
+      "title": "Wanneer gebruik je ESTAR?",
+      "explanation": "Estar gebruik je voor tijdelijke toestanden: locatie, emoties, gezondheidstoestand, tijdelijke eigenschappen en de gerundium (estar + werkwoord op -ando/-iendo). Denk aan estar als 'hoe iets zich NU bevindt' — de toestand op dit moment.",
+      "formula": "estar + locatie / emotie / gezondheid / tijdelijke toestand / gerundium (-ando/-iendo)",
+      "examples": [
+        {
+          "italian": "Estoy en Buenos Aires.",
+          "dutch": "Ik ben in Buenos Aires.",
+          "breakdown": [
+            { "word": "Estoy", "role": "verb", "color": "#f87171", "annotation": "estar, 1e persoon enkelvoud (locatie)" },
+            { "word": "en", "role": "preposition", "color": "#fbbf24", "annotation": "voorzetsel 'in'" },
+            { "word": "Buenos Aires", "role": "object", "color": "#34d399", "annotation": "locatie (waar je je bevindt)" }
+          ]
+        },
+        {
+          "italian": "Mi abuela está enferma hoy.",
+          "dutch": "Mijn oma is vandaag ziek.",
+          "breakdown": [
+            { "word": "Mi", "role": "adjective", "color": "#a78bfa", "annotation": "bezittelijk voornaamwoord 'mijn'" },
+            { "word": "abuela", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp 'oma'" },
+            { "word": "está", "role": "verb", "color": "#f87171", "annotation": "estar, 3e persoon enkelvoud (tijdelijke toestand)" },
+            { "word": "enferma", "role": "adjective", "color": "#34d399", "annotation": "ziek (tijdelijk)" },
+            { "word": "hoy", "role": "adverb", "color": "#fbbf24", "annotation": "vandaag (tijdsaanduiding)" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ser-estar-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul 'ser' of 'estar' in de juiste vorm in: 'Ik ben student.'",
+        "sentence": "Yo ___ estudiante.",
+        "context": "Beroep/identiteit → ser"
+      },
+      "correctAnswer": "soy",
+      "distractors": ["estoy", "es", "está"],
+      "explanation": {
+        "nl": "Voor beroep en identiteit gebruik je altijd 'ser'. 'Estudiante' (student) is wat je bent, niet hoe je je voelt. Yo soy = ik ben (identiteit).",
+        "rule": "Ser voor identiteit en beroep",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "ser",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "soy", "highlight": true },
+            { "person": "tú", "form": "eres" },
+            { "person": "él/ella/usted", "form": "es" },
+            { "person": "nosotros", "form": "somos" },
+            { "person": "ustedes", "form": "son" },
+            { "person": "ellos/ellas", "form": "son" }
+          ]
+        }
+      },
+      "hints": [
+        "Gaat het om identiteit of beroep? → ser",
+        "De yo-vorm van ser is 'soy'."
+      ]
+    },
+    {
+      "id": "ser-estar-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul 'ser' of 'estar' in de juiste vorm in: 'Het restaurant is op de hoek.'",
+        "sentence": "El restaurante ___ en la esquina.",
+        "context": "Locatie (waar iets zich bevindt) → estar"
+      },
+      "correctAnswer": "está",
+      "distractors": ["es", "son", "estoy"],
+      "explanation": {
+        "nl": "Voor locatie — waar iets of iemand zich bevindt — gebruik je altijd 'estar'. Het restaurant bevindt zich op een plek, dus: está.",
+        "rule": "Estar voor locatie",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "estar",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "estoy" },
+            { "person": "tú", "form": "estás" },
+            { "person": "él/ella/usted", "form": "está", "highlight": true },
+            { "person": "nosotros", "form": "estamos" },
+            { "person": "ustedes", "form": "están" },
+            { "person": "ellos/ellas", "form": "están" }
+          ]
+        }
+      },
+      "hints": [
+        "Waar bevindt het restaurant zich? Locatie → estar.",
+        "De él/ella/usted-vorm van estar is 'está'."
+      ]
+    },
+    {
+      "id": "ser-estar-3",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm in: 'Wij zijn Mexicaans.'",
+        "sentence": "Nosotros ___ mexicanos.",
+        "context": "Nationaliteit → ser"
+      },
+      "correctAnswer": "somos",
+      "distractors": ["estamos", "son", "están"],
+      "explanation": {
+        "nl": "Nationaliteit is een permanent kenmerk van je identiteit, dus gebruik je 'ser'. Nosotros somos = wij zijn (identiteit/nationaliteit).",
+        "rule": "Ser voor nationaliteit en herkomst",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "ser",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "soy" },
+            { "person": "tú", "form": "eres" },
+            { "person": "él/ella/usted", "form": "es" },
+            { "person": "nosotros", "form": "somos", "highlight": true },
+            { "person": "ustedes", "form": "son" },
+            { "person": "ellos/ellas", "form": "son" }
+          ]
+        }
+      },
+      "hints": [
+        "Nationaliteit is permanent — welk werkwoord hoort daarbij?",
+        "De nosotros-vorm van ser is 'somos'."
+      ]
+    },
+    {
+      "id": "ser-estar-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul de juiste vorm in: 'De kinderen zijn blij (op dit moment).'",
+        "sentence": "Los niños ___ contentos.",
+        "context": "Emotie/gemoedstoestand (tijdelijk) → estar"
+      },
+      "correctAnswer": "están",
+      "distractors": ["son", "estamos", "somos"],
+      "explanation": {
+        "nl": "Emoties en gemoedstoestand zijn tijdelijk — je bent niet altijd blij. Daarom gebruik je 'estar'. Los niños están contentos = de kinderen zijn (nu) blij.",
+        "rule": "Estar voor emoties en tijdelijke toestanden",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "estar",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "estoy" },
+            { "person": "tú", "form": "estás" },
+            { "person": "él/ella/usted", "form": "está" },
+            { "person": "nosotros", "form": "estamos" },
+            { "person": "ustedes", "form": "están" },
+            { "person": "ellos/ellas", "form": "están", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "Is blij zijn permanent of tijdelijk? Tijdelijke gevoelens → estar.",
+        "Los niños = ellos, dus je hebt de ellos-vorm nodig."
+      ]
+    },
+    {
+      "id": "ser-estar-5",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Mi hermano es en Bogotá esta semana.",
+        "context": "Locatie (waar iemand zich bevindt) → estar, niet ser"
+      },
+      "correctAnswer": "es",
+      "distractors": ["Mi", "Bogotá", "semana"],
+      "explanation": {
+        "nl": "'Es' (ser) is hier fout. Voor locatie — waar iemand zich bevindt — moet je 'estar' gebruiken. De juiste zin is: 'Mi hermano está en Bogotá esta semana.' Ser geeft aan wat iets IS, estar geeft aan waar iets ZICH BEVINDT.",
+        "rule": "Locatie altijd met estar, nooit met ser",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "estar",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "estoy" },
+            { "person": "tú", "form": "estás" },
+            { "person": "él/ella/usted", "form": "está", "highlight": true },
+            { "person": "nosotros", "form": "estamos" },
+            { "person": "ustedes", "form": "están" },
+            { "person": "ellos/ellas", "form": "están" }
+          ]
+        }
+      },
+      "hints": [
+        "De zin gaat over waar iemand zich bevindt. Welk werkwoord hoort bij locatie?",
+        "Ser of estar bij 'en Bogotá'? Locatie = estar."
+      ]
+    },
+    {
+      "id": "ser-estar-6",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Het eten is lekker.' (je hebt net geproefd — tijdelijk oordeel)",
+        "sentence": "Het eten is lekker.",
+        "context": "rica = lekker (tijdelijk oordeel over smaak) → estar. La comida = het eten."
+      },
+      "correctAnswer": ["La comida está rica.", "La comida está muy rica."],
+      "explanation": {
+        "nl": "Als je zegt dat eten lekker is na het proeven, is dat een tijdelijk oordeel over de toestand van het eten. Daarom gebruik je 'estar'. In Latijns-Amerika is 'estar rico/a' de standaard manier om te zeggen dat eten lekker smaakt. Met 'ser rica' zou je zeggen dat het eten van nature/altijd lekker is als eigenschap.",
+        "rule": "Estar + rico/a voor smaak (tijdelijk oordeel na proeven)",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "verb": "estar",
+          "tense": "presente",
+          "forms": [
+            { "person": "yo", "form": "estoy" },
+            { "person": "tú", "form": "estás" },
+            { "person": "él/ella/usted", "form": "está", "highlight": true },
+            { "person": "nosotros", "form": "estamos" },
+            { "person": "ustedes", "form": "están" },
+            { "person": "ellos/ellas", "form": "están" }
+          ]
+        }
+      },
+      "hints": [
+        "Je hebt net geproefd: is dit een permanent feit of een tijdelijk oordeel?",
+        "Tijdelijk oordeel over smaak → estar. La comida está..."
+      ]
+    },
+    {
+      "id": "ser-estar-7",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Kies de juiste optie: 'Carlos ___ aburrido.' (Carlos is een saai persoon — permanent eigenschap)",
+        "sentence": "Carlos ___ aburrido.",
+        "context": "ser aburrido = saai (als persoon, permanent) vs estar aburrido = verveeld (tijdelijk gevoel)"
+      },
+      "correctAnswer": "es",
+      "distractors": ["está", "estoy", "soy"],
+      "explanation": {
+        "nl": "Dit is een klassiek ser/estar-contrast! 'Ser aburrido' = een saai persoon zijn (permanente eigenschap). 'Estar aburrido' = zich verveeld voelen (tijdelijke toestand). Carlos es aburrido = Carlos is saai. Carlos está aburrido = Carlos verveelt zich.",
+        "rule": "Ser aburrido = saai (eigenschap) vs Estar aburrido = verveeld (gevoel)",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "verb": "ser vs estar",
+          "tense": "presente",
+          "forms": [
+            { "person": "ser aburrido", "form": "saai persoon (permanent)", "highlight": true },
+            { "person": "estar aburrido", "form": "verveeld (tijdelijk)" },
+            { "person": "ser listo", "form": "slim (permanent)" },
+            { "person": "estar listo", "form": "klaar/gereed (tijdelijk)" },
+            { "person": "ser rico", "form": "rijk (permanent)" },
+            { "person": "estar rico", "form": "lekker smaken (tijdelijk)" }
+          ]
+        }
+      },
+      "hints": [
+        "Is Carlos een saai persoon (eigenschap) of voelt hij zich verveeld (gevoel)?",
+        "Permanente eigenschap van een persoon → ser."
+      ]
+    },
+    {
+      "id": "ser-estar-8",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Kies de juiste optie: '¿Ustedes ___ listos para el examen?' (Zijn jullie klaar voor het examen?)",
+        "sentence": "¿Ustedes ___ listos para el examen?",
+        "context": "estar listo = klaar/gereed (tijdelijke toestand) vs ser listo = slim (permanente eigenschap)"
+      },
+      "correctAnswer": "están",
+      "distractors": ["son", "estamos", "somos"],
+      "explanation": {
+        "nl": "Nog een klassiek contrast! 'Estar listo' = klaar/gereed zijn (tijdelijke toestand). 'Ser listo' = slim/intelligent zijn (permanente eigenschap). Hier wordt gevraagd of ze klaar zijn voor het examen — een tijdelijke toestand — dus: están.",
+        "rule": "Estar listo = klaar/gereed (tijdelijk) vs Ser listo = slim (permanent)",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "verb": "ser vs estar",
+          "tense": "presente",
+          "forms": [
+            { "person": "ser listo", "form": "slim (permanent)" },
+            { "person": "estar listo", "form": "klaar/gereed (tijdelijk)", "highlight": true },
+            { "person": "ser aburrido", "form": "saai persoon (permanent)" },
+            { "person": "estar aburrido", "form": "verveeld (tijdelijk)" },
+            { "person": "ser bueno", "form": "goed persoon (permanent)" },
+            { "person": "estar bueno", "form": "lekker/aantrekkelijk (tijdelijk)" }
+          ]
+        }
+      },
+      "hints": [
+        "Gaat het over slim zijn of klaar zijn voor iets?",
+        "Klaar/gereed = tijdelijke toestand → estar. Ustedes → están."
+      ]
+    },
+    {
+      "id": "ser-estar-9",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Het is drie uur en ik ben moe.'",
+        "sentence": "Het is drie uur en ik ben moe.",
+        "context": "Tijd → ser (son las tres). Moe zijn → estar (estoy cansado/a), want het is tijdelijk."
+      },
+      "correctAnswer": ["Son las tres y estoy cansado.", "Son las tres y estoy cansada.", "Son las tres y yo estoy cansado.", "Son las tres y yo estoy cansada."],
+      "explanation": {
+        "nl": "Deze zin combineert beide werkwoorden! Voor tijdsaanduiding gebruik je altijd 'ser': son las tres (het is drie uur). Voor een tijdelijke toestand zoals moe zijn gebruik je 'estar': estoy cansado/a. Let op: 'son' (meervoud) omdat 'las tres' meervoud is.",
+        "rule": "Ser voor tijd (son las tres) + estar voor tijdelijke toestand (estoy cansado)",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "verb": "ser + estar",
+          "tense": "presente",
+          "forms": [
+            { "person": "ser + tijd", "form": "Son las tres", "highlight": true },
+            { "person": "ser + tijd", "form": "Es la una (enkelvoud)" },
+            { "person": "estar + moe", "form": "Estoy cansado/a", "highlight": true },
+            { "person": "estar + ziek", "form": "Estoy enfermo/a" },
+            { "person": "estar + blij", "form": "Estoy contento/a" },
+            { "person": "estar + verdrietig", "form": "Estoy triste" }
+          ]
+        }
+      },
+      "hints": [
+        "Tijd uitdrukken → ser. Welke vorm? Het is DRIE uur (meervoud).",
+        "Moe zijn is tijdelijk → estar. Yo estoy..."
+      ]
+    },
+    {
+      "id": "ser-estar-10",
+      "type": "foutherkenning",
+      "difficulty": 4,
+      "question": {
+        "nl": "Welk woord is fout in deze zin? 'De conferentie is in Lima' (locatie van een evenement).",
+        "sentence": "La conferencia está en Lima.",
+        "context": "Locatie van evenementen → ser (uitzondering op de locatieregel!). Estar voor fysieke locatie van personen/objecten."
+      },
+      "correctAnswer": "está",
+      "distractors": ["La", "conferencia", "Lima"],
+      "explanation": {
+        "nl": "Dit is een veelgemaakte fout! Normaal gebruik je 'estar' voor locatie, maar voor evenementen (conferenties, feesten, concerten) gebruik je 'ser'. De conferentie IS in Lima — het gaat om waar het evenement plaatsvindt, niet waar een object zich bevindt. De juiste zin: 'La conferencia es en Lima.'",
+        "rule": "Uitzondering: locatie van evenementen → ser (La fiesta es en mi casa)",
+        "diagramType": "wordOrderComparison",
+        "diagramData": {
+          "verb": "ser vs estar + locatie",
+          "tense": "presente",
+          "forms": [
+            { "person": "evenement + locatie", "form": "La fiesta es en mi casa", "highlight": true },
+            { "person": "evenement + locatie", "form": "La conferencia es en Lima", "highlight": true },
+            { "person": "persoon + locatie", "form": "Yo estoy en Lima" },
+            { "person": "object + locatie", "form": "El libro está en la mesa" },
+            { "person": "gebouw + locatie", "form": "El banco está en la esquina" },
+            { "person": "evenement + locatie", "form": "El concierto es en el estadio", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "Een conferentie is een evenement. Welk werkwoord gebruik je voor de locatie van evenementen?",
+        "Uitzondering: evenementen gebruiken 'ser' voor locatie, niet 'estar'."
+      ]
+    }
+  ]
+}
