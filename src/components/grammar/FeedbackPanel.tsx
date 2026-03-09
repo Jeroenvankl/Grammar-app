@@ -75,7 +75,32 @@ Leg kort uit (max 3 zinnen) waarom het antwoord fout is en wat de regel is.`,
           >
             {isCorrect ? "Goed gedaan!" : "Niet helemaal"}
           </h3>
-          <p className="text-sm text-stone-600 mt-1">
+
+          {/* Show correct answer when wrong */}
+          {!isCorrect && (
+            <div className="mt-2 bg-white/70 rounded-xl p-3 border border-rose-200">
+              <div className="flex items-start gap-2 mb-1.5">
+                <span className="text-xs font-semibold text-rose-500 uppercase tracking-wide">Jouw antwoord</span>
+              </div>
+              <p className="text-sm text-rose-600 line-through mb-2.5">{userAnswer || <span className="italic text-rose-400">— leeg —</span>}</p>
+
+              <div className="flex items-start gap-2 mb-1.5">
+                <span className="text-xs font-semibold text-emerald-600 uppercase tracking-wide">Correct antwoord</span>
+              </div>
+              <p className="text-base font-semibold text-emerald-700">
+                {Array.isArray(exercise.correctAnswer)
+                  ? exercise.correctAnswer[0]
+                  : exercise.correctAnswer}
+              </p>
+              {Array.isArray(exercise.correctAnswer) && exercise.correctAnswer.length > 1 && (
+                <p className="text-xs text-stone-500 mt-1">
+                  Ook goed: {exercise.correctAnswer.slice(1).join(", ")}
+                </p>
+              )}
+            </div>
+          )}
+
+          <p className="text-sm text-stone-600 mt-2">
             {exercise.explanation.nl}
           </p>
         </div>
