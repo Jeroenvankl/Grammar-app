@@ -11,6 +11,7 @@ import {
   Settings,
   BarChart3,
   Plane,
+  Layers,
   Menu,
   X,
 } from "lucide-react";
@@ -21,6 +22,7 @@ import { useProgress } from "@/hooks/useProgress";
 const navItems = [
   { href: "/", label: "Dashboard", icon: Home },
   { href: "/reiszinnen", label: "Reiszinnen", icon: Plane },
+  { href: "/flashcards", label: "Flashcards", icon: Layers },
   { href: "/voortgang", label: "Voortgang", icon: BarChart3 },
   { href: "/ai-tutor", label: "AI Tutor", icon: Bot },
   { href: "/instellingen", label: "Instellingen", icon: Settings },
@@ -146,9 +148,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </aside>
 
-      {/* Mobile bottom nav */}
+      {/* Mobile bottom nav — show first 5 most important items */}
       <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-stone-200 flex safe-bottom">
-        {navItems.slice(0, 5).map((item) => {
+        {navItems.filter((_, i) => i !== 5).slice(0, 5).map((item) => {
           const Icon = item.icon;
           const active = isActive(item.href);
           return (
@@ -159,7 +161,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 active ? "text-indigo-600" : "text-stone-400"
               }`}
             >
-              <Icon className="w-5 h-5" />
+              <Icon className="w-4 h-4" />
               {item.label}
             </Link>
           );

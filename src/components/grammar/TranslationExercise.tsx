@@ -7,6 +7,7 @@ import { Exercise } from "@/types/grammar";
 interface TranslationExerciseProps {
   exercise: Exercise;
   onAnswer: (answer: string, isCorrect: boolean) => void;
+  languageId?: string;
 }
 
 function fuzzyMatch(input: string, correct: string): boolean {
@@ -34,7 +35,22 @@ function fuzzyMatch(input: string, correct: string): boolean {
   return dist + (a.length - i) + (b.length - j) <= maxDist;
 }
 
-export default function TranslationExercise({ exercise, onAnswer }: TranslationExerciseProps) {
+/**
+ * For Japanese answers like "バスで学校に行きます (basu de gakkou ni ikimasu)",
+ * also accept just the Japanese or just the romaji part.
+ */
+function getTranslationVariants(correctAnswer: string, languageId?: string): string[] {
+  const variants = [correctAnswer];
+  if (languageId !== "japanese") return variants;
+  const match = correctAnswer.match(/^(.+?)\s*[\(（](.+?)[\)）]$/);
+  if (match) {
+    variants.push(match[1].trim());
+    variants.push(match[2].trim());
+  }
+  return variants;
+}
+
+export default function TranslationExercise({ exercise, onAnswer, languageId }: TranslationExerciseProps) {
   const [answer, setAnswer] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -42,7 +58,10 @@ export default function TranslationExercise({ exercise, onAnswer }: TranslationE
     ? exercise.correctAnswer
     : [exercise.correctAnswer];
 
-  const isCorrect = correctAnswers.some((correct) => fuzzyMatch(answer, correct));
+  const isCorrect = correctAnswers.some((correct) => {
+    const variants = getTranslationVariants(correct, languageId);
+    return variants.some((v) => fuzzyMatch(answer, v));
+  });
 
   const handleSubmit = () => {
     if (!answer.trim() || submitted) return;

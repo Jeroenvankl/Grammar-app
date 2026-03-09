@@ -95,15 +95,15 @@ export default function ExercisePage() {
     const key = `exercise-${currentIndex}`;
     switch (current.type) {
       case "invullen":
-        return <FillInExercise key={key} exercise={current} onAnswer={handleAnswer} />;
+        return <FillInExercise key={key} exercise={current} onAnswer={handleAnswer} languageId={languageId} />;
       case "vertalen":
-        return <TranslationExercise key={key} exercise={current} onAnswer={handleAnswer} />;
+        return <TranslationExercise key={key} exercise={current} onAnswer={handleAnswer} languageId={languageId} />;
       case "foutherkenning":
         return <ErrorDetectionExercise key={key} exercise={current} onAnswer={handleAnswer} />;
       case "zinsvolgorde":
         return <WordOrderExercise key={key} exercise={current} onAnswer={handleAnswer} />;
       default:
-        return <FillInExercise key={key} exercise={current} onAnswer={handleAnswer} />;
+        return <FillInExercise key={key} exercise={current} onAnswer={handleAnswer} languageId={languageId} />;
     }
   };
 
