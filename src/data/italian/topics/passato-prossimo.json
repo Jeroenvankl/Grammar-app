@@ -1,0 +1,451 @@
+{
+  "id": "passato-prossimo",
+  "name": "Passato Prossimo",
+  "description": "Leer de Italiaanse verleden tijd: wanneer gebruik je 'avere' of 'essere' als hulpwerkwoord, en hoe vervoeg je het voltooid deelwoord.",
+  "level": "gemiddeld",
+  "order": 4,
+  "grammarRules": [
+    {
+      "id": "passato-avere",
+      "title": "Passato prossimo met avere",
+      "explanation": "De meeste werkwoorden gebruiken 'avere' als hulpwerkwoord in de passato prossimo. Het voltooid deelwoord verandert niet, ongeacht het onderwerp. De uitgangen zijn: -are wordt -ato, -ere wordt -uto, -ire wordt -ito.",
+      "formula": "onderwerp + avere (vervoegd) + voltooid deelwoord",
+      "examples": [
+        {
+          "italian": "Ho mangiato la pizza.",
+          "dutch": "Ik heb pizza gegeten.",
+          "breakdown": [
+            { "word": "Ho", "role": "verb", "color": "#f87171", "annotation": "avere, 1e persoon enkelvoud" },
+            { "word": "mangiato", "role": "verb", "color": "#f87171", "annotation": "voltooid deelwoord (-ato)" },
+            { "word": "la", "role": "article", "color": "#a78bfa" },
+            { "word": "pizza", "role": "object", "color": "#34d399" }
+          ]
+        },
+        {
+          "italian": "Abbiamo letto un libro interessante.",
+          "dutch": "We hebben een interessant boek gelezen.",
+          "breakdown": [
+            { "word": "Abbiamo", "role": "verb", "color": "#f87171", "annotation": "avere, 1e persoon meervoud" },
+            { "word": "letto", "role": "verb", "color": "#f87171", "annotation": "voltooid deelwoord (onregelmatig: leggere → letto)" },
+            { "word": "un", "role": "article", "color": "#a78bfa" },
+            { "word": "libro", "role": "object", "color": "#34d399" },
+            { "word": "interessante", "role": "adjective", "color": "#fbbf24" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passato-essere",
+      "title": "Passato prossimo met essere",
+      "explanation": "Werkwoorden van beweging (andare, venire, partire, arrivare, tornare), toestandsverandering (nascere, morire, diventare) en wederkerende werkwoorden gebruiken 'essere' als hulpwerkwoord. Het voltooid deelwoord moet overeenkomen in geslacht en getal met het onderwerp: -o (mannelijk enkelvoud), -a (vrouwelijk enkelvoud), -i (mannelijk meervoud), -e (vrouwelijk meervoud).",
+      "formula": "onderwerp + essere (vervoegd) + voltooid deelwoord (met overeenkomst)",
+      "examples": [
+        {
+          "italian": "Maria è andata al cinema.",
+          "dutch": "Maria is naar de bioscoop gegaan.",
+          "breakdown": [
+            { "word": "Maria", "role": "subject", "color": "#60a5fa" },
+            { "word": "è", "role": "verb", "color": "#f87171", "annotation": "essere, 3e persoon enkelvoud" },
+            { "word": "andata", "role": "verb", "color": "#f87171", "annotation": "voltooid deelwoord, vrouwelijk (-ata)" },
+            { "word": "al", "role": "preposition", "color": "#fb923c", "annotation": "a + il" },
+            { "word": "cinema", "role": "object", "color": "#34d399" }
+          ]
+        },
+        {
+          "italian": "I ragazzi sono partiti ieri.",
+          "dutch": "De jongens zijn gisteren vertrokken.",
+          "breakdown": [
+            { "word": "I", "role": "article", "color": "#a78bfa" },
+            { "word": "ragazzi", "role": "subject", "color": "#60a5fa" },
+            { "word": "sono", "role": "verb", "color": "#f87171", "annotation": "essere, 3e persoon meervoud" },
+            { "word": "partiti", "role": "verb", "color": "#f87171", "annotation": "voltooid deelwoord, mannelijk meervoud (-iti)" },
+            { "word": "ieri", "role": "adverb", "color": "#c084fc" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "pp-ex-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van de passato prossimo in.",
+        "sentence": "Ieri io ___ (mangiare) una pasta deliziosa."
+      },
+      "correctAnswer": "ho mangiato",
+      "hint": "Het werkwoord 'mangiare' gebruikt 'avere' als hulpwerkwoord. De uitgang -are wordt -ato.",
+      "explanation": "'Mangiare' is een regelmatig werkwoord met avere. Io + ho + mangiato.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "mangiare",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "ho mangiato", "highlight": true },
+          { "person": "tu", "form": "hai mangiato" },
+          { "person": "lui/lei", "form": "ha mangiato" },
+          { "person": "noi", "form": "abbiamo mangiato" },
+          { "person": "voi", "form": "avete mangiato" },
+          { "person": "loro", "form": "hanno mangiato" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van de passato prossimo in.",
+        "sentence": "Tu ___ (bere) troppo caffè stamattina."
+      },
+      "correctAnswer": "hai bevuto",
+      "hint": "'Bere' is een werkwoord met avere. Het voltooid deelwoord is onregelmatig: bevuto.",
+      "explanation": "'Bere' gebruikt avere en heeft een onregelmatig voltooid deelwoord: bevuto. Tu + hai + bevuto.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "bere",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "ho bevuto" },
+          { "person": "tu", "form": "hai bevuto", "highlight": true },
+          { "person": "lui/lei", "form": "ha bevuto" },
+          { "person": "noi", "form": "abbiamo bevuto" },
+          { "person": "voi", "form": "avete bevuto" },
+          { "person": "loro", "form": "hanno bevuto" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-3",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van de passato prossimo in.",
+        "sentence": "Marco ___ (parlare) con il professore."
+      },
+      "correctAnswer": "ha parlato",
+      "hint": "'Parlare' is een regelmatig werkwoord met avere. Marco = lui (3e persoon enkelvoud).",
+      "explanation": "'Parlare' is een regelmatig -are werkwoord met avere. Lui + ha + parlato.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "parlare",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "ho parlato" },
+          { "person": "tu", "form": "hai parlato" },
+          { "person": "lui/lei", "form": "ha parlato", "highlight": true },
+          { "person": "noi", "form": "abbiamo parlato" },
+          { "person": "voi", "form": "avete parlato" },
+          { "person": "loro", "form": "hanno parlato" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-4",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van de passato prossimo in. Let op: dit werkwoord gebruikt 'essere'.",
+        "sentence": "Io (m.) ___ (andare) al supermercato."
+      },
+      "correctAnswer": "sono andato",
+      "hint": "'Andare' is een bewegingswerkwoord en gebruikt 'essere'. Het deelwoord moet overeenkomen met het onderwerp (mannelijk).",
+      "explanation": "'Andare' gebruikt essere als hulpwerkwoord. Bij mannelijk enkelvoud: sono andato.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "andare",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "sono andato", "highlight": true },
+          { "person": "tu", "form": "sei andato" },
+          { "person": "lui", "form": "è andato" },
+          { "person": "lei", "form": "è andata" },
+          { "person": "noi", "form": "siamo andati" },
+          { "person": "loro", "form": "sono andati" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-5",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul de juiste vorm van de passato prossimo in. Let op het geslacht van het onderwerp.",
+        "sentence": "La ragazza ___ (partire) per Roma."
+      },
+      "correctAnswer": "è partita",
+      "hint": "'Partire' is een bewegingswerkwoord (essere). 'La ragazza' is vrouwelijk enkelvoud, dus het deelwoord eindigt op -a.",
+      "explanation": "'Partire' gebruikt essere. Het onderwerp is vrouwelijk enkelvoud, dus het deelwoord wordt 'partita': è partita.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "partire",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "sono partito" },
+          { "person": "tu", "form": "sei partito" },
+          { "person": "lui", "form": "è partito" },
+          { "person": "lei", "form": "è partita", "highlight": true },
+          { "person": "noi", "form": "siamo partiti" },
+          { "person": "loro", "form": "sono partiti" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Marco ha andato al cinema ieri sera."
+      },
+      "correctAnswer": "ha",
+      "hint": "'Andare' is een bewegingswerkwoord. Welk hulpwerkwoord hoort erbij?",
+      "explanation": "'Andare' is een bewegingswerkwoord en gebruikt 'essere', niet 'avere'. De correcte zin is: 'Marco è andato al cinema ieri sera.'",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "andare",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "sono andato", "highlight": true },
+          { "person": "tu", "form": "sei andato" },
+          { "person": "lui", "form": "è andato" },
+          { "person": "lei", "form": "è andata" },
+          { "person": "noi", "form": "siamo andati" },
+          { "person": "loro", "form": "sono andati" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-7",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "I turisti hanno arrivato in ritardo."
+      },
+      "correctAnswer": "hanno",
+      "hint": "'Arrivare' is een bewegingswerkwoord. Moet je 'avere' of 'essere' gebruiken?",
+      "explanation": "'Arrivare' is een bewegingswerkwoord en gebruikt 'essere'. De correcte zin is: 'I turisti sono arrivati in ritardo.' Let ook op het meervoud: arrivati.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "arrivare",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "sono arrivato" },
+          { "person": "tu", "form": "sei arrivato" },
+          { "person": "lui", "form": "è arrivato" },
+          { "person": "lei", "form": "è arrivata" },
+          { "person": "noi", "form": "siamo arrivati" },
+          { "person": "loro", "form": "sono arrivati", "highlight": true }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-8",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Wij hebben een film gezien.'"
+      },
+      "correctAnswer": [
+        "Abbiamo visto un film.",
+        "Noi abbiamo visto un film."
+      ],
+      "hint": "'Zien' is 'vedere' in het Italiaans. Het voltooid deelwoord is onregelmatig: visto. 'Vedere' gebruikt 'avere'.",
+      "explanation": "'Vedere' gebruikt avere en heeft het onregelmatige deelwoord 'visto'. Noi + abbiamo + visto.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "vedere",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "ho visto" },
+          { "person": "tu", "form": "hai visto" },
+          { "person": "lui/lei", "form": "ha visto" },
+          { "person": "noi", "form": "abbiamo visto", "highlight": true },
+          { "person": "voi", "form": "avete visto" },
+          { "person": "loro", "form": "hanno visto" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-9",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Zij (vrouwelijk, enkelvoud) is naar huis teruggekeerd.'"
+      },
+      "correctAnswer": [
+        "Lei è tornata a casa.",
+        "È tornata a casa."
+      ],
+      "hint": "'Terugkeren' is 'tornare' in het Italiaans. Het is een bewegingswerkwoord (essere). Let op de vrouwelijke uitgang van het deelwoord.",
+      "explanation": "'Tornare' gebruikt essere. Bij een vrouwelijk onderwerp wordt het deelwoord 'tornata': è tornata a casa.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "tornare",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "sono tornato" },
+          { "person": "tu", "form": "sei tornato" },
+          { "person": "lui", "form": "è tornato" },
+          { "person": "lei", "form": "è tornata", "highlight": true },
+          { "person": "noi", "form": "siamo tornati" },
+          { "person": "loro", "form": "sono tornati" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-10",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste vorm in. Let op de overeenkomst met het onderwerp.",
+        "sentence": "Le ragazze ___ (venire) alla festa."
+      },
+      "correctAnswer": "sono venute",
+      "hint": "'Venire' is een bewegingswerkwoord (essere). 'Le ragazze' is vrouwelijk meervoud. Het onregelmatige deelwoord van 'venire' is 'venuto'.",
+      "explanation": "'Venire' gebruikt essere en heeft het onregelmatige deelwoord 'venuto'. Bij vrouwelijk meervoud wordt dit 'venute': sono venute.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "venire",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "sono venuto" },
+          { "person": "tu", "form": "sei venuto" },
+          { "person": "lui", "form": "è venuto" },
+          { "person": "lei", "form": "è venuta" },
+          { "person": "noi", "form": "siamo venuti" },
+          { "person": "loro (f.)", "form": "sono venute", "highlight": true }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-11",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste vorm in. Let op de overeenkomst met het onderwerp.",
+        "sentence": "Noi (f.) ___ (nascere) nel 1995."
+      },
+      "correctAnswer": "siamo nate",
+      "hint": "'Nascere' is een toestandswerkwoord (essere). 'Noi' is hier vrouwelijk meervoud. Het deelwoord van 'nascere' is 'nato'.",
+      "explanation": "'Nascere' gebruikt essere. Bij vrouwelijk meervoud wordt het deelwoord 'nate': siamo nate.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "nascere",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "sono nato" },
+          { "person": "tu", "form": "sei nato" },
+          { "person": "lui", "form": "è nato" },
+          { "person": "lei", "form": "è nata" },
+          { "person": "noi (f.)", "form": "siamo nate", "highlight": true },
+          { "person": "loro", "form": "sono nati" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-12",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin? Let op de overeenkomst van het voltooid deelwoord.",
+        "sentence": "Le studentesse sono partito per Firenze."
+      },
+      "correctAnswer": "partito",
+      "hint": "'Le studentesse' is vrouwelijk meervoud. Komt het voltooid deelwoord overeen?",
+      "explanation": "Bij essere moet het deelwoord overeenkomen met het onderwerp. 'Le studentesse' is vrouwelijk meervoud, dus het deelwoord moet 'partite' zijn, niet 'partito'. Correct: 'Le studentesse sono partite per Firenze.'",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "partire",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io (m.)", "form": "sono partito" },
+          { "person": "io (f.)", "form": "sono partita" },
+          { "person": "lui", "form": "è partito" },
+          { "person": "lei", "form": "è partita" },
+          { "person": "loro (m.)", "form": "sono partiti" },
+          { "person": "loro (f.)", "form": "sono partite", "highlight": true }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-13",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin? Let op de overeenkomst van het voltooid deelwoord.",
+        "sentence": "La nonna è diventato molto stanca."
+      },
+      "correctAnswer": "diventato",
+      "hint": "'La nonna' is vrouwelijk enkelvoud. Komt het voltooid deelwoord overeen met het geslacht?",
+      "explanation": "'Diventare' gebruikt essere. 'La nonna' is vrouwelijk enkelvoud, dus het deelwoord moet 'diventata' zijn, niet 'diventato'. Correct: 'La nonna è diventata molto stanca.'",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "diventare",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io (m.)", "form": "sono diventato" },
+          { "person": "io (f.)", "form": "sono diventata", "highlight": true },
+          { "person": "lui", "form": "è diventato" },
+          { "person": "lei", "form": "è diventata" },
+          { "person": "loro (m.)", "form": "sono diventati" },
+          { "person": "loro (f.)", "form": "sono diventate" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-14",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Gisteren heb ik een brief geschreven en daarna ben ik naar het station gegaan.'"
+      },
+      "correctAnswer": [
+        "Ieri ho scritto una lettera e dopo sono andato alla stazione.",
+        "Ieri ho scritto una lettera e poi sono andato alla stazione."
+      ],
+      "hint": "'Schrijven' = scrivere (onregelmatig deelwoord: scritto, met avere). 'Gaan' = andare (met essere). 'Station' = stazione (vrouwelijk). Let op het verschil tussen avere en essere in dezelfde zin.",
+      "explanation": "Deze zin combineert beide hulpwerkwoorden: 'scrivere' gebruikt avere (ho scritto), terwijl 'andare' essere gebruikt (sono andato). De onregelmatige deelwoorden zijn: scritto en andato.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "scrivere / andare",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "scrivere (io)", "form": "ho scritto", "highlight": true },
+          { "person": "scrivere (tu)", "form": "hai scritto" },
+          { "person": "scrivere (lui/lei)", "form": "ha scritto" },
+          { "person": "andare (io)", "form": "sono andato", "highlight": true },
+          { "person": "andare (tu)", "form": "sei andato" },
+          { "person": "andare (lui/lei)", "form": "è andato" }
+        ]
+      }
+    },
+    {
+      "id": "pp-ex-15",
+      "type": "zinsvolgorde",
+      "difficulty": 4,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde om een correcte zin in de passato prossimo te maken.",
+        "sentence": "ieri / sono / alla / tornati / festa / dalla / i ragazzi"
+      },
+      "correctAnswer": "I ragazzi sono tornati dalla festa ieri.",
+      "hint": "Begin met het onderwerp (i ragazzi), dan het hulpwerkwoord (sono), het deelwoord (tornati), en vervolgens de rest van de zin.",
+      "explanation": "De juiste volgorde is: onderwerp (I ragazzi) + hulpwerkwoord (sono) + deelwoord (tornati) + voorzetselgroep (dalla festa) + tijdsbepaling (ieri). 'Tornare' gebruikt essere en het deelwoord 'tornati' komt overeen met het mannelijk meervoud onderwerp.",
+      "diagramType": "conjugation",
+      "diagramData": {
+        "verb": "tornare",
+        "tense": "passato prossimo",
+        "forms": [
+          { "person": "io", "form": "sono tornato" },
+          { "person": "tu", "form": "sei tornato" },
+          { "person": "lui", "form": "è tornato" },
+          { "person": "lei", "form": "è tornata" },
+          { "person": "noi", "form": "siamo tornati" },
+          { "person": "loro", "form": "sono tornati", "highlight": true }
+        ]
+      }
+    }
+  ]
+}

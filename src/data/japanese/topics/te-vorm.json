@@ -1,0 +1,480 @@
+{
+  "id": "te-vorm",
+  "name": "て-vorm (Te-form)",
+  "description": "Leer de て-vorm: de meest veelzijdige werkwoordsvorm in het Japans. Gebruik het voor verzoeken (〜てください), lopende acties (〜ている), en het verbinden van zinnen.",
+  "level": "gemiddeld",
+  "order": 4,
+  "exercises": [
+    {
+      "id": "te-vorm-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Zet het werkwoord 食べる (taberu - eten) om naar de て-vorm.",
+        "sentence": "野菜 (yasai) を ___ ください。",
+        "context": "Je vraagt iemand beleefd om groenten te eten."
+      },
+      "correctAnswer": "食べて (tabete)",
+      "distractors": ["食べる (taberu)", "食べた (tabeta)", "食べます (tabemasu)"],
+      "explanation": {
+        "nl": "食べる is een ichidan-werkwoord (groep 2). Verwijder る en voeg て toe: 食べる → 食べて.",
+        "rule": "Ichidan: stam + て",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "食べ", "role": "stam", "color": "#4A90D9" },
+            { "text": "て", "role": "te-vorm uitgang", "particle": "て", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "食べる is een ichidan (ru-)werkwoord.",
+        "Verwijder る en voeg て toe."
+      ]
+    },
+    {
+      "id": "te-vorm-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Zet het werkwoord 見る (miru - kijken) om naar de て-vorm.",
+        "sentence": "この 映画 (eiga) を ___ ください。",
+        "context": "Je raadt iemand aan om deze film te bekijken."
+      },
+      "correctAnswer": "見て (mite)",
+      "distractors": ["見る (miru)", "見た (mita)", "見ます (mimasu)"],
+      "explanation": {
+        "nl": "見る is een ichidan-werkwoord (groep 2). Verwijder る en voeg て toe: 見る → 見て.",
+        "rule": "Ichidan: stam + て",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "見", "role": "stam", "color": "#4A90D9" },
+            { "text": "て", "role": "te-vorm uitgang", "particle": "て", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "見る is een ichidan (ru-)werkwoord.",
+        "De regel is hetzelfde als bij 食べる: verwijder る, voeg て toe."
+      ]
+    },
+    {
+      "id": "te-vorm-3",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Zet het werkwoord 開ける (akeru - openen) om naar de て-vorm.",
+        "sentence": "窓 (mado) を ___ ください。",
+        "context": "Je vraagt iemand om het raam open te doen."
+      },
+      "correctAnswer": "開けて (akete)",
+      "distractors": ["開ける (akeru)", "開けた (aketa)", "開けます (akemasu)"],
+      "explanation": {
+        "nl": "開ける is een ichidan-werkwoord (groep 2). Verwijder る en voeg て toe: 開ける → 開けて.",
+        "rule": "Ichidan: stam + て",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "開け", "role": "stam", "color": "#4A90D9" },
+            { "text": "て", "role": "te-vorm uitgang", "particle": "て", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "開ける eindigt op -ける, dus het is een ichidan-werkwoord.",
+        "Verwijder る en voeg て toe."
+      ]
+    },
+    {
+      "id": "te-vorm-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet het werkwoord 書く (kaku - schrijven) om naar de て-vorm.",
+        "sentence": "名前 (namae) を ___ ください。",
+        "context": "Een medewerker vraagt je om je naam op te schrijven."
+      },
+      "correctAnswer": "書いて (kaite)",
+      "distractors": ["書くて (kakute)", "書して (kashite)", "書って (katte)"],
+      "explanation": {
+        "nl": "書く is een godan-werkwoord (groep 1) dat eindigt op く. De regel is: く → いて. Dus 書く → 書いて.",
+        "rule": "Godan く → いて",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "書", "role": "stam", "color": "#4A90D9" },
+            { "text": "いて", "role": "te-vorm uitgang (く→いて)", "particle": "て", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "書く eindigt op く. Wat is de て-vorm regel voor く-werkwoorden?",
+        "く verandert naar いて."
+      ]
+    },
+    {
+      "id": "te-vorm-5",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet het werkwoord 飲む (nomu - drinken) om naar de て-vorm.",
+        "sentence": "お茶 (ocha) を ___ ください。",
+        "context": "Je biedt iemand thee aan."
+      },
+      "correctAnswer": "飲んで (nonde)",
+      "distractors": ["飲むて (nomute)", "飲みて (nomite)", "飲って (notte)"],
+      "explanation": {
+        "nl": "飲む is een godan-werkwoord (groep 1) dat eindigt op む. De regel is: む → んで. Dus 飲む → 飲んで. Let op: het wordt んで, niet んて!",
+        "rule": "Godan む → んで",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "飲", "role": "stam", "color": "#4A90D9" },
+            { "text": "んで", "role": "te-vorm uitgang (む→んで)", "particle": "て", "color": "#E74C3C" }
+          ]
+        }
+      },
+      "hints": [
+        "飲む eindigt op む. Werkwoorden op む/ぶ/ぬ krijgen んで.",
+        "む verandert naar んで (niet んて)."
+      ]
+    },
+    {
+      "id": "te-vorm-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord bevat een fout in de て-vorm?",
+        "sentence": "漢字 (kanji) を 書くて (kakute) ください。",
+        "context": "Iemand probeert te zeggen: 'Schrijf alstublieft kanji.'"
+      },
+      "correctAnswer": "書くて (kakute)",
+      "distractors": ["漢字 (kanji)", "を (wo)", "ください (kudasai)"],
+      "explanation": {
+        "nl": "書くて is fout. Bij godan-werkwoorden op く verandert く naar いて, niet くて. De correcte て-vorm is 書いて (kaite).",
+        "rule": "Godan く → いて (niet くて)",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "書", "role": "stam", "color": "#4A90D9" },
+            { "text": "くて", "role": "FOUT", "color": "#FF0000" },
+            { "text": "→ いて", "role": "correct", "particle": "て", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "Kijk naar het werkwoord. Is de て-vorm correct gevormd?",
+        "書く eindigt op く. De て-vorm van く-werkwoorden is いて."
+      ]
+    },
+    {
+      "id": "te-vorm-7",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord bevat een fout in de て-vorm?",
+        "sentence": "ちょっと 待つて (matsute) ください。",
+        "context": "Iemand probeert te zeggen: 'Wacht even alstublieft.'"
+      },
+      "correctAnswer": "待つて (matsute)",
+      "distractors": ["ちょっと (chotto)", "ください (kudasai)"],
+      "explanation": {
+        "nl": "待つて is fout. Bij godan-werkwoorden op つ verandert つ naar って, niet つて. De correcte て-vorm is 待って (matte).",
+        "rule": "Godan つ → って (niet つて)",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "待", "role": "stam", "color": "#4A90D9" },
+            { "text": "つて", "role": "FOUT", "color": "#FF0000" },
+            { "text": "→ って", "role": "correct", "particle": "て", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "Kijk naar het werkwoord 待つ. Is de て-vorm correct?",
+        "待つ eindigt op つ. De て-vorm van つ-werkwoorden is って."
+      ]
+    },
+    {
+      "id": "te-vorm-8",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Maak een beleefd verzoek: 'Lees dit boek alstublieft.' Vul de て-vorm + ください in.",
+        "sentence": "この 本 (hon) を ___。",
+        "context": "Een leraar raadt een boek aan."
+      },
+      "correctAnswer": "読んでください (yonde kudasai)",
+      "distractors": ["読むください (yomu kudasai)", "読みください (yomi kudasai)", "読ってください (yotte kudasai)"],
+      "explanation": {
+        "nl": "読む is een godan-werkwoord op む. De て-vorm is 読んで (む→んで). Voeg ください toe voor een beleefd verzoek: 読んでください.",
+        "rule": "て-vorm + ください = beleefd verzoek",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "読", "role": "stam", "color": "#4A90D9" },
+            { "text": "んで", "role": "te-vorm uitgang", "particle": "て", "color": "#E74C3C" },
+            { "text": "ください", "role": "verzoek", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "読む eindigt op む. De て-vorm van む is んで.",
+        "Voeg ください toe na de て-vorm voor een beleefd verzoek."
+      ]
+    },
+    {
+      "id": "te-vorm-9",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Maak een beleefd verzoek: 'Wacht alstublieft even.'",
+        "sentence": "ちょっと ___。",
+        "context": "Je vraagt iemand om even te wachten bij een balie."
+      },
+      "correctAnswer": "待ってください (matte kudasai)",
+      "distractors": ["待つてください (matsute kudasai)", "待ちてください (machite kudasai)", "待んでください (mande kudasai)"],
+      "explanation": {
+        "nl": "待つ is een godan-werkwoord op つ. De て-vorm is 待って (つ→って). Voeg ください toe: 待ってください.",
+        "rule": "て-vorm + ください = beleefd verzoek",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "待", "role": "stam", "color": "#4A90D9" },
+            { "text": "って", "role": "te-vorm uitgang (つ→って)", "particle": "て", "color": "#E74C3C" },
+            { "text": "ください", "role": "verzoek", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "待つ eindigt op つ. Werkwoorden op う/つ/る krijgen って.",
+        "Voeg ください toe na de て-vorm."
+      ]
+    },
+    {
+      "id": "te-vorm-10",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar Japans: 'Ik ben aan het eten.' (gebruik ている)",
+        "sentence": "私 (watashi) は 食べています (tabete imasu)。",
+        "context": "Iemand belt je tijdens het eten en vraagt wat je aan het doen bent."
+      },
+      "correctAnswer": ["食べています (tabete imasu)", "食べてます (tabete masu)"],
+      "distractors": ["食べるいます (taberu imasu)", "食べます (tabemasu)", "食べたいます (tabetai masu)"],
+      "explanation": {
+        "nl": "De progressieve vorm (aan het ... zijn) maak je met て-vorm + いる/います. 食べる → 食べて + いる = 食べている (informeel) of 食べています (beleefd). In spreektaal mag い worden weggelaten: 食べてます.",
+        "rule": "て-vorm + いる/います = progressief (aan het ... zijn)",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "食べ", "role": "stam", "color": "#4A90D9" },
+            { "text": "て", "role": "te-vorm uitgang", "particle": "て", "color": "#E74C3C" },
+            { "text": "います", "role": "progressief (beleefd)", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "De progressieve vorm is て-vorm + いる (informeel) of います (beleefd).",
+        "食べる → 食べて + います = 食べています."
+      ]
+    },
+    {
+      "id": "te-vorm-11",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar Japans: 'Hij is een boek aan het lezen.'",
+        "sentence": "彼 (kare) は 本 (hon) を 読んでいます (yonde imasu)。",
+        "context": "Je beschrijft wat je vriend op dit moment aan het doen is."
+      },
+      "correctAnswer": ["本を読んでいます (hon wo yonde imasu)", "本を読んでます (hon wo yonde masu)"],
+      "distractors": ["本を読みます (hon wo yomimasu)", "本を読むている (hon wo yonde iru)", "本を読みている (hon wo yomite iru)"],
+      "explanation": {
+        "nl": "読む (godan, む→んで) wordt 読んで. Voeg います toe voor de beleefde progressieve vorm: 読んでいます. Het object 本 krijgt partikel を.",
+        "rule": "て-vorm + います = progressief",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "本", "role": "object", "particle": "を", "color": "#FF9800" },
+            { "text": "読", "role": "stam", "color": "#4A90D9" },
+            { "text": "んで", "role": "te-vorm uitgang", "particle": "て", "color": "#E74C3C" },
+            { "text": "います", "role": "progressief (beleefd)", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "読む eindigt op む. De て-vorm van む is んで.",
+        "Progressief = て-vorm + いる/います."
+      ]
+    },
+    {
+      "id": "te-vorm-12",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet het onregelmatige werkwoord する (suru - doen) om naar de て-vorm.",
+        "sentence": "宿題 (shukudai) を ___ ください。",
+        "context": "Een leraar vraagt leerlingen om hun huiswerk te maken."
+      },
+      "correctAnswer": "して (shite)",
+      "distractors": ["すて (sute)", "するて (surute)", "さて (sate)"],
+      "explanation": {
+        "nl": "する is een onregelmatig werkwoord. De て-vorm is して (shite). Dit geldt ook voor alle suru-werkwoorden: 勉強する → 勉強して, 料理する → 料理して.",
+        "rule": "Onregelmatig: する → して",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "宿題", "role": "object", "particle": "を", "color": "#FF9800" },
+            { "text": "して", "role": "te-vorm (onregelmatig)", "particle": "て", "color": "#E74C3C" },
+            { "text": "ください", "role": "verzoek", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "する is een onregelmatig werkwoord. De て-vorm volgt geen standaardregel.",
+        "する → して. Dit moet je uit je hoofd leren."
+      ]
+    },
+    {
+      "id": "te-vorm-13",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet de onregelmatige werkwoorden 来る (kuru - komen) en 行く (iku - gaan) om naar de て-vorm. Wat is de て-vorm van 来る?",
+        "sentence": "明日 (ashita) うちに ___ ください。",
+        "context": "Je nodigt een vriend uit om morgen naar je huis te komen."
+      },
+      "correctAnswer": "きて (kite)",
+      "distractors": ["くて (kute)", "くって (kutte)", "きって (kitte)"],
+      "explanation": {
+        "nl": "来る (kuru) is een onregelmatig werkwoord. De て-vorm is きて (kite). Let op: de kanji 来 wordt hier gelezen als き, niet く. Onthoud ook: 行く → 行って (itte) is een uitzondering op de く→いて regel!",
+        "rule": "Onregelmatig: 来る → きて | 行く → 行って",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "うちに", "role": "richting", "particle": "に", "color": "#FF9800" },
+            { "text": "きて", "role": "te-vorm (onregelmatig)", "particle": "て", "color": "#E74C3C" },
+            { "text": "ください", "role": "verzoek", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "来る is een van de twee onregelmatige werkwoorden.",
+        "来る → きて (de stam verandert van ku naar ki)."
+      ]
+    },
+    {
+      "id": "te-vorm-14",
+      "type": "foutherkenning",
+      "difficulty": 4,
+      "question": {
+        "nl": "Welk woord bevat een subtiele fout in de て-vorm?",
+        "sentence": "友達 (tomodachi) が 来て (kite)、一緒に (issho ni) 遊いで (asoide) います。",
+        "context": "Iemand wil zeggen: 'Een vriend is gekomen en we zijn samen aan het spelen.'"
+      },
+      "correctAnswer": "遊いで (asoide)",
+      "distractors": ["友達 (tomodachi)", "来て (kite)", "一緒に (issho ni)"],
+      "explanation": {
+        "nl": "遊いで is fout. 遊ぶ (asobu) eindigt op ぶ, en de regel voor ぶ is ぶ→んで. De correcte て-vorm is 遊んで (asonde), niet 遊いで. De いで-uitgang is voor ぐ-werkwoorden (例: 泳ぐ→泳いで).",
+        "rule": "ぶ → んで (niet いで); ぐ → いで",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "遊", "role": "stam", "color": "#4A90D9" },
+            { "text": "いで", "role": "FOUT (ぐ-regel)", "color": "#FF0000" },
+            { "text": "→ んで", "role": "correct (ぶ-regel)", "particle": "て", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "遊ぶ eindigt op ぶ. Welke て-vorm regel geldt voor ぶ?",
+        "ぶ → んで. De いで-uitgang is voor ぐ-werkwoorden."
+      ]
+    },
+    {
+      "id": "te-vorm-15",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar Japans: 'Ik heb ontbijt gegeten en ben naar school gegaan.' (gebruik て-vorm om zinnen te verbinden)",
+        "sentence": "朝ご飯 (asagohan) を 食べて (tabete)、学校 (gakkou) に 行きました (ikimashita)。",
+        "context": "Je beschrijft je ochtend aan een vriend."
+      },
+      "correctAnswer": ["朝ご飯を食べて、学校に行きました (asagohan wo tabete, gakkou ni ikimashita)", "朝ご飯を食べて学校に行きました (asagohan wo tabete gakkou ni ikimashita)"],
+      "distractors": [
+        "朝ご飯を食べます学校に行きました (asagohan wo tabemasu gakkou ni ikimashita)",
+        "朝ご飯を食べた学校に行きました (asagohan wo tabeta gakkou ni ikimashita)",
+        "朝ご飯を食べるて学校に行きました (asagohan wo taberute gakkou ni ikimashita)"
+      ],
+      "explanation": {
+        "nl": "De て-vorm verbindt opeenvolgende acties: 'A deed X en (daarna) Y.' Het eerste werkwoord staat in de て-vorm (食べて), het laatste werkwoord wordt vervoegd naar de gewenste tijd (行きました - verleden, beleefd). De て-vorm zelf draagt geen tijdsinformatie; de tijd wordt bepaald door het laatste werkwoord.",
+        "rule": "て-vorm verbindt acties: V1て、V2 (tijd op V2)",
+        "diagramType": "particle",
+        "diagramData": {
+          "parts": [
+            { "text": "朝ご飯", "role": "object", "particle": "を", "color": "#FF9800" },
+            { "text": "食べて", "role": "actie 1 (te-vorm)", "particle": "て", "color": "#E74C3C" },
+            { "text": "学校", "role": "bestemming", "particle": "に", "color": "#FF9800" },
+            { "text": "行きました", "role": "actie 2 (verleden, beleefd)", "color": "#2ECC71" }
+          ]
+        }
+      },
+      "hints": [
+        "Gebruik de て-vorm van het eerste werkwoord om de acties te verbinden.",
+        "食べる → 食べて (ichidan). Het laatste werkwoord krijgt de verleden beleefdheids­vorm: 行きました."
+      ]
+    }
+  ],
+  "grammarRules": [
+    {
+      "id": "te-vorm-maken",
+      "title": "De て-vorm maken vanuit de woordenboeksvorm",
+      "explanation": "De て-vorm is een van de belangrijkste werkwoordsvormen in het Japans. De vorming hangt af van de werkwoordgroep. Groep 2 (ichidan/る-werkwoorden): verwijder る, voeg て toe. Groep 1 (godan/う-werkwoorden): de uitgang hangt af van de laatste kana: う/つ/る→って, む/ぶ/ぬ→んで, く→いて, ぐ→いで, す→して. Onregelmatige werkwoorden: する→して, 来る→きて. Let op de uitzondering: 行く→行って (niet 行いて).",
+      "formula": "Groep 2: stam + て | Groep 1: う/つ/る→って, む/ぶ/ぬ→んで, く→いて, ぐ→いで, す→して | する→して | 来る→きて",
+      "examples": [
+        {
+          "italian": "食べて (tabete)",
+          "dutch": "eten (て-vorm, groep 2)",
+          "breakdown": [
+            { "word": "食べ", "role": "verb", "color": "#E74C3C", "annotation": "stam van 食べる (taberu)" },
+            { "word": "て", "role": "particle", "color": "#3498DB", "annotation": "て-vorm uitgang (ichidan)" }
+          ]
+        },
+        {
+          "italian": "飲んで (nonde)",
+          "dutch": "drinken (て-vorm, groep 1 む→んで)",
+          "breakdown": [
+            { "word": "飲", "role": "verb", "color": "#E74C3C", "annotation": "stam van 飲む (nomu)" },
+            { "word": "んで", "role": "particle", "color": "#3498DB", "annotation": "て-vorm uitgang (む→んで)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "te-vorm-gebruik",
+      "title": "Gebruik van de て-vorm",
+      "explanation": "De て-vorm heeft veel toepassingen: (1) Verzoeken: て + ください = 'doe alstublieft ...' (2) Progressief: て + いる/います = 'aan het ... zijn' (3) Toestemming: て + もいい = 'mag ik ...?' (4) Zinnen verbinden: V1て、V2 = 'doe X en (dan) Y' — de acties gebeuren in volgorde. De tijd wordt alleen bepaald door het laatste werkwoord.",
+      "formula": "てください (verzoek) | ている (progressief) | てもいい (toestemming) | V1て、V2 (verbinding)",
+      "examples": [
+        {
+          "italian": "食べてください (tabete kudasai)",
+          "dutch": "Eet alstublieft / Eet het alstublieft",
+          "breakdown": [
+            { "word": "食べて", "role": "verb", "color": "#f87171", "annotation": "te-vorm van 食べる (taberu)" },
+            { "word": "ください", "role": "verb", "color": "#E74C3C", "annotation": "alstublieft (beleefd verzoek)" }
+          ]
+        },
+        {
+          "italian": "食べています (tabete imasu)",
+          "dutch": "Ik ben aan het eten",
+          "breakdown": [
+            { "word": "食べて", "role": "verb", "color": "#f87171", "annotation": "te-vorm van 食べる (taberu)" },
+            { "word": "います", "role": "verb", "color": "#E74C3C", "annotation": "zijn (progressieve hulpvorm, beleefd)" }
+          ]
+        }
+      ]
+    }
+  ]
+}

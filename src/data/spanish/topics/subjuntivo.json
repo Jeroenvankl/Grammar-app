@@ -1,0 +1,452 @@
+{
+  "id": "subjuntivo",
+  "name": "Presente de Subjuntivo",
+  "description": "Leer de Spaanse subjuntivo: de aanvoegende wijs die je gebruikt na wensen (quiero que), emoties (me alegra que), twijfel (dudo que) en onpersoonlijke uitdrukkingen (es importante que).",
+  "level": "gevorderd",
+  "order": 5,
+  "grammarRules": [
+    {
+      "id": "subjuntivo-vormen",
+      "title": "Hoe vorm je de subjuntivo?",
+      "explanation": "De presente de subjuntivo wordt gevormd door de indicativo-stam te nemen en de uitgangen om te draaien: werkwoorden op -ar krijgen -e uitgangen (hable, hables, hable, hablemos, hablen), terwijl werkwoorden op -er/-ir -a uitgangen krijgen (coma, comas, coma, comamos, coman). Veel voorkomende onregelmatige vormen zijn: ser → sea, tener → tenga, hacer → haga, ir → vaya, poder → pueda, decir → diga, saber → sepa.",
+      "formula": "-ar → -e, -es, -e, -emos, -en | -er/-ir → -a, -as, -a, -amos, -an | onregelmatig: sea, tenga, haga, vaya, pueda, diga, sepa",
+      "examples": [
+        {
+          "italian": "Quiero que vengas a la fiesta.",
+          "dutch": "Ik wil dat je naar het feest komt.",
+          "breakdown": [
+            { "word": "Quiero", "role": "verb", "color": "#f87171", "annotation": "willen, 1e persoon indicativo" },
+            { "word": "que", "role": "particle", "color": "#fbbf24", "annotation": "dat (trigger voor subjuntivo)" },
+            { "word": "vengas", "role": "verb", "color": "#f87171", "annotation": "venir, 2e persoon subjuntivo" },
+            { "word": "a la fiesta", "role": "object", "color": "#34d399", "annotation": "naar het feest" }
+          ]
+        },
+        {
+          "italian": "Es importante que hablemos con el doctor.",
+          "dutch": "Het is belangrijk dat we met de dokter praten.",
+          "breakdown": [
+            { "word": "Es importante", "role": "verb", "color": "#f87171", "annotation": "het is belangrijk (onpersoonlijke uitdrukking)" },
+            { "word": "que", "role": "particle", "color": "#fbbf24", "annotation": "dat (trigger voor subjuntivo)" },
+            { "word": "hablemos", "role": "verb", "color": "#f87171", "annotation": "hablar, 1e persoon meervoud subjuntivo" },
+            { "word": "con", "role": "preposition", "color": "#fbbf24", "annotation": "met (voorzetsel)" },
+            { "word": "el", "role": "article", "color": "#a78bfa", "annotation": "de (mannelijk)" },
+            { "word": "doctor", "role": "object", "color": "#34d399", "annotation": "dokter" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subjuntivo-gebruik",
+      "title": "Wanneer gebruik je de subjuntivo?",
+      "explanation": "De subjuntivo wordt gebruikt na uitdrukkingen van wens (quiero que, espero que), emotie (me alegra que, me molesta que), twijfel (dudo que, no creo que), mogelijkheid (es posible que, es probable que), noodzaak (es importante que, es necesario que) en doel (para que). De basisregel is: als er twee verschillende onderwerpen zijn verbonden door 'que', gebruik je de subjuntivo. Ook na 'ojalá (que)' staat altijd de subjuntivo.",
+      "formula": "Onderwerp 1 + werkwoord indicativo + que + onderwerp 2 + werkwoord subjuntivo | ojalá (que) + subjuntivo",
+      "examples": [
+        {
+          "italian": "Espero que tengas un buen día.",
+          "dutch": "Ik hoop dat je een goede dag hebt.",
+          "breakdown": [
+            { "word": "Espero", "role": "verb", "color": "#f87171", "annotation": "hopen, 1e persoon indicativo" },
+            { "word": "que", "role": "particle", "color": "#fbbf24", "annotation": "dat (trigger voor subjuntivo)" },
+            { "word": "tengas", "role": "verb", "color": "#f87171", "annotation": "tener, 2e persoon subjuntivo" },
+            { "word": "un buen día", "role": "object", "color": "#34d399", "annotation": "een goede dag" }
+          ]
+        },
+        {
+          "italian": "Ojalá que llueva mañana para las plantas.",
+          "dutch": "Hopelijk regent het morgen voor de planten.",
+          "breakdown": [
+            { "word": "Ojalá", "role": "adverb", "color": "#c084fc", "annotation": "hopelijk / ik hoop dat (trigger voor subjuntivo)" },
+            { "word": "que", "role": "particle", "color": "#fbbf24", "annotation": "dat" },
+            { "word": "llueva", "role": "verb", "color": "#f87171", "annotation": "llover, 3e persoon subjuntivo (regenen)" },
+            { "word": "mañana", "role": "adverb", "color": "#c084fc", "annotation": "morgen" },
+            { "word": "para", "role": "preposition", "color": "#fbbf24", "annotation": "voor (doel)" },
+            { "word": "las plantas", "role": "object", "color": "#34d399", "annotation": "de planten" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "subjuntivo-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste subjuntivo-vorm van 'hablar' (spreken) in.",
+        "sentence": "Quiero que tú ___ con el profesor.",
+        "context": "hablar = spreken, 2e persoon subjuntivo na 'quiero que'"
+      },
+      "correctAnswer": "hables",
+      "distractors": ["hablas", "habla", "hable"],
+      "explanation": {
+        "nl": "Na 'quiero que' volgt de subjuntivo. Bij -ar werkwoorden krijgt de 2e persoon (tú) de uitgang -es. Hablar → habl- + -es = hables. Let op: 'hablas' is de indicativo-vorm en zou hier fout zijn.",
+        "rule": "Quiero que + subjuntivo: -ar werkwoorden: tú → stam + -es",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "hablar",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "hable" },
+            { "person": "tú", "form": "hables", "highlight": true },
+            { "person": "él/ella/usted", "form": "hable" },
+            { "person": "nosotros", "form": "hablemos" },
+            { "person": "ellos/ustedes", "form": "hablen" }
+          ]
+        }
+      },
+      "hints": [
+        "Na 'quiero que' gebruik je altijd de subjuntivo, niet de indicativo.",
+        "Bij -ar werkwoorden draaien de uitgangen om: -a wordt -e, -as wordt -es."
+      ]
+    },
+    {
+      "id": "subjuntivo-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste subjuntivo-vorm van 'comer' (eten) in.",
+        "sentence": "Quiero que ella ___ más frutas.",
+        "context": "comer = eten, 3e persoon subjuntivo na 'quiero que'"
+      },
+      "correctAnswer": "coma",
+      "distractors": ["come", "comen", "comas"],
+      "explanation": {
+        "nl": "Na 'quiero que' volgt de subjuntivo. Bij -er werkwoorden krijgt de 3e persoon (ella) de uitgang -a. Comer → com- + -a = coma. Let op: 'come' is de indicativo-vorm.",
+        "rule": "Quiero que + subjuntivo: -er werkwoorden: él/ella/usted → stam + -a",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "comer",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "coma" },
+            { "person": "tú", "form": "comas" },
+            { "person": "él/ella/usted", "form": "coma", "highlight": true },
+            { "person": "nosotros", "form": "comamos" },
+            { "person": "ellos/ustedes", "form": "coman" }
+          ]
+        }
+      },
+      "hints": [
+        "Na 'quiero que' staat de subjuntivo omdat er twee verschillende onderwerpen zijn (yo en ella).",
+        "Bij -er werkwoorden draaien de uitgangen om: -e wordt -a."
+      ]
+    },
+    {
+      "id": "subjuntivo-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul de juiste subjuntivo-vorm van 'estudiar' (studeren) in.",
+        "sentence": "Espero que ustedes ___ para el examen.",
+        "context": "estudiar = studeren, meervoudsvorm subjuntivo na 'espero que'"
+      },
+      "correctAnswer": "estudien",
+      "distractors": ["estudian", "estudia", "estudiemos"],
+      "explanation": {
+        "nl": "Na 'espero que' volgt de subjuntivo. Bij -ar werkwoorden krijgt de meervoudsvorm (ustedes) de uitgang -en. Estudiar → estudi- + -en = estudien. Let op: 'estudian' is de indicativo-vorm.",
+        "rule": "Espero que + subjuntivo: -ar werkwoorden: ustedes → stam + -en",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "estudiar",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "estudie" },
+            { "person": "tú", "form": "estudies" },
+            { "person": "él/ella/usted", "form": "estudie" },
+            { "person": "nosotros", "form": "estudiemos" },
+            { "person": "ellos/ustedes", "form": "estudien", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "'Espero que' drukt een wens uit en wordt altijd gevolgd door de subjuntivo.",
+        "De ustedes-vorm van -ar werkwoorden in de subjuntivo eindigt op -en (niet -an)."
+      ]
+    },
+    {
+      "id": "subjuntivo-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul de juiste subjuntivo-vorm van 'escribir' (schrijven) in.",
+        "sentence": "Es importante que tú ___ la tarea todos los días.",
+        "context": "escribir = schrijven, 2e persoon subjuntivo na 'es importante que'"
+      },
+      "correctAnswer": "escribas",
+      "distractors": ["escribes", "escribe", "escriban"],
+      "explanation": {
+        "nl": "Na 'es importante que' volgt de subjuntivo. Bij -ir werkwoorden krijgt de 2e persoon (tú) de uitgang -as. Escribir → escrib- + -as = escribas. De onpersoonlijke uitdrukking 'es importante que' drukt noodzaak uit.",
+        "rule": "Es importante que + subjuntivo: -ir werkwoorden: tú → stam + -as",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "escribir",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "escriba" },
+            { "person": "tú", "form": "escribas", "highlight": true },
+            { "person": "él/ella/usted", "form": "escriba" },
+            { "person": "nosotros", "form": "escribamos" },
+            { "person": "ellos/ustedes", "form": "escriban" }
+          ]
+        }
+      },
+      "hints": [
+        "'Es importante que' is een onpersoonlijke uitdrukking die altijd de subjuntivo triggert.",
+        "Bij -ir werkwoorden zijn de subjuntivo-uitgangen hetzelfde als bij -er: -a, -as, -a, -amos, -an."
+      ]
+    },
+    {
+      "id": "subjuntivo-5",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Quiero que tú hablas con tu mamá.",
+        "context": "Na 'quiero que' moet de subjuntivo staan, niet de indicativo."
+      },
+      "correctAnswer": "hablas",
+      "distractors": ["Quiero", "tú", "mamá"],
+      "explanation": {
+        "nl": "'Hablas' is de indicativo-vorm (tegenwoordige tijd). Na 'quiero que' moet de subjuntivo staan omdat er twee verschillende onderwerpen zijn (yo quiero, tú hablas). De correcte zin is: 'Quiero que tú hables con tu mamá.'",
+        "rule": "Na 'quiero que' altijd subjuntivo: hablas (indicativo) → hables (subjuntivo)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "hablar",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "hable" },
+            { "person": "tú", "form": "hables", "highlight": true },
+            { "person": "él/ella/usted", "form": "hable" },
+            { "person": "nosotros", "form": "hablemos" },
+            { "person": "ellos/ustedes", "form": "hablen" }
+          ]
+        }
+      },
+      "hints": [
+        "Na 'quiero que' moet een andere werkwoordsvorm staan dan in de gewone tegenwoordige tijd.",
+        "Controleer of het werkwoord na 'que' in de subjuntivo staat."
+      ]
+    },
+    {
+      "id": "subjuntivo-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Es necesario que nosotros comimos más verduras.",
+        "context": "Na 'es necesario que' moet de presente de subjuntivo staan, niet de verleden tijd."
+      },
+      "correctAnswer": "comimos",
+      "distractors": ["necesario", "nosotros", "verduras"],
+      "explanation": {
+        "nl": "'Comimos' is de verleden tijd (pretérito). Na 'es necesario que' moet de presente de subjuntivo staan. De correcte zin is: 'Es necesario que nosotros comamos más verduras.' De subjuntivo-vorm voor nosotros van 'comer' is 'comamos'.",
+        "rule": "Na 'es necesario que' altijd subjuntivo: comimos (pretérito) → comamos (subjuntivo)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "comer",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "coma" },
+            { "person": "tú", "form": "comas" },
+            { "person": "él/ella/usted", "form": "coma" },
+            { "person": "nosotros", "form": "comamos", "highlight": true },
+            { "person": "ellos/ustedes", "form": "coman" }
+          ]
+        }
+      },
+      "hints": [
+        "Kijk goed naar de werkwoordstijd na 'que'. Is het de juiste wijs?",
+        "'Comimos' is een verleden tijd. Na 'es necesario que' heb je een andere wijs nodig."
+      ]
+    },
+    {
+      "id": "subjuntivo-7",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste subjuntivo-vorm van 'ser' (zijn) in.",
+        "sentence": "Dudo que él ___ el mejor candidato para el trabajo.",
+        "context": "ser = zijn, 3e persoon subjuntivo na 'dudo que'. Ser is onregelmatig in de subjuntivo."
+      },
+      "correctAnswer": "sea",
+      "distractors": ["es", "está", "fue"],
+      "explanation": {
+        "nl": "Na 'dudo que' (ik betwijfel dat) volgt de subjuntivo. 'Ser' is volledig onregelmatig in de subjuntivo: sea, seas, sea, seamos, sean. 'Es' zou de indicativo zijn en is hier fout. Twijfel triggert altijd de subjuntivo.",
+        "rule": "Dudo que + subjuntivo: ser is onregelmatig → sea (niet es)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "ser",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "sea" },
+            { "person": "tú", "form": "seas" },
+            { "person": "él/ella/usted", "form": "sea", "highlight": true },
+            { "person": "nosotros", "form": "seamos" },
+            { "person": "ellos/ustedes", "form": "sean" }
+          ]
+        }
+      },
+      "hints": [
+        "'Dudo que' drukt twijfel uit en wordt altijd gevolgd door de subjuntivo.",
+        "'Ser' is volledig onregelmatig in de subjuntivo. De stam verandert helemaal."
+      ]
+    },
+    {
+      "id": "subjuntivo-8",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste subjuntivo-vorm van 'ir' (gaan) in.",
+        "sentence": "Es posible que nosotros ___ a Bogotá el próximo mes.",
+        "context": "ir = gaan, 1e persoon meervoud subjuntivo na 'es posible que'. Ir is onregelmatig in de subjuntivo."
+      },
+      "correctAnswer": "vayamos",
+      "distractors": ["vamos", "iremos", "fuimos"],
+      "explanation": {
+        "nl": "Na 'es posible que' (het is mogelijk dat) volgt de subjuntivo. 'Ir' is onregelmatig in de subjuntivo: vaya, vayas, vaya, vayamos, vayan. 'Vamos' is de indicativo-vorm en zou hier fout zijn.",
+        "rule": "Es posible que + subjuntivo: ir is onregelmatig → vayamos (niet vamos)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "ir",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "vaya" },
+            { "person": "tú", "form": "vayas" },
+            { "person": "él/ella/usted", "form": "vaya" },
+            { "person": "nosotros", "form": "vayamos", "highlight": true },
+            { "person": "ellos/ustedes", "form": "vayan" }
+          ]
+        }
+      },
+      "hints": [
+        "'Es posible que' drukt mogelijkheid uit en triggert de subjuntivo.",
+        "'Ir' verandert compleet in de subjuntivo. De stam is 'vay-'."
+      ]
+    },
+    {
+      "id": "subjuntivo-9",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Ik hoop dat ze (meervoud) goed eten.'",
+        "sentence": "Ik hoop dat ze goed eten.",
+        "context": "esperar = hopen, comer = eten, bien = goed. Gebruik de subjuntivo na 'espero que'."
+      },
+      "correctAnswer": ["Espero que coman bien.", "Espero que ellos coman bien."],
+      "explanation": {
+        "nl": "'Ik hoop' is 'espero' (indicativo). 'Dat ze eten' wordt 'que coman' (subjuntivo). Na 'espero que' staan twee onderwerpen (yo en ellos), dus de subjuntivo is verplicht. 'Coman' is de ellos/ustedes-vorm van 'comer' in de subjuntivo.",
+        "rule": "Espero que + subjuntivo: comer → coman (ellos/ustedes). Het onderwerp 'ellos' is optioneel.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "comer",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "coma" },
+            { "person": "tú", "form": "comas" },
+            { "person": "él/ella/usted", "form": "coma" },
+            { "person": "nosotros", "form": "comamos" },
+            { "person": "ellos/ustedes", "form": "coman", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "'Ik hoop dat' vertaal je met 'espero que', gevolgd door de subjuntivo.",
+        "De ellos/ustedes-vorm van 'comer' in de subjuntivo eindigt op -an."
+      ]
+    },
+    {
+      "id": "subjuntivo-10",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Het is belangrijk dat je de waarheid zegt.'",
+        "sentence": "Het is belangrijk dat je de waarheid zegt.",
+        "context": "es importante que = het is belangrijk dat, decir = zeggen (onregelmatig: diga), la verdad = de waarheid"
+      },
+      "correctAnswer": ["Es importante que digas la verdad.", "Es importante que tú digas la verdad."],
+      "explanation": {
+        "nl": "'Es importante que' is een onpersoonlijke uitdrukking die de subjuntivo triggert. 'Decir' is onregelmatig in de subjuntivo: diga, digas, diga, digamos, digan. De tú-vorm is 'digas'. Het onderwerp 'tú' mag worden weggelaten.",
+        "rule": "Es importante que + subjuntivo: decir is onregelmatig → digas (tú)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "decir",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "diga" },
+            { "person": "tú", "form": "digas", "highlight": true },
+            { "person": "él/ella/usted", "form": "diga" },
+            { "person": "nosotros", "form": "digamos" },
+            { "person": "ellos/ustedes", "form": "digan" }
+          ]
+        }
+      },
+      "hints": [
+        "'Het is belangrijk dat' vertaal je met 'es importante que'.",
+        "'Decir' (zeggen) is onregelmatig in de subjuntivo. De stam verandert naar 'dig-'."
+      ]
+    },
+    {
+      "id": "subjuntivo-11",
+      "type": "foutherkenning",
+      "difficulty": 4,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "No creo que ellos tienen razón sobre el proyecto.",
+        "context": "Na 'no creo que' (ik geloof niet dat) moet de subjuntivo staan. Tener is onregelmatig in de subjuntivo."
+      },
+      "correctAnswer": "tienen",
+      "distractors": ["creo", "ellos", "razón"],
+      "explanation": {
+        "nl": "'Tienen' is de indicativo-vorm van 'tener'. Na 'no creo que' moet de subjuntivo staan omdat ontkenning + geloven twijfel uitdrukt. De correcte zin is: 'No creo que ellos tengan razón sobre el proyecto.' Let op: bij 'creo que' (zonder ontkenning) gebruik je wél de indicativo!",
+        "rule": "No creo que + subjuntivo: tienen (indicativo) → tengan (subjuntivo). Let op: 'creo que' (positief) + indicativo!",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "tener",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "tenga" },
+            { "person": "tú", "form": "tengas" },
+            { "person": "él/ella/usted", "form": "tenga" },
+            { "person": "nosotros", "form": "tengamos" },
+            { "person": "ellos/ustedes", "form": "tengan", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "'No creo que' drukt twijfel uit. Controleer of het werkwoord na 'que' in de juiste wijs staat.",
+        "'Tener' is onregelmatig in de subjuntivo. Vergelijk: tienen (indicativo) vs. tengan (subjuntivo)."
+      ]
+    },
+    {
+      "id": "subjuntivo-12",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Hopelijk kan hij morgen naar het feest komen.'",
+        "sentence": "Hopelijk kan hij morgen naar het feest komen.",
+        "context": "ojalá (que) = hopelijk, poder = kunnen (onregelmatig: pueda), venir = komen, la fiesta = het feest, mañana = morgen"
+      },
+      "correctAnswer": ["Ojalá que pueda venir a la fiesta mañana.", "Ojalá pueda venir a la fiesta mañana.", "Ojalá que él pueda venir a la fiesta mañana."],
+      "explanation": {
+        "nl": "'Ojalá' komt van het Arabisch en betekent 'hopelijk' of 'ik hoop dat'. Na 'ojalá (que)' staat altijd de subjuntivo. 'Poder' is onregelmatig in de subjuntivo: pueda, puedas, pueda, podamos, puedan. Het woord 'que' na 'ojalá' is optioneel. Na 'pueda' volgt de infinitief 'venir'.",
+        "rule": "Ojalá (que) + subjuntivo: poder → pueda (3e persoon). Na een vervoegd werkwoord in de subjuntivo volgt de infinitief.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "poder",
+          "tense": "presente de subjuntivo",
+          "forms": [
+            { "person": "yo", "form": "pueda" },
+            { "person": "tú", "form": "puedas" },
+            { "person": "él/ella/usted", "form": "pueda", "highlight": true },
+            { "person": "nosotros", "form": "podamos" },
+            { "person": "ellos/ustedes", "form": "puedan" }
+          ]
+        }
+      },
+      "hints": [
+        "'Ojalá' wordt altijd gevolgd door de subjuntivo. 'Que' erna is optioneel.",
+        "'Poder' verandert in de subjuntivo: de stam wordt 'pued-' (behalve bij nosotros: podamos)."
+      ]
+    }
+  ]
+}

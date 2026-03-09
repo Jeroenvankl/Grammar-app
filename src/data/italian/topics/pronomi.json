@@ -1,0 +1,497 @@
+{
+  "id": "pronomi",
+  "name": "Pronomi Diretti e Indiretti",
+  "description": "Leer de Italiaanse persoonlijke voornaamwoorden: directe (lo, la, li, le) en indirecte (mi, ti, gli, le, ci, vi, gli) voornaamwoorden en hun positie in de zin.",
+  "level": "gevorderd",
+  "order": 5,
+  "grammarRules": [
+    {
+      "id": "pronomi-diretti",
+      "title": "Directe voornaamwoorden (pronomi diretti)",
+      "explanation": "Directe voornaamwoorden vervangen het lijdend voorwerp (accusatief). Ze staan vóór het vervoegde werkwoord. De vormen zijn: mi (mij), ti (jou), lo (hem/het), la (haar/het), ci (ons), vi (jullie), li (hen, mannelijk), le (hen, vrouwelijk). Let op: 'lo' en 'la' worden afgekort tot l' voor een klinker.",
+      "formula": "pronome diretto + werkwoord (vervoegd)",
+      "examples": [
+        {
+          "italian": "Lo mangio ogni giorno.",
+          "dutch": "Ik eet het elke dag.",
+          "breakdown": [
+            { "word": "Lo", "role": "object", "color": "#34d399", "annotation": "direct vnw (het/hem)" },
+            { "word": "mangio", "role": "verb", "color": "#f87171", "annotation": "eten, 1e persoon" },
+            { "word": "ogni", "role": "adverb", "color": "#60a5fa" },
+            { "word": "giorno", "role": "object", "color": "#34d399", "annotation": "dag" }
+          ]
+        },
+        {
+          "italian": "La vedo dalla finestra.",
+          "dutch": "Ik zie haar vanuit het raam.",
+          "breakdown": [
+            { "word": "La", "role": "object", "color": "#34d399", "annotation": "direct vnw (haar)" },
+            { "word": "vedo", "role": "verb", "color": "#f87171", "annotation": "zien, 1e persoon" },
+            { "word": "dalla", "role": "preposition", "color": "#fbbf24", "annotation": "da + la (vanuit de)" },
+            { "word": "finestra", "role": "object", "color": "#34d399", "annotation": "raam" }
+          ]
+        },
+        {
+          "italian": "Li compro al mercato.",
+          "dutch": "Ik koop ze op de markt.",
+          "breakdown": [
+            { "word": "Li", "role": "object", "color": "#34d399", "annotation": "direct vnw (hen/ze, mannelijk mv)" },
+            { "word": "compro", "role": "verb", "color": "#f87171", "annotation": "kopen, 1e persoon" },
+            { "word": "al", "role": "preposition", "color": "#fbbf24", "annotation": "a + il (op de)" },
+            { "word": "mercato", "role": "object", "color": "#34d399", "annotation": "markt" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pronomi-indiretti",
+      "title": "Indirecte voornaamwoorden (pronomi indiretti)",
+      "explanation": "Indirecte voornaamwoorden vervangen het meewerkend voorwerp (datief: aan wie? voor wie?). Ze staan vóór het vervoegde werkwoord. De vormen zijn: mi (aan mij), ti (aan jou), gli (aan hem), le (aan haar), ci (aan ons), vi (aan jullie), gli (aan hen). Let op: 'gli' wordt zowel voor 'aan hem' als 'aan hen' gebruikt.",
+      "formula": "pronome indiretto + werkwoord (vervoegd)",
+      "examples": [
+        {
+          "italian": "Gli scrivo una lettera.",
+          "dutch": "Ik schrijf hem een brief.",
+          "breakdown": [
+            { "word": "Gli", "role": "object", "color": "#34d399", "annotation": "indirect vnw (aan hem)" },
+            { "word": "scrivo", "role": "verb", "color": "#f87171", "annotation": "schrijven, 1e persoon" },
+            { "word": "una", "role": "article", "color": "#a78bfa", "annotation": "onbepaald lidwoord" },
+            { "word": "lettera", "role": "object", "color": "#34d399", "annotation": "brief" }
+          ]
+        },
+        {
+          "italian": "Le telefono domani.",
+          "dutch": "Ik bel haar morgen.",
+          "breakdown": [
+            { "word": "Le", "role": "object", "color": "#34d399", "annotation": "indirect vnw (aan haar)" },
+            { "word": "telefono", "role": "verb", "color": "#f87171", "annotation": "bellen, 1e persoon" },
+            { "word": "domani", "role": "adverb", "color": "#60a5fa", "annotation": "morgen" }
+          ]
+        },
+        {
+          "italian": "Ti do il mio numero.",
+          "dutch": "Ik geef je mijn nummer.",
+          "breakdown": [
+            { "word": "Ti", "role": "object", "color": "#34d399", "annotation": "indirect vnw (aan jou)" },
+            { "word": "do", "role": "verb", "color": "#f87171", "annotation": "geven, 1e persoon" },
+            { "word": "il", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord" },
+            { "word": "mio", "role": "adjective", "color": "#fb923c", "annotation": "mijn" },
+            { "word": "numero", "role": "object", "color": "#34d399", "annotation": "nummer" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "pronomi-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste directe voornaamwoord in. 'Il caffè? ___ bevo ogni mattina.' (De koffie? Ik drink het elke ochtend.)",
+        "sentence": "Il caffè? ___ bevo ogni mattina.",
+        "context": "caffè = mannelijk enkelvoud, dus direct vnw = lo"
+      },
+      "correctAnswer": "Lo",
+      "distractors": ["La", "Li", "Le"],
+      "explanation": {
+        "nl": "'Caffè' is mannelijk enkelvoud, dus je gebruikt 'lo' als direct voornaamwoord. Het staat vóór het vervoegde werkwoord 'bevo'.",
+        "rule": "Mannelijk enkelvoud lijdend voorwerp → lo",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi diretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (mij)", "highlight": true },
+            { "person": "2e enk.", "form": "ti (jou)" },
+            { "person": "3e enk. m.", "form": "lo (hem/het)", "highlight": true },
+            { "person": "3e enk. v.", "form": "la (haar)" },
+            { "person": "1e mv.", "form": "ci (ons)" },
+            { "person": "2e mv.", "form": "vi (jullie)" },
+            { "person": "3e mv. m.", "form": "li (hen/ze m.)" },
+            { "person": "3e mv. v.", "form": "le (hen/ze v.)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Caffè' is mannelijk enkelvoud — welk direct voornaamwoord hoort daarbij?",
+        "Het directe voornaamwoord staat vóór het werkwoord."
+      ]
+    },
+    {
+      "id": "pronomi-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste directe voornaamwoord in. 'La pizza? ___ mangio volentieri.' (De pizza? Ik eet haar/het graag.)",
+        "sentence": "La pizza? ___ mangio volentieri.",
+        "context": "pizza = vrouwelijk enkelvoud, dus direct vnw = la"
+      },
+      "correctAnswer": "La",
+      "distractors": ["Lo", "Li", "Le"],
+      "explanation": {
+        "nl": "'Pizza' is vrouwelijk enkelvoud, dus je gebruikt 'la' als direct voornaamwoord. In het Italiaans heeft het voornaamwoord hetzelfde geslacht als het zelfstandig naamwoord dat het vervangt.",
+        "rule": "Vrouwelijk enkelvoud lijdend voorwerp → la",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi diretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (mij)" },
+            { "person": "2e enk.", "form": "ti (jou)" },
+            { "person": "3e enk. m.", "form": "lo (hem/het)" },
+            { "person": "3e enk. v.", "form": "la (haar)", "highlight": true },
+            { "person": "1e mv.", "form": "ci (ons)" },
+            { "person": "2e mv.", "form": "vi (jullie)" },
+            { "person": "3e mv. m.", "form": "li (hen/ze m.)" },
+            { "person": "3e mv. v.", "form": "le (hen/ze v.)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Pizza' is vrouwelijk — welk direct voornaamwoord past bij vrouwelijk enkelvoud?",
+        "Denk aan het geslacht van het zelfstandig naamwoord."
+      ]
+    },
+    {
+      "id": "pronomi-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste directe voornaamwoord in. 'I libri? ___ leggo spesso.' (De boeken? Ik lees ze vaak.)",
+        "sentence": "I libri? ___ leggo spesso.",
+        "context": "libri = mannelijk meervoud, dus direct vnw = li"
+      },
+      "correctAnswer": "Li",
+      "distractors": ["Lo", "Le", "La"],
+      "explanation": {
+        "nl": "'Libri' is mannelijk meervoud, dus je gebruikt 'li'. Let op het verschil: 'lo' (enkelvoud mannelijk) vs. 'li' (meervoud mannelijk).",
+        "rule": "Mannelijk meervoud lijdend voorwerp → li",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi diretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (mij)" },
+            { "person": "2e enk.", "form": "ti (jou)" },
+            { "person": "3e enk. m.", "form": "lo (hem/het)" },
+            { "person": "3e enk. v.", "form": "la (haar)" },
+            { "person": "1e mv.", "form": "ci (ons)" },
+            { "person": "2e mv.", "form": "vi (jullie)" },
+            { "person": "3e mv. m.", "form": "li (hen/ze m.)", "highlight": true },
+            { "person": "3e mv. v.", "form": "le (hen/ze v.)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Libri' is het meervoud van 'libro' (mannelijk) — welk meervoudig direct vnw gebruik je?",
+        "Het meervoud van 'lo' is 'li'."
+      ]
+    },
+    {
+      "id": "pronomi-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste directe voornaamwoord in. 'Le scarpe? ___ compro domani.' (De schoenen? Ik koop ze morgen.)",
+        "sentence": "Le scarpe? ___ compro domani.",
+        "context": "scarpe = vrouwelijk meervoud, dus direct vnw = le"
+      },
+      "correctAnswer": "Le",
+      "distractors": ["Li", "La", "Lo"],
+      "explanation": {
+        "nl": "'Scarpe' is vrouwelijk meervoud, dus je gebruikt 'le'. Let op: 'le' als direct voornaamwoord (hen/ze, vrouwelijk) is dezelfde vorm als het lidwoord 'le', maar heeft een andere functie.",
+        "rule": "Vrouwelijk meervoud lijdend voorwerp → le",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi diretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (mij)" },
+            { "person": "2e enk.", "form": "ti (jou)" },
+            { "person": "3e enk. m.", "form": "lo (hem/het)" },
+            { "person": "3e enk. v.", "form": "la (haar)" },
+            { "person": "1e mv.", "form": "ci (ons)" },
+            { "person": "2e mv.", "form": "vi (jullie)" },
+            { "person": "3e mv. m.", "form": "li (hen/ze m.)" },
+            { "person": "3e mv. v.", "form": "le (hen/ze v.)", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "'Scarpe' is vrouwelijk meervoud — welk meervoudig vnw past hier?",
+        "Het meervoud van 'la' (direct vnw) is 'le'."
+      ]
+    },
+    {
+      "id": "pronomi-5",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin? (De appel is mannelijk: la mela → nee, il pomo of eigenlijk: la mela is vrouwelijk)",
+        "sentence": "La mela? Lo mangio a colazione.",
+        "context": "mela = vrouwelijk enkelvoud, maar het voornaamwoord 'lo' is mannelijk"
+      },
+      "correctAnswer": "Lo",
+      "distractors": ["La", "mangio", "colazione"],
+      "explanation": {
+        "nl": "'Mela' (appel) is vrouwelijk, dus je moet 'la' gebruiken in plaats van 'lo'. Het directe voornaamwoord moet overeenkomen in geslacht met het zelfstandig naamwoord dat het vervangt. De juiste zin is: 'La mela? La mangio a colazione.'",
+        "rule": "Het directe voornaamwoord moet overeenkomen in geslacht: vrouwelijk → la, mannelijk → lo",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi diretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (mij)" },
+            { "person": "2e enk.", "form": "ti (jou)" },
+            { "person": "3e enk. m.", "form": "lo (hem/het)" },
+            { "person": "3e enk. v.", "form": "la (haar)", "highlight": true },
+            { "person": "1e mv.", "form": "ci (ons)" },
+            { "person": "2e mv.", "form": "vi (jullie)" },
+            { "person": "3e mv. m.", "form": "li (hen/ze m.)" },
+            { "person": "3e mv. v.", "form": "le (hen/ze v.)" }
+          ]
+        }
+      },
+      "hints": [
+        "Kijk naar het geslacht van 'mela' — is het mannelijk of vrouwelijk?",
+        "Het voornaamwoord moet hetzelfde geslacht hebben als het zelfstandig naamwoord."
+      ]
+    },
+    {
+      "id": "pronomi-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "I pantaloni? Le compro al negozio.",
+        "context": "pantaloni = mannelijk meervoud, maar 'le' is vrouwelijk meervoud"
+      },
+      "correctAnswer": "Le",
+      "distractors": ["I", "compro", "negozio"],
+      "explanation": {
+        "nl": "'Pantaloni' (broeken) is mannelijk meervoud, dus je moet 'li' gebruiken in plaats van 'le'. 'Le' is het vrouwelijk meervoud voornaamwoord. De juiste zin is: 'I pantaloni? Li compro al negozio.'",
+        "rule": "Mannelijk meervoud → li (niet 'le'). Le = vrouwelijk meervoud.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi diretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (mij)" },
+            { "person": "2e enk.", "form": "ti (jou)" },
+            { "person": "3e enk. m.", "form": "lo (hem/het)" },
+            { "person": "3e enk. v.", "form": "la (haar)" },
+            { "person": "1e mv.", "form": "ci (ons)" },
+            { "person": "2e mv.", "form": "vi (jullie)" },
+            { "person": "3e mv. m.", "form": "li (hen/ze m.)", "highlight": true },
+            { "person": "3e mv. v.", "form": "le (hen/ze v.)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Pantaloni' is mannelijk meervoud — welk voornaamwoord hoort daarbij?",
+        "Let op het verschil tussen 'li' (mannelijk mv) en 'le' (vrouwelijk mv)."
+      ]
+    },
+    {
+      "id": "pronomi-7",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul het juiste indirecte voornaamwoord in. '___ parlo domani.' (Ik spreek hem morgen.) — parlare a qualcuno",
+        "sentence": "___ parlo domani.",
+        "context": "aan hem = gli (indirect voornaamwoord, 3e persoon mannelijk enkelvoud)"
+      },
+      "correctAnswer": "Gli",
+      "distractors": ["Lo", "Le", "Li"],
+      "explanation": {
+        "nl": "'Parlare a qualcuno' (spreken tegen iemand) vereist een indirect voornaamwoord. 'Aan hem' wordt 'gli' in het Italiaans. Let op het verschil: 'lo' = hem (direct, lijdend voorwerp), 'gli' = aan hem (indirect, meewerkend voorwerp).",
+        "rule": "Indirect vnw 3e persoon mannelijk enkelvoud: gli (aan hem)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi indiretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (aan mij)" },
+            { "person": "2e enk.", "form": "ti (aan jou)" },
+            { "person": "3e enk. m.", "form": "gli (aan hem)", "highlight": true },
+            { "person": "3e enk. v.", "form": "le (aan haar)" },
+            { "person": "1e mv.", "form": "ci (aan ons)" },
+            { "person": "2e mv.", "form": "vi (aan jullie)" },
+            { "person": "3e mv.", "form": "gli (aan hen)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Parlare a' vereist een indirect voornaamwoord — je spreekt tegen iemand.",
+        "Het indirect voornaamwoord voor 'aan hem' is niet 'lo' maar een andere vorm."
+      ]
+    },
+    {
+      "id": "pronomi-8",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul het juiste indirecte voornaamwoord in. '___ mando un messaggio.' (Ik stuur haar een bericht.) — mandare a qualcuno",
+        "sentence": "___ mando un messaggio.",
+        "context": "aan haar = le (indirect voornaamwoord, 3e persoon vrouwelijk enkelvoud)"
+      },
+      "correctAnswer": "Le",
+      "distractors": ["Gli", "La", "Li"],
+      "explanation": {
+        "nl": "'Mandare a qualcuno' (sturen aan iemand) vereist een indirect voornaamwoord. 'Aan haar' wordt 'le' (indirect). Let op: 'la' = haar (direct, lijdend voorwerp), 'le' = aan haar (indirect, meewerkend voorwerp).",
+        "rule": "Indirect vnw 3e persoon vrouwelijk enkelvoud: le (aan haar)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi indiretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (aan mij)" },
+            { "person": "2e enk.", "form": "ti (aan jou)" },
+            { "person": "3e enk. m.", "form": "gli (aan hem)" },
+            { "person": "3e enk. v.", "form": "le (aan haar)", "highlight": true },
+            { "person": "1e mv.", "form": "ci (aan ons)" },
+            { "person": "2e mv.", "form": "vi (aan jullie)" },
+            { "person": "3e mv.", "form": "gli (aan hen)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Mandare a' vereist een indirect voornaamwoord — je stuurt iets aan iemand.",
+        "Het indirect vnw voor 'aan haar' lijkt op het directe meervoud, maar heeft een andere functie."
+      ]
+    },
+    {
+      "id": "pronomi-9",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Ik zie hem elke dag.'",
+        "sentence": "Ik zie hem elke dag.",
+        "context": "zien = vedere, hem = lo (direct vnw), elke dag = ogni giorno"
+      },
+      "correctAnswer": ["Lo vedo ogni giorno.", "Lo vedo ogni giorno"],
+      "explanation": {
+        "nl": "'Zien' (vedere) heeft een lijdend voorwerp, dus je gebruikt het directe voornaamwoord 'lo' (hem). Het voornaamwoord staat vóór het werkwoord: 'Lo vedo'. Het persoonlijk voornaamwoord 'io' mag worden weggelaten.",
+        "rule": "Direct vnw + werkwoord: Lo vedo (ik zie hem). Het vnw staat altijd vóór het vervoegde werkwoord.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi diretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (mij)" },
+            { "person": "2e enk.", "form": "ti (jou)" },
+            { "person": "3e enk. m.", "form": "lo (hem/het)", "highlight": true },
+            { "person": "3e enk. v.", "form": "la (haar)" },
+            { "person": "1e mv.", "form": "ci (ons)" },
+            { "person": "2e mv.", "form": "vi (jullie)" },
+            { "person": "3e mv. m.", "form": "li (hen/ze m.)" },
+            { "person": "3e mv. v.", "form": "le (hen/ze v.)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Hem' is een lijdend voorwerp, dus gebruik je een direct voornaamwoord.",
+        "Het directe voornaamwoord staat vóór het werkwoord in het Italiaans."
+      ]
+    },
+    {
+      "id": "pronomi-10",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Ik schrijf haar een email.'",
+        "sentence": "Ik schrijf haar een email.",
+        "context": "schrijven = scrivere, aan haar = le (indirect vnw), email = una email/un'email"
+      },
+      "correctAnswer": ["Le scrivo una email.", "Le scrivo un'email.", "Le scrivo una email", "Le scrivo un'email"],
+      "explanation": {
+        "nl": "'Schrijven aan iemand' (scrivere a qualcuno) vereist een indirect voornaamwoord. 'Aan haar' wordt 'le'. Let op: hier is 'le' een indirect voornaamwoord (aan haar), niet het directe meervoud (hen/ze).",
+        "rule": "Indirect vnw + werkwoord: Le scrivo (ik schrijf aan haar). Scrivere a → indirect voornaamwoord.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi indiretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (aan mij)" },
+            { "person": "2e enk.", "form": "ti (aan jou)" },
+            { "person": "3e enk. m.", "form": "gli (aan hem)" },
+            { "person": "3e enk. v.", "form": "le (aan haar)", "highlight": true },
+            { "person": "1e mv.", "form": "ci (aan ons)" },
+            { "person": "2e mv.", "form": "vi (aan jullie)" },
+            { "person": "3e mv.", "form": "gli (aan hen)" }
+          ]
+        }
+      },
+      "hints": [
+        "Bij 'schrijven aan iemand' gebruik je een indirect voornaamwoord.",
+        "'Haar' is hier een meewerkend voorwerp (aan haar), niet een lijdend voorwerp."
+      ]
+    },
+    {
+      "id": "pronomi-11",
+      "type": "foutherkenning",
+      "difficulty": 4,
+      "question": {
+        "nl": "Welk woord is fout in deze zin? Let op het verschil tussen direct en indirect.",
+        "sentence": "Marco? Lo telefono stasera.",
+        "context": "telefonare a qualcuno = bellen naar iemand → vereist indirect vnw (gli), niet direct vnw (lo)"
+      },
+      "correctAnswer": "Lo",
+      "distractors": ["Marco", "telefono", "stasera"],
+      "explanation": {
+        "nl": "'Telefonare' (bellen) wordt in het Italiaans gebruikt met 'a' (telefonare a qualcuno), dus het vereist een indirect voornaamwoord. 'Lo' is direct (lijdend voorwerp), maar hier heb je 'gli' nodig (indirect, meewerkend voorwerp). De juiste zin is: 'Marco? Gli telefono stasera.'",
+        "rule": "Telefonare a → indirect vnw. Gli (aan hem), niet lo (hem).",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi indiretti",
+          "tense": "presente",
+          "forms": [
+            { "person": "1e enk.", "form": "mi (aan mij)" },
+            { "person": "2e enk.", "form": "ti (aan jou)" },
+            { "person": "3e enk. m.", "form": "gli (aan hem)", "highlight": true },
+            { "person": "3e enk. v.", "form": "le (aan haar)" },
+            { "person": "1e mv.", "form": "ci (aan ons)" },
+            { "person": "2e mv.", "form": "vi (aan jullie)" },
+            { "person": "3e mv.", "form": "gli (aan hen)" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'telefonare' wordt gebruikt met 'a' — telefonare a qualcuno.",
+        "Werkwoorden met 'a' vereisen een indirect voornaamwoord, geen direct voornaamwoord."
+      ]
+    },
+    {
+      "id": "pronomi-12",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar het Italiaans: 'Ik geef het aan hem.' (het boek aan Marco)",
+        "sentence": "Ik geef het aan hem.",
+        "context": "geven = dare, het (direct) = lo, aan hem (indirect) = gli. Bij gecombineerde voornaamwoorden: gli + lo = glielo"
+      },
+      "correctAnswer": ["Glielo do.", "Glielo do", "Glielo dò.", "Glielo dò"],
+      "explanation": {
+        "nl": "Wanneer je zowel een direct als een indirect voornaamwoord hebt, worden ze gecombineerd. 'Gli' (aan hem) + 'lo' (het) = 'glielo'. Het gecombineerde voornaamwoord staat vóór het werkwoord. De volgorde is altijd: indirect + direct.",
+        "rule": "Gecombineerde voornaamwoorden: gli + lo = glielo, gli + la = gliela, gli + li = glieli, gli + le = gliele",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronomi combinati (gli +)",
+          "tense": "presente",
+          "forms": [
+            { "person": "gli + lo", "form": "glielo", "highlight": true },
+            { "person": "gli + la", "form": "gliela" },
+            { "person": "gli + li", "form": "glieli" },
+            { "person": "gli + le", "form": "gliele" },
+            { "person": "gli + ne", "form": "gliene" }
+          ]
+        }
+      },
+      "hints": [
+        "Je hebt twee voornaamwoorden nodig: 'het' (direct) en 'aan hem' (indirect).",
+        "In het Italiaans worden twee voornaamwoorden samengevoegd tot één woord: gli + lo = ..."
+      ]
+    }
+  ]
+}

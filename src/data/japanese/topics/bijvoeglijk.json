@@ -1,0 +1,448 @@
+{
+  "id": "bijvoeglijk",
+  "name": "Bijvoeglijke naamwoorden (い/な)",
+  "description": "Leer het verschil tussen い-bijvoeglijke naamwoorden (大きい, 小さい, 高い) en な-bijvoeglijke naamwoorden (きれい, 静か, 有名). Oefen verbuigingen en ontkenningen.",
+  "level": "gemiddeld",
+  "order": 5,
+  "grammarRules": [
+    {
+      "id": "i-adjectieven",
+      "title": "い-bijvoeglijke naamwoorden (i-adjectieven)",
+      "explanation": "い-adjectieven eindigen op い en kunnen direct voor een zelfstandig naamwoord staan zonder tussenvoegsel. Ze worden verbogen door い te vervangen: negatief い→くない, verleden い→かった, verleden negatief い→くなかった. Let op: いい (goed) is onregelmatig en wordt よくない, よかった, よくなかった.",
+      "formula": "Tegenwoordig: [stam]い | Negatief: [stam]くない | Verleden: [stam]かった | Verleden neg.: [stam]くなかった | + zn: [stam]い + zelfst. nw.",
+      "examples": [
+        {
+          "italian": "大きい犬 (ookii inu)",
+          "dutch": "Een grote hond",
+          "breakdown": [
+            { "word": "大きい", "role": "adjective", "color": "#a78bfa", "annotation": "groot (i-adjective)" },
+            { "word": "犬", "role": "object", "color": "#34d399", "annotation": "hond (inu)" }
+          ]
+        },
+        {
+          "italian": "高くない (takakunai)",
+          "dutch": "Niet hoog / niet duur",
+          "breakdown": [
+            { "word": "高", "role": "adjective", "color": "#a78bfa", "annotation": "stam van 高い (takai)" },
+            { "word": "くない", "role": "particle", "color": "#f87171", "annotation": "negatieve uitgang (kunai)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "na-adjectieven",
+      "title": "な-bijvoeglijke naamwoorden (na-adjectieven)",
+      "explanation": "な-adjectieven hebben な nodig als tussenvoegsel wanneer ze voor een zelfstandig naamwoord staan. In de predicatieve vorm (aan het einde van de zin) gebruiken ze です. Negatief: じゃない of ではない. Verleden: でした. Let op: きれい en 嫌い zien eruit als い-adjectieven maar zijn な-adjectieven!",
+      "formula": "+ zn: [stam]な + zelfst. nw. | Tegenwoordig: [stam]です | Negatief: [stam]じゃない / ではない | Verleden: [stam]でした",
+      "examples": [
+        {
+          "italian": "きれいな花 (kirei na hana)",
+          "dutch": "Een mooie bloem",
+          "breakdown": [
+            { "word": "きれい", "role": "adjective", "color": "#a78bfa", "annotation": "mooi (na-adjective)" },
+            { "word": "な", "role": "particle", "color": "#fbbf24", "annotation": "verbindingspartikel" },
+            { "word": "花", "role": "object", "color": "#34d399", "annotation": "bloem (hana)" }
+          ]
+        },
+        {
+          "italian": "静かじゃない (shizuka ja nai)",
+          "dutch": "Niet stil",
+          "breakdown": [
+            { "word": "静か", "role": "adjective", "color": "#a78bfa", "annotation": "stil (na-adjective)" },
+            { "word": "じゃない", "role": "particle", "color": "#f87171", "annotation": "ontkenning (ja nai)" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "bijvoeglijk-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste い-bijvoeglijk naamwoord in: 'Een grote kat.' — ___ 猫 (neko).",
+        "sentence": "___ 猫 (neko)。",
+        "context": "Je beschrijft een kat die je op straat ziet."
+      },
+      "correctAnswer": "大きい (ookii)",
+      "distractors": ["大きな (ookina)", "大きく (ookiku)", "大きいな (ookiina)"],
+      "explanation": {
+        "nl": "大きい is een い-adjective en staat direct voor het zelfstandig naamwoord zonder tussenvoegsel. 大きい猫 = grote kat. Let op: 大きな bestaat ook maar is een speciale vorm (連体詞).",
+        "rule": "い-adjective + zelfstandig naamwoord (zonder な)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "大きい (groot)",
+          "tense": "i-adjective verbuiging",
+          "forms": [
+            { "person": "Tegenwoordig +", "form": "大きい (ookii)", "highlight": true },
+            { "person": "Tegenwoordig −", "form": "大きくない (ookikunai)" },
+            { "person": "Verleden +", "form": "大きかった (ookikatta)" },
+            { "person": "Verleden −", "form": "大きくなかった (ookikunakatta)" },
+            { "person": "+ zelfst. nw.", "form": "大きい犬 (ookii inu)" }
+          ]
+        }
+      },
+      "hints": [
+        "大きい eindigt op い en is dus een い-adjective.",
+        "い-adjectieven staan direct voor het zelfstandig naamwoord."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste い-bijvoeglijk naamwoord in: 'Een kleine hond.' — ___ 犬 (inu).",
+        "sentence": "___ 犬 (inu)。",
+        "context": "Je ziet een schattig hondje in het park."
+      },
+      "correctAnswer": "小さい (chiisai)",
+      "distractors": ["小さな (chiisana)", "小さく (chiisaku)", "小さいな (chiisaina)"],
+      "explanation": {
+        "nl": "小さい is een い-adjective. Het staat direct voor het zelfstandig naamwoord: 小さい犬 = kleine hond. Net als 大きい heeft 小さい ook een speciale 小さな-vorm, maar de standaardvorm is 小さい.",
+        "rule": "い-adjective + zelfstandig naamwoord",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "小さい (klein)",
+          "tense": "i-adjective verbuiging",
+          "forms": [
+            { "person": "Tegenwoordig +", "form": "小さい (chiisai)", "highlight": true },
+            { "person": "Tegenwoordig −", "form": "小さくない (chiisakunai)" },
+            { "person": "Verleden +", "form": "小さかった (chiisakatta)" },
+            { "person": "Verleden −", "form": "小さくなかった (chiisakunakatta)" },
+            { "person": "+ zelfst. nw.", "form": "小さい犬 (chiisai inu)" }
+          ]
+        }
+      },
+      "hints": [
+        "小さい eindigt op い — het is een い-adjective.",
+        "い-adjectieven hebben geen な nodig voor een zelfstandig naamwoord."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-3",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm in: 'Een mooie bloem.' — ___ 花 (hana).",
+        "sentence": "___ 花 (hana)。",
+        "context": "Je bewondert bloemen in een Japanse tuin."
+      },
+      "correctAnswer": "きれいな (kirei na)",
+      "distractors": ["きれい (kirei)", "きれいい (kireii)", "きれいの (kirei no)"],
+      "explanation": {
+        "nl": "きれい is een な-adjective, ook al lijkt het op een い-adjective. Voor een zelfstandig naamwoord heb je な nodig: きれいな花 = mooie bloem. Let op: きれいい bestaat niet!",
+        "rule": "な-adjective + な + zelfstandig naamwoord",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "きれい (mooi)",
+          "tense": "na-adjective verbuiging",
+          "forms": [
+            { "person": "Tegenwoordig +", "form": "きれいです (kirei desu)", "highlight": false },
+            { "person": "Tegenwoordig −", "form": "きれいじゃない (kirei ja nai)", "highlight": false },
+            { "person": "Verleden +", "form": "きれいでした (kirei deshita)", "highlight": false },
+            { "person": "Verleden −", "form": "きれいじゃなかった (kirei ja nakatta)", "highlight": false },
+            { "person": "+ zelfst. nw.", "form": "きれいな花 (kirei na hana)", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "きれい lijkt op een い-adjective maar is eigenlijk een な-adjective.",
+        "な-adjectieven hebben な nodig voor een zelfstandig naamwoord."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-4",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm in: 'Een stille plek.' — ___ 場所 (basho).",
+        "sentence": "___ 場所 (basho)。",
+        "context": "Je zoekt een rustige plek om te studeren."
+      },
+      "correctAnswer": "静かな (shizuka na)",
+      "distractors": ["静か (shizuka)", "静かい (shizukai)", "静かの (shizuka no)"],
+      "explanation": {
+        "nl": "静か is een な-adjective. Voor een zelfstandig naamwoord voeg je な toe: 静かな場所 = stille plek. 静かい bestaat niet — 静か eindigt niet op い in de basisvorm.",
+        "rule": "な-adjective + な + zelfstandig naamwoord",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "静か (stil)",
+          "tense": "na-adjective verbuiging",
+          "forms": [
+            { "person": "Tegenwoordig +", "form": "静かです (shizuka desu)", "highlight": false },
+            { "person": "Tegenwoordig −", "form": "静かじゃない (shizuka ja nai)", "highlight": false },
+            { "person": "Verleden +", "form": "静かでした (shizuka deshita)", "highlight": false },
+            { "person": "Verleden −", "form": "静かじゃなかった (shizuka ja nakatta)", "highlight": false },
+            { "person": "+ zelfst. nw.", "form": "静かな場所 (shizuka na basho)", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "静か eindigt niet op い — het is een な-adjective.",
+        "な-adjectieven krijgen な voor een zelfstandig naamwoord."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-5",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout? 'Een mooie bloem.'",
+        "sentence": "きれいい (kireii) 花 (hana)。",
+        "context": "Iemand probeert te zeggen dat de bloem mooi is."
+      },
+      "correctAnswer": "きれいい (kireii)",
+      "distractors": ["花 (hana)", "きれいな (kirei na)", "きれい (kirei)"],
+      "explanation": {
+        "nl": "きれいい bestaat niet. きれい is een な-adjective, geen い-adjective. Je mag geen extra い toevoegen. De juiste vorm voor een zelfstandig naamwoord is きれいな花 (kirei na hana).",
+        "rule": "な-adjectieven krijgen な, niet い, voor een zelfstandig naamwoord",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "きれい (mooi)",
+          "tense": "fout vs correct",
+          "forms": [
+            { "person": "FOUT", "form": "きれいい花 (kireii hana)", "highlight": true },
+            { "person": "CORRECT", "form": "きれいな花 (kirei na hana)", "highlight": true },
+            { "person": "Reden", "form": "きれい = な-adjective, niet い-adjective" }
+          ]
+        }
+      },
+      "hints": [
+        "Is きれい een い-adjective of een な-adjective?",
+        "Niet alle woorden die op い eindigen zijn い-adjectieven."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout? 'Een beroemde persoon.'",
+        "sentence": "有名い (yuumeii) 人 (hito)。",
+        "context": "Iemand probeert te zeggen dat een persoon beroemd is."
+      },
+      "correctAnswer": "有名い (yuumeii)",
+      "distractors": ["人 (hito)", "有名な (yuumei na)", "有名 (yuumei)"],
+      "explanation": {
+        "nl": "有名い bestaat niet. 有名 (beroemd) is een な-adjective. Je kunt niet zomaar い toevoegen. De juiste vorm is 有名な人 (yuumei na hito) = een beroemde persoon.",
+        "rule": "な-adjectieven krijgen な, niet い, voor een zelfstandig naamwoord",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "有名 (beroemd)",
+          "tense": "fout vs correct",
+          "forms": [
+            { "person": "FOUT", "form": "有名い人 (yuumeii hito)", "highlight": true },
+            { "person": "CORRECT", "form": "有名な人 (yuumei na hito)", "highlight": true },
+            { "person": "Reden", "form": "有名 = な-adjective, niet い-adjective" }
+          ]
+        }
+      },
+      "hints": [
+        "有名 eindigt niet op い in de basisvorm.",
+        "Welk type bijvoeglijk naamwoord is 有名?"
+      ]
+    },
+    {
+      "id": "bijvoeglijk-7",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet in de negatieve vorm: 'Deze tas is niet duur.' — このかばんは ___。",
+        "sentence": "このかばんは ___。",
+        "context": "Je legt uit dat een tas betaalbaar is in een winkel."
+      },
+      "correctAnswer": "高くない (takakunai)",
+      "distractors": ["高いじゃない (takai ja nai)", "高いくない (taikakunai)", "高くありません (takaku arimasen)"],
+      "explanation": {
+        "nl": "高い is een い-adjective. De negatieve vorm maak je door い te vervangen door くない: 高い → 高くない. Let op: じゃない is alleen voor な-adjectieven!",
+        "rule": "い-adjective negatief: い → くない",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "高い (hoog/duur)",
+          "tense": "i-adjective verbuiging",
+          "forms": [
+            { "person": "Tegenwoordig +", "form": "高い (takai)" },
+            { "person": "Tegenwoordig −", "form": "高くない (takakunai)", "highlight": true },
+            { "person": "Verleden +", "form": "高かった (takakatta)" },
+            { "person": "Verleden −", "form": "高くなかった (takakunakatta)" }
+          ]
+        }
+      },
+      "hints": [
+        "高い is een い-adjective. Vervang い door くない.",
+        "じゃない werkt alleen bij な-adjectieven."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-8",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet in de negatieve vorm: 'Deze plek is niet stil.' — この場所は ___。",
+        "sentence": "この場所 (basho) は ___。",
+        "context": "Je beschrijft een lawaaierige plek."
+      },
+      "correctAnswer": "静かじゃない (shizuka ja nai)",
+      "distractors": ["静かくない (shizukakunai)", "静かない (shizukanai)", "静かではない (shizuka dewa nai)"],
+      "explanation": {
+        "nl": "静か is een な-adjective. De negatieve vorm is じゃない (informeel) of ではない (formeel): 静かじゃない = niet stil. Let op: くない is alleen voor い-adjectieven!",
+        "rule": "な-adjective negatief: じゃない / ではない",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "静か (stil)",
+          "tense": "na-adjective verbuiging",
+          "forms": [
+            { "person": "Tegenwoordig +", "form": "静かです (shizuka desu)" },
+            { "person": "Tegenwoordig −", "form": "静かじゃない (shizuka ja nai)", "highlight": true },
+            { "person": "Formeel −", "form": "静かではない (shizuka dewa nai)" },
+            { "person": "Verleden +", "form": "静かでした (shizuka deshita)" },
+            { "person": "Verleden −", "form": "静かじゃなかった (shizuka ja nakatta)" }
+          ]
+        }
+      },
+      "hints": [
+        "静か is een な-adjective. Welke ontkenningsvorm hoort daarbij?",
+        "くない is alleen voor い-adjectieven, niet voor な-adjectieven."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-9",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar Japans: 'Het eten was lekker.' (verleden tijd, informeel)",
+        "sentence": "ご飯 (gohan) は おいしかった (oishikatta)。",
+        "context": "Je vertelt een vriend over het eten van gisteren."
+      },
+      "correctAnswer": ["ご飯はおいしかった (gohan wa oishikatta)", "おいしかった (oishikatta)"],
+      "distractors": [
+        "ご飯はおいしいだった (gohan wa oishii datta)",
+        "ご飯はおいしくなかった (gohan wa oishikunakatta)",
+        "ご飯はおいしいでした (gohan wa oishii deshita)"
+      ],
+      "explanation": {
+        "nl": "おいしい is een い-adjective. De verleden tijd maak je door い te vervangen door かった: おいしい → おいしかった. Let op: だった en でした gebruik je niet bij い-adjectieven!",
+        "rule": "い-adjective verleden: い → かった",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "おいしい (lekker)",
+          "tense": "i-adjective verbuiging",
+          "forms": [
+            { "person": "Tegenwoordig +", "form": "おいしい (oishii)" },
+            { "person": "Tegenwoordig −", "form": "おいしくない (oishikunai)" },
+            { "person": "Verleden +", "form": "おいしかった (oishikatta)", "highlight": true },
+            { "person": "Verleden −", "form": "おいしくなかった (oishikunakatta)" }
+          ]
+        }
+      },
+      "hints": [
+        "おいしい is een い-adjective. De verleden tijd is い → かった.",
+        "Gebruik geen だった of でした bij い-adjectieven."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-10",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar Japans: 'Die tempel was beroemd.' (verleden tijd, beleefd)",
+        "sentence": "あのお寺 (otera) は 有名でした (yuumei deshita)。",
+        "context": "Je vertelt over een tempel die je hebt bezocht."
+      },
+      "correctAnswer": ["あのお寺は有名でした (ano otera wa yuumei deshita)", "有名でした (yuumei deshita)"],
+      "distractors": [
+        "あのお寺は有名かった (ano otera wa yuumeikatta)",
+        "あのお寺は有名だった (ano otera wa yuumei datta)",
+        "あのお寺は有名じゃなかった (ano otera wa yuumei ja nakatta)"
+      ],
+      "explanation": {
+        "nl": "有名 is een な-adjective. De beleefde verleden tijd is でした: 有名でした = was beroemd. Let op: かった is alleen voor い-adjectieven! だった is de informele verleden tijd van な-adjectieven.",
+        "rule": "な-adjective verleden (beleefd): でした",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "有名 (beroemd)",
+          "tense": "na-adjective verbuiging",
+          "forms": [
+            { "person": "Tegenwoordig +", "form": "有名です (yuumei desu)" },
+            { "person": "Tegenwoordig −", "form": "有名じゃない (yuumei ja nai)" },
+            { "person": "Verleden + (beleefd)", "form": "有名でした (yuumei deshita)", "highlight": true },
+            { "person": "Verleden + (informeel)", "form": "有名だった (yuumei datta)" },
+            { "person": "Verleden −", "form": "有名じゃなかった (yuumei ja nakatta)" }
+          ]
+        }
+      },
+      "hints": [
+        "有名 is een な-adjective. Welke verleden-tijdvorm hoort bij な-adjectieven?",
+        "De beleefde verleden tijd van な-adjectieven is でした."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-11",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout? 'Het weer was koud.' (verleden tijd)",
+        "sentence": "天気 (tenki) は 寒いだった (samui datta)。",
+        "context": "Iemand probeert te zeggen dat het weer koud was."
+      },
+      "correctAnswer": "寒いだった (samui datta)",
+      "distractors": ["天気 (tenki)", "は (wa)", "寒かった (samukatta)"],
+      "explanation": {
+        "nl": "寒い is een い-adjective. De verleden tijd maak je door い → かった: 寒かった. Je mag geen だった toevoegen aan een い-adjective — dat is alleen voor な-adjectieven en zelfstandige naamwoorden. Correct: 天気は寒かった。",
+        "rule": "い-adjective verleden: い → かった (nooit だった!)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "寒い (koud)",
+          "tense": "fout vs correct",
+          "forms": [
+            { "person": "FOUT", "form": "寒いだった (samui datta)", "highlight": true },
+            { "person": "CORRECT", "form": "寒かった (samukatta)", "highlight": true },
+            { "person": "Reden", "form": "い-adj. verleden = い → かった, niet だった" }
+          ]
+        }
+      },
+      "hints": [
+        "寒い is een い-adjective. Hoe maak je de verleden tijd?",
+        "だった wordt alleen gebruikt bij な-adjectieven en zelfstandige naamwoorden."
+      ]
+    },
+    {
+      "id": "bijvoeglijk-12",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar Japans: 'Die nieuwe en goedkope auto is handig.' (beleefd)",
+        "sentence": "あの新しくて安い車は便利です (ano atarashikute yasui kuruma wa benri desu)。",
+        "context": "Je bespreekt met een vriend waarom een bepaalde auto goed is."
+      },
+      "correctAnswer": ["あの新しくて安い車は便利です (ano atarashikute yasui kuruma wa benri desu)", "新しくて安い車は便利です (atarashikute yasui kuruma wa benri desu)"],
+      "distractors": [
+        "あの新しい安い車は便利です (ano atarashii yasui kuruma wa benri desu)",
+        "あの新しくて安い車は便利なです (ano atarashikute yasui kuruma wa benri na desu)",
+        "あの新しいと安い車は便利です (ano atarashii to yasui kuruma wa benri desu)"
+      ],
+      "explanation": {
+        "nl": "Deze zin combineert meerdere adjectieven. Om い-adjectieven aan te rijgen vervang je い door くて: 新しい → 新しくて (nieuw en...). Het tweede い-adjective 安い staat direct voor het zelfstandig naamwoord. 便利 is een な-adjective in predicatieve positie: 便利です.",
+        "rule": "い-adj. aanrijgen: い → くて | な-adj. predicatief: stam + です",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "adjectieven combineren",
+          "tense": "aanrijgvormen",
+          "forms": [
+            { "person": "い-adj. aanrijgen", "form": "新しくて (atarashikute)", "highlight": true },
+            { "person": "な-adj. aanrijgen", "form": "便利で (benri de)", "highlight": true },
+            { "person": "い-adj. + zn.", "form": "安い車 (yasui kuruma)" },
+            { "person": "な-adj. predicatief", "form": "便利です (benri desu)" },
+            { "person": "Hele zin", "form": "新しくて安い車は便利です" }
+          ]
+        }
+      },
+      "hints": [
+        "Om twee い-adjectieven aan te rijgen, vervang je い door くて.",
+        "便利 is een な-adjective. In predicatieve positie (einde zin) wordt het 便利です."
+      ]
+    }
+  ]
+}

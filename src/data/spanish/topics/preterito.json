@@ -1,0 +1,554 @@
+{
+  "id": "preterito",
+  "name": "Pretérito Indefinido",
+  "description": "Leer de Spaanse verleden tijd voor afgeronde acties: regelmatige werkwoorden op -ar/-er/-ir en belangrijke onregelmatige werkwoorden zoals ir, ser, tener, hacer en estar.",
+  "level": "gemiddeld",
+  "order": 4,
+  "grammarRules": [
+    {
+      "id": "preterito-regular",
+      "title": "Regelmatige werkwoorden in het pretérito indefinido",
+      "explanation": "Het pretérito indefinido wordt gebruikt voor afgeronde acties in het verleden. Regelmatige werkwoorden worden vervoegd door de infinitief-uitgang te vervangen door de juiste preterito-uitgang. Werkwoorden op -er en -ir hebben dezelfde uitgangen in het pretérito. In Latijns-Amerika wordt 'ustedes' gebruikt in plaats van 'vosotros'.",
+      "formula": "-ar: -é, -aste, -ó, -amos, -aron | -er/-ir: -í, -iste, -ió, -imos, -ieron",
+      "examples": [
+        {
+          "italian": "Ayer compré recuerdos en el mercado de Oaxaca.",
+          "dutch": "Gisteren kocht ik souvenirs op de markt van Oaxaca.",
+          "breakdown": [
+            { "word": "Ayer", "role": "adverb", "color": "#60a5fa", "annotation": "gisteren" },
+            { "word": "compré", "role": "verb", "color": "#f87171", "annotation": "comprar → compr- + -é (1e persoon preterito)" },
+            { "word": "recuerdos", "role": "object", "color": "#34d399", "annotation": "souvenirs" },
+            { "word": "en", "role": "preposition", "color": "#fbbf24", "annotation": "op/in" },
+            { "word": "el", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord" },
+            { "word": "mercado", "role": "object", "color": "#34d399", "annotation": "markt" },
+            { "word": "de", "role": "preposition", "color": "#fbbf24", "annotation": "van" },
+            { "word": "Oaxaca", "role": "object", "color": "#34d399", "annotation": "stad in Mexico" }
+          ]
+        },
+        {
+          "italian": "Ellos comieron empanadas en Buenos Aires.",
+          "dutch": "Zij aten empanada's in Buenos Aires.",
+          "breakdown": [
+            { "word": "Ellos", "role": "subject", "color": "#60a5fa", "annotation": "zij (mannelijk meervoud)" },
+            { "word": "comieron", "role": "verb", "color": "#f87171", "annotation": "comer → com- + -ieron (3e persoon meervoud preterito)" },
+            { "word": "empanadas", "role": "object", "color": "#34d399", "annotation": "empanada's (gevulde deegpakketjes)" },
+            { "word": "en", "role": "preposition", "color": "#fbbf24", "annotation": "in" },
+            { "word": "Buenos Aires", "role": "object", "color": "#34d399", "annotation": "hoofdstad van Argentinië" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "preterito-irregular",
+      "title": "Onregelmatige werkwoorden in het pretérito indefinido",
+      "explanation": "Veel veelgebruikte Spaanse werkwoorden zijn onregelmatig in het pretérito indefinido. Ze hebben een veranderde stam en speciale uitgangen zonder accenten. Ir en ser hebben dezelfde vormen in het pretérito (fui, fuiste, fue, fuimos, fueron). De context maakt duidelijk welk werkwoord bedoeld wordt.",
+      "formula": "ir/ser: fui, fuiste, fue, fuimos, fueron | tener: tuve, tuviste, tuvo, tuvimos, tuvieron | hacer: hice, hiciste, hizo, hicimos, hicieron | estar: estuve, estuviste, estuvo, estuvimos, estuvieron | poder: pude, pudiste, pudo, pudimos, pudieron | decir: dije, dijiste, dijo, dijimos, dijeron",
+      "examples": [
+        {
+          "italian": "El año pasado fui a Cartagena de vacaciones.",
+          "dutch": "Vorig jaar ging ik op vakantie naar Cartagena.",
+          "breakdown": [
+            { "word": "El año pasado", "role": "adverb", "color": "#60a5fa", "annotation": "vorig jaar" },
+            { "word": "fui", "role": "verb", "color": "#f87171", "annotation": "ir, 1e persoon preterito (onregelmatig)" },
+            { "word": "a", "role": "preposition", "color": "#fbbf24", "annotation": "naar" },
+            { "word": "Cartagena", "role": "object", "color": "#34d399", "annotation": "stad in Colombia" },
+            { "word": "de", "role": "preposition", "color": "#fbbf24", "annotation": "op/van" },
+            { "word": "vacaciones", "role": "object", "color": "#34d399", "annotation": "vakantie" }
+          ]
+        },
+        {
+          "italian": "Mi mamá hizo tamales para toda la familia.",
+          "dutch": "Mijn moeder maakte tamales voor de hele familie.",
+          "breakdown": [
+            { "word": "Mi", "role": "adjective", "color": "#c084fc", "annotation": "mijn (bezittelijk)" },
+            { "word": "mamá", "role": "subject", "color": "#60a5fa", "annotation": "moeder" },
+            { "word": "hizo", "role": "verb", "color": "#f87171", "annotation": "hacer, 3e persoon preterito (onregelmatig: hic- → hiz-)" },
+            { "word": "tamales", "role": "object", "color": "#34d399", "annotation": "tamales (Mexicaans gerecht)" },
+            { "word": "para", "role": "preposition", "color": "#fbbf24", "annotation": "voor" },
+            { "word": "toda", "role": "adjective", "color": "#c084fc", "annotation": "hele/gehele" },
+            { "word": "la", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord" },
+            { "word": "familia", "role": "object", "color": "#34d399", "annotation": "familie" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "preterito-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste pretérito-vorm van 'hablar' (praten) in.",
+        "sentence": "Yo ___ con mi abuela por teléfono anoche.",
+        "context": "hablar = praten, 1e persoon enkelvoud, pretérito indefinido"
+      },
+      "correctAnswer": "hablé",
+      "distractors": ["habló", "hablaste", "hablaron"],
+      "explanation": {
+        "nl": "Bij regelmatige werkwoorden op -ar krijgt de eerste persoon enkelvoud (yo) de uitgang -é in het pretérito. Hablar → habl- + -é = hablé. Let op het accent op de é.",
+        "rule": "Regelmatige -ar werkwoorden pretérito: yo → stam + -é",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "hablar",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "hablé", "highlight": true },
+            { "person": "tú", "form": "hablaste" },
+            { "person": "él/ella/usted", "form": "habló" },
+            { "person": "nosotros", "form": "hablamos" },
+            { "person": "ellos/ustedes", "form": "hablaron" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'hablar' is regelmatig en eindigt op -ar.",
+        "Voor 'yo' in het pretérito vervang je -ar door -é (met accent)."
+      ]
+    },
+    {
+      "id": "preterito-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste pretérito-vorm van 'comprar' (kopen) in.",
+        "sentence": "Ella ___ frutas en el mercado de Medellín.",
+        "context": "comprar = kopen, 3e persoon enkelvoud, pretérito indefinido"
+      },
+      "correctAnswer": "compró",
+      "distractors": ["compré", "compraste", "compraron"],
+      "explanation": {
+        "nl": "Bij regelmatige werkwoorden op -ar krijgt de derde persoon enkelvoud (él/ella/usted) de uitgang -ó in het pretérito. Comprar → compr- + -ó = compró.",
+        "rule": "Regelmatige -ar werkwoorden pretérito: él/ella/usted → stam + -ó",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "comprar",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "compré" },
+            { "person": "tú", "form": "compraste" },
+            { "person": "él/ella/usted", "form": "compró", "highlight": true },
+            { "person": "nosotros", "form": "compramos" },
+            { "person": "ellos/ustedes", "form": "compraron" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'comprar' is regelmatig en eindigt op -ar.",
+        "Voor 'ella' in het pretérito vervang je -ar door -ó (met accent)."
+      ]
+    },
+    {
+      "id": "preterito-3",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste pretérito-vorm van 'viajar' (reizen) in.",
+        "sentence": "Nosotros ___ a Cancún el verano pasado.",
+        "context": "viajar = reizen, 1e persoon meervoud, pretérito indefinido"
+      },
+      "correctAnswer": "viajamos",
+      "distractors": ["viajaron", "viajé", "viajó"],
+      "explanation": {
+        "nl": "Bij regelmatige werkwoorden op -ar krijgt de eerste persoon meervoud (nosotros) de uitgang -amos in het pretérito. Dit is dezelfde vorm als in het presente! De context maakt duidelijk of het heden of verleden is. Viajar → viaj- + -amos = viajamos.",
+        "rule": "Regelmatige -ar werkwoorden pretérito: nosotros → stam + -amos (gelijk aan presente!)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "viajar",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "viajé" },
+            { "person": "tú", "form": "viajaste" },
+            { "person": "él/ella/usted", "form": "viajó" },
+            { "person": "nosotros", "form": "viajamos", "highlight": true },
+            { "person": "ellos/ustedes", "form": "viajaron" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'viajar' is regelmatig en eindigt op -ar.",
+        "De nosotros-vorm in het pretérito is hetzelfde als in het presente: stam + -amos."
+      ]
+    },
+    {
+      "id": "preterito-4",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste pretérito-vorm van 'comer' (eten) in.",
+        "sentence": "Yo ___ tacos al pastor en la Ciudad de México.",
+        "context": "comer = eten, 1e persoon enkelvoud, pretérito indefinido"
+      },
+      "correctAnswer": "comí",
+      "distractors": ["comió", "comiste", "comieron"],
+      "explanation": {
+        "nl": "Bij regelmatige werkwoorden op -er krijgt de eerste persoon enkelvoud (yo) de uitgang -í in het pretérito. Comer → com- + -í = comí. Let op het accent op de í.",
+        "rule": "Regelmatige -er werkwoorden pretérito: yo → stam + -í",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "comer",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "comí", "highlight": true },
+            { "person": "tú", "form": "comiste" },
+            { "person": "él/ella/usted", "form": "comió" },
+            { "person": "nosotros", "form": "comimos" },
+            { "person": "ellos/ustedes", "form": "comieron" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'comer' is regelmatig en eindigt op -er.",
+        "Voor 'yo' in het pretérito vervang je -er door -í (met accent)."
+      ]
+    },
+    {
+      "id": "preterito-5",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste pretérito-vorm van 'vivir' (wonen/leven) in.",
+        "sentence": "Tú ___ en Bogotá durante dos años.",
+        "context": "vivir = wonen/leven, 2e persoon enkelvoud, pretérito indefinido"
+      },
+      "correctAnswer": "viviste",
+      "distractors": ["viví", "vivió", "vivieron"],
+      "explanation": {
+        "nl": "Bij regelmatige werkwoorden op -ir krijgt de tweede persoon enkelvoud (tú) de uitgang -iste in het pretérito. Vivir → viv- + -iste = viviste. De -er en -ir werkwoorden hebben dezelfde uitgangen in het pretérito.",
+        "rule": "Regelmatige -ir werkwoorden pretérito: tú → stam + -iste",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "vivir",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "viví" },
+            { "person": "tú", "form": "viviste", "highlight": true },
+            { "person": "él/ella/usted", "form": "vivió" },
+            { "person": "nosotros", "form": "vivimos" },
+            { "person": "ellos/ustedes", "form": "vivieron" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'vivir' is regelmatig en eindigt op -ir.",
+        "Voor 'tú' in het pretérito vervang je -ir door -iste."
+      ]
+    },
+    {
+      "id": "preterito-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Nosotros viajé a Lima el mes pasado.",
+        "context": "viajar = reizen, nosotros-vorm in het pretérito"
+      },
+      "correctAnswer": "viajé",
+      "distractors": ["Nosotros", "Lima", "pasado"],
+      "explanation": {
+        "nl": "'Viajé' is de yo-vorm van het pretérito. Voor 'nosotros' moet het 'viajamos' zijn. De -ar werkwoorden krijgen de uitgang -amos voor nosotros in het pretérito.",
+        "rule": "Regelmatige -ar werkwoorden pretérito: nosotros → stam + -amos, niet -é (dat is de yo-vorm)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "viajar",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "viajé" },
+            { "person": "tú", "form": "viajaste" },
+            { "person": "él/ella/usted", "form": "viajó" },
+            { "person": "nosotros", "form": "viajamos", "highlight": true },
+            { "person": "ellos/ustedes", "form": "viajaron" }
+          ]
+        }
+      },
+      "hints": [
+        "Kijk naar het onderwerp 'nosotros' en controleer of de werkwoordsvorm daarbij past.",
+        "De uitgang -é hoort bij de yo-vorm, niet bij nosotros."
+      ]
+    },
+    {
+      "id": "preterito-7",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Tú comieron mucho en la fiesta anoche.",
+        "context": "comer = eten, tú-vorm in het pretérito"
+      },
+      "correctAnswer": "comieron",
+      "distractors": ["Tú", "fiesta", "anoche"],
+      "explanation": {
+        "nl": "'Comieron' is de ellos/ustedes-vorm (3e persoon meervoud). Voor 'tú' moet het 'comiste' zijn. De uitgang -ieron hoort bij de 3e persoon meervoud, niet bij de 2e persoon enkelvoud.",
+        "rule": "Regelmatige -er werkwoorden pretérito: tú → stam + -iste, niet -ieron (dat is ellos/ustedes)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "comer",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "comí" },
+            { "person": "tú", "form": "comiste", "highlight": true },
+            { "person": "él/ella/usted", "form": "comió" },
+            { "person": "nosotros", "form": "comimos" },
+            { "person": "ellos/ustedes", "form": "comieron" }
+          ]
+        }
+      },
+      "hints": [
+        "Kijk naar het onderwerp 'tú' en controleer of de werkwoordsvorm daarbij past.",
+        "De uitgang -ieron hoort bij de 3e persoon meervoud (ellos/ustedes)."
+      ]
+    },
+    {
+      "id": "preterito-8",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Ik kocht een boek in de boekhandel.'",
+        "sentence": "Ik kocht een boek in de boekhandel.",
+        "context": "comprar = kopen, un libro = een boek, la librería = de boekhandel"
+      },
+      "correctAnswer": ["Yo compré un libro en la librería.", "Compré un libro en la librería."],
+      "explanation": {
+        "nl": "'Comprar' is regelmatig: yo → compré. In het Spaans mag het persoonlijk voornaamwoord worden weggelaten. 'Boekhandel' is 'librería' (niet te verwarren met 'biblioteca' = bibliotheek).",
+        "rule": "Regelmatige -ar werkwoorden pretérito: yo → stam + -é. Het persoonlijk voornaamwoord is optioneel.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "comprar",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "compré", "highlight": true },
+            { "person": "tú", "form": "compraste" },
+            { "person": "él/ella/usted", "form": "compró" },
+            { "person": "nosotros", "form": "compramos" },
+            { "person": "ellos/ustedes", "form": "compraron" }
+          ]
+        }
+      },
+      "hints": [
+        "'Kopen' is 'comprar' in het Spaans.",
+        "De yo-vorm van -ar werkwoorden in het pretérito eindigt op -é."
+      ]
+    },
+    {
+      "id": "preterito-9",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Zij schreef een brief aan haar vriendin.'",
+        "sentence": "Zij schreef een brief aan haar vriendin.",
+        "context": "escribir = schrijven, una carta = een brief, a su amiga = aan haar vriendin"
+      },
+      "correctAnswer": ["Ella escribió una carta a su amiga.", "Escribió una carta a su amiga."],
+      "explanation": {
+        "nl": "'Escribir' is regelmatig in het pretérito: ella → escribió. De uitgang -ió wordt gebruikt voor de 3e persoon enkelvoud van -er/-ir werkwoorden. 'Brief' is 'carta' en 'vriendin' is 'amiga'.",
+        "rule": "Regelmatige -ir werkwoorden pretérito: él/ella/usted → stam + -ió",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "escribir",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "escribí" },
+            { "person": "tú", "form": "escribiste" },
+            { "person": "él/ella/usted", "form": "escribió", "highlight": true },
+            { "person": "nosotros", "form": "escribimos" },
+            { "person": "ellos/ustedes", "form": "escribieron" }
+          ]
+        }
+      },
+      "hints": [
+        "'Schrijven' is 'escribir' in het Spaans.",
+        "De ella-vorm van -ir werkwoorden in het pretérito eindigt op -ió."
+      ]
+    },
+    {
+      "id": "preterito-10",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste pretérito-vorm van 'ir' (gaan) in.",
+        "sentence": "Nosotros ___ al parque Chapultepec el domingo.",
+        "context": "ir = gaan (onregelmatig), 1e persoon meervoud, pretérito indefinido"
+      },
+      "correctAnswer": "fuimos",
+      "distractors": ["fueron", "fui", "fue"],
+      "explanation": {
+        "nl": "'Ir' is volledig onregelmatig in het pretérito. De stam verandert naar 'fu-'. De nosotros-vorm is 'fuimos'. Let op: 'ir' en 'ser' hebben dezelfde vormen in het pretérito — de context maakt duidelijk welk werkwoord bedoeld wordt.",
+        "rule": "Ir (onregelmatig pretérito): fui, fuiste, fue, fuimos, fueron. Gelijk aan 'ser'!",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "ir",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "fui" },
+            { "person": "tú", "form": "fuiste" },
+            { "person": "él/ella/usted", "form": "fue" },
+            { "person": "nosotros", "form": "fuimos", "highlight": true },
+            { "person": "ellos/ustedes", "form": "fueron" }
+          ]
+        }
+      },
+      "hints": [
+        "'Ir' is onregelmatig: de stam verandert volledig in het pretérito.",
+        "De nosotros-vorm van 'ir' in het pretérito is 'fuimos'."
+      ]
+    },
+    {
+      "id": "preterito-11",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste pretérito-vorm van 'hacer' (maken/doen) in.",
+        "sentence": "¿Qué ___ tú ayer en Guadalajara?",
+        "context": "hacer = maken/doen (onregelmatig), 2e persoon enkelvoud, pretérito indefinido"
+      },
+      "correctAnswer": "hiciste",
+      "distractors": ["hizo", "hice", "hicieron"],
+      "explanation": {
+        "nl": "'Hacer' is onregelmatig in het pretérito. De stam verandert naar 'hic-' (behalve in de 3e persoon enkelvoud: 'hizo', met z). De tú-vorm is 'hiciste'.",
+        "rule": "Hacer (onregelmatig pretérito): hice, hiciste, hizo, hicimos, hicieron. Let op: 3e persoon enkelvoud heeft z (hizo).",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "hacer",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "hice" },
+            { "person": "tú", "form": "hiciste", "highlight": true },
+            { "person": "él/ella/usted", "form": "hizo" },
+            { "person": "nosotros", "form": "hicimos" },
+            { "person": "ellos/ustedes", "form": "hicieron" }
+          ]
+        }
+      },
+      "hints": [
+        "'Hacer' is onregelmatig: de stam verandert naar 'hic-' in het pretérito.",
+        "De tú-vorm krijgt de uitgang -iste bij de onregelmatige stam: hic- + -iste."
+      ]
+    },
+    {
+      "id": "preterito-12",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Ella tuvió que trabajar todo el fin de semana.",
+        "context": "tener = hebben (onregelmatig), ella-vorm in het pretérito"
+      },
+      "correctAnswer": "tuvió",
+      "distractors": ["Ella", "trabajar", "semana"],
+      "explanation": {
+        "nl": "'Tuvió' bestaat niet. De juiste ella-vorm van 'tener' in het pretérito is 'tuvo' (zonder accent). Onregelmatige werkwoorden in het pretérito krijgen geen accent op de laatste lettergreep in de 3e persoon enkelvoud.",
+        "rule": "Tener (onregelmatig pretérito): de ella/él/usted-vorm is 'tuvo' (zonder accent, niet 'tuvió')",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "tener",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "tuve" },
+            { "person": "tú", "form": "tuviste" },
+            { "person": "él/ella/usted", "form": "tuvo", "highlight": true },
+            { "person": "nosotros", "form": "tuvimos" },
+            { "person": "ellos/ustedes", "form": "tuvieron" }
+          ]
+        }
+      },
+      "hints": [
+        "Controleer of het werkwoord correct vervoegd is — onregelmatige pretérito-vormen hebben speciale regels.",
+        "Onregelmatige werkwoorden in het pretérito krijgen geen accent in de yo- en él/ella/usted-vorm."
+      ]
+    },
+    {
+      "id": "preterito-13",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Yo hació la tarea antes de la cena.",
+        "context": "hacer = maken/doen (onregelmatig), yo-vorm in het pretérito"
+      },
+      "correctAnswer": "hació",
+      "distractors": ["Yo", "tarea", "cena"],
+      "explanation": {
+        "nl": "'Hació' bestaat niet. De juiste yo-vorm van 'hacer' in het pretérito is 'hice'. Bij 'hacer' verandert de stam naar 'hic-' en de yo-uitgang is -e (zonder accent). Dit is een veelgemaakte fout: studenten proberen de regelmatige -ar uitgang -ó toe te passen op 'hacer'.",
+        "rule": "Hacer (onregelmatig pretérito): yo → hice (niet 'hació'). De stam verandert naar hic-.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "hacer",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "hice", "highlight": true },
+            { "person": "tú", "form": "hiciste" },
+            { "person": "él/ella/usted", "form": "hizo" },
+            { "person": "nosotros", "form": "hicimos" },
+            { "person": "ellos/ustedes", "form": "hicieron" }
+          ]
+        }
+      },
+      "hints": [
+        "Controleer of het werkwoord correct vervoegd is — 'hacer' is onregelmatig in het pretérito.",
+        "'Hacer' volgt niet de regelmatige uitgangen. De stam verandert naar 'hic-'."
+      ]
+    },
+    {
+      "id": "preterito-14",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar het Spaans: 'Vorige week gingen wij naar het strand en aten we verse vis.'",
+        "sentence": "Vorige week gingen wij naar het strand en aten we verse vis.",
+        "context": "ir = gaan, comer = eten, la semana pasada = vorige week, la playa = het strand, pescado fresco = verse vis"
+      },
+      "correctAnswer": ["La semana pasada fuimos a la playa y comimos pescado fresco.", "La semana pasada nosotros fuimos a la playa y comimos pescado fresco."],
+      "explanation": {
+        "nl": "Deze zin combineert twee werkwoorden in het pretérito: 'ir' (onregelmatig: fuimos) en 'comer' (regelmatig: comimos). 'Vorige week' is 'la semana pasada'. Beide werkwoorden staan in de nosotros-vorm. 'Strand' is 'playa' en 'verse vis' is 'pescado fresco'.",
+        "rule": "Bij meerdere acties in het verleden staat elk werkwoord in het pretérito. Ir: nosotros → fuimos. Comer: nosotros → comimos.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "ir",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "fui" },
+            { "person": "tú", "form": "fuiste" },
+            { "person": "él/ella/usted", "form": "fue" },
+            { "person": "nosotros", "form": "fuimos", "highlight": true },
+            { "person": "ellos/ustedes", "form": "fueron" }
+          ]
+        }
+      },
+      "hints": [
+        "'Gaan' is 'ir' — onregelmatig in het pretérito: nosotros → fuimos.",
+        "'Eten' is 'comer' — regelmatig in het pretérito: nosotros → comimos."
+      ]
+    },
+    {
+      "id": "preterito-15",
+      "type": "zinsvolgorde",
+      "difficulty": 4,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde.",
+        "sentence": "un / hizo / regalo / para / mi / ella / cumpleaños / me",
+        "context": "hacer = maken/doen, un regalo = een cadeau, para mi cumpleaños = voor mijn verjaardag"
+      },
+      "correctAnswer": ["Ella me hizo un regalo para mi cumpleaños.", "Ella hizo un regalo para mi cumpleaños."],
+      "explanation": {
+        "nl": "De woordvolgorde is: Onderwerp + Indirect voorwerp (me) + Werkwoord + Direct voorwerp + Voorzetselgroep. 'Hacer' is onregelmatig: ella → hizo. 'Me' is het indirect voorwerp (aan mij). In het Spaans staat het indirect voorwerp voor het werkwoord.",
+        "rule": "Woordvolgorde met indirect voorwerp: S + IO + V + DO + Complement. Hacer pretérito: ella → hizo.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "hacer",
+          "tense": "pretérito indefinido",
+          "forms": [
+            { "person": "yo", "form": "hice" },
+            { "person": "tú", "form": "hiciste" },
+            { "person": "él/ella/usted", "form": "hizo", "highlight": true },
+            { "person": "nosotros", "form": "hicimos" },
+            { "person": "ellos/ustedes", "form": "hicieron" }
+          ]
+        }
+      },
+      "hints": [
+        "Begin met het onderwerp 'ella', gevolgd door het indirect voorwerp 'me'.",
+        "'Hacer' is onregelmatig in het pretérito: ella → hizo."
+      ]
+    }
+  ]
+}
