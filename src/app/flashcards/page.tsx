@@ -30,6 +30,14 @@ const languages = [
     border: "border-amber-200",
     description: "Oefen Latijns-Amerikaanse zinnen met uitspraak",
   },
+  {
+    id: "frans",
+    name: "Frans",
+    flag: "🇫🇷",
+    color: "from-blue-50 to-cyan-50",
+    border: "border-blue-200",
+    description: "Oefen Franse zinnen met uitspraak",
+  },
 ];
 
 export default function FlashcardsHubPage() {

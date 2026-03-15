@@ -1,0 +1,558 @@
+{
+  "id": "passe-compose",
+  "name": "Le Pass\u00e9 Compos\u00e9",
+  "description": "Leer de Franse voltooid tegenwoordige tijd: wanneer gebruik je 'avoir' of '\u00eatre' als hulpwerkwoord, en hoe vorm je het voltooid deelwoord.",
+  "level": "gemiddeld",
+  "order": 4,
+  "grammarRules": [
+    {
+      "id": "pc-avoir",
+      "title": "Pass\u00e9 compos\u00e9 met avoir",
+      "explanation": "De meeste werkwoorden gebruiken 'avoir' als hulpwerkwoord in de pass\u00e9 compos\u00e9. Het voltooid deelwoord verandert niet, ongeacht het onderwerp. De uitgangen zijn: -er wordt -\u00e9, -ir wordt -i, -re wordt -u. Sommige werkwoorden hebben een onregelmatig voltooid deelwoord (faire \u2192 fait, voir \u2192 vu, prendre \u2192 pris, \u00e9crire \u2192 \u00e9crit).",
+      "formula": "onderwerp + avoir (vervoegd) + voltooid deelwoord",
+      "examples": [
+        {
+          "french": "J'ai mang\u00e9 une pomme.",
+          "dutch": "Ik heb een appel gegeten.",
+          "breakdown": [
+            { "word": "J'", "role": "subject", "color": "#60a5fa", "annotation": "je (onderwerp)" },
+            { "word": "ai", "role": "verb", "color": "#f87171", "annotation": "avoir, 1e persoon enkelvoud" },
+            { "word": "mang\u00e9", "role": "verb", "color": "#f87171", "annotation": "voltooid deelwoord (-\u00e9)" },
+            { "word": "une", "role": "article", "color": "#a78bfa" },
+            { "word": "pomme", "role": "object", "color": "#34d399" }
+          ]
+        },
+        {
+          "french": "Nous avons fini nos devoirs.",
+          "dutch": "Wij hebben ons huiswerk afgemaakt.",
+          "breakdown": [
+            { "word": "Nous", "role": "subject", "color": "#60a5fa" },
+            { "word": "avons", "role": "verb", "color": "#f87171", "annotation": "avoir, 1e persoon meervoud" },
+            { "word": "fini", "role": "verb", "color": "#f87171", "annotation": "voltooid deelwoord (-i)" },
+            { "word": "nos", "role": "article", "color": "#a78bfa", "annotation": "bezittelijk voornaamwoord" },
+            { "word": "devoirs", "role": "object", "color": "#34d399" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pc-etre",
+      "title": "Pass\u00e9 compos\u00e9 met \u00eatre (DR MRS VANDERTRAMP + wederkerend)",
+      "explanation": "Een beperkte groep werkwoorden gebruikt '\u00eatre' als hulpwerkwoord. Dit zijn de DR MRS VANDERTRAMP-werkwoorden: Devenir, Revenir, Monter, Rester, Sortir, Venir, Aller, Na\u00eetre, Descendre, Entrer, Retourner, Tomber, Rentrer, Arriver, Mourir, Partir. Ook alle wederkerende werkwoorden (se laver, se lever, etc.) gebruiken '\u00eatre'. Bij \u00eatre-werkwoorden moet het voltooid deelwoord overeenkomen in geslacht en getal met het onderwerp: -\u00e9 (m.ev.), -\u00e9e (v.ev.), -\u00e9s (m.mv.), -\u00e9es (v.mv.).",
+      "formula": "onderwerp + \u00eatre (vervoegd) + voltooid deelwoord (met overeenkomst in geslacht/getal)",
+      "examples": [
+        {
+          "french": "Elle est all\u00e9e au march\u00e9.",
+          "dutch": "Zij is naar de markt gegaan.",
+          "breakdown": [
+            { "word": "Elle", "role": "subject", "color": "#60a5fa" },
+            { "word": "est", "role": "verb", "color": "#f87171", "annotation": "\u00eatre, 3e persoon enkelvoud" },
+            { "word": "all\u00e9e", "role": "verb", "color": "#f87171", "annotation": "voltooid deelwoord, vrouwelijk (-\u00e9e)" },
+            { "word": "au", "role": "preposition", "color": "#fb923c", "annotation": "\u00e0 + le" },
+            { "word": "march\u00e9", "role": "object", "color": "#34d399" }
+          ]
+        },
+        {
+          "french": "Ils se sont lav\u00e9s les mains.",
+          "dutch": "Zij hebben hun handen gewassen.",
+          "breakdown": [
+            { "word": "Ils", "role": "subject", "color": "#60a5fa" },
+            { "word": "se", "role": "pronoun", "color": "#c084fc", "annotation": "wederkerend voornaamwoord" },
+            { "word": "sont", "role": "verb", "color": "#f87171", "annotation": "\u00eatre, 3e persoon meervoud" },
+            { "word": "lav\u00e9s", "role": "verb", "color": "#f87171", "annotation": "voltooid deelwoord, mannelijk meervoud (-\u00e9s)" },
+            { "word": "les", "role": "article", "color": "#a78bfa" },
+            { "word": "mains", "role": "object", "color": "#34d399" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "pc-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van de pass\u00e9 compos\u00e9 in.",
+        "sentence": "Hier, j' ___ (manger) une salade."
+      },
+      "correctAnswer": "ai mang\u00e9",
+      "hints": [
+        "Het werkwoord 'manger' gebruikt 'avoir' als hulpwerkwoord.",
+        "De uitgang -er wordt -\u00e9 in het voltooid deelwoord.",
+        "Je + avoir = j'ai."
+      ],
+      "explanation": {
+        "nl": "'Manger' is een regelmatig -er werkwoord met avoir. Je \u2192 j'ai + mang\u00e9.",
+        "rule": "Regelmatige -er werkwoorden: stam + \u00e9 als voltooid deelwoord. Hulpwerkwoord avoir vervoegen naar het onderwerp.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "manger",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je", "form": "j'ai mang\u00e9", "highlight": true },
+            { "person": "tu", "form": "tu as mang\u00e9" },
+            { "person": "il/elle", "form": "il/elle a mang\u00e9" },
+            { "person": "nous", "form": "nous avons mang\u00e9" },
+            { "person": "vous", "form": "vous avez mang\u00e9" },
+            { "person": "ils/elles", "form": "ils/elles ont mang\u00e9" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van de pass\u00e9 compos\u00e9 in.",
+        "sentence": "Tu ___ (finir) tes devoirs."
+      },
+      "correctAnswer": "as fini",
+      "hints": [
+        "Het werkwoord 'finir' gebruikt 'avoir' als hulpwerkwoord.",
+        "De uitgang -ir wordt -i in het voltooid deelwoord.",
+        "Tu + avoir = tu as."
+      ],
+      "explanation": {
+        "nl": "'Finir' is een regelmatig -ir werkwoord met avoir. Tu \u2192 as + fini.",
+        "rule": "Regelmatige -ir werkwoorden: stam + i als voltooid deelwoord.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "finir",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je", "form": "j'ai fini" },
+            { "person": "tu", "form": "tu as fini", "highlight": true },
+            { "person": "il/elle", "form": "il/elle a fini" },
+            { "person": "nous", "form": "nous avons fini" },
+            { "person": "vous", "form": "vous avez fini" },
+            { "person": "ils/elles", "form": "ils/elles ont fini" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-3",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van de pass\u00e9 compos\u00e9 in.",
+        "sentence": "Nous ___ (regarder) un film int\u00e9ressant."
+      },
+      "correctAnswer": "avons regard\u00e9",
+      "hints": [
+        "'Regarder' is een regelmatig -er werkwoord met avoir.",
+        "Nous + avoir = nous avons.",
+        "Het voltooid deelwoord van 'regarder' is 'regard\u00e9'."
+      ],
+      "explanation": {
+        "nl": "'Regarder' is een regelmatig -er werkwoord. Nous \u2192 avons + regard\u00e9.",
+        "rule": "Bij avoir-werkwoorden verandert het voltooid deelwoord niet, ongeacht het onderwerp.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "regarder",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je", "form": "j'ai regard\u00e9" },
+            { "person": "tu", "form": "tu as regard\u00e9" },
+            { "person": "il/elle", "form": "il/elle a regard\u00e9" },
+            { "person": "nous", "form": "nous avons regard\u00e9", "highlight": true },
+            { "person": "vous", "form": "vous avez regard\u00e9" },
+            { "person": "ils/elles", "form": "ils/elles ont regard\u00e9" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul de juiste vorm van de pass\u00e9 compos\u00e9 in. Let op: dit werkwoord gebruikt '\u00eatre'.",
+        "sentence": "Marie ___ (aller) au cin\u00e9ma."
+      },
+      "correctAnswer": "est all\u00e9e",
+      "hints": [
+        "'Aller' is een DR MRS VANDERTRAMP-werkwoord en gebruikt '\u00eatre'.",
+        "Marie is vrouwelijk enkelvoud, dus het deelwoord krijgt een extra -e.",
+        "Elle + \u00eatre = elle est."
+      ],
+      "explanation": {
+        "nl": "'Aller' gebruikt \u00eatre als hulpwerkwoord. Marie is vrouwelijk, dus het deelwoord wordt 'all\u00e9e' (met extra -e).",
+        "rule": "Bij \u00eatre-werkwoorden komt het voltooid deelwoord overeen in geslacht en getal met het onderwerp. Vrouwelijk enkelvoud: + e.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "aller",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je (m.)", "form": "je suis all\u00e9" },
+            { "person": "je (f.)", "form": "je suis all\u00e9e" },
+            { "person": "il", "form": "il est all\u00e9" },
+            { "person": "elle", "form": "elle est all\u00e9e", "highlight": true },
+            { "person": "nous (m.)", "form": "nous sommes all\u00e9s" },
+            { "person": "elles", "form": "elles sont all\u00e9es" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-5",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul de juiste vorm van de pass\u00e9 compos\u00e9 in. Let op het onregelmatige voltooid deelwoord.",
+        "sentence": "Ils ___ (faire) leurs devoirs."
+      },
+      "correctAnswer": "ont fait",
+      "hints": [
+        "'Faire' gebruikt 'avoir' als hulpwerkwoord.",
+        "Het voltooid deelwoord van 'faire' is onregelmatig: fait.",
+        "Ils + avoir = ils ont."
+      ],
+      "explanation": {
+        "nl": "'Faire' heeft een onregelmatig voltooid deelwoord: fait. Het gebruikt avoir. Ils \u2192 ont + fait.",
+        "rule": "Veel gebruikte werkwoorden hebben onregelmatige voltooid deelwoorden. Faire \u2192 fait, voir \u2192 vu, prendre \u2192 pris, \u00e9crire \u2192 \u00e9crit.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "faire",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je", "form": "j'ai fait" },
+            { "person": "tu", "form": "tu as fait" },
+            { "person": "il/elle", "form": "il/elle a fait" },
+            { "person": "nous", "form": "nous avons fait" },
+            { "person": "vous", "form": "vous avez fait" },
+            { "person": "ils/elles", "form": "ils/elles ont fait", "highlight": true }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Pierre a all\u00e9 \u00e0 la boulangerie."
+      },
+      "correctAnswer": "a",
+      "hints": [
+        "'Aller' is een DR MRS VANDERTRAMP-werkwoord.",
+        "Welk hulpwerkwoord hoort bij bewegingswerkwoorden?",
+        "Pierre is mannelijk, dus het deelwoord blijft 'all\u00e9'."
+      ],
+      "explanation": {
+        "nl": "'Aller' is een bewegingswerkwoord en gebruikt '\u00eatre', niet 'avoir'. De correcte zin is: 'Pierre est all\u00e9 \u00e0 la boulangerie.'",
+        "rule": "DR MRS VANDERTRAMP-werkwoorden gebruiken altijd '\u00eatre' als hulpwerkwoord, niet 'avoir'.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "aller",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je", "form": "je suis all\u00e9(e)" },
+            { "person": "tu", "form": "tu es all\u00e9(e)" },
+            { "person": "il", "form": "il est all\u00e9", "highlight": true },
+            { "person": "elle", "form": "elle est all\u00e9e" },
+            { "person": "nous", "form": "nous sommes all\u00e9(e)s" },
+            { "person": "ils", "form": "ils sont all\u00e9s" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-7",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Wij hebben een boek gelezen.'"
+      },
+      "correctAnswer": [
+        "Nous avons lu un livre.",
+        "On a lu un livre."
+      ],
+      "hints": [
+        "'Lezen' is 'lire' in het Frans.",
+        "'Lire' gebruikt 'avoir' als hulpwerkwoord.",
+        "Het voltooid deelwoord van 'lire' is onregelmatig: lu."
+      ],
+      "explanation": {
+        "nl": "'Lire' gebruikt avoir en heeft het onregelmatige voltooid deelwoord 'lu'. Nous + avons + lu.",
+        "rule": "Onregelmatige voltooid deelwoorden moeten uit het hoofd geleerd worden. Lire \u2192 lu, \u00e9crire \u2192 \u00e9crit, boire \u2192 bu.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "lire",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je", "form": "j'ai lu" },
+            { "person": "tu", "form": "tu as lu" },
+            { "person": "il/elle", "form": "il/elle a lu" },
+            { "person": "nous", "form": "nous avons lu", "highlight": true },
+            { "person": "vous", "form": "vous avez lu" },
+            { "person": "ils/elles", "form": "ils/elles ont lu" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-8",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Zij (vrouwelijk, enkelvoud) is gisteren aangekomen.'"
+      },
+      "correctAnswer": [
+        "Elle est arriv\u00e9e hier.",
+        "Hier, elle est arriv\u00e9e."
+      ],
+      "hints": [
+        "'Aankomen' is 'arriver' in het Frans.",
+        "'Arriver' is een DR MRS VANDERTRAMP-werkwoord (\u00eatre).",
+        "Het onderwerp is vrouwelijk, dus het deelwoord krijgt een extra -e: arriv\u00e9e."
+      ],
+      "explanation": {
+        "nl": "'Arriver' gebruikt \u00eatre. Bij een vrouwelijk onderwerp wordt het deelwoord 'arriv\u00e9e'. Elle \u2192 est + arriv\u00e9e.",
+        "rule": "Bij \u00eatre-werkwoorden stemt het voltooid deelwoord overeen met het onderwerp: vrouwelijk enkelvoud krijgt een extra -e.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "arriver",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je (m.)", "form": "je suis arriv\u00e9" },
+            { "person": "je (f.)", "form": "je suis arriv\u00e9e" },
+            { "person": "il", "form": "il est arriv\u00e9" },
+            { "person": "elle", "form": "elle est arriv\u00e9e", "highlight": true },
+            { "person": "nous (m.)", "form": "nous sommes arriv\u00e9s" },
+            { "person": "elles", "form": "elles sont arriv\u00e9es" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-9",
+      "type": "zinsvolgorde",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde om een correcte zin in de pass\u00e9 compos\u00e9 te maken.",
+        "sentence": "parl\u00e9 / professeur / avons / au / nous"
+      },
+      "correctAnswer": "Nous avons parl\u00e9 au professeur.",
+      "hints": [
+        "Begin met het onderwerp (nous).",
+        "Dan volgt het hulpwerkwoord (avons).",
+        "Daarna het voltooid deelwoord (parl\u00e9) en de rest."
+      ],
+      "explanation": {
+        "nl": "De juiste volgorde is: onderwerp (Nous) + hulpwerkwoord (avons) + deelwoord (parl\u00e9) + voorzetselgroep (au professeur).",
+        "rule": "De zinsvolgorde in de pass\u00e9 compos\u00e9 is: onderwerp + hulpwerkwoord + voltooid deelwoord + aanvullingen.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "parler",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je", "form": "j'ai parl\u00e9" },
+            { "person": "tu", "form": "tu as parl\u00e9" },
+            { "person": "il/elle", "form": "il/elle a parl\u00e9" },
+            { "person": "nous", "form": "nous avons parl\u00e9", "highlight": true },
+            { "person": "vous", "form": "vous avez parl\u00e9" },
+            { "person": "ils/elles", "form": "ils/elles ont parl\u00e9" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-10",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste vorm in. Let op de overeenkomst met het onderwerp.",
+        "sentence": "Les filles ___ (partir) en vacances."
+      },
+      "correctAnswer": "sont parties",
+      "hints": [
+        "'Partir' is een DR MRS VANDERTRAMP-werkwoord (\u00eatre).",
+        "'Les filles' is vrouwelijk meervoud.",
+        "Het voltooid deelwoord moet overeenkomen: parti + e (vrouwelijk) + s (meervoud) = parties."
+      ],
+      "explanation": {
+        "nl": "'Partir' gebruikt \u00eatre. 'Les filles' is vrouwelijk meervoud, dus het deelwoord wordt 'parties': sont parties.",
+        "rule": "Bij \u00eatre-werkwoorden: vrouwelijk meervoud = deelwoord + es. Parti \u2192 parties.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "partir",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je (m.)", "form": "je suis parti" },
+            { "person": "je (f.)", "form": "je suis partie" },
+            { "person": "il", "form": "il est parti" },
+            { "person": "elle", "form": "elle est partie" },
+            { "person": "ils", "form": "ils sont partis" },
+            { "person": "elles", "form": "elles sont parties", "highlight": true }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-11",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin? Let op de overeenkomst van het voltooid deelwoord.",
+        "sentence": "Les gar\u00e7ons sont all\u00e9es au parc."
+      },
+      "correctAnswer": "all\u00e9es",
+      "hints": [
+        "'Les gar\u00e7ons' is mannelijk meervoud.",
+        "Komt het voltooid deelwoord overeen met het geslacht?",
+        "Mannelijk meervoud: deelwoord + s, niet + es."
+      ],
+      "explanation": {
+        "nl": "'Les gar\u00e7ons' is mannelijk meervoud. Het deelwoord moet 'all\u00e9s' zijn (niet 'all\u00e9es', dat is vrouwelijk meervoud). Correct: 'Les gar\u00e7ons sont all\u00e9s au parc.'",
+        "rule": "Bij \u00eatre-werkwoorden: mannelijk meervoud = deelwoord + s. Vrouwelijk meervoud = deelwoord + es. Let goed op het verschil!",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "aller",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je (m.)", "form": "je suis all\u00e9" },
+            { "person": "je (f.)", "form": "je suis all\u00e9e" },
+            { "person": "ils", "form": "ils sont all\u00e9s", "highlight": true },
+            { "person": "elles", "form": "elles sont all\u00e9es" },
+            { "person": "nous (m.)", "form": "nous sommes all\u00e9s" },
+            { "person": "nous (f.)", "form": "nous sommes all\u00e9es" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-12",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste vorm van de pass\u00e9 compos\u00e9 in. Dit is een wederkerend werkwoord.",
+        "sentence": "Elle ___ (se lever) t\u00f4t ce matin."
+      },
+      "correctAnswer": "s'est lev\u00e9e",
+      "hints": [
+        "Wederkerende werkwoorden gebruiken '\u00eatre' als hulpwerkwoord.",
+        "Het wederkerend voornaamwoord 'se' wordt 's'' voor een klinker.",
+        "'Elle' is vrouwelijk, dus het deelwoord krijgt een extra -e."
+      ],
+      "explanation": {
+        "nl": "'Se lever' is een wederkerend werkwoord en gebruikt \u00eatre. Elle \u2192 s'est lev\u00e9e. Het deelwoord stemt overeen met het vrouwelijke onderwerp.",
+        "rule": "Wederkerende werkwoorden gebruiken altijd \u00eatre. De overeenkomst van het deelwoord volgt dezelfde regels als andere \u00eatre-werkwoorden.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "se lever",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je (m.)", "form": "je me suis lev\u00e9" },
+            { "person": "je (f.)", "form": "je me suis lev\u00e9e" },
+            { "person": "il", "form": "il s'est lev\u00e9" },
+            { "person": "elle", "form": "elle s'est lev\u00e9e", "highlight": true },
+            { "person": "nous (m.)", "form": "nous nous sommes lev\u00e9s" },
+            { "person": "elles", "form": "elles se sont lev\u00e9es" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-13",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Zij (vrouwelijk, meervoud) zijn naar school gegaan.'"
+      },
+      "correctAnswer": [
+        "Elles sont all\u00e9es \u00e0 l'\u00e9cole.",
+        "Elles sont all\u00e9es \u00e0 l'ecole."
+      ],
+      "hints": [
+        "'Gaan' is 'aller' in het Frans (DR MRS VANDERTRAMP, met \u00eatre).",
+        "'Zij' (vrouwelijk meervoud) = elles.",
+        "Het deelwoord moet overeenkomen: all\u00e9 + e (vrouwelijk) + s (meervoud) = all\u00e9es."
+      ],
+      "explanation": {
+        "nl": "'Aller' gebruikt \u00eatre. Elles (vrouwelijk meervoud) \u2192 sont + all\u00e9es. Het deelwoord krijgt -es voor vrouwelijk meervoud.",
+        "rule": "Bij \u00eatre-werkwoorden en vrouwelijk meervoud onderwerp: voltooid deelwoord + es.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "aller",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je (m.)", "form": "je suis all\u00e9" },
+            { "person": "je (f.)", "form": "je suis all\u00e9e" },
+            { "person": "il", "form": "il est all\u00e9" },
+            { "person": "elle", "form": "elle est all\u00e9e" },
+            { "person": "ils", "form": "ils sont all\u00e9s" },
+            { "person": "elles", "form": "elles sont all\u00e9es", "highlight": true }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-14",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Nous avons descendu les escaliers."
+      },
+      "correctAnswer": "avons",
+      "hints": [
+        "'Descendre' is een DR MRS VANDERTRAMP-werkwoord wanneer het zonder lijdend voorwerp wordt gebruikt.",
+        "Hier wordt 'descendre' intransitief gebruikt (de trap afgaan).",
+        "Welk hulpwerkwoord hoort bij DR MRS VANDERTRAMP-werkwoorden?"
+      ],
+      "explanation": {
+        "nl": "'Descendre' is een DR MRS VANDERTRAMP-werkwoord en gebruikt '\u00eatre' wanneer het intransitief wordt gebruikt (zonder lijdend voorwerp). 'Les escaliers' is hier geen lijdend voorwerp maar een plaatsbepaling. Correct: 'Nous sommes descendu(e)s les escaliers.' Let op: als 'descendre' w\u00e9l een lijdend voorwerp heeft (bijv. 'descendre les valises' = de koffers naar beneden brengen), dan gebruik je 'avoir'.",
+        "rule": "Sommige DR MRS VANDERTRAMP-werkwoorden (monter, descendre, sortir, rentrer, passer) kunnen zowel \u00eatre (intransitief) als avoir (transitief, met lijdend voorwerp) gebruiken.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "descendre",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je (intransitief)", "form": "je suis descendu(e)", "highlight": true },
+            { "person": "tu (intransitief)", "form": "tu es descendu(e)" },
+            { "person": "il (intransitief)", "form": "il est descendu" },
+            { "person": "je (transitief)", "form": "j'ai descendu" },
+            { "person": "tu (transitief)", "form": "tu as descendu" },
+            { "person": "il (transitief)", "form": "il a descendu" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pc-15",
+      "type": "zinsvolgorde",
+      "difficulty": 4,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde om een correcte zin in de pass\u00e9 compos\u00e9 te maken. Let op het wederkerende werkwoord.",
+        "sentence": "ce / couch\u00e9es / matin / sont / t\u00f4t / elles / se"
+      },
+      "correctAnswer": "Elles se sont couch\u00e9es t\u00f4t ce matin.",
+      "hints": [
+        "Begin met het onderwerp (elles).",
+        "Bij wederkerende werkwoorden: onderwerp + wederkerend voornaamwoord + hulpwerkwoord + deelwoord.",
+        "'Elles' is vrouwelijk meervoud, dus het deelwoord krijgt -\u00e9es."
+      ],
+      "explanation": {
+        "nl": "De juiste volgorde is: onderwerp (Elles) + wederkerend voornaamwoord (se) + hulpwerkwoord (sont) + deelwoord (couch\u00e9es) + bijwoord (t\u00f4t) + tijdsbepaling (ce matin). Het deelwoord stemt overeen met het vrouwelijk meervoud onderwerp.",
+        "rule": "Bij wederkerende werkwoorden in de pass\u00e9 compos\u00e9: onderwerp + wederkerend voornaamwoord + \u00eatre (vervoegd) + voltooid deelwoord (met overeenkomst).",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "se coucher",
+          "tense": "pass\u00e9 compos\u00e9",
+          "forms": [
+            { "person": "je (m.)", "form": "je me suis couch\u00e9" },
+            { "person": "je (f.)", "form": "je me suis couch\u00e9e" },
+            { "person": "il", "form": "il s'est couch\u00e9" },
+            { "person": "elle", "form": "elle s'est couch\u00e9e" },
+            { "person": "ils", "form": "ils se sont couch\u00e9s" },
+            { "person": "elles", "form": "elles se sont couch\u00e9es", "highlight": true }
+          ]
+        }
+      }
+    }
+  ]
+}

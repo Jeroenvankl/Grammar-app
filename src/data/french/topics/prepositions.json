@@ -1,0 +1,247 @@
+{
+  "id": "prepositions",
+  "name": "Les Prépositions",
+  "description": "Leer de Franse voorzetsels: à, de, en, dans, sur, sous, avec, pour, par, chez en hun gebruik met lidwoorden.",
+  "level": "gemiddeld",
+  "order": 3,
+  "grammarRules": [
+    {
+      "id": "prepositions-base",
+      "title": "Basisvoorzetsels",
+      "explanation": "Frans heeft veel voorzetsels. De belangrijkste zijn: à (naar/aan/in), de (van/uit), en (in/naar), dans (in), sur (op), sous (onder), avec (met), pour (voor), par (door), chez (bij/thuis bij). Elk voorzetsel heeft specifieke gebruiksregels.",
+      "formula": "voorzetsel + zelfstandig naamwoord (eventueel met lidwoord)",
+      "examples": [
+        {
+          "italian": "Je vais à la gare.",
+          "dutch": "Ik ga naar het station.",
+          "breakdown": [
+            { "word": "Je vais", "role": "verb", "color": "#E85D75", "annotation": "ik ga (aller)" },
+            { "word": "à", "role": "preposition", "color": "#FF9800", "annotation": "naar" },
+            { "word": "la gare", "role": "object", "color": "#4CAF50", "annotation": "het station (vrouwelijk)" }
+          ]
+        },
+        {
+          "italian": "Il habite chez ses parents.",
+          "dutch": "Hij woont bij zijn ouders.",
+          "breakdown": [
+            { "word": "Il habite", "role": "verb", "color": "#E85D75", "annotation": "hij woont (habiter)" },
+            { "word": "chez", "role": "preposition", "color": "#FF9800", "annotation": "bij (thuis bij)" },
+            { "word": "ses parents", "role": "object", "color": "#4CAF50", "annotation": "zijn ouders" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prepositions-contractees",
+      "title": "Samengetrokken voorzetsels",
+      "explanation": "Wanneer 'à' of 'de' gevolgd worden door het mannelijk enkelvoud lidwoord 'le' of het meervoud lidwoord 'les', smelten ze samen: à + le = au, à + les = aux, de + le = du, de + les = des. Let op: met 'la' en 'l'' is er GEEN samentrekking.",
+      "formula": "à + le = au, à + les = aux, de + le = du, de + les = des",
+      "examples": [
+        {
+          "italian": "Je vais au cinéma.",
+          "dutch": "Ik ga naar de bioscoop.",
+          "breakdown": [
+            { "word": "Je vais", "role": "verb", "color": "#E85D75", "annotation": "ik ga" },
+            { "word": "au", "role": "preposition", "color": "#FF9800", "annotation": "à + le = au" },
+            { "word": "cinéma", "role": "object", "color": "#4CAF50", "annotation": "bioscoop (mannelijk)" }
+          ]
+        },
+        {
+          "italian": "Le livre du professeur.",
+          "dutch": "Het boek van de leraar.",
+          "breakdown": [
+            { "word": "Le livre", "role": "subject", "color": "#4A90D9", "annotation": "het boek" },
+            { "word": "du", "role": "preposition", "color": "#FF9800", "annotation": "de + le = du" },
+            { "word": "professeur", "role": "object", "color": "#4CAF50", "annotation": "leraar (mannelijk)" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "prep-fr-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste samengetrokken voorzetsel in (à + le):",
+        "sentence": "Je vais ___ cinéma ce soir.",
+        "context": "à + le = au"
+      },
+      "correctAnswer": "au",
+      "distractors": ["à le", "du", "aux"],
+      "explanation": {
+        "nl": "'Au' is de samentrekking van 'à' (naar) + 'le' (de, mannelijk enkelvoud). 'Cinéma' is mannelijk, dus je schrijft 'au cinéma'. Je mag NOOIT 'à le' schrijven.",
+        "rule": "à + le = au",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "à", "article": "le", "combined": "au", "usage": "richting/bestemming" }
+      },
+      "hints": ["Het voorzetsel 'à' en het lidwoord 'le' smelten altijd samen.", "'Cinéma' is een mannelijk woord."]
+    },
+    {
+      "id": "prep-fr-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste samengetrokken voorzetsel in (de + le):",
+        "sentence": "C'est le livre ___ professeur.",
+        "context": "de + le = du"
+      },
+      "correctAnswer": "du",
+      "distractors": ["de le", "des", "au"],
+      "explanation": {
+        "nl": "'Du' is de samentrekking van 'de' (van) + 'le' (de, mannelijk enkelvoud). 'Professeur' is mannelijk, dus 'de + le' wordt 'du'. Je mag NOOIT 'de le' schrijven.",
+        "rule": "de + le = du",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "de", "article": "le", "combined": "du", "usage": "bezit/eigenschap" }
+      },
+      "hints": ["'De' + 'le' smelten samen tot één woord.", "'Professeur' is mannelijk enkelvoud."]
+    },
+    {
+      "id": "prep-fr-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste voorzetsel in: 'Ik ga naar de luchthaven.'",
+        "sentence": "Je vais ___ l'aéroport.",
+        "context": "Geen samentrekking met l' — gewoon 'à'"
+      },
+      "correctAnswer": "à",
+      "distractors": ["au", "aux", "du"],
+      "explanation": {
+        "nl": "Wanneer het zelfstandig naamwoord begint met een klinker of stomme h, wordt het lidwoord 'l''. In dat geval is er GEEN samentrekking: je schrijft gewoon 'à l'aéroport', niet 'au aéroport'.",
+        "rule": "à + l' = à l' (geen samentrekking)",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "à", "article": "l'", "combined": "à l'", "usage": "richting (geen samentrekking bij l')" }
+      },
+      "hints": ["'Aéroport' begint met een klinker, dus het lidwoord is 'l''.", "Bij 'l'' vindt er geen samentrekking plaats."]
+    },
+    {
+      "id": "prep-fr-4",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Je parle à les enfants dans le jardin."
+      },
+      "correctAnswer": "à",
+      "distractors": ["les", "dans", "le"],
+      "explanation": {
+        "nl": "'À les' mag niet! 'À' + 'les' moeten altijd samensmelten tot 'aux'. De correcte zin is: 'Je parle aux enfants dans le jardin.' (Ik praat met de kinderen in de tuin.)",
+        "rule": "à + les = aux (nooit 'à les')",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "à", "article": "les", "combined": "aux", "usage": "meervoud bestemming/ontvanger" }
+      },
+      "hints": ["'À' gevolgd door 'les' moet samensmelten.", "Kijk naar de voorzetsels en lidwoorden in de zin."]
+    },
+    {
+      "id": "prep-fr-5",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Het einde van de film.'",
+        "sentence": "Het einde van de film.",
+        "context": "de + le = du"
+      },
+      "correctAnswer": ["La fin du film.", "La fin du film"],
+      "explanation": {
+        "nl": "'Du' is de samentrekking van 'de' (van) + 'le' (de). 'Film' is mannelijk in het Frans, dus 'de + le' = 'du'. 'Fin' (einde) is vrouwelijk, dus 'la fin'.",
+        "rule": "de + le = du",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "de", "article": "le", "combined": "du", "usage": "bezit (van de)" }
+      },
+      "hints": ["'Einde' = 'fin' (vrouwelijk), 'film' = 'film' (mannelijk).", "'Van de' + mannelijk enkelvoud = 'du'."]
+    },
+    {
+      "id": "prep-fr-6",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste voorzetsel in: 'De kat zit onder de tafel.'",
+        "sentence": "Le chat est ___ la table.",
+        "context": "Positie: onder"
+      },
+      "correctAnswer": "sous",
+      "distractors": ["sur", "dans", "avec"],
+      "explanation": {
+        "nl": "'Sous' betekent 'onder'. Het geeft een positie aan. Let op het verschil: 'sur' = op, 'sous' = onder, 'dans' = in.",
+        "rule": "sous = onder (positie)",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "sous", "article": "la", "combined": "sous la", "usage": "positie (onder)" }
+      },
+      "hints": ["Waar zit de kat? Onder iets.", "'Onder' in het Frans is 'sous'."]
+    },
+    {
+      "id": "prep-fr-7",
+      "type": "zinsvolgorde",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde: 'Ik ga naar de markt met mijn moeder.'",
+        "sentence": "mère / avec / vais / ma / marché / Je / au"
+      },
+      "correctAnswer": "Je vais au marché avec ma mère.",
+      "distractors": ["Je vais avec au marché ma mère.", "Au marché je vais avec ma mère.", "Je avec ma mère vais au marché."],
+      "explanation": {
+        "nl": "De juiste volgorde is: onderwerp (Je) + werkwoord (vais) + voorzetsel + bestemming (au marché) + voorzetsel + gezelschap (avec ma mère). Let op: 'au' is de samentrekking van 'à + le'. 'Marché' (markt) is mannelijk.",
+        "rule": "Onderwerp + werkwoord + à/au + bestemming + avec + gezelschap",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "au / avec", "article": "le / ma", "combined": "au marché / avec ma mère", "usage": "bestemming + gezelschap" }
+      },
+      "hints": ["Begin met het onderwerp 'Je' en het werkwoord 'vais'.", "'Au' = à + le, 'marché' is mannelijk."]
+    },
+    {
+      "id": "prep-fr-8",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Elle vient de les États-Unis pour étudier."
+      },
+      "correctAnswer": "de",
+      "distractors": ["les", "pour", "vient"],
+      "explanation": {
+        "nl": "'De les' mag niet! 'De' + 'les' moeten altijd samensmelten tot 'des'. De correcte zin is: 'Elle vient des États-Unis pour étudier.' (Zij komt uit de Verenigde Staten om te studeren.)",
+        "rule": "de + les = des (nooit 'de les')",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "de", "article": "les", "combined": "des", "usage": "herkomst (meervoud)" }
+      },
+      "hints": ["'De' + 'les' moeten samensmelten tot één woord.", "Landen in het meervoud gebruiken 'les'."]
+    },
+    {
+      "id": "prep-fr-9",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Ik denk aan de vakantie.'",
+        "sentence": "Ik denk aan de vakantie.",
+        "context": "penser à + les = aux"
+      },
+      "correctAnswer": ["Je pense aux vacances.", "Je pense aux vacances"],
+      "explanation": {
+        "nl": "'Penser à' = denken aan. 'Vacances' (vakantie) wordt in het Frans altijd in het meervoud gebruikt met 'les'. Dus 'à + les' = 'aux'. De volledige zin: 'Je pense aux vacances.'",
+        "rule": "à + les = aux",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "à", "article": "les", "combined": "aux", "usage": "denken aan (penser à) + meervoud" }
+      },
+      "hints": ["'Denken aan' = 'penser à'. 'Vakantie' = 'vacances' (altijd meervoud in het Frans).", "'À' + 'les' smelten samen tot 'aux'."]
+    },
+    {
+      "id": "prep-fr-10",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'De kinderen van de buurman gaan naar het zwembad met hun vrienden.'",
+        "sentence": "De kinderen van de buurman gaan naar het zwembad met hun vrienden.",
+        "context": "Meerdere voorzetsels: de + le = du, à + la = à la, avec"
+      },
+      "correctAnswer": ["Les enfants du voisin vont à la piscine avec leurs amis.", "Les enfants du voisin vont à la piscine avec leurs amis"],
+      "explanation": {
+        "nl": "Deze zin bevat drie voorzetsels: 'du' (de + le, van de buurman), 'à la' (naar het zwembad — 'piscine' is vrouwelijk, dus GEEN samentrekking), en 'avec' (met). Let op: bij 'la' vindt geen samentrekking plaats, dus het is 'à la piscine', niet 'au piscine'.",
+        "rule": "du (de+le) | à la (geen samentrekking bij la) | avec",
+        "diagramType": "preposition",
+        "diagramData": { "preposition": "de / à / avec", "article": "le / la / —", "combined": "du / à la / avec", "usage": "bezit + bestemming + gezelschap" }
+      },
+      "hints": ["'Buurman' = 'voisin' (mannelijk), dus 'de + le' = 'du'.", "'Piscine' (zwembad) is vrouwelijk, dus geen samentrekking: 'à la piscine'.", "'Met' = 'avec', 'hun vrienden' = 'leurs amis'."]
+    }
+  ]
+}

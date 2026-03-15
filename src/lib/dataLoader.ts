@@ -21,6 +21,13 @@ import porParaData from "@/data/spanish/topics/por-para.json";
 import preteritoData from "@/data/spanish/topics/preterito.json";
 import subjuntivoData from "@/data/spanish/topics/subjuntivo.json";
 
+// French topics
+import presentFrData from "@/data/french/topics/present.json";
+import articlesFrData from "@/data/french/topics/articles.json";
+import prepositionsFrData from "@/data/french/topics/prepositions.json";
+import passeComposeFrData from "@/data/french/topics/passe-compose.json";
+import pronomsFrData from "@/data/french/topics/pronoms.json";
+
 const italianTopics: Topic[] = [
   presenteData as unknown as Topic,
   articoliData as unknown as Topic,
@@ -45,6 +52,14 @@ const spanishTopics: Topic[] = [
   subjuntivoData as unknown as Topic,
 ];
 
+const frenchTopics: Topic[] = [
+  presentFrData as unknown as Topic,
+  articlesFrData as unknown as Topic,
+  prepositionsFrData as unknown as Topic,
+  passeComposeFrData as unknown as Topic,
+  pronomsFrData as unknown as Topic,
+];
+
 export const languages: Language[] = [
   {
     id: "italian",
@@ -63,6 +78,12 @@ export const languages: Language[] = [
     name: "Spaans (Latijns-Amerika)",
     flag: "\u{1F30E}",
     topics: spanishTopics,
+  },
+  {
+    id: "french",
+    name: "Frans",
+    flag: "\u{1F1EB}\u{1F1F7}",
+    topics: frenchTopics,
   },
 ];
 

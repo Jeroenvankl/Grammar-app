@@ -1,0 +1,486 @@
+{
+  "id": "pronoms",
+  "name": "Les Pronoms",
+  "description": "Leer de Franse persoonlijke voornaamwoorden: directe (me, te, le, la, les) en indirecte (lui, leur) voornaamwoorden en hun positie in de zin.",
+  "level": "gevorderd",
+  "order": 5,
+  "grammarRules": [
+    {
+      "id": "pronoms-cod",
+      "title": "Directe voornaamwoorden (pronoms COD)",
+      "explanation": "Directe voornaamwoorden (compléments d'objet direct) vervangen het lijdend voorwerp. Ze staan vóór het vervoegde werkwoord. De vormen zijn: me/m' (mij), te/t' (jou), le/l' (hem/het), la/l' (haar/het), nous (ons), vous (jullie/u), les (hen/ze). Let op: 'me', 'te', 'le' en 'la' worden afgekort tot m', t' en l' voor een klinker of stomme h.",
+      "formula": "sujet + pronom COD + verbe conjugué",
+      "examples": [
+        {
+          "french": "Je le mange tous les jours.",
+          "dutch": "Ik eet het elke dag.",
+          "breakdown": [
+            { "word": "Je", "role": "subject", "color": "#60a5fa", "annotation": "ik" },
+            { "word": "le", "role": "object", "color": "#34d399", "annotation": "direct vnw (het/hem)" },
+            { "word": "mange", "role": "verb", "color": "#f87171", "annotation": "eten, 1e persoon" },
+            { "word": "tous les jours", "role": "adverb", "color": "#fbbf24", "annotation": "elke dag" }
+          ]
+        },
+        {
+          "french": "Il la voit depuis la fenêtre.",
+          "dutch": "Hij ziet haar vanuit het raam.",
+          "breakdown": [
+            { "word": "Il", "role": "subject", "color": "#60a5fa", "annotation": "hij" },
+            { "word": "la", "role": "object", "color": "#34d399", "annotation": "direct vnw (haar)" },
+            { "word": "voit", "role": "verb", "color": "#f87171", "annotation": "zien, 3e persoon" },
+            { "word": "depuis", "role": "preposition", "color": "#fbbf24", "annotation": "vanuit" },
+            { "word": "la fenêtre", "role": "object", "color": "#a78bfa", "annotation": "het raam" }
+          ]
+        },
+        {
+          "french": "Nous les achetons au marché.",
+          "dutch": "Wij kopen ze op de markt.",
+          "breakdown": [
+            { "word": "Nous", "role": "subject", "color": "#60a5fa", "annotation": "wij" },
+            { "word": "les", "role": "object", "color": "#34d399", "annotation": "direct vnw (hen/ze)" },
+            { "word": "achetons", "role": "verb", "color": "#f87171", "annotation": "kopen, 1e persoon mv" },
+            { "word": "au", "role": "preposition", "color": "#fbbf24", "annotation": "à + le (op de)" },
+            { "word": "marché", "role": "object", "color": "#a78bfa", "annotation": "markt" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pronoms-coi",
+      "title": "Indirecte voornaamwoorden (pronoms COI)",
+      "explanation": "Indirecte voornaamwoorden (compléments d'objet indirect) vervangen 'à + persoon' (het meewerkend voorwerp). Ze staan vóór het vervoegde werkwoord. De vormen zijn: me/m' (aan mij), te/t' (aan jou), lui (aan hem/haar), nous (aan ons), vous (aan jullie/u), leur (aan hen). Let op: 'lui' wordt zowel voor mannelijk als vrouwelijk gebruikt (aan hem én aan haar).",
+      "formula": "sujet + pronom COI + verbe conjugué",
+      "examples": [
+        {
+          "french": "Je lui écris une lettre.",
+          "dutch": "Ik schrijf hem/haar een brief.",
+          "breakdown": [
+            { "word": "Je", "role": "subject", "color": "#60a5fa", "annotation": "ik" },
+            { "word": "lui", "role": "object", "color": "#34d399", "annotation": "indirect vnw (aan hem/haar)" },
+            { "word": "écris", "role": "verb", "color": "#f87171", "annotation": "schrijven, 1e persoon" },
+            { "word": "une", "role": "article", "color": "#a78bfa", "annotation": "onbepaald lidwoord" },
+            { "word": "lettre", "role": "object", "color": "#34d399", "annotation": "brief" }
+          ]
+        },
+        {
+          "french": "Elle leur téléphone demain.",
+          "dutch": "Zij belt hen morgen.",
+          "breakdown": [
+            { "word": "Elle", "role": "subject", "color": "#60a5fa", "annotation": "zij" },
+            { "word": "leur", "role": "object", "color": "#34d399", "annotation": "indirect vnw (aan hen)" },
+            { "word": "téléphone", "role": "verb", "color": "#f87171", "annotation": "bellen, 3e persoon" },
+            { "word": "demain", "role": "adverb", "color": "#fbbf24", "annotation": "morgen" }
+          ]
+        },
+        {
+          "french": "Tu me donnes ton numéro.",
+          "dutch": "Jij geeft mij je nummer.",
+          "breakdown": [
+            { "word": "Tu", "role": "subject", "color": "#60a5fa", "annotation": "jij" },
+            { "word": "me", "role": "object", "color": "#34d399", "annotation": "indirect vnw (aan mij)" },
+            { "word": "donnes", "role": "verb", "color": "#f87171", "annotation": "geven, 2e persoon" },
+            { "word": "ton", "role": "adjective", "color": "#fb923c", "annotation": "jouw" },
+            { "word": "numéro", "role": "object", "color": "#a78bfa", "annotation": "nummer" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "pronoms-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste directe voornaamwoord in. 'Le gâteau ? Je ___ mange après le dîner.' (De taart? Ik eet het na het avondeten.)",
+        "sentence": "Le gâteau ? Je ___ mange après le dîner.",
+        "context": "gâteau = mannelijk enkelvoud, dus direct vnw = le"
+      },
+      "correctAnswer": "le",
+      "distractors": ["la", "les", "lui"],
+      "explanation": {
+        "nl": "'Gâteau' is mannelijk enkelvoud, dus je gebruikt 'le' als direct voornaamwoord. Het staat tussen het onderwerp 'je' en het werkwoord 'mange'.",
+        "rule": "Mannelijk enkelvoud lijdend voorwerp → le",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronoms COD",
+          "tense": "présent",
+          "forms": [
+            { "person": "1e enk.", "form": "me / m' (mij)" },
+            { "person": "2e enk.", "form": "te / t' (jou)" },
+            { "person": "3e enk. m.", "form": "le / l' (hem/het)", "highlight": true },
+            { "person": "3e enk. v.", "form": "la / l' (haar/het)" },
+            { "person": "1e mv.", "form": "nous (ons)" },
+            { "person": "2e mv.", "form": "vous (jullie/u)" },
+            { "person": "3e mv.", "form": "les (hen/ze)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Gâteau' is mannelijk enkelvoud — welk direct voornaamwoord hoort daarbij?",
+        "Het directe voornaamwoord staat vóór het werkwoord, na het onderwerp."
+      ]
+    },
+    {
+      "id": "pronoms-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste directe voornaamwoord in. 'La salade ? Je ___ prépare maintenant.' (De salade? Ik bereid het/haar nu.)",
+        "sentence": "La salade ? Je ___ prépare maintenant.",
+        "context": "salade = vrouwelijk enkelvoud, dus direct vnw = la"
+      },
+      "correctAnswer": "la",
+      "distractors": ["le", "les", "leur"],
+      "explanation": {
+        "nl": "'Salade' is vrouwelijk enkelvoud, dus je gebruikt 'la' als direct voornaamwoord. In het Frans moet het voornaamwoord overeenkomen in geslacht en getal met het zelfstandig naamwoord dat het vervangt.",
+        "rule": "Vrouwelijk enkelvoud lijdend voorwerp → la",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronoms COD",
+          "tense": "présent",
+          "forms": [
+            { "person": "1e enk.", "form": "me / m' (mij)" },
+            { "person": "2e enk.", "form": "te / t' (jou)" },
+            { "person": "3e enk. m.", "form": "le / l' (hem/het)" },
+            { "person": "3e enk. v.", "form": "la / l' (haar/het)", "highlight": true },
+            { "person": "1e mv.", "form": "nous (ons)" },
+            { "person": "2e mv.", "form": "vous (jullie/u)" },
+            { "person": "3e mv.", "form": "les (hen/ze)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Salade' is vrouwelijk — welk direct voornaamwoord past bij vrouwelijk enkelvoud?",
+        "Denk aan het geslacht van het zelfstandig naamwoord."
+      ]
+    },
+    {
+      "id": "pronoms-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste directe voornaamwoord in. 'Les livres ? Je ___ lis souvent.' (De boeken? Ik lees ze vaak.)",
+        "sentence": "Les livres ? Je ___ lis souvent.",
+        "context": "livres = meervoud, dus direct vnw = les"
+      },
+      "correctAnswer": "les",
+      "distractors": ["le", "la", "leur"],
+      "explanation": {
+        "nl": "'Livres' is meervoud, dus je gebruikt 'les'. In het Frans is er maar één meervoudsvorm voor het directe voornaamwoord: 'les' (voor zowel mannelijk als vrouwelijk meervoud). Dit is eenvoudiger dan in het Italiaans, waar je 'li' en 'le' hebt.",
+        "rule": "Meervoud lijdend voorwerp (mannelijk of vrouwelijk) → les",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronoms COD",
+          "tense": "présent",
+          "forms": [
+            { "person": "1e enk.", "form": "me / m' (mij)" },
+            { "person": "2e enk.", "form": "te / t' (jou)" },
+            { "person": "3e enk. m.", "form": "le / l' (hem/het)" },
+            { "person": "3e enk. v.", "form": "la / l' (haar/het)" },
+            { "person": "1e mv.", "form": "nous (ons)" },
+            { "person": "2e mv.", "form": "vous (jullie/u)" },
+            { "person": "3e mv.", "form": "les (hen/ze)", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "'Livres' is een meervoud — welk direct voornaamwoord gebruik je voor meervoud?",
+        "In het Frans is er maar één meervoudsvorm voor het directe voornaamwoord."
+      ]
+    },
+    {
+      "id": "pronoms-4",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste indirecte voornaamwoord in. 'Je ___ parle demain.' (Ik spreek hem/haar morgen.) — parler à quelqu'un",
+        "sentence": "Je ___ parle demain.",
+        "context": "aan hem/haar = lui (indirect voornaamwoord, 3e persoon enkelvoud)"
+      },
+      "correctAnswer": "lui",
+      "distractors": ["le", "la", "leur"],
+      "explanation": {
+        "nl": "'Parler à quelqu'un' (spreken tegen iemand) vereist een indirect voornaamwoord. 'Aan hem/haar' wordt 'lui' in het Frans. Let op: in het Frans wordt 'lui' zowel voor mannelijk als vrouwelijk gebruikt, anders dan in het Italiaans (gli/le).",
+        "rule": "Indirect vnw 3e persoon enkelvoud (m. + v.): lui (aan hem/haar)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronoms COI",
+          "tense": "présent",
+          "forms": [
+            { "person": "1e enk.", "form": "me / m' (aan mij)" },
+            { "person": "2e enk.", "form": "te / t' (aan jou)" },
+            { "person": "3e enk.", "form": "lui (aan hem/haar)", "highlight": true },
+            { "person": "1e mv.", "form": "nous (aan ons)" },
+            { "person": "2e mv.", "form": "vous (aan jullie/u)" },
+            { "person": "3e mv.", "form": "leur (aan hen)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Parler à' vereist een indirect voornaamwoord — je spreekt tegen iemand.",
+        "Het indirect voornaamwoord voor de 3e persoon enkelvoud is hetzelfde voor mannelijk en vrouwelijk."
+      ]
+    },
+    {
+      "id": "pronoms-5",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste indirecte voornaamwoord in. 'Elle ___ envoie un message.' (Zij stuurt hen een bericht.) — envoyer à quelqu'un",
+        "sentence": "Elle ___ envoie un message.",
+        "context": "aan hen = leur (indirect voornaamwoord, 3e persoon meervoud)"
+      },
+      "correctAnswer": "leur",
+      "distractors": ["lui", "les", "le"],
+      "explanation": {
+        "nl": "'Envoyer à quelqu'un' (sturen aan iemand) vereist een indirect voornaamwoord. 'Aan hen' wordt 'leur'. Let op het verschil: 'les' = hen/ze (direct, lijdend voorwerp), 'leur' = aan hen (indirect, meewerkend voorwerp).",
+        "rule": "Indirect vnw 3e persoon meervoud: leur (aan hen)",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronoms COI",
+          "tense": "présent",
+          "forms": [
+            { "person": "1e enk.", "form": "me / m' (aan mij)" },
+            { "person": "2e enk.", "form": "te / t' (aan jou)" },
+            { "person": "3e enk.", "form": "lui (aan hem/haar)" },
+            { "person": "1e mv.", "form": "nous (aan ons)" },
+            { "person": "2e mv.", "form": "vous (aan jullie/u)" },
+            { "person": "3e mv.", "form": "leur (aan hen)", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "'Envoyer à' vereist een indirect voornaamwoord — je stuurt iets aan iemand.",
+        "Het indirect voornaamwoord voor 'aan hen' (meervoud) is niet 'les' maar een andere vorm."
+      ]
+    },
+    {
+      "id": "pronoms-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "La pomme ? Je lui mange après le déjeuner.",
+        "context": "'Manger' heeft een lijdend voorwerp (direct), geen meewerkend voorwerp. 'Lui' is een indirect vnw, maar hier heb je een direct vnw nodig."
+      },
+      "correctAnswer": "lui",
+      "distractors": ["La", "mange", "déjeuner"],
+      "explanation": {
+        "nl": "'Manger' (eten) heeft een lijdend voorwerp: je eet iets (direct object). 'Lui' is een indirect voornaamwoord (aan hem/haar), maar hier heb je een direct voornaamwoord nodig. 'Pomme' is vrouwelijk enkelvoud, dus je moet 'la' gebruiken. De juiste zin is: 'La pomme ? Je la mange après le déjeuner.'",
+        "rule": "Manger + COD (direct object) → direct vnw. Vrouwelijk enkelvoud → la.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronoms COD",
+          "tense": "présent",
+          "forms": [
+            { "person": "1e enk.", "form": "me / m' (mij)" },
+            { "person": "2e enk.", "form": "te / t' (jou)" },
+            { "person": "3e enk. m.", "form": "le / l' (hem/het)" },
+            { "person": "3e enk. v.", "form": "la / l' (haar/het)", "highlight": true },
+            { "person": "1e mv.", "form": "nous (ons)" },
+            { "person": "2e mv.", "form": "vous (jullie/u)" },
+            { "person": "3e mv.", "form": "les (hen/ze)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Manger' (eten) vereist een lijdend voorwerp — je eet iets.",
+        "Is 'lui' een direct of indirect voornaamwoord? Welk type heb je hier nodig?"
+      ]
+    },
+    {
+      "id": "pronoms-7",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin? Let op het verschil tussen direct en indirect.",
+        "sentence": "Marie ? Je le téléphone ce soir.",
+        "context": "téléphoner à quelqu'un = bellen naar iemand → vereist indirect vnw (lui), niet direct vnw (le). Bovendien is Marie vrouwelijk."
+      },
+      "correctAnswer": "le",
+      "distractors": ["Marie", "téléphone", "soir"],
+      "explanation": {
+        "nl": "'Téléphoner' wordt in het Frans gebruikt met 'à' (téléphoner à quelqu'un), dus het vereist een indirect voornaamwoord. 'Le' is een direct voornaamwoord (lijdend voorwerp), maar hier heb je 'lui' nodig (indirect, meewerkend voorwerp). De juiste zin is: 'Marie ? Je lui téléphone ce soir.'",
+        "rule": "Téléphoner à → indirect vnw. Lui (aan hem/haar), niet le/la (hem/haar).",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronoms COI",
+          "tense": "présent",
+          "forms": [
+            { "person": "1e enk.", "form": "me / m' (aan mij)" },
+            { "person": "2e enk.", "form": "te / t' (aan jou)" },
+            { "person": "3e enk.", "form": "lui (aan hem/haar)", "highlight": true },
+            { "person": "1e mv.", "form": "nous (aan ons)" },
+            { "person": "2e mv.", "form": "vous (aan jullie/u)" },
+            { "person": "3e mv.", "form": "leur (aan hen)" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'téléphoner' wordt gebruikt met 'à' — téléphoner à quelqu'un.",
+        "Werkwoorden met 'à' vereisen een indirect voornaamwoord, geen direct voornaamwoord."
+      ]
+    },
+    {
+      "id": "pronoms-8",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Ik zie hem elke dag.'",
+        "sentence": "Ik zie hem elke dag.",
+        "context": "zien = voir, hem = le (direct vnw), elke dag = tous les jours"
+      },
+      "correctAnswer": ["Je le vois tous les jours.", "Je le vois tous les jours"],
+      "explanation": {
+        "nl": "'Voir' (zien) heeft een lijdend voorwerp, dus je gebruikt het directe voornaamwoord 'le' (hem). Het voornaamwoord staat vóór het werkwoord: 'Je le vois'. In het Frans heb je altijd het onderwerp 'je' nodig, anders dan in het Italiaans.",
+        "rule": "Sujet + pronom COD + verbe: Je le vois (ik zie hem). Het vnw staat altijd vóór het vervoegde werkwoord.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronoms COD",
+          "tense": "présent",
+          "forms": [
+            { "person": "1e enk.", "form": "me / m' (mij)" },
+            { "person": "2e enk.", "form": "te / t' (jou)" },
+            { "person": "3e enk. m.", "form": "le / l' (hem/het)", "highlight": true },
+            { "person": "3e enk. v.", "form": "la / l' (haar/het)" },
+            { "person": "1e mv.", "form": "nous (ons)" },
+            { "person": "2e mv.", "form": "vous (jullie/u)" },
+            { "person": "3e mv.", "form": "les (hen/ze)" }
+          ]
+        }
+      },
+      "hints": [
+        "'Hem' is hier een lijdend voorwerp, dus gebruik je een direct voornaamwoord.",
+        "Het directe voornaamwoord staat vóór het werkwoord: sujet + pronom + verbe."
+      ]
+    },
+    {
+      "id": "pronoms-9",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Wij geven hun een cadeau.'",
+        "sentence": "Wij geven hun een cadeau.",
+        "context": "geven = donner, aan hen = leur (indirect vnw), cadeau = un cadeau"
+      },
+      "correctAnswer": ["Nous leur donnons un cadeau.", "Nous leur donnons un cadeau"],
+      "explanation": {
+        "nl": "'Donner à quelqu'un' (geven aan iemand) vereist een indirect voornaamwoord. 'Aan hen' wordt 'leur'. Let op: 'leur' als voornaamwoord krijgt nooit een -s, in tegenstelling tot het bezittelijk voornaamwoord 'leurs' (hun).",
+        "rule": "Sujet + pronom COI + verbe: Nous leur donnons (wij geven aan hen). 'Leur' als vnw krijgt nooit een -s.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "pronoms COI",
+          "tense": "présent",
+          "forms": [
+            { "person": "1e enk.", "form": "me / m' (aan mij)" },
+            { "person": "2e enk.", "form": "te / t' (aan jou)" },
+            { "person": "3e enk.", "form": "lui (aan hem/haar)" },
+            { "person": "1e mv.", "form": "nous (aan ons)" },
+            { "person": "2e mv.", "form": "vous (aan jullie/u)" },
+            { "person": "3e mv.", "form": "leur (aan hen)", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "Bij 'geven aan iemand' gebruik je een indirect voornaamwoord.",
+        "'Hun' is hier een meewerkend voorwerp (aan hen), niet een lijdend voorwerp."
+      ]
+    },
+    {
+      "id": "pronoms-10",
+      "type": "zinsvolgorde",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde. De zin betekent: 'Zij kent ze (de liedjes) goed.'",
+        "sentence": "bien / Elle / connaît / les",
+        "context": "kennen = connaître, ze (direct vnw meervoud) = les, goed = bien"
+      },
+      "correctAnswer": ["Elle les connaît bien.", "Elle les connaît bien"],
+      "explanation": {
+        "nl": "De juiste woordvolgorde in het Frans is: onderwerp + direct voornaamwoord + werkwoord + bijwoord. 'Les' (ze) staat vóór het werkwoord 'connaît'. Het bijwoord 'bien' komt na het werkwoord.",
+        "rule": "Volgorde: Sujet + pronom COD + verbe + adverbe. Het voornaamwoord staat altijd direct vóór het werkwoord.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "woordvolgorde",
+          "tense": "présent",
+          "forms": [
+            { "person": "1", "form": "Sujet (onderwerp)", "highlight": true },
+            { "person": "2", "form": "Pronom (voornaamwoord)", "highlight": true },
+            { "person": "3", "form": "Verbe (werkwoord)", "highlight": true },
+            { "person": "4", "form": "Complément (aanvulling)" }
+          ]
+        }
+      },
+      "hints": [
+        "Het onderwerp staat altijd vooraan in een Franse zin.",
+        "Het voornaamwoord staat direct vóór het werkwoord, niet erna."
+      ]
+    },
+    {
+      "id": "pronoms-11",
+      "type": "foutherkenning",
+      "difficulty": 4,
+      "question": {
+        "nl": "Welk woord is fout in deze zin? Let op elisie (afkorting voor een klinker).",
+        "sentence": "Je le aime beaucoup.",
+        "context": "'Aime' begint met een klinker. 'Le' moet worden afgekort tot 'l'' voor een klinker: je l'aime."
+      },
+      "correctAnswer": "le",
+      "distractors": ["Je", "aime", "beaucoup"],
+      "explanation": {
+        "nl": "Wanneer het directe voornaamwoord 'le' of 'la' voor een werkwoord staat dat begint met een klinker of stomme h, moet je elisie toepassen: 'le' wordt 'l''. De juiste zin is: 'Je l'aime beaucoup.' Dit geldt ook voor 'me' → 'm'' en 'te' → 't''.",
+        "rule": "Elisie: le/la → l' voor een klinker of stomme h. Je le aime → Je l'aime.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "elisie (COD)",
+          "tense": "présent",
+          "forms": [
+            { "person": "me + klinker", "form": "m' (je m'appelle)" },
+            { "person": "te + klinker", "form": "t' (il t'écoute)" },
+            { "person": "le + klinker", "form": "l' (je l'aime)", "highlight": true },
+            { "person": "la + klinker", "form": "l' (je l'adore)", "highlight": true },
+            { "person": "nous", "form": "nous (geen elisie)" },
+            { "person": "vous", "form": "vous (geen elisie)" },
+            { "person": "les", "form": "les (geen elisie)" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'aimer' begint met een klinker.",
+        "Wat gebeurt er met 'le' of 'la' als het volgende woord met een klinker begint?"
+      ]
+    },
+    {
+      "id": "pronoms-12",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Ik geef het aan haar.' (het boek aan Marie)",
+        "sentence": "Ik geef het aan haar.",
+        "context": "geven = donner, het (direct) = le, aan haar (indirect) = lui. Volgorde bij twee voornaamwoorden: COI (me/te/nous/vous) vóór COD, maar lui/leur komt ná COD: je le lui donne."
+      },
+      "correctAnswer": ["Je le lui donne.", "Je le lui donne"],
+      "explanation": {
+        "nl": "Wanneer je zowel een direct als een indirect voornaamwoord hebt met 'lui' of 'leur', is de volgorde: sujet + COD + COI + verbe. Dus: 'Je le lui donne.' Let op: bij me/te/nous/vous is de volgorde anders (COI vóór COD). Dit is een belangrijk verschil met het Italiaans, waar de voornaamwoorden worden samengevoegd.",
+        "rule": "Twee voornaamwoorden met lui/leur: sujet + le/la/les + lui/leur + verbe. Bij me/te/nous/vous: sujet + me/te/nous/vous + le/la/les + verbe.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "volgorde twee vnw",
+          "tense": "présent",
+          "forms": [
+            { "person": "me/te/nous/vous +", "form": "me/te/nous/vous + le/la/les + verbe" },
+            { "person": "lui/leur +", "form": "le/la/les + lui/leur + verbe", "highlight": true },
+            { "person": "Voorbeeld 1", "form": "Il me le donne. (Hij geeft het aan mij.)" },
+            { "person": "Voorbeeld 2", "form": "Je le lui donne. (Ik geef het aan hem/haar.)", "highlight": true },
+            { "person": "Voorbeeld 3", "form": "Nous les leur envoyons. (Wij sturen ze aan hen.)" }
+          ]
+        }
+      },
+      "hints": [
+        "Je hebt twee voornaamwoorden nodig: 'het' (direct) en 'aan haar' (indirect).",
+        "Bij 'lui' en 'leur' komt het directe voornaamwoord (le/la/les) vóór het indirecte voornaamwoord."
+      ]
+    }
+  ]
+}

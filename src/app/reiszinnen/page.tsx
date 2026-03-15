@@ -39,6 +39,17 @@ const languages = [
     description: "Reiszinnen voor heel Latijns-Amerika — met regionale uitdrukkingen",
     extra: "Lokale slang & tips",
   },
+  {
+    id: "frans",
+    name: "Frans",
+    flag: "🇫🇷",
+    phrases: "130+",
+    color: "from-blue-50 to-cyan-50",
+    border: "border-blue-200",
+    hoverShadow: "hover:shadow-blue-100",
+    description: "Van begroetingen tot noodgevallen — alles voor je reis naar Frankrijk",
+    extra: "Uitspraaktips voor Nederlanders",
+  },
 ];
 
 export default function ReiszinnenHubPage() {

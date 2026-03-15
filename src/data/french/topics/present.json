@@ -1,0 +1,457 @@
+{
+  "id": "present",
+  "name": "Le Présent",
+  "description": "Leer de Franse tegenwoordige tijd: regelmatige werkwoorden op -er, -ir en -re, en onregelmatige werkwoorden zoals être, avoir en aller.",
+  "level": "beginner",
+  "order": 1,
+  "grammarRules": [
+    {
+      "id": "present-regulier",
+      "title": "Regelmatige werkwoorden in het présent",
+      "explanation": "Franse werkwoorden worden vervoegd door de uitgang (-er, -ir, -re) te vervangen door de juiste persoonsvorm. Elke groep heeft zijn eigen set uitgangen.",
+      "formula": "-er: stam + -e, -es, -e, -ons, -ez, -ent | -ir: stam + -is, -is, -it, -issons, -issez, -issent | -re: stam + -s, -s, -, -ons, -ez, -ent",
+      "examples": [
+        {
+          "french": "Je parle français tous les jours.",
+          "dutch": "Ik spreek elke dag Frans.",
+          "breakdown": [
+            { "word": "Je", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (1e persoon enkelvoud)" },
+            { "word": "parle", "role": "verb", "color": "#f87171", "annotation": "parler \u2192 parl- + -e" },
+            { "word": "français", "role": "object", "color": "#34d399", "annotation": "lijdend voorwerp" },
+            { "word": "tous les jours", "role": "adverb", "color": "#fbbf24", "annotation": "tijdsbepaling (elke dag)" }
+          ]
+        },
+        {
+          "french": "Nous finissons le travail.",
+          "dutch": "Wij maken het werk af.",
+          "breakdown": [
+            { "word": "Nous", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (1e persoon meervoud)" },
+            { "word": "finissons", "role": "verb", "color": "#f87171", "annotation": "finir \u2192 fin- + -issons" },
+            { "word": "le", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord" },
+            { "word": "travail", "role": "object", "color": "#34d399", "annotation": "lijdend voorwerp" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "present-irregulier",
+      "title": "Onregelmatige werkwoorden: être, avoir, aller, faire",
+      "explanation": "De meest gebruikte Franse werkwoorden zijn onregelmatig. Être (zijn), avoir (hebben), aller (gaan) en faire (doen/maken) moet je uit je hoofd leren omdat ze niet de standaard uitgangen volgen.",
+      "formula": "être: suis/es/est/sommes/êtes/sont | avoir: ai/as/a/avons/avez/ont | aller: vais/vas/va/allons/allez/vont | faire: fais/fais/fait/faisons/faites/font",
+      "examples": [
+        {
+          "french": "Je suis étudiant.",
+          "dutch": "Ik ben student.",
+          "breakdown": [
+            { "word": "Je", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp" },
+            { "word": "suis", "role": "verb", "color": "#f87171", "annotation": "être, 1e persoon enkelvoud (onregelmatig)" },
+            { "word": "étudiant", "role": "object", "color": "#34d399", "annotation": "naamwoordelijk deel" }
+          ]
+        },
+        {
+          "french": "Ils vont au cinéma.",
+          "dutch": "Zij gaan naar de bioscoop.",
+          "breakdown": [
+            { "word": "Ils", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp (3e persoon meervoud, mannelijk)" },
+            { "word": "vont", "role": "verb", "color": "#f87171", "annotation": "aller, 3e persoon meervoud (onregelmatig)" },
+            { "word": "au", "role": "preposition", "color": "#fbbf24", "annotation": "à + le (voorzetsel + lidwoord)" },
+            { "word": "cinéma", "role": "object", "color": "#34d399", "annotation": "lijdend voorwerp" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "present-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van 'parler' (spreken) in.",
+        "sentence": "Je ___ français tous les jours.",
+        "context": "parler = spreken, 1e persoon enkelvoud"
+      },
+      "correctAnswer": "parle",
+      "distractors": ["parles", "parlons", "parlent"],
+      "explanation": {
+        "nl": "Bij werkwoorden op -er krijgt de eerste persoon enkelvoud (je) de uitgang -e. Parler \u2192 parl- + -e = parle.",
+        "rule": "Regelmatige -er werkwoorden: je \u2192 stam + -e",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "parler",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "parle", "highlight": true },
+            { "person": "tu", "form": "parles" },
+            { "person": "il/elle", "form": "parle" },
+            { "person": "nous", "form": "parlons" },
+            { "person": "vous", "form": "parlez" },
+            { "person": "ils/elles", "form": "parlent" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'parler' is regelmatig en eindigt op -er.",
+        "Voor 'je' vervang je -er door -e."
+      ]
+    },
+    {
+      "id": "present-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul de juiste vorm van 'manger' (eten) in.",
+        "sentence": "Tu ___ une pomme.",
+        "context": "manger = eten, 2e persoon enkelvoud"
+      },
+      "correctAnswer": "manges",
+      "distractors": ["mange", "mangeons", "mangez"],
+      "explanation": {
+        "nl": "Bij werkwoorden op -er krijgt de tweede persoon enkelvoud (tu) de uitgang -es. Manger \u2192 mang- + -es = manges.",
+        "rule": "Regelmatige -er werkwoorden: tu \u2192 stam + -es",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "manger",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "mange" },
+            { "person": "tu", "form": "manges", "highlight": true },
+            { "person": "il/elle", "form": "mange" },
+            { "person": "nous", "form": "mangeons" },
+            { "person": "vous", "form": "mangez" },
+            { "person": "ils/elles", "form": "mangent" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'manger' is regelmatig en eindigt op -er.",
+        "Voor 'tu' vervang je -er door -es."
+      ]
+    },
+    {
+      "id": "present-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul de juiste vorm van 'finir' (eindigen/afmaken) in.",
+        "sentence": "Nous ___ nos devoirs avant le dîner.",
+        "context": "finir = afmaken, 1e persoon meervoud"
+      },
+      "correctAnswer": "finissons",
+      "distractors": ["finons", "finissez", "finissent"],
+      "explanation": {
+        "nl": "Bij werkwoorden op -ir (2e groep) krijgt de eerste persoon meervoud (nous) de uitgang -issons. Finir \u2192 fin- + -issons = finissons. Let op het dubbele 's' dat typisch is voor deze groep!",
+        "rule": "Regelmatige -ir werkwoorden: nous \u2192 stam + -issons",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "finir",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "finis" },
+            { "person": "tu", "form": "finis" },
+            { "person": "il/elle", "form": "finit" },
+            { "person": "nous", "form": "finissons", "highlight": true },
+            { "person": "vous", "form": "finissez" },
+            { "person": "ils/elles", "form": "finissent" }
+          ]
+        }
+      },
+      "hints": [
+        "Het werkwoord 'finir' behoort tot de 2e groep (-ir werkwoorden met -iss-).",
+        "De 'nous'-vorm van -ir werkwoorden bevat -iss- gevolgd door -ons."
+      ]
+    },
+    {
+      "id": "present-4",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste vorm van 'être' (zijn) in.",
+        "sentence": "Ils ___ très contents aujourd'hui.",
+        "context": "être = zijn, 3e persoon meervoud"
+      },
+      "correctAnswer": "sont",
+      "distractors": ["est", "sommes", "êtes"],
+      "explanation": {
+        "nl": "'Être' is een onregelmatig werkwoord. De 3e persoon meervoud is 'sont'. Dit werkwoord moet je uit je hoofd leren.",
+        "rule": "Être is onregelmatig: je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "être",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "suis" },
+            { "person": "tu", "form": "es" },
+            { "person": "il/elle", "form": "est" },
+            { "person": "nous", "form": "sommes" },
+            { "person": "vous", "form": "êtes" },
+            { "person": "ils/elles", "form": "sont", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "'Être' is volledig onregelmatig \u2014 je moet de vormen uit je hoofd leren.",
+        "De 'ils/elles'-vorm is een kort woord van vier letters."
+      ]
+    },
+    {
+      "id": "present-5",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Wij hebben een kat.'",
+        "sentence": "Wij hebben een kat.",
+        "context": "avoir = hebben, un chat = een kat"
+      },
+      "correctAnswer": ["Nous avons un chat."],
+      "explanation": {
+        "nl": "'Avoir' is onregelmatig. De 'nous'-vorm is 'avons'. In het Frans is het persoonlijk voornaamwoord verplicht, in tegenstelling tot het Italiaans of Spaans.",
+        "rule": "Avoir: nous \u2192 avons. Het persoonlijk voornaamwoord is verplicht in het Frans.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "avoir",
+          "tense": "présent",
+          "forms": [
+            { "person": "je/j'", "form": "ai" },
+            { "person": "tu", "form": "as" },
+            { "person": "il/elle", "form": "a" },
+            { "person": "nous", "form": "avons", "highlight": true },
+            { "person": "vous", "form": "avez" },
+            { "person": "ils/elles", "form": "ont" }
+          ]
+        }
+      },
+      "hints": [
+        "'Hebben' is 'avoir' in het Frans.",
+        "De 'nous'-vorm van avoir begint met 'av-'."
+      ]
+    },
+    {
+      "id": "present-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Tu manges une salade et il mange un croissant, et nous mangons du pain.",
+        "context": "manger = eten, let op de spelling van de 'nous'-vorm"
+      },
+      "correctAnswer": "mangons",
+      "distractors": ["manges", "mange", "pain"],
+      "explanation": {
+        "nl": "'Mangons' is fout. Bij werkwoorden op -ger behouden we de 'e' voor uitgangen die met -o beginnen om de zachte 'g'-klank te bewaren. De juiste vorm is 'mangeons'.",
+        "rule": "Werkwoorden op -ger: nous \u2192 stam + -eons (niet -ons) om de zachte g te behouden",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "manger",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "mange" },
+            { "person": "tu", "form": "manges" },
+            { "person": "il/elle", "form": "mange" },
+            { "person": "nous", "form": "mangeons", "highlight": true },
+            { "person": "vous", "form": "mangez" },
+            { "person": "ils/elles", "form": "mangent" }
+          ]
+        }
+      },
+      "hints": [
+        "Kijk naar de 'nous'-vorm. Klopt de spelling?",
+        "Bij werkwoorden op -ger moet je een extra letter toevoegen bij de 'nous'-vorm."
+      ]
+    },
+    {
+      "id": "present-7",
+      "type": "zinsvolgorde",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde.",
+        "sentence": "au / vais / je / cinéma / tous les samedis",
+        "context": "aller au cinéma = naar de bioscoop gaan"
+      },
+      "correctAnswer": ["Je vais au cinéma tous les samedis.", "Tous les samedis, je vais au cinéma."],
+      "explanation": {
+        "nl": "De standaard woordvolgorde in het Frans is: Onderwerp + Werkwoord + Complement + Tijdsbepaling. 'Aller' is onregelmatig: je \u2192 vais. De tijdsbepaling kan ook aan het begin staan, gevolgd door een komma.",
+        "rule": "Woordvolgorde: S + V + O/Complement. Tijdsbepalingen kunnen aan het begin of eind staan.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "aller",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "vais", "highlight": true },
+            { "person": "tu", "form": "vas" },
+            { "person": "il/elle", "form": "va" },
+            { "person": "nous", "form": "allons" },
+            { "person": "vous", "form": "allez" },
+            { "person": "ils/elles", "form": "vont" }
+          ]
+        }
+      },
+      "hints": [
+        "Begin met het onderwerp of de tijdsbepaling.",
+        "'Aller' is onregelmatig: je vais."
+      ]
+    },
+    {
+      "id": "present-8",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Zij (vrouwelijk, enkelvoud) gaat naar het station.'",
+        "sentence": "Zij gaat naar het station.",
+        "context": "aller = gaan, la gare = het station"
+      },
+      "correctAnswer": ["Elle va à la gare."],
+      "explanation": {
+        "nl": "'Aller' is onregelmatig: elle \u2192 va. 'Naar het station' wordt 'à la gare'. In tegenstelling tot het Italiaans (alla) worden het voorzetsel en het lidwoord in het Frans niet samengevoegd wanneer het lidwoord 'la' is.",
+        "rule": "Aller: elle \u2192 va. Voorzetsel à + la = à la (geen samenvoeging bij vrouwelijk lidwoord).",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "aller",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "vais" },
+            { "person": "tu", "form": "vas" },
+            { "person": "il/elle", "form": "va", "highlight": true },
+            { "person": "nous", "form": "allons" },
+            { "person": "vous", "form": "allez" },
+            { "person": "ils/elles", "form": "vont" }
+          ]
+        }
+      },
+      "hints": [
+        "'Aller' voor 'elle' is een korte, onregelmatige vorm.",
+        "'Naar de/het' wordt vertaald met 'à + lidwoord'. Bij vrouwelijke woorden: à la."
+      ]
+    },
+    {
+      "id": "present-9",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Nous avemos deux chats à la maison.",
+        "context": "avoir = hebben, deux chats = twee katten"
+      },
+      "correctAnswer": "avemos",
+      "distractors": ["Nous", "deux", "chats"],
+      "explanation": {
+        "nl": "'Avemos' bestaat niet in het Frans. De juiste 'nous'-vorm van 'avoir' is 'avons'. Dit is een veelgemaakte fout, vaak door verwarring met het Spaans of Portugees.",
+        "rule": "Avoir is onregelmatig: nous \u2192 avons (niet 'avemos')",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "avoir",
+          "tense": "présent",
+          "forms": [
+            { "person": "je/j'", "form": "ai" },
+            { "person": "tu", "form": "as" },
+            { "person": "il/elle", "form": "a" },
+            { "person": "nous", "form": "avons", "highlight": true },
+            { "person": "vous", "form": "avez" },
+            { "person": "ils/elles", "form": "ont" }
+          ]
+        }
+      },
+      "hints": [
+        "Controleer of het werkwoord correct vervoegd is voor 'nous'.",
+        "'Avoir' is een onregelmatig werkwoord \u2014 de vormen lijken niet op het Spaans."
+      ]
+    },
+    {
+      "id": "present-10",
+      "type": "invullen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vul de juiste vorm van 'faire' (doen/maken) in.",
+        "sentence": "Qu'est-ce que vous ___ ce week-end ?",
+        "context": "faire = doen/maken, 2e persoon meervoud (vous)"
+      },
+      "correctAnswer": "faites",
+      "distractors": ["faisez", "faisont", "font"],
+      "explanation": {
+        "nl": "'Faire' is een onregelmatig werkwoord. De 'vous'-vorm is 'faites' (niet 'faisez'!). Let op: de stam verandert in de meervoudsvormen.",
+        "rule": "Faire is onregelmatig: je fais, tu fais, il fait, nous faisons, vous faites, ils font",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "faire",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "fais" },
+            { "person": "tu", "form": "fais" },
+            { "person": "il/elle", "form": "fait" },
+            { "person": "nous", "form": "faisons" },
+            { "person": "vous", "form": "faites", "highlight": true },
+            { "person": "ils/elles", "form": "font" }
+          ]
+        }
+      },
+      "hints": [
+        "'Faire' is volledig onregelmatig \u2014 de 'vous'-vorm volgt geen standaardpatroon.",
+        "De 'vous'-vorm eindigt op '-tes', niet op '-sez'."
+      ]
+    },
+    {
+      "id": "present-11",
+      "type": "zinsvolgorde",
+      "difficulty": 3,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde.",
+        "sentence": "ne / pas / elle / française / est",
+        "context": "De ontkenning in het Frans: ne ... pas"
+      },
+      "correctAnswer": ["Elle n'est pas française."],
+      "explanation": {
+        "nl": "In het Frans wordt de ontkenning gevormd door 'ne ... pas' rond het werkwoord te plaatsen. 'Ne' wordt afgekort tot 'n'' voor een klinker: ne + est = n'est. De volgorde is: onderwerp + ne/n' + werkwoord + pas + complement.",
+        "rule": "Ontkenning: onderwerp + ne/n' + werkwoord + pas + complement",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "être",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "suis" },
+            { "person": "tu", "form": "es" },
+            { "person": "il/elle", "form": "est", "highlight": true },
+            { "person": "nous", "form": "sommes" },
+            { "person": "vous", "form": "êtes" },
+            { "person": "ils/elles", "form": "sont" }
+          ]
+        }
+      },
+      "hints": [
+        "De ontkenning in het Frans gebruikt 'ne ... pas' rond het werkwoord.",
+        "'Ne' wordt afgekort tot 'n'' voor een klinker (zoals 'est')."
+      ]
+    },
+    {
+      "id": "present-12",
+      "type": "vertalen",
+      "difficulty": 4,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Zij (meervoud, mannelijk) doen hun huiswerk en daarna gaan ze naar het park.'",
+        "sentence": "Zij doen hun huiswerk en daarna gaan ze naar het park.",
+        "context": "faire = doen, les devoirs = huiswerk, aller = gaan, le parc = het park, ensuite = daarna"
+      },
+      "correctAnswer": ["Ils font leurs devoirs et ensuite ils vont au parc.", "Ils font leurs devoirs et ensuite, ils vont au parc."],
+      "explanation": {
+        "nl": "Deze zin combineert twee onregelmatige werkwoorden: 'faire' (ils \u2192 font) en 'aller' (ils \u2192 vont). 'Au parc' is de samenvoeging van 'à + le = au'. Let op: 'leurs' (meervoud) wordt gebruikt omdat 'devoirs' meervoud is.",
+        "rule": "Faire: ils \u2192 font. Aller: ils \u2192 vont. Voorzetsel à + le = au.",
+        "diagramType": "conjugation",
+        "diagramData": {
+          "verb": "faire",
+          "tense": "présent",
+          "forms": [
+            { "person": "je", "form": "fais" },
+            { "person": "tu", "form": "fais" },
+            { "person": "il/elle", "form": "fait" },
+            { "person": "nous", "form": "faisons" },
+            { "person": "vous", "form": "faites" },
+            { "person": "ils/elles", "form": "font", "highlight": true }
+          ]
+        }
+      },
+      "hints": [
+        "Je hebt twee onregelmatige werkwoorden nodig: 'faire' en 'aller'.",
+        "'Naar het park' = 'au parc' (à + le = au)."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "id": "articles",
+  "name": "Les Articles",
+  "description": "Leer de Franse lidwoorden: bepaald (le, la, les, l'), onbepaald (un, une, des) en deelwoorden (du, de la, de l', des).",
+  "level": "beginner",
+  "order": 2,
+  "grammarRules": [
+    {
+      "id": "articles-definis",
+      "title": "Bepaalde lidwoorden (articles d\u00e9finis)",
+      "explanation": "Het Frans heeft 4 bepaalde lidwoorden. 'Le' voor mannelijk enkelvoud, 'la' voor vrouwelijk enkelvoud, 'les' voor meervoud (beide geslachten). Voor woorden die beginnen met een klinker of stomme h wordt 'le' of 'la' afgekort tot 'l''.",
+      "formula": "Mannelijk: le (enk.) | Vrouwelijk: la (enk.) | Elisie: l' (voor klinker/stomme h) | Meervoud: les",
+      "examples": [
+        {
+          "french": "Le gar\u00e7on mange la pomme.",
+          "dutch": "De jongen eet de appel.",
+          "breakdown": [
+            { "word": "Le", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord, mannelijk enkelvoud" },
+            { "word": "gar\u00e7on", "role": "subject", "color": "#60a5fa", "annotation": "mannelijk, begint met medeklinker \u2192 le" },
+            { "word": "mange", "role": "verb", "color": "#f87171", "annotation": "manger, 3e persoon enkelvoud" },
+            { "word": "la", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord, vrouwelijk enkelvoud" },
+            { "word": "pomme", "role": "object", "color": "#34d399", "annotation": "vrouwelijk, begint met medeklinker \u2192 la" }
+          ]
+        },
+        {
+          "french": "L'\u00e9cole est ferm\u00e9e. Les enfants jouent.",
+          "dutch": "De school is dicht. De kinderen spelen.",
+          "breakdown": [
+            { "word": "L'", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord met elisie (voor klinker)" },
+            { "word": "\u00e9cole", "role": "subject", "color": "#60a5fa", "annotation": "vrouwelijk, begint met klinker \u2192 l'" },
+            { "word": "est", "role": "verb", "color": "#f87171", "annotation": "\u00eatre, 3e persoon enkelvoud" },
+            { "word": "ferm\u00e9e", "role": "adjective", "color": "#fb923c", "annotation": "bijvoeglijk naamwoord, vrouwelijk enkelvoud" },
+            { "word": "Les", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord, meervoud" },
+            { "word": "enfants", "role": "subject", "color": "#60a5fa", "annotation": "meervoud \u2192 les" },
+            { "word": "jouent", "role": "verb", "color": "#f87171", "annotation": "jouer, 3e persoon meervoud" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "articles-indefinis",
+      "title": "Onbepaalde lidwoorden (articles ind\u00e9finis)",
+      "explanation": "Het Frans heeft 3 onbepaalde lidwoorden. 'Un' voor mannelijk enkelvoud, 'une' voor vrouwelijk enkelvoud en 'des' voor meervoud (beide geslachten). 'Des' is het meervoud van zowel 'un' als 'une' en wordt in het Nederlands vaak niet vertaald.",
+      "formula": "Mannelijk: un | Vrouwelijk: une | Meervoud: des",
+      "examples": [
+        {
+          "french": "Un homme porte une valise.",
+          "dutch": "Een man draagt een koffer.",
+          "breakdown": [
+            { "word": "Un", "role": "article", "color": "#a78bfa", "annotation": "onbepaald lidwoord, mannelijk enkelvoud" },
+            { "word": "homme", "role": "subject", "color": "#60a5fa", "annotation": "mannelijk \u2192 un" },
+            { "word": "porte", "role": "verb", "color": "#f87171", "annotation": "porter, 3e persoon enkelvoud" },
+            { "word": "une", "role": "article", "color": "#a78bfa", "annotation": "onbepaald lidwoord, vrouwelijk enkelvoud" },
+            { "word": "valise", "role": "object", "color": "#34d399", "annotation": "vrouwelijk \u2192 une" }
+          ]
+        },
+        {
+          "french": "J'ai des livres int\u00e9ressants.",
+          "dutch": "Ik heb (enkele) interessante boeken.",
+          "breakdown": [
+            { "word": "J'", "role": "subject", "color": "#60a5fa", "annotation": "je + elisie" },
+            { "word": "ai", "role": "verb", "color": "#f87171", "annotation": "avoir, 1e persoon enkelvoud" },
+            { "word": "des", "role": "article", "color": "#a78bfa", "annotation": "onbepaald lidwoord, meervoud" },
+            { "word": "livres", "role": "object", "color": "#34d399", "annotation": "mannelijk meervoud \u2192 des" },
+            { "word": "int\u00e9ressants", "role": "adjective", "color": "#fb923c", "annotation": "bijvoeglijk naamwoord, mannelijk meervoud" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "articles-partitifs",
+      "title": "Deelwoorden (articles partitifs)",
+      "explanation": "Deelwoorden worden gebruikt om een onbepaalde hoeveelheid aan te duiden van iets dat niet telbaar is (eten, drinken, abstracte begrippen). 'Du' voor mannelijk, 'de la' voor vrouwelijk, 'de l'' voor woorden die beginnen met een klinker of stomme h, en 'des' voor meervoud. In het Nederlands bestaat dit niet en wordt het vaak niet vertaald.",
+      "formula": "Mannelijk: du (= de + le) | Vrouwelijk: de la | Elisie: de l' (voor klinker/stomme h) | Meervoud: des",
+      "examples": [
+        {
+          "french": "Je bois du caf\u00e9 et de la limonade.",
+          "dutch": "Ik drink koffie en limonade.",
+          "breakdown": [
+            { "word": "Je", "role": "subject", "color": "#60a5fa", "annotation": "onderwerp: ik" },
+            { "word": "bois", "role": "verb", "color": "#f87171", "annotation": "boire, 1e persoon enkelvoud" },
+            { "word": "du", "role": "article", "color": "#a78bfa", "annotation": "deelwoord, mannelijk (de + le)" },
+            { "word": "caf\u00e9", "role": "object", "color": "#34d399", "annotation": "mannelijk, niet-telbaar \u2192 du" },
+            { "word": "et", "role": "particle", "color": "#fbbf24", "annotation": "voegwoord: en" },
+            { "word": "de la", "role": "article", "color": "#a78bfa", "annotation": "deelwoord, vrouwelijk" },
+            { "word": "limonade", "role": "object", "color": "#34d399", "annotation": "vrouwelijk, niet-telbaar \u2192 de la" }
+          ]
+        },
+        {
+          "french": "Il y a de l'eau dans le verre.",
+          "dutch": "Er is water in het glas.",
+          "breakdown": [
+            { "word": "Il y a", "role": "verb", "color": "#f87171", "annotation": "er is/zijn" },
+            { "word": "de l'", "role": "article", "color": "#a78bfa", "annotation": "deelwoord met elisie (voor klinker)" },
+            { "word": "eau", "role": "object", "color": "#34d399", "annotation": "vrouwelijk, begint met klinker \u2192 de l'" },
+            { "word": "dans", "role": "particle", "color": "#fbbf24", "annotation": "voorzetsel: in" },
+            { "word": "le", "role": "article", "color": "#a78bfa", "annotation": "bepaald lidwoord, mannelijk enkelvoud" },
+            { "word": "verre", "role": "object", "color": "#34d399", "annotation": "mannelijk \u2192 le" }
+          ]
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "articles-1",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste bepaalde lidwoord in voor 'chat' (kat, mannelijk).",
+        "sentence": "___ chat dort sur le canap\u00e9.",
+        "context": "chat = kat (mannelijk), begint met medeklinker"
+      },
+      "correctAnswer": "Le",
+      "distractors": ["La", "Les", "L'"],
+      "explanation": {
+        "nl": "'Chat' is mannelijk enkelvoud en begint met een medeklinker. Daarom gebruik je 'le'. 'La' is voor vrouwelijke woorden, 'les' voor meervoud en 'l'' voor woorden die beginnen met een klinker of stomme h.",
+        "rule": "Mannelijk enkelvoud + medeklinker \u2192 le",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "le",
+          "noun": "chat",
+          "gender": "mannelijk",
+          "number": "enkelvoud",
+          "rule": "Mannelijke woorden die beginnen met een medeklinker krijgen 'le'."
+        }
+      },
+      "hints": [
+        "'Chat' is mannelijk en begint met 'ch', een medeklinker.",
+        "Het mannelijk bepaald lidwoord voor medeklinkers is 'le'."
+      ]
+    },
+    {
+      "id": "articles-2",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste bepaalde lidwoord in voor 'maison' (huis, vrouwelijk).",
+        "sentence": "___ maison est tr\u00e8s belle.",
+        "context": "maison = huis (vrouwelijk), begint met medeklinker"
+      },
+      "correctAnswer": "La",
+      "distractors": ["Le", "Les", "L'"],
+      "explanation": {
+        "nl": "'Maison' is vrouwelijk enkelvoud en begint met een medeklinker. Daarom gebruik je 'la'. Alleen voor woorden die beginnen met een klinker of stomme h wordt 'la' afgekort tot 'l''.",
+        "rule": "Vrouwelijk enkelvoud + medeklinker \u2192 la",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "la",
+          "noun": "maison",
+          "gender": "vrouwelijk",
+          "number": "enkelvoud",
+          "rule": "Vrouwelijke woorden die beginnen met een medeklinker krijgen 'la'."
+        }
+      },
+      "hints": [
+        "'Maison' is vrouwelijk \u2014 onthoud: la maison.",
+        "Het vrouwelijk bepaald lidwoord voor medeklinkers is 'la'."
+      ]
+    },
+    {
+      "id": "articles-3",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste bepaalde lidwoord in voor '\u00e9cole' (school, vrouwelijk).",
+        "sentence": "___ \u00e9cole commence \u00e0 huit heures.",
+        "context": "\u00e9cole = school (vrouwelijk), begint met een klinker"
+      },
+      "correctAnswer": "L'",
+      "distractors": ["Le", "La", "Les"],
+      "explanation": {
+        "nl": "'\u00c9cole' is vrouwelijk en begint met een klinker ('\u00e9'). Wanneer een woord begint met een klinker of stomme h, worden 'le' en 'la' afgekort tot 'l'' (elisie). Het geslacht maakt dan niet uit voor de vorm van het lidwoord.",
+        "rule": "Enkelvoud + klinker/stomme h \u2192 l' (elisie)",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "l'",
+          "noun": "\u00e9cole",
+          "gender": "vrouwelijk",
+          "number": "enkelvoud",
+          "rule": "Woorden die beginnen met een klinker of stomme h krijgen 'l'' in plaats van 'le' of 'la'."
+        }
+      },
+      "hints": [
+        "'\u00c9cole' begint met een klinker ('\u00e9').",
+        "Bij klinkers worden 'le' en 'la' afgekort. Hoe heet dat verschijnsel?"
+      ]
+    },
+    {
+      "id": "articles-4",
+      "type": "invullen",
+      "difficulty": 1,
+      "question": {
+        "nl": "Vul het juiste onbepaalde lidwoord in voor 'livre' (boek, mannelijk).",
+        "sentence": "J'ai ___ livre int\u00e9ressant.",
+        "context": "livre = boek (mannelijk)"
+      },
+      "correctAnswer": "un",
+      "distractors": ["une", "des", "le"],
+      "explanation": {
+        "nl": "'Livre' is mannelijk enkelvoud. Het onbepaalde lidwoord voor mannelijk enkelvoud is 'un'. 'Une' is voor vrouwelijk enkelvoud en 'des' voor meervoud.",
+        "rule": "Mannelijk enkelvoud \u2192 un",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "un",
+          "noun": "livre",
+          "gender": "mannelijk",
+          "number": "enkelvoud",
+          "rule": "Mannelijke woorden krijgen het onbepaald lidwoord 'un'."
+        }
+      },
+      "hints": [
+        "'Livre' is mannelijk \u2014 kijk naar het bepaald lidwoord: le livre.",
+        "Het mannelijk onbepaald lidwoord is 'un'."
+      ]
+    },
+    {
+      "id": "articles-5",
+      "type": "vertalen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'Ik drink koffie.'",
+        "sentence": "Ik drink koffie.",
+        "context": "boire = drinken (je bois), caf\u00e9 = koffie (mannelijk). Let op: je hebt een deelwoord nodig voor een onbepaalde hoeveelheid."
+      },
+      "correctAnswer": ["Je bois du caf\u00e9."],
+      "explanation": {
+        "nl": "'Koffie' is niet-telbaar, dus gebruik je het deelwoord 'du' (mannelijk). In het Nederlands zeg je gewoon 'koffie' zonder lidwoord, maar in het Frans is het deelwoord verplicht: 'du caf\u00e9'.",
+        "rule": "Niet-telbaar mannelijk zelfstandig naamwoord \u2192 du",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "du",
+          "noun": "caf\u00e9",
+          "gender": "mannelijk",
+          "number": "enkelvoud",
+          "rule": "Bij niet-telbare mannelijke zelfstandige naamwoorden gebruik je het deelwoord 'du' (= de + le)."
+        }
+      },
+      "hints": [
+        "'Koffie' is niet-telbaar, dus je hebt een deelwoord nodig.",
+        "'Caf\u00e9' is mannelijk. Het mannelijk deelwoord is 'du'."
+      ]
+    },
+    {
+      "id": "articles-6",
+      "type": "foutherkenning",
+      "difficulty": 2,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Le eau est froide.",
+        "context": "eau = water (vrouwelijk), begint met een klinker"
+      },
+      "correctAnswer": "Le",
+      "distractors": ["eau", "est", "froide"],
+      "explanation": {
+        "nl": "'Eau' begint met een klinker, dus 'le' (of 'la', want 'eau' is vrouwelijk) moet worden afgekort tot 'l''. Correct: L'eau est froide. Elisie is verplicht wanneer het volgende woord begint met een klinker of stomme h.",
+        "rule": "Klinker/stomme h \u2192 verplichte elisie: l' (niet le of la)",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "l'",
+          "noun": "eau",
+          "gender": "vrouwelijk",
+          "number": "enkelvoud",
+          "rule": "Voor woorden die beginnen met een klinker of stomme h is elisie verplicht: 'le'/'la' wordt 'l''. Correct: L'eau."
+        }
+      },
+      "hints": [
+        "Kijk naar de beginletter van 'eau'. Wat is dat voor soort letter?",
+        "Bij woorden die beginnen met een klinker moet je elisie toepassen."
+      ]
+    },
+    {
+      "id": "articles-7",
+      "type": "zinsvolgorde",
+      "difficulty": 2,
+      "question": {
+        "nl": "Zet de woorden in de juiste volgorde.",
+        "sentence": "mangent / enfants / des / les / fruits",
+        "context": "les enfants = de kinderen, manger = eten, des fruits = (enkele) vruchten"
+      },
+      "correctAnswer": ["Les enfants mangent des fruits."],
+      "explanation": {
+        "nl": "Het bepaald lidwoord 'les' staat direct voor 'enfants' (de kinderen = onderwerp). Het onbepaald meervoudslidwoord 'des' staat voor 'fruits' (het lijdend voorwerp). De woordvolgorde is: onderwerp + werkwoord + lijdend voorwerp.",
+        "rule": "Lidwoord + zelfstandig naamwoord vormen samen een zinsdeel. Woordvolgorde: S + V + O.",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "les / des",
+          "noun": "enfants / fruits",
+          "gender": "mannelijk",
+          "number": "meervoud",
+          "rule": "'Les' is het bepaald meervoudslidwoord, 'des' is het onbepaald meervoudslidwoord."
+        }
+      },
+      "hints": [
+        "Het onderwerp (les enfants) staat vooraan in de zin.",
+        "'Des' hoort bij 'fruits' en staat na het werkwoord."
+      ]
+    },
+    {
+      "id": "articles-8",
+      "type": "invullen",
+      "difficulty": 2,
+      "question": {
+        "nl": "Vul het juiste deelwoord in voor 'viande' (vlees, vrouwelijk).",
+        "sentence": "Je mange ___ viande tous les jours.",
+        "context": "viande = vlees (vrouwelijk), niet-telbaar"
+      },
+      "correctAnswer": "de la",
+      "distractors": ["du", "de l'", "des"],
+      "explanation": {
+        "nl": "'Viande' is vrouwelijk en niet-telbaar, dus gebruik je het deelwoord 'de la'. 'Du' is voor mannelijke woorden, 'de l'' voor woorden die beginnen met een klinker of stomme h.",
+        "rule": "Niet-telbaar vrouwelijk + medeklinker \u2192 de la",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "de la",
+          "noun": "viande",
+          "gender": "vrouwelijk",
+          "number": "enkelvoud",
+          "rule": "Bij niet-telbare vrouwelijke woorden die beginnen met een medeklinker gebruik je 'de la'."
+        }
+      },
+      "hints": [
+        "'Viande' is vrouwelijk en niet-telbaar.",
+        "Het vrouwelijk deelwoord voor medeklinkers is 'de la'."
+      ]
+    },
+    {
+      "id": "articles-9",
+      "type": "foutherkenning",
+      "difficulty": 3,
+      "question": {
+        "nl": "Welk woord is fout in deze zin?",
+        "sentence": "Elle boit de la eau min\u00e9rale.",
+        "context": "eau = water (vrouwelijk), begint met een klinker"
+      },
+      "correctAnswer": "de la",
+      "distractors": ["boit", "eau", "min\u00e9rale"],
+      "explanation": {
+        "nl": "'Eau' begint met een klinker, dus het deelwoord 'de la' moet worden afgekort tot 'de l''. Dit is dezelfde elisieregel als bij de bepaalde lidwoorden. Correct: Elle boit de l'eau min\u00e9rale.",
+        "rule": "Deelwoord + klinker/stomme h \u2192 de l' (niet de la of du)",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "de l'",
+          "noun": "eau",
+          "gender": "vrouwelijk",
+          "number": "enkelvoud",
+          "rule": "Voor woorden die beginnen met een klinker of stomme h wordt het deelwoord 'de la' of 'du' afgekort tot 'de l''. Correct: de l'eau."
+        }
+      },
+      "hints": [
+        "Kijk naar de beginletter van 'eau'. Wat gebeurt er met het deelwoord voor een klinker?",
+        "Elisie geldt ook bij deelwoorden: 'de la' wordt 'de l'' voor klinkers."
+      ]
+    },
+    {
+      "id": "articles-10",
+      "type": "vertalen",
+      "difficulty": 3,
+      "question": {
+        "nl": "Vertaal naar het Frans: 'De vrouw koopt een jurk en bloemen.'",
+        "sentence": "De vrouw koopt een jurk en bloemen.",
+        "context": "femme = vrouw (vrouwelijk), acheter = kopen (elle ach\u00e8te), robe = jurk (vrouwelijk), fleurs = bloemen (vrouwelijk meervoud)"
+      },
+      "correctAnswer": ["La femme ach\u00e8te une robe et des fleurs."],
+      "explanation": {
+        "nl": "'Femme' is vrouwelijk enkelvoud met medeklinker, dus bepaald lidwoord 'la'. 'Robe' is vrouwelijk enkelvoud, dus onbepaald lidwoord 'une'. 'Fleurs' is meervoud, dus onbepaald meervoudslidwoord 'des'. In het Nederlands staat er geen lidwoord voor 'bloemen', maar in het Frans is 'des' verplicht.",
+        "rule": "Bepaald: la + vrouwelijk | Onbepaald: une + vrouwelijk enkelvoud, des + meervoud",
+        "diagramType": "agreement",
+        "diagramData": {
+          "article": "la / une / des",
+          "noun": "femme / robe / fleurs",
+          "gender": "vrouwelijk",
+          "number": "enkelvoud / enkelvoud / meervoud",
+          "rule": "Elk zelfstandig naamwoord in het Frans heeft een lidwoord nodig. 'Des' is het meervoud van 'un'/'une' en wordt in het Nederlands vaak niet vertaald."
+        }
+      },
+      "hints": [
+        "'De vrouw' is bepaald (la), 'een jurk' is onbepaald enkelvoud (une), 'bloemen' is onbepaald meervoud.",
+        "In het Frans gebruik je 'des' voor een onbepaald meervoud, ook al staat er in het Nederlands geen lidwoord."
+      ]
+    }
+  ]
+}
