@@ -14,6 +14,7 @@ import {
   Layers,
   Menu,
   X,
+  AlertTriangle,
 } from "lucide-react";
 import XPBar from "@/components/gamification/XPBar";
 import StreakCounter from "@/components/gamification/StreakCounter";
@@ -23,6 +24,7 @@ const navItems = [
   { href: "/", label: "Dashboard", icon: Home },
   { href: "/reiszinnen", label: "Reiszinnen", icon: Plane },
   { href: "/flashcards", label: "Flashcards", icon: Layers },
+  { href: "/fouten", label: "Mijn Fouten", icon: AlertTriangle },
   { href: "/voortgang", label: "Voortgang", icon: BarChart3 },
   { href: "/ai-tutor", label: "AI Tutor", icon: Bot },
   { href: "/instellingen", label: "Instellingen", icon: Settings },
@@ -150,7 +152,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Mobile bottom nav — show first 5 most important items */}
       <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-stone-200 flex safe-bottom">
-        {navItems.filter((_, i) => i !== 5).slice(0, 5).map((item) => {
+        {navItems.filter((item) => !["/reiszinnen", "/instellingen"].includes(item.href)).slice(0, 5).map((item) => {
           const Icon = item.icon;
           const active = isActive(item.href);
           return (

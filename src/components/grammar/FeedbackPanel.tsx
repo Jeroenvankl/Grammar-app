@@ -13,6 +13,7 @@ interface FeedbackPanelProps {
   userAnswer: string;
   onNext: () => void;
   languageId?: string;
+  topicName?: string;
 }
 
 export default function FeedbackPanel({
@@ -21,34 +22,70 @@ export default function FeedbackPanel({
   userAnswer,
   onNext,
   languageId,
+  topicName,
 }: FeedbackPanelProps) {
   const [showDiagram, setShowDiagram] = useState(false);
   const [aiResponse, setAiResponse] = useState<string | null>(null);
   const [aiLoading, setAiLoading] = useState(false);
+  const [aiFollowUp, setAiFollowUp] = useState("");
+  const [aiFollowUpResponse, setAiFollowUpResponse] = useState<string | null>(null);
+  const [aiFollowUpLoading, setAiFollowUpLoading] = useState(false);
   const hasAI = getAvailableProvider() !== null;
+
+  const correctAnswer = Array.isArray(exercise.correctAnswer)
+    ? exercise.correctAnswer[0]
+    : exercise.correctAnswer;
+
+  const buildContext = () => {
+    const langName = languageId === "italian" ? "Italiaans"
+      : languageId === "japanese" ? "Japans"
+      : languageId === "spanish" ? "Spaans"
+      : languageId === "french" ? "Frans"
+      : "de taal";
+    return `Taal: ${langName}${topicName ? ` | Onderwerp: ${topicName}` : ""}
+Oefening type: ${exercise.type}
+Vraag: ${exercise.question.nl}
+Zin: ${exercise.question.sentence}${exercise.question.context ? `\nContext: ${exercise.question.context}` : ""}
+Antwoord leerling: "${userAnswer}"
+Correct antwoord: "${correctAnswer}"${Array.isArray(exercise.correctAnswer) && exercise.correctAnswer.length > 1 ? `\nAlternatieve antwoorden: ${exercise.correctAnswer.slice(1).join(", ")}` : ""}
+Grammaticaregel: ${exercise.explanation.rule}
+Uitleg: ${exercise.explanation.nl}`;
+  };
 
   const askAI = async () => {
     if (aiLoading || aiResponse) return;
     setAiLoading(true);
-    const correctAnswer = Array.isArray(exercise.correctAnswer)
-      ? exercise.correctAnswer[0]
-      : exercise.correctAnswer;
     const result = await sendChatMessage([
       { role: "system", content: getSystemPrompt(languageId) },
       {
         role: "user",
-        content: `De leerling maakte een fout bij deze oefening:
-Vraag: ${exercise.question.nl}
-Zin: ${exercise.question.sentence}
-Antwoord leerling: "${userAnswer}"
-Correct antwoord: "${correctAnswer}"
-Regel: ${exercise.explanation.rule}
+        content: `${buildContext()}
 
-Leg kort uit (max 3 zinnen) waarom het antwoord fout is en wat de regel is.`,
+Leg persoonlijk en kort uit (max 4 zinnen) waarom "${userAnswer}" fout is en "${correctAnswer}" correct. Focus op het specifieke verschil tussen wat de leerling schreef en het juiste antwoord. Geef een ezelsbruggetje of tip om het te onthouden.`,
       },
     ]);
     setAiResponse(result.response);
     setAiLoading(false);
+  };
+
+  const askFollowUp = async () => {
+    if (aiFollowUpLoading || !aiFollowUp.trim() || !aiResponse) return;
+    setAiFollowUpLoading(true);
+    const result = await sendChatMessage([
+      { role: "system", content: getSystemPrompt(languageId) },
+      {
+        role: "user",
+        content: `${buildContext()}
+
+Eerdere uitleg van SyntaxBot: "${aiResponse}"
+
+Vervolgvraag van de leerling: "${aiFollowUp}"
+
+Beantwoord de vervolgvraag kort en duidelijk (max 3 zinnen). Gebruik voorbeelden in de doeltaal als dat helpt.`,
+      },
+    ]);
+    setAiFollowUpResponse(result.response);
+    setAiFollowUpLoading(false);
   };
 
   return (
@@ -88,9 +125,7 @@ Leg kort uit (max 3 zinnen) waarom het antwoord fout is en wat de regel is.`,
                 <span className="text-xs font-semibold text-emerald-600 uppercase tracking-wide">Correct antwoord</span>
               </div>
               <p className="text-base font-semibold text-emerald-700">
-                {Array.isArray(exercise.correctAnswer)
-                  ? exercise.correctAnswer[0]
-                  : exercise.correctAnswer}
+                {correctAnswer}
               </p>
               {Array.isArray(exercise.correctAnswer) && exercise.correctAnswer.length > 1 && (
                 <p className="text-xs text-stone-500 mt-1">
@@ -106,64 +141,102 @@ Leg kort uit (max 3 zinnen) waarom het antwoord fout is en wat de regel is.`,
         </div>
       </div>
 
-      {/* Show diagram button */}
+      {/* Action buttons row — AI and diagram always visible when wrong */}
       {!isCorrect && (
-        <button
-          onClick={() => setShowDiagram(!showDiagram)}
-          className="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-700 mb-3"
-        >
-          <ChevronDown
-            className={`w-4 h-4 transition-transform ${
-              showDiagram ? "rotate-180" : ""
-            }`}
-          />
-          {showDiagram ? "Verberg uitleg" : "Waarom?"}
-        </button>
+        <div className="flex gap-2 mb-3">
+          {hasAI && (
+            <button
+              onClick={askAI}
+              disabled={aiLoading || !!aiResponse}
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${
+                aiResponse
+                  ? "bg-indigo-100 text-indigo-600 cursor-default"
+                  : aiLoading
+                  ? "bg-indigo-50 text-indigo-400 animate-pulse"
+                  : "bg-indigo-600 text-white hover:bg-indigo-700 shadow-sm hover:shadow-md"
+              }`}
+            >
+              <Bot className="w-4 h-4" />
+              {aiLoading ? "Denkt na..." : aiResponse ? "Uitleg ontvangen" : "Leg uit met AI"}
+            </button>
+          )}
+          <button
+            onClick={() => setShowDiagram(!showDiagram)}
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-white text-stone-600 border border-stone-200 hover:bg-stone-50 transition-colors"
+          >
+            <ChevronDown
+              className={`w-4 h-4 transition-transform ${showDiagram ? "rotate-180" : ""}`}
+            />
+            {showDiagram ? "Verberg diagram" : "Toon diagram"}
+          </button>
+        </div>
       )}
 
+      {/* AI Response — shown prominently */}
+      <AnimatePresence>
+        {aiResponse && (
+          <motion.div
+            initial={{ opacity: 0, y: -5 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-3 bg-white rounded-xl p-4 border border-indigo-200 shadow-sm"
+          >
+            <div className="flex items-center gap-1.5 mb-2">
+              <div className="p-1 bg-indigo-100 rounded-md">
+                <Bot className="w-3.5 h-3.5 text-indigo-600" />
+              </div>
+              <span className="text-xs font-semibold text-indigo-600">SyntaxBot</span>
+            </div>
+            <p className="text-sm text-stone-700 leading-relaxed whitespace-pre-line">{aiResponse}</p>
+
+            {/* Follow-up response */}
+            {aiFollowUpResponse && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="mt-3 pt-3 border-t border-indigo-100"
+              >
+                <p className="text-sm text-stone-700 leading-relaxed whitespace-pre-line">{aiFollowUpResponse}</p>
+              </motion.div>
+            )}
+
+            {/* Follow-up input */}
+            {!aiFollowUpResponse && (
+              <div className="mt-3 flex gap-2">
+                <input
+                  type="text"
+                  value={aiFollowUp}
+                  onChange={(e) => setAiFollowUp(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && askFollowUp()}
+                  placeholder="Stel een vervolgvraag..."
+                  className="flex-1 text-xs px-3 py-2 rounded-lg border border-stone-200 bg-stone-50 outline-none focus:border-indigo-300 transition-colors"
+                />
+                <button
+                  onClick={askFollowUp}
+                  disabled={aiFollowUpLoading || !aiFollowUp.trim()}
+                  className="px-3 py-2 rounded-lg text-xs font-medium bg-indigo-600 text-white hover:bg-indigo-700 disabled:opacity-40 transition-colors"
+                >
+                  {aiFollowUpLoading ? "..." : "Vraag"}
+                </button>
+              </div>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Diagram */}
       <AnimatePresence>
         {showDiagram && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="overflow-hidden"
+            className="overflow-hidden mb-3"
           >
             <ExplanationPanel
               diagramType={exercise.explanation.diagramType}
               diagramData={exercise.explanation.diagramData}
               rule={exercise.explanation.rule}
             />
-
-            {/* AI button */}
-            {hasAI && !isCorrect && (
-              <div className="mt-3">
-                {!aiResponse ? (
-                  <button
-                    onClick={askAI}
-                    disabled={aiLoading}
-                    className="flex items-center gap-2 text-sm font-medium text-indigo-600 hover:text-indigo-700 disabled:opacity-50"
-                  >
-                    <Bot className="w-4 h-4" />
-                    {aiLoading
-                      ? "Even denken..."
-                      : "Vraag het aan de AI-tutor"}
-                  </button>
-                ) : (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="bg-white rounded-xl p-3 border border-indigo-100 text-sm text-stone-700"
-                  >
-                    <div className="flex items-center gap-1.5 mb-1.5 text-indigo-600 font-medium text-xs">
-                      <Bot className="w-3.5 h-3.5" />
-                      SyntaxBot
-                    </div>
-                    {aiResponse}
-                  </motion.div>
-                )}
-              </div>
-            )}
           </motion.div>
         )}
       </AnimatePresence>
@@ -172,7 +245,7 @@ Leg kort uit (max 3 zinnen) waarom het antwoord fout is en wat de regel is.`,
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         onClick={onNext}
-        className={`w-full mt-4 py-3 rounded-xl font-semibold text-white transition-colors ${
+        className={`w-full py-3 rounded-xl font-semibold text-white transition-colors ${
           isCorrect
             ? "bg-emerald-500 hover:bg-emerald-600"
             : "bg-indigo-600 hover:bg-indigo-700"

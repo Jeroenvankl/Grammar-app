@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, BookOpen } from "lucide-react";
 import Layout from "@/components/ui/Layout";
-import { getTopic } from "@/lib/dataLoader";
+import { getTopic, getLanguage } from "@/lib/dataLoader";
 import { useProgress } from "@/hooks/useProgress";
+import { useMistakes } from "@/hooks/useMistakes";
 import FillInExercise from "@/components/grammar/FillInExercise";
 import TranslationExercise from "@/components/grammar/TranslationExercise";
 import ErrorDetectionExercise from "@/components/grammar/ErrorDetectionExercise";
@@ -22,6 +23,7 @@ export default function ExercisePage() {
   const languageId = params.languageId as string;
   const topicId = params.topicId as string;
   const topic = getTopic(languageId, topicId);
+  const language = getLanguage(languageId);
   const {
     addXP,
     completeExercise,
@@ -31,6 +33,7 @@ export default function ExercisePage() {
     levelUpEvent,
     dismissLevelUp,
   } = useProgress();
+  const { addMistake } = useMistakes();
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -73,6 +76,28 @@ export default function ExercisePage() {
       setScore((s) => s + 1);
       setTotalXP((t) => t + xp);
       addXP(xp, "correct");
+    } else if (current && topic && language) {
+      const correctAnswer = Array.isArray(current.correctAnswer)
+        ? current.correctAnswer[0]
+        : current.correctAnswer;
+      const alternativeAnswers = Array.isArray(current.correctAnswer)
+        ? current.correctAnswer.slice(1)
+        : undefined;
+      addMistake({
+        languageId,
+        languageName: language.name,
+        topicId,
+        topicName: topic.name,
+        exerciseId: current.id,
+        exerciseType: current.type,
+        question: current.question.nl,
+        sentence: current.question.sentence,
+        userAnswer: answer,
+        correctAnswer,
+        alternativeAnswers,
+        explanation: current.explanation.nl,
+        rule: current.explanation.rule,
+      });
     }
     setFeedback({ isCorrect, userAnswer: answer });
   };
@@ -140,6 +165,16 @@ export default function ExercisePage() {
               </p>
             )}
           </div>
+          {!finished && topic.grammarRules.length > 0 && (
+            <Link
+              href={`/taal/${languageId}/${topicId}/theorie`}
+              className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium text-indigo-600 bg-indigo-50 hover:bg-indigo-100 transition-colors"
+              title="Bekijk de theorie"
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              Theorie
+            </Link>
+          )}
         </div>
 
         {/* Progress bar */}
@@ -170,6 +205,7 @@ export default function ExercisePage() {
               userAnswer={feedback.userAnswer}
               onNext={handleNext}
               languageId={languageId}
+              topicName={topic.name}
             />
           ) : (
             <motion.div

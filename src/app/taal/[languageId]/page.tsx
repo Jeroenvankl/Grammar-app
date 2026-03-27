@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft, ChevronRight, Lock, CheckCircle } from "lucide-react";
+import { ArrowLeft, ChevronRight, Lock, CheckCircle, BookOpen } from "lucide-react";
 import Layout from "@/components/ui/Layout";
 import { getLanguage } from "@/lib/dataLoader";
 import { useProgress } from "@/hooks/useProgress";
@@ -109,11 +109,23 @@ export default function LanguagePage() {
                             ` \u2022 Beste score: ${topicProgress.bestScore}%`}
                         </p>
                       </div>
-                      {isStarted ? (
-                        <CheckCircle className="w-5 h-5 text-emerald-500" />
-                      ) : (
-                        <ChevronRight className="w-5 h-5 text-stone-400 group-hover:text-indigo-500 transition-colors" />
-                      )}
+                      <div className="flex items-center gap-2 flex-shrink-0">
+                        {topic.grammarRules.length > 0 && (
+                          <Link
+                            href={`/taal/${languageId}/${topic.id}/theorie`}
+                            onClick={(e) => e.stopPropagation()}
+                            className="p-2 rounded-lg text-indigo-400 hover:text-indigo-600 hover:bg-indigo-50 transition-colors"
+                            title="Bekijk theorie"
+                          >
+                            <BookOpen className="w-4 h-4" />
+                          </Link>
+                        )}
+                        {isStarted ? (
+                          <CheckCircle className="w-5 h-5 text-emerald-500" />
+                        ) : (
+                          <ChevronRight className="w-5 h-5 text-stone-400 group-hover:text-indigo-500 transition-colors" />
+                        )}
+                      </div>
                     </Link>
                   )}
                 </motion.div>
